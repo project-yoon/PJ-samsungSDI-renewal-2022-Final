@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+.content_inner {
+    position: relative;
+}
+
+/* 기본 테이블(표)
+***********************************************************************/
+.basic_table {
+    /* margin-top: 40px; */
+	overflow: hidden;
+}
+.basic_table table {
+    width: 100%;
+    background-color: white;
+    border-top: 2px solid #222222;
+	margin-left: -1px;
+}
+.basic_table table tr th,
+.basic_table table tr td {
+    padding: 24px 0;
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+}
+.basic_table table tr th,
+.basic_table table tr td {
+    border-left: 1px solid #DDDDDD; 
+}
+.basic_table table thead tr:first-child th:first-child,
+.basic_table table tbody tr th:first-child {
+    border-left-width: 0px;
+}
+.basic_table table thead tr th {
+	font-weight: 500;
+	font-size: 16px;
+	background: #F5F5F5;
+}
+.basic_table table tbody tr td {
+	font-size: 16px;
+}
+
+/* sub_visual */
+.news .sub_visual {
+	background: url(../images/sdi_now/visual_sdinow_01.png) no-repeat center / cover;
+}
+.column .sub_visual {
+	background: url(../images/sdi_now/visual_sdinow_02.png) no-repeat center / cover;
+}
+.media .sub_visual {
+	background: url(../images/sdi_now/visual_sdinow_03.png) no-repeat center / cover;
+}
+
+/* filter */
+.column .list_cont .filter_tit p {
+    margin-bottom: 0;
+}
+.news .list_cont .filter_tit p {
+    margin-bottom: 20px;
+}
+
+/* view_body */
+.view_body strong {
+    margin-bottom: 18px;
+    display: block;
+    color: #666666;
+}
+.view_body strong + .view_img {
+    display: block;
+}
+.view_body p {
+    line-height: 1.5;
+    color: #666666;
+    word-break: keep-all;
+}
+.view_body .view_list p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #888888;
+}
+.view_body .view_list ul li {
+    padding-left: 11px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #888888;
+    vertical-align: middle;
+    position: relative;
+}
+.view_body .view_list ul li::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background: #888888;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+.view_body .view_img .pc_img {
+    display: block;
+}
+.view_body .view_img .m_img {
+    display: none;
+}
+.view_body .view_img img {
+    width: 100%;
+}
+.view_body .view_caption {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #888888;
+}
+
+/* 미디어
+**********************************************************/
+/* .view_body .youtube_view {
+    width: 100%;
+    padding-bottom: 55%;
+    padding-top: 13px;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+.view_body embed,
+.view_body iframe,
+.view_body object {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+
+/* 테블릿
+**********************************************************/
+@media all and (max-width: 1280px) {
+}
+
+/* 모바일
+**********************************************************/
+@media all and (max-width: 720px) {
+    /* sub_visual */
+    .news .sub_visual {
+        background: url(../images/sdi_now/visual_sdinow_01_mo.png) no-repeat center / cover;
+    }
+    .column .sub_visual {
+        background: url(../images/sdi_now/visual_sdinow_02_mo.png) no-repeat center / cover;
+    }
+    .media .sub_visual {
+        background: url(../images/sdi_now/visual_sdinow_03_mo.png) no-repeat center / cover;
+    }
+
+    /* list_cont */
+    .news .list_cont .filter_tit p,
+    .media .list_cont .filter_tit p {
+        margin-bottom: 16px;
+    }
+
+    /* view_body */
+    .view_body .view_txt strong {
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+    .view_body p {
+        font-size: 16px;
+    }
+    .view_body .view_img .pc_img {
+        display: none;
+    }
+    .view_body .view_img .m_img {
+        display: block;
+    }
+    .view_body .view_caption {
+        font-size: 14px;
+    }
+    .view_body .view_list ul li {
+        font-size: 14px;
+    }
+}
