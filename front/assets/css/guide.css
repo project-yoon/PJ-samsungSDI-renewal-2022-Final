@@ -231,7 +231,7 @@ ol.index_cont {
 
 /*  subvisual full 에 있는 nav*/
 .sub_nav {position: absolute;left:50%;bottom: 18%;width: 100%;max-width: 1200px;transform:translateX(-50%);z-index: 3;}
-.sub_nav ul {display: table;padding: 0 24px;margin: 0 auto;white-space: nowrap;}
+.sub_nav ul {display: table;width: 100%;padding: 0 24px;margin: 0 auto;white-space: nowrap;}
 .sub_nav li {display:table-cell;vertical-align: middle;width: calc(100% / 5);padding-right: 4px;}
 .sub_nav li:last-child {padding-right: 0;}
 .sub_nav a {display: block;height: 50px;font-weight: 400;border-bottom: 4px solid rgba(255 255 255  / 65%);color:rgba(255 255 255  / 65%);}
@@ -864,7 +864,7 @@ table .td {
 	.wrap-tab-list li:first-child {margin-left: 0;}	
 	.wrap-tab-list li a {font-size: 16px;height: 30px;line-height: 30px;}
 	.wrap-tab-list li.active a:after {content: '';display: block;position: absolute;top: 27px;left: 0;width: 100%;height: 3px;background: #222;} */
-	.tab_list ul {overflow-x: auto;overflow-y: hidden;gap: 30px;}
+	.tab_list ul {overflow-x: auto;overflow-y: hidden;/*gap: 30px;*/}
 	.tab_list ul::-webkit-scrollbar {display: none;}
 	.tab_list ul li {flex-shrink: 0;line-height: 0;width: auto !important;}
 	.tab_list ul li:first-child {margin-left: 0;}	

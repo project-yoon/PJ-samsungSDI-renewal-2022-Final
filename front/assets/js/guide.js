@@ -290,31 +290,6 @@ function initSearchBtn() {
 	});
 }
 
-function subNav() {
-	var subNav = $('.sub_nav');
-
-	if(subNav.length){
-		$(window).on('resize', function(){
-			var winW = $(window).width(),
-				subNavUl = subNav.find('ul'),
-				subNavLi = subNav.find('li'),
-				totalWidth = 0;
-
-			if(winW <= 1280){ // 테블릿 이하
-				subNavLi.each(function(){    
-					totalWidth = totalWidth + $(this).outerWidth();   
-				});
-				
-				subNavUl.css('min-width', totalWidth + 20 + 'px');
-			}else{ // PC
-				subNavUl.css('min-width', 'auto');
-			}
-		});	
-
-		$(window).trigger('resize');
-	}
-}
-
 function scrollDown() {
 	var scrollDown =  $('.btn_scrolldown img'),
 		contentTop = $('.wrap .content').offset().top;
@@ -335,7 +310,6 @@ $(document).ready(function() {
 	dropdownNav();		// history. dropdown_nav
 	initAccordionList();  //AccordionList
 	initSearchBtn();
-	subNav();
 	scrollDown();
 })
 

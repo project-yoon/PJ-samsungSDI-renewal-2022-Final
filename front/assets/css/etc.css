@@ -517,14 +517,14 @@ table td.pd40 {
 }
 
 /* 이용약관 탭 */
-.tp_version_cont{display: none;padding: 15px;}
+.tp_version_cont{display: none;}
 .tp_version_cont.current{display: inherit;}
 
 .PPtabs {position: absolute;top:0;right:0;z-index: 10;}
 .PPtabs button {position: relative;width: 340px;margin-bottom: 5px;padding: 16px  45px 16px 20px;border-radius:10px;border:1px solid #ddd;background-color: #fff;font-size: 14px;color:#333;text-align: left;line-height: 1;}
 .PPtabs button:after {content:'';position: absolute;top:50%;right:20px;width:16px;height: 16px;background: url('../../assets/images/common/bullet_sn_select.png') no-repeat center center;transform:translateY(-50%);}
 .PPtabs button.on:after {transform:rotate(180deg) translateY(50%);}
-.PPtabs ul {display: none;height: 190px;border-radius:10px;border:1px solid #ddd;background-color: #fff;cursor:pointer;overflow-x:hidden;overflow-y:auto;}
+.PPtabs ul {position: absolute;display: none;width: 100%;height: 160px;border-radius:10px;border:1px solid #ddd;background-color: #fff;cursor:pointer;overflow-x:hidden;overflow-y:auto;}
 .PPtabs li {padding: 16px  20px;box-sizing:border-box;font-size: 14px;font-weight: 500;}
 .PPtabs li:hover {color: #435CE7;background: #F6F7FE;border: 0 none;}
 .PPtabs ul.expanded {display: block;}
@@ -818,7 +818,7 @@ table td.pd40 {
 		margin-left: 3px;
 	}
 
-	.PPtabs {position: static;top:auto;right: auto;}
+	.PPtabs {position: static;top:auto;right: auto;margin-bottom: 40px;}
 	.PPtabs button {width: 100%;}
 }
 
