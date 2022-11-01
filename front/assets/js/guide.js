@@ -291,7 +291,7 @@ function initSearchBtn() {
 }
 
 function scrollDown() {
-	var scrollDown =  $('.btn_scrolldown img'),
+	var scrollDown =  $('.btn_scrolldown button'),
 		contentTop = $('.wrap .content').offset().top;
 
 	scrollDown.on('click', function(){

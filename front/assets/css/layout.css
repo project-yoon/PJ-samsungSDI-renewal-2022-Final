@@ -138,9 +138,8 @@ section.content .inner {position:relative; width: 1200px;margin: 0px auto;}
 .sub_visual h2 {position: absolute;top: 200px;left: 50%;width: 100%;line-height: 1.4;color: #ffffff;transform: translate(-50%, 0);}
 .sub_visual.full p {line-height: 1.4;}
 .sub_visual .btn_scrolldown {display: none;}
-.sub_visual.full .btn_scrolldown {display: inline-block;position: absolute;bottom: 3%;left: 50%;transform: translateX(-50%);z-index: 1;}
-.sub_visual .btn_scrolldown img {cursor: pointer;}
-.sub_visual .btn_scrolldown img:hover {animation: arrowHorizonBounce 0.75s infinite ease-in;}
+.sub_visual.full .btn_scrolldown {display: inline-block;position: absolute;bottom: 45px;left: 50%;transform: translateX(-50%);z-index: 1;font-size: 0;}
+.sub_visual.full .btn_scrolldown button {width: 40px;height: 40px;background: url('../../assets/images/layout/btn_sv_scrolldown.png') no-repeat center / 39px 23px;}
 /* Top Move
 ****************************************************************/
 /* #btn_top_move {display: block;position: fixed;z-index: 2;bottom: 50px;right: 50px;line-height: 1;}
@@ -196,6 +195,8 @@ footer#footer p.copyright {font-size: 16px;color: #666666;}
 	/* #btn_top_move {bottom: 24px;right: 30px;display: block;} */
 	.quick {bottom: 24px;right: 30px;}
 	
+	.sub_visual.full .btn_scrolldown button {background-size: 15px 8px;}
+
 	/* Footer
 	****************************************************************/
 	footer#footer .footer_line {display: none;}
@@ -268,6 +269,7 @@ footer#footer p.copyright {font-size: 16px;color: #666666;}
 	footer#footer ul.sns li {margin-left: 18px;}
 	footer#footer address {line-height: 1.4;}
 }
+
 /* 페널
 **********************************************************/
 
