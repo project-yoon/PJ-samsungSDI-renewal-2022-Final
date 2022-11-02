@@ -15,7 +15,8 @@
 .business_report .sub_visual,
 .earning_releases .sub_visual {background: url('../images/investment/visual_investment_03.png') no-repeat center / cover;}
 .disclosure_view .sub_visual,
-.disclosure .sub_visual {background: url('../images/investment/visual_investment_04.png') no-repeat center / cover;}
+.disclosure .sub_visual,
+.notice .sub_visual {background: url('../images/investment/visual_investment_04.png') no-repeat center / cover;}
 .council .sub_visual,
 .committee .sub_visual,
 .articles_incorporation .sub_visual,
@@ -38,7 +39,6 @@
 .btn_cont a:not(:last-child) {margin-right: 20px;}
 .btn_download {display: block; width: 42px; height: 42px; border-radius: 50%; background: url('../images/investment/icon_download_02.png') no-repeat; background-size: contain;}
 .btn_sound {display: block; width: 42px; height: 42px; border-radius: 50%; background: url('../images/investment/icon_sound.png') no-repeat; background-size: contain;}
-
 
 /* 재무정보 - 주요지표
 **********************************************************/
@@ -148,15 +148,15 @@
 
 /* 공시
 **********************************************************/
-.disclosure .titmain{margin-bottom: 39px;}
-.disclosure .division_head{width: 100%;border-top:2px solid #222; border-bottom: 1px solid #ddd;padding: 30px 0;display: flex;}
-.disclosure .division_head li{width: 10%;text-align: center;margin-right: 2.5%;}
-.disclosure .division_head li:nth-of-type(2){width: 60%;margin-left: 5%;}
-.disclosure .division_cont{margin-bottom: 60px;}
-.disclosure .division_cont li{display: flex; border-bottom: 1px solid #ddd ; line-height: 1.4;}
-.disclosure .division_cont li p{width: 10%; text-align: center;padding:30px 0;margin-right: 2.5%;}
-.disclosure .division_cont li p.division_tit{width: 60%;text-align: left;margin-left: 5%;}
-.disclosure .head_inbtn{display: flex;align-items: flex-start;justify-content: space-between;}
+.disclosure .titmain, .notice .titmain {margin-bottom: 39px;}
+.disclosure .division_head, .notice .division_head {width: 100%;border-top:2px solid #222; border-bottom: 1px solid #ddd;padding: 30px 0;display: flex;}
+.disclosure .division_head li, .notice .division_head li {width: 10%;text-align: center;margin-right: 2.5%;}
+.disclosure .division_head li:nth-of-type(2), .notice .division_head li:nth-of-type(2) {width: 60%;margin-left: 5%;}
+.disclosure .division_cont, .notice .division_cont {margin-bottom: 60px;}
+.disclosure .division_cont li, .notice .division_cont li{display: flex; border-bottom: 1px solid #ddd ; line-height: 1.4;}
+.disclosure .division_cont li p, .notice .division_cont li p{width: 10%; text-align: center;padding:30px 0;margin-right: 2.5%;}
+.disclosure .division_cont li p.division_tit, .notice .division_cont li p.division_tit{width: 60%;text-align: left;margin-left: 5%;}
+.disclosure .head_inbtn, .notice .head_inbtn {display: flex;align-items: flex-start;justify-content: space-between;}
 
 /* 공시 상세페이지
 ********************************************************** */
@@ -273,18 +273,20 @@
 	.general_meeting .iframe-wrap{margin-bottom: 70px;}
 
 	/* 공시 */
-	.disclosure .division_cont{margin-bottom: 50px;}
-	.disclosure .division_head{display: none;}
-	.disclosure .division_cont li{display: block;padding:30px 0;border-bottom: 1px solid #eee;line-height: 1.3;}
-	.disclosure .division_cont li:nth-of-type(1){border-top:1px solid #eee;}
-	.disclosure .division_cont li p{padding:0;width: 100%;text-align: left;margin-right: 0%;}
-	.disclosure .division_cont li p.division_tit{width: 100%;font-weight: 500;font-size: 18px;margin-bottom: 16px;margin-left: 0;}
-	.disclosure .head_inbtn{display: block}
-	.disclosure .head_inbtn .titmain{margin-bottom: 30px;}
-	.disclosure .head_inbtn .btn_ti_download{margin-bottom: 30px;}
+	.disclosure .division_cont, .notice .division_cont {margin-bottom: 50px;}
+	.disclosure .division_head, .notice .division_head {display: none;}
+	.disclosure .division_cont li, .notice .division_cont li {display: block;padding:30px 0;border-bottom: 1px solid #eee;line-height: 1.3;}
+	.disclosure .division_cont li:nth-of-type(1), .notice .division_cont li:nth-of-type(1) {border-top:1px solid #eee;}
+	.disclosure .division_cont li p, .notice .division_cont li p {padding:0;width: 100%;text-align: left;margin-right: 0%;}
+	.disclosure .division_cont li p.division_tit, .notice .division_cont li p.division_tit {width: 100%;font-weight: 500;font-size: 18px;margin-bottom: 16px;margin-left: 0;}
+	.disclosure .head_inbtn, .notice .head_inbtn {display: block;}
+	.disclosure .head_inbtn .titmain, .notice .head_inbtn .titmain {margin-bottom: 30px;}
+	.disclosure .head_inbtn .btn_ti_download, .notice .head_inbtn .btn_ti_download {margin-bottom: 30px;}
+	.disclosure .division_cont li p, .notice .division_cont li p {display: none;}
+	.disclosure .division_cont li p.division_date,.disclosure .division_cont li p.division_tit, .notice .division_cont li p.division_date,.notice .division_cont li p.division_tit {display: block;}
 
 	/* 공시 상세 */
-	.disclosure_view  .view_body .file_box li{padding:16px 0;}
+	.disclosure_view .view_body .file_box li{padding:16px 0;}
 	.disclosure_view .view_head .tit .category {margin-bottom: 14px;}
     .disclosure_view .view_body .cont_box {padding: 50px 0;}
     .disclosure_view .view_body h4 {font-size: 20px;}
@@ -295,8 +297,6 @@
     .disclosure_view .view_body .cont_box .cont ol.round_num li {margin: 0 0 14px 0; width: 50%;} 
     .disclosure_view .view_body .cont_box .cont ol.round_num li:last-child {margin: 0; width: 100%;} 
     .disclosure_view .view_body .basic_table table tr td {padding: 30px 0 30px 20px;}
-	.disclosure .division_cont li p{display: none;}
-	.disclosure .division_cont li p.division_date,.disclosure .division_cont li p.division_tit{display: block;}
 }
 
 /* 모바일
@@ -314,14 +314,15 @@
 	.business_report .sub_visual,
 	.earning_releases .sub_visual {background: url('../images/investment/visual_investment_03_mo.png') no-repeat center / cover;}
 	.disclosure_view .sub_visual,
-	.disclosure .sub_visual {background: url('../images/investment/visual_investment_04_mo.png') no-repeat center / cover;}
+	.disclosure .sub_visual,
+	.notice .sub_visual {background: url('../images/investment/visual_investment_04_mo.png') no-repeat center / cover;}
 	.council .sub_visual,
 	.committee .sub_visual,
 	.articles_incorporation .sub_visual,
 	.general_meeting .sub_visual {background: url('../images/investment/visual_investment_05_mo.png') no-repeat center / cover;}
 
 	/* 재무정보 - 공통 */
-	.cont_head.flex_between {margin-bottom: 30px;}
+	.cont_head.flex_between {margin-bottom: 30px; flex-direction: column;}
 	.cont_head.flex_between h3 {margin-bottom: 30px;}
 	.view_cont a {padding: 15px 36px 15px 16px; font-size: 16px; background-position: right 15px center;}
 

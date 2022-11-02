@@ -1,21 +1,21 @@
  function subNav1() {
 	// 인베스트먼트에 있는 네비
 	var subNav1 = $(".sub_nav1"),
-		subNav1Btn = $(".sub_nav1 .nav_list > dt > a"),
-		subNav1Cont = $(".sub_nav1 .nav_list > dd"),
+		subNav1Btn = $(".sub_nav1 .depth > a"),
+		subNav1Cont = $(".sub_nav1 .depth > ul"),
 		speed = 300;
 
 	subNav1Btn.on('click', function(e){
 		e.preventDefault();
 		
-		if($(this).parent().parent().hasClass('on')){
-			subNav1Btn.parent().parent().removeClass('on');
+		if($(this).parent().hasClass('on')){
+			subNav1Btn.parent().removeClass('on');
 			subNav1Cont.slideUp(speed);
 		}else{
-			subNav1Btn.parent().parent().removeClass('on')
-			$(this).parent().parent().addClass('on');
+			subNav1Btn.parent().removeClass('on')
+			$(this).parent().addClass('on');
 			subNav1Cont.slideUp(speed);
-			$(this).parent().next().slideDown(speed);
+			$(this).next().slideDown(speed);
 		}
 	});
 }
