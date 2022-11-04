@@ -1,15 +1,75 @@
 @charset "UTF-8";
 /* 공통 */
+.pc {display:block;}
+.mo {display:none;}
+
+.social .sub_visual {background-image: url('../../assets/images/esg/visual_esg_03.png');}
+
+/* 사회->안전과 보건
+**********************************************************/
+.bg_txt {padding:30px;background-color:#435CE7;border-radius:20px;font-weight:700;font-size:30px;color:#fff;text-align:center;}
+.bg_txt span {display:block;margin-top:12px;font-weight:400;font-size:16px;}
+
+.rule_list ul {flex-wrap:wrap;gap:20px;}
+.rule_list li {height:270px;padding:20px 14px 90px;border:1px solid #eee;border-radius:20px;background-position:right 24px bottom 28px;background-repeat:no-repeat;background-size:56px 56px;}
+.rule_list span {display:block;margin-bottom:14px;line-height:1.4;}
+.rule_list span:last-child {margin-bottom:0;}
+.rule_list .tit {font-weight:700;}
+
+.rule_list li:nth-child(1) {background-image:url('../../assets/images/esg/ico_social_tab01_01.png');} 
+.rule_list li:nth-child(2) {background-image:url('../../assets/images/esg/ico_social_tab01_02.png');} 
+.rule_list li:nth-child(3) {background-image:url('../../assets/images/esg/ico_social_tab01_03.png');} 
+.rule_list li:nth-child(4) {background-image:url('../../assets/images/esg/ico_social_tab01_04.png');} 
+.rule_list li:nth-child(5) {background-image:url('../../assets/images/esg/ico_social_tab01_05.png');} 
+.rule_list li:nth-child(6) {background-image:url('../../assets/images/esg/ico_social_tab01_06.png');} 
+.rule_list li:nth-child(7) {background-image:url('../../assets/images/esg/ico_social_tab01_07.png');} 
+.rule_list li:nth-child(8) {background-image:url('../../assets/images/esg/ico_social_tab01_08.png');} 
+.rule_list li:nth-child(9) {background-image:url('../../assets/images/esg/ico_social_tab01_09.png');} 
+.rule_list li:nth-child(10) {background-image:url('../../assets/images/esg/ico_social_tab01_10.png');} 
+
+/* 사회->다양성과 포용
+**********************************************************/
+.social_tab06 h3 {margin-bottom:30px;}
+.social_tab06 .visual {margin-bottom:40px;border-radius:20px;overflow:hidden;}
+.social_tab06 p {line-height:1.4;}
+
+/* social_view
+**********************************************************/
+.social .view_cont .view_txt {line-height:1.4;}
 
 /* 테블릿
 **********************************************************/
 @media all and (max-width: 1280px) {
-	  
+	/* 사회->안전과 보건
+	**********************************************************/
+	.rule_list ul {gap:15px;}
+	.rule_list li {width: calc(50% - 7.5px);height:auto;}
 }
 
 /* 모바일
 **********************************************************/
 @media all and (max-width: 720px) {
+	.pc {display:none;}
+	.mo {display:block;}
+
 	/* 공통 */
+	.social .sub_visual {background-image: url('../../assets/images/esg/visual_esg_03_mo.png');}
 	
+	/* 사회->안전과 보건
+	**********************************************************/
+	.bg_txt {padding:18px;border-radius:14px;font-size:14px;}
+	.bg_txt span {font-size:12px;}
+
+	.rule_list li {width:100%;padding:18px 18px 18px 88px;background-position:18px 24px;background-size:40px 40px;}
+	.rule_list span {margin-bottom:8px;}
+
+	/* 사회->다양성과 포용
+	**********************************************************/
+	.social_tab06 h3 {margin-bottom:16px;}
+	.social_tab06 .visual {margin-bottom:30px;border-radius:14px;}
+	.social_tab06 p {line-height:1.3;}
+
+	/* social_view
+	**********************************************************/
+	.social .view_cont .view_txt {line-height:1.3;}
 }

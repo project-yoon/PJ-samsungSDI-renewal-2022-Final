@@ -38,6 +38,7 @@
 .flex_between {display: flex !important;justify-content: space-between !important;}
 .flex_center {display: flex !important;justify-content: center !important;}
 .flex_5n {width: calc(100% / 5)}
+.flex_item_2n {width: calc((100% - 30px)/2)}
 .flex_item_3n {width: calc((100% - 60px)/3)}
 .flex_item_4n {width: calc((100% - 120px)/4)}
 .flex_item_5n {width: calc((100% - 120px)/5)}
@@ -474,7 +475,7 @@ table .td {
 .list_cont ul {flex-wrap: wrap;flex-direction: row;gap: 70px 2.5%;}
 .list_cont ul li img {display: block;width: 100%;}
 .list_cont ul li a {display: block;width: 100%;}
-.list_cont .filter_img {position: relative;margin-bottom: 30px;border-radius: 20px;}
+.list_cont .filter_img {overflow: hidden;position: relative;margin-bottom: 30px;overflow: hidden;border-radius: 20px;}
 .list_cont .filter_img img {display: block;width: 100%;}
 .list_cont .filter_img .play_time {position: absolute;right: 14px;bottom: 14px;width: 60px;height: 36px;line-height: 36px;text-align: center;background: rgba(255, 255, 255, 0.8);border-radius: 30px;}
 .list_cont .filter_tit p {display: -webkit-box;overflow: hidden;margin-bottom: 24px;font-weight: 700;font-size: 24px;line-height: 1.4;word-break: keep-all;white-space: normal;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
@@ -659,7 +660,7 @@ table .td {
 	.subTab_cont ul.tab_menu {
 		gap: 10px;
 		overflow-x: auto;
-		padding: 0 24px 20px 24px;
+		/* padding: 0 24px 20px 24px; */
 		scrollbar-width: none;
 		-ms-overflow-style: none;
 	}
@@ -678,6 +679,9 @@ table .td {
 		padding: 7px 14px;
 		font-size: 14px;
 		white-space: nowrap;
+	}
+	.list_cont .filter_img {
+		border-radius: 14px;
 	}
 
 	/* Pagination */

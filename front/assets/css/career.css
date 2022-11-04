@@ -139,11 +139,15 @@
 .application_view .view_body .cont_box .cont button.btn_zoom {display: none;}
 .application_view .view_body .btn_area {margin-top: 70px; text-align: center;}
 .application_view .view_body .btn_area a {padding: 0 30px; display: inline-block; min-width: 240px; height: 60px; background-color: #ffffff; border: 1px solid #DDDDDD; border-radius: 7px; font-size: 18px; line-height: 60px; font-weight: 400; text-align: center;}
+.application_view .view_body .btn_area a:hover {background-color: #F5F5F5;}
+.application_view .view_body .btn_area a:active,
+.application_view .view_body .btn_area a:focus {background-color: #dddddd;}
 
 /* 삼성SDI Life 
 **********************************************************/
 .life .list_cont {padding: 0; border: none;}
 .life .list_cont ul li a {display: block; position: relative; color: #ffffff;}
+.life .list_cont ul li a .list_img {border-radius: 20px; overflow: hidden;}
 .life .list_cont ul li a .list_tit {padding: 30px; width: 100%; position: absolute; left: 0; bottom: 0; border-radius: 0 0 20px 20px; background: rgba(18, 18, 18, 0.4); backdrop-filter: blur(5px);}
 .life .list_cont ul li a .list_tit span:not(:last-child) {margin-bottom: 10px;}
 .life .list_cont ul li a p {margin-bottom: 10px; line-height: 1.2; word-break: break-word;}
@@ -157,17 +161,18 @@
 
 /* 팝업
 **********************************************************/
-.popup {display: none; padding: 60px 50px; width: 100%; height: 100%; max-width: 550px; position: fixed; right: 0; top: 0; background: #ffffff; box-shadow: 5px 10px 24px rgba(34, 34, 34, 0.25); z-index: 99;}
-.popup h3 {margin-bottom: 40px;}
-.popup h3 + div {padding: 24px; background: #F6F7FE; border-radius: 20px;}
-.popup h3 + div p:not(:last-child) {margin-bottom: 20px;}
-.popup h3 + div p a {text-decoration: underline;}
-.popup .btn_close {position: absolute; right: 54px; top: 58px;}
-.popup .btn_close button {width: 32px; height: 32px;}
-.popup .accordion_list p {width: 90%;}
-.popup .accordion_list strong {display: block;}
-.popup .accordion_list strong::before {content: ""; margin-right: 8px; display: inline-block; width: 20px; height: 20px; background: url('../images/career/icon_qna.png')no-repeat; vertical-align: middle;}
-.popup .pop_img {padding-top: 58px;}
+.popup.img_modal {height: 100%; left: 0; right: auto; top: 0; transform: none; border-radius: 0;}
+.popup.faq_modal {padding: 60px 50px; height: 100%; max-width: 550px; left: auto; right: 0; top: 0; transform: none; border-radius: 0;}
+.popup.faq_modal h3 {margin-bottom: 40px;}
+.popup.faq_modal h3 + div {padding: 24px; background: #F6F7FE; border-radius: 20px;}
+.popup.faq_modal h3 + div p:not(:last-child) {margin-bottom: 20px;}
+.popup.faq_modal h3 + div p a {text-decoration: underline;}
+.popup.faq_modal .btn_close {right: 54px; top: 58px;}
+.popup.faq_modal .btn_close button {width: 32px; height: 32px;}
+.popup.faq_modal .accordion_list p {width: 90%;}
+.popup.faq_modal .accordion_list strong {display: block;}
+.popup.faq_modal .accordion_list strong::before {content: ""; margin-right: 8px; display: inline-block; width: 20px; height: 20px; background: url('../images/career/icon_qna.png')no-repeat; vertical-align: middle;}
+.popup.img_modal .pop_img {padding-top: 58px;}
 .popup.faq_modal .pop_body {padding-top: 60px; height: 95%;}
 .popup.faq_modal .pop_body .accordion {height: 85%; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none;}
 .popup.faq_modal .pop_body .accordion::-webkit-scrollbar {display: none;}
@@ -227,6 +232,7 @@
     .application_view .view_body .basic_table table tr td {padding: 30px 0 30px 20px;}
 
     /* SDI_Life */
+    .life .list_cont ul li a .list_img {border-radius: 14px;}
     .life .list_cont ul li .list_play {position: absolute; right: 34px; bottom: 153px;}
     .life .list_cont ul li a .list_tit {height: 183px;}
 
@@ -274,14 +280,16 @@
     .life .list_cont ul li .list_play {width: 50px; height: 50px; position: absolute; right: 24px; bottom: 117px;}
 
     /* 팝업 */
-    .popup {max-width: none; padding: 20px 24px;}
-    .popup h3 {text-align: center;}
+    .popup.faq_modal {max-width: none; padding: 20px 24px;}
+    .popup.faq_modal h3 {text-align: center;}
     .popup.img_modal {max-width: none; padding: 0;}
     .popup.faq_modal .pop_body {padding-top: 30px;}
-    .popup .btn_close {right: 24px; top: 17px;}
-    .popup .btn_close button {width: 24px; height: 24px;}
+    .popup.faq_modal .btn_close,
+    .popup.img_modal .btn_close {right: 24px; top: 17px;}
+    .popup.faq_modal .btn_close button,
+    .popup.img_modal .btn_close button {width: 21px; height: 21px;}
     .popup .accordion_list strong {margin-bottom: 16px;}
-    .popup h3 + div p:not(:last-child) {margin-bottom: 16px;}
+    .popup.faq_modal h3 + div p:not(:last-child) {margin-bottom: 16px;}
 }
 
 /* 모바일

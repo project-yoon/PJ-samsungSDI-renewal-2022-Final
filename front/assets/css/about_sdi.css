@@ -15,11 +15,11 @@
 
 /* about sdi - background
 	**********************************************************/
-.about .sub_visual {background: url('../../assets/images/about_sdi/visual_about_pc.png') no-repeat center top / cover;}
-.history .sub_visual {background: url('../../assets/images/about_sdi/visual_history_pc.png') no-repeat center top / cover;}
-.ci .sub_visual {background: url('../../assets/images/about_sdi/visual_ci_pc.png') no-repeat center top / cover;}
-.develop .sub_visual {background: url('../../assets/images/about_sdi/visual_rnd_pc.png') no-repeat center top / cover;}
-.network .sub_visual {background: url('../../assets/images/about_sdi/visual_network_pc.png') no-repeat center top / cover;}
+.about .sub_visual {background: url('../../assets/images/about_sdi/visual_about_pc.png') no-repeat center / cover;}
+.history .sub_visual {background: url('../../assets/images/about_sdi/visual_history_pc.png') no-repeat center / cover;}
+.ci .sub_visual {background: url('../../assets/images/about_sdi/visual_ci_pc.png') no-repeat center / cover;}
+.develop .sub_visual {background: url('../../assets/images/about_sdi/visual_rnd_pc.png') no-repeat center / cover;}
+.network .sub_visual {background: url('../../assets/images/about_sdi/visual_network_pc.png') no-repeat center / cover;}
 
 .sub_visual.full {display: flex;flex-direction:column;justify-content:center;}
 .sub_visual.full h2 {position: static;transform:none;margin-bottom: 25px;}
@@ -155,7 +155,8 @@ ul.ci_download a img {display: inline-block;vertical-align:middle;width: 15px;ma
 .about_story dt {width: 43%;color:#fff;line-height: 1.4;}
 .about_story dt span {display: block;margin-bottom: 10px;}
 .about_story dd {width: 46%;}
-.about_story .video {overflow: hidden;width: 100%;max-width: 540px;height: 100%;max-height: 305px;border-radius: 20px;cursor: pointer;}
+.about_story .video {margin:0 auto;width: 100%;max-width: 540px;height: 100%;max-height: 305px;border-radius: 20px;cursor: pointer;}
+.about_story .video a {display: block;}
 .value_list {max-width: 1200px;margin: 0 auto;gap: 30px;}
 .value_list li {padding: 110px 0 50px;text-align: center;background-color: #F6F7FE;background-repeat: no-repeat;background-size: 40px;background-position: top 52px center;box-shadow: 5px 10px 24px rgba(34, 34, 34, 0.25);
 	border-radius: 20px;}
@@ -587,11 +588,11 @@ dl.field_info dt img {padding: 24px 0 40px;border-radius:20px;}
 		display:block;
 	}	
 
-	.about .sub_visual {background: url('../../assets/images/about_sdi/visual_about_mo.png') no-repeat center top / cover;}
-	.history .sub_visual {background: url('../../assets/images/about_sdi/visual_history_mo.png') no-repeat center top / cover;}
-	.ci .sub_visual {background: url('../../assets/images/about_sdi/visual_ci_mo.png') no-repeat center top / cover;}
-	.develop .sub_visual {background: url('../../assets/images/about_sdi/visual_rnd_mo.png') no-repeat center top / cover;}
-	.network .sub_visual {background: url('../../assets/images/about_sdi/visual_network_mo.png') no-repeat center top / cover;}
+	.about .sub_visual {background: url('../../assets/images/about_sdi/visual_about_mo.png') no-repeat center / cover;}
+	.history .sub_visual {background: url('../../assets/images/about_sdi/visual_history_mo.png') no-repeat center / cover;}
+	.ci .sub_visual {background: url('../../assets/images/about_sdi/visual_ci_mo.png') no-repeat center / cover;}
+	.develop .sub_visual {background: url('../../assets/images/about_sdi/visual_rnd_mo.png') no-repeat center / cover;}
+	.network .sub_visual {background: url('../../assets/images/about_sdi/visual_network_mo.png') no-repeat center / cover;}
 
 	.sub_visual.full {padding: 0 24px;}
 

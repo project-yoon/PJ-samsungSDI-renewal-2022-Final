@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>List | guide | 삼성SDI 공식사이트</title>
+<link rel="stylesheet" href="../../../front/assets/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../../front/assets/css/base.css" />
+<!-- <link rel="stylesheet" href="../../../front/assets/css/style.css" /> -->
+<link rel="stylesheet" href="../../../front/assets/css/layout.css" />
+<!-- <link rel="stylesheet" href="../../../front/assets/css/template.css" /> -->
+<link rel="stylesheet" href="../../../front/assets/css/common.css" />
+<link rel="stylesheet" href="../../../front/assets/css/guide.css" />
+<link rel="stylesheet" href="../../assets/css/guide_only.css" />
+<script src="../../../front/assets/js/jquery-1.11.3.min.js"></script>
+<script src="../../../front/assets/js/swiper-bundle.min.js"></script>
+<script src="../../../front/assets/js/layout.js"></script>
+<script src="../../../front/assets/js/template.js"></script>
+<!-- <script src="../../../front/assets/js/aria_tab.js"></script> -->
+<script src="../../../front/assets/js/guide.js"></script>
+</head>
+<body>
+<nav id="skip_navi">
+    <a href="#container">본문 바로가기</a>
+</nav>
+
+<div id="guide_head"></div>
+
+<hr />
+<div id="container" class="guide Tabs">
+	<div class="wrap">
+        <section class="content" style="padding-top:0;">
+
+
+			<div class="content_inner " style="padding-bottom: 0;">
+				<div class="guide_header">
+					<h3 class="titmain">wide the frame</h3>
+					<!-- <h4 class="titmain">wide the frame</h4> -->
+				</div>
+			</div>
+			<div class="content_inner wide" style="width: 100%;">
+				<div class="guide_body wide">
+					
+					<style>#TEMP_WIDE header.header{display: none;}</style>
+					<div id="TEMP_WIDE"></div>					
+					
+				</div>
+			</div>
+
+		</section> 
+    </div>
+</div>
+<div id="bg_modal"></div>
+
+<script type="text/javascript">
+	$(document).ready( function() {
+		$("#guide_head").load("guide_head.html");
+		$("#TEMP_WIDE").load("../../../front/html/TEMP/TEMP_sub_wide.html");
+	});
+</script>
+</body>
+</html>

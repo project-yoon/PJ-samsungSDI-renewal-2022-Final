@@ -82,8 +82,27 @@ function initSubPageNavi() {
     })
 }
 
+function videoPop() {
+    $('.about .video').on('click', function(){
+        $('.popup.full_modal').attr('tabindex','0').show().focus()
+    })
+
+    $('.about .video').on('keydown', function(e){
+        if(e.which==13) {
+            $('.popup.full_modal').attr('tabindex','0').show().focus()
+        }
+    })
+
+    $('.popup.full_modal .btn_close').on('click', function(){
+        $('.popup.full_modal video').get(0).pause()
+        $('.about .tab_item.active a').attr('tabindex','0').focus()
+    })
+
+}
+
 $(document).ready(function() {
-	initSubPageNavi(); //Sub Page Navi	
+	initSubPageNavi(); //Sub Page Navi
+    videoPop();	
 
 
 	if($(".map_box").length){

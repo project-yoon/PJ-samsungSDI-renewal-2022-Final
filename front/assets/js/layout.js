@@ -433,6 +433,23 @@ function bodyOverflowAntiShaking(overflowHiddenIs) {
     }
 }
 
+function popEffect() {
+	$('.popOpen').on('click', function(){
+		$('#bg_modal').show()
+
+        if($('.popup.full_modal')) {
+            $('#bg_modal').hide()
+        }
+		$('html, body').css('overflow','hidden')
+	})
+
+	$('.popup .btn_close button, .popup .cancel, .popup .close').on('click', function(){
+		$('.popup').hide()
+		$('#bg_modal').hide()
+		$('html, body').css('overflow','visible')
+	})
+}
+
 $(document).ready(function() {
 	if($(".quick").length > 0) {
 		initTopMove(); //Top move
@@ -442,4 +459,5 @@ $(document).ready(function() {
     initSitemapGnb(); //Sitemap GNB
     initHeaderSubNaviSticky() //Header & Sub Navi Sticky
     initSubVisual(); //Sub Visual
+    popEffect()//popup
 })

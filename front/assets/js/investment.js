@@ -24,7 +24,14 @@ function cardListToggle(){
     })
 }
 
+function fullPopEffect() {
+    $('.popOpen').on('click', function() {
+        $('.popup.full_modal').show()
+    })
+}
+
 
 $(document).ready(function() {
     cardListToggle();
+    fullPopEffect();
 })
