@@ -75,7 +75,7 @@ function initSubPageNavi() {
         mousedownFired = false;
     })
 	
-    cmnItem.find(">a").on("click",function() {
+    cmnItem.find(">a").off('click').on('click',function() {
         if(mousedownFired == true) {
             return false;   
         }
@@ -83,7 +83,7 @@ function initSubPageNavi() {
 }
 
 function videoPop() {
-    $('.about .video').on('click', function(){
+    $('.about .video').off('click').on('click', function(){
         $('.popup.full_modal').attr('tabindex','0').show().focus()
     })
 
@@ -93,7 +93,7 @@ function videoPop() {
         }
     })
 
-    $('.popup.full_modal .btn_close').on('click', function(){
+    $('.popup.full_modal .btn_close').off('click').on('click', function(){
         $('.popup.full_modal video').get(0).pause()
         $('.about .tab_item.active a').attr('tabindex','0').focus()
     })
@@ -116,7 +116,7 @@ $(document).ready(function() {
 		chkBtn.parent('span').addClass('on');
 
 		// all check
-		chkAll.on('click', function(){
+		chkAll.off('click').on('click', function(){
 			if( $(this).is(':checked') ){
 				chkBtn.prop('checked', true);
 				chkBtn.parent('span').addClass('on');
@@ -128,7 +128,7 @@ $(document).ready(function() {
 			}
 		});
 		
-		chkSub.on('click', function(){
+		chkSub.off('click').on('click', function(){
 			var index = $(this).parent().parent().index();
 
 			if( $(this).is(':checked') == true ){

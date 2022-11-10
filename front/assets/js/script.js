@@ -73,7 +73,7 @@ function initGNB(deps1Num) {
 	})
 	
 	//테블릿 이하 일 때
-	btnGnb.on("click",function() {
+	btnGnb.off('click').on('click',function() {
 		if($(window).width() <= 1280) {
 			bgGnb.fadeIn(200)
 			gnb.show();
@@ -82,7 +82,7 @@ function initGNB(deps1Num) {
 			},300)
 		}
 	})
-	btnClase.on("click",function() {
+	btnClase.off('click').on('click',function() {
 		if($(window).width() <= 1280) {
 			gnb.animate({
 				"right": "-360px"
@@ -96,7 +96,7 @@ function initGNB(deps1Num) {
 			})
 		}
 	})
-	gItem.find(">button.btn_deps_menu").on("click",function() {
+	gItem.find(">button.btn_deps_menu").off('click').on('click',function() {
 		if($(window).width() <= 1280) {
 			if($(this).prev().hasClass("active") == false) {
 				$(this).prev().addClass("active")
@@ -171,7 +171,7 @@ function initTopMove() {
 	})
 	
 	
-	btnTopMove.find("button").on("click",function() {
+	btnTopMove.find("button").off('click').on('click',function() {
 		$("html,body").animate({
 			"scrollTop":0
 		},300)
@@ -210,7 +210,7 @@ function popupProjectDetail(modalname) {
 		popupModal.focus();
 	})
 	
-	btnClose.off().on("click",function() {
+	btnClose.off().off('click').on('click',function() {
 		popupProjectDetail.animate({
 			"opacity":0
 		},300,function() {
@@ -259,7 +259,7 @@ function initGuideAnchorContent() {
 		
 	})
 	
-	gsnItem.find(">a").on("click",function() {
+	gsnItem.find(">a").off('click').on('click',function() {
 		tContOfsTop = $($(this).attr("href")).offset().top;
 		
 		$("html,body").animate({
@@ -280,7 +280,7 @@ function initInquiryList() {
 		btnTopMove = $("#btn_top_move");
 	})
 	
-	ilItem.find("dt>a").on("click",function() {
+	ilItem.find("dt>a").off('click').on('click',function() {
 		btnTopMove.css({"opacity":0})
 		if($(this).parent().parent().hasClass("active") == false) {
 			ilItem.removeClass("active");
@@ -329,7 +329,7 @@ function initGuideMenu(deps1Num,deps2Num,deps3Num) {
 		}
 	}
 	
-	gmDeps1.find(">button.btn_deps_menu").on("click",function() {
+	gmDeps1.find(">button.btn_deps_menu").off('click').on('click',function() {
 		if($(this).parent().hasClass("on") == false) {
 			gmDeps1.removeClass("on");
 			gmDeps1.find(">ul").slideUp(300);
@@ -342,7 +342,7 @@ function initGuideMenu(deps1Num,deps2Num,deps3Num) {
 		}
 	})
 	
-	gmDeps2.find(">button.btn_deps_menu").on("click",function() {
+	gmDeps2.find(">button.btn_deps_menu").off('click').on('click',function() {
 		if($(this).parent().hasClass("on") == false) {
 			gmDeps2.removeClass("on");
 			gmDeps2.find(">ul").slideUp(300);
@@ -356,7 +356,7 @@ function initGuideMenu(deps1Num,deps2Num,deps3Num) {
 	})
 	
 	
-	btnMenuOpen.on("click",function() {
+	btnMenuOpen.off('click').on('click',function() {
 		if($(this).hasClass("on") == false) {
 			$(this).addClass("on");
 			gmList.slideDown(300);
@@ -394,7 +394,7 @@ function showDiv(element){
 function initToggleOpen() {
 	var toggleOpen =  $(".toggle-open");
 	var btnToggleOpen = toggleOpen.find(">.btn_toggle_open button")
-	btnToggleOpen.on("click",function() {
+	btnToggleOpen.off('click').on('click',function() {
 		if($(this).hasClass("on") == false) {
 			$(this).addClass("on");
 		} else if($(this).hasClass("on") == true) {
@@ -440,7 +440,7 @@ function tabUI(){
 	function bindEvents(obj){
 		var $this = $(obj);
 
-		$this.find('.tab > li > a').on('click', function(e){
+		$this.find('.tab > li > a').off('click').on('click', function(e){
 			e.preventDefault();
 			var index = $(this).closest('li').index();
 
@@ -448,7 +448,7 @@ function tabUI(){
 				return;
 			}
 
-			console.log($(this));
+			// console.log($(this));
 
 			$(this).closest(el).find('.tab > li > a span.blind').remove();
 			$(this).append('<span class="blind">선택됨</span>');
@@ -502,7 +502,7 @@ function tabSecondUI(){
 	function bindEvents(obj){
 		var $this = $(obj);
 
-		$this.find('.tab_second > li > a').on('click', function(e){
+		$this.find('.tab_second > li > a').off('click').on('click', function(e){
 			e.preventDefault();
 			var index = $(this).closest('li').index();
 

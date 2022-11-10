@@ -4,12 +4,12 @@ function searchNav() {
 		searchList = $('.tab_nav  .tab_list_filter ul'),
 		searchItem = $('.tab_nav  .tab_list_filter ul a');
 
-	searchBtn.on('click', function(){
+	searchBtn.off('click').on('click', function(){
 		searchBtn.toggleClass('on');
 		searchList.toggleClass('open');
 	});
 
-	searchItem.on('click', function(){
+	searchItem.off('click').on('click', function(){
 		var category = $(this).find('.category').text(),
 			 num = $(this).find('.count').text();
 		
@@ -37,7 +37,7 @@ function initFilter() {
 	const filterMenu = $('.filter_menu');
 	const button = target.find('.filter_menu button');
 
-	selectedBtn.on('click', function(){		
+	selectedBtn.off('click').on('click', function(){		
 		if( target.hasClass('active')){       //selectbox 선택자	
 			target.removeClass('active');
 			target.find('.filter_menu').css({"displaly": "none"}).slideUp(300);
@@ -46,12 +46,12 @@ function initFilter() {
 			target.find('.filter_menu').css({"displaly": "flex"}).slideDown(300);
 		}	
 		
-		button.on('click', function(){
+		button.off('click').on('click', function(){
 			target.find('.filter_menu').css({"displaly": "none"}).slideUp(300);
 		});
 	});
 	
-	button.on('click', function(){
+	button.off('click').on('click', function(){
 		const text = $(this).text();
 		const el = $(this).parent();
 		if( !el.hasClass('is-active')){      //tab 선택자
@@ -66,8 +66,7 @@ function initFilterSearch(){
 	const selectedBtnSch = targetSch.find('.filter_selected');
 	const filterMenuSch = $('.filter_search');
 	const buttonSch = targetSch.find('.filter_search button');
-	buttonSch.on('click', function(){
-		console.log('zzz');
+	buttonSch.off('click').on('click', function(){
 		const textSch = $(this).text();
 		const elSch = $(this).parent();
 		if( !elSch.hasClass('is-active')){      //tab 선택자
@@ -206,16 +205,21 @@ function dropdownNav(){
 	var dropPrev = $(".btn_hs_prev");
 	var dropNext = $(".btn_hs_next");
 
-	dropLink.on("click", function(e){
-		 dropIndex = dropList.find(">a.active").parent().index();
+	dropText.off('click').on('click', function(){
+		$(this).toggleClass('on');
 	});
-	dropPrev.on("click", function(){
+
+	dropLink.off('click').on('click', function(e){
+		 dropIndex = dropList.find(">a.active").parent().index();
+		 dropText.removeClass('on');
+	});
+	dropPrev.off('click').on('click', function(){
 		dropIndex--;
 		dropIndexFind(dropIndex);
 		dropText_change();
 		scroll();
 	});
-	dropNext.on("click", function(){
+	dropNext.off('click').on('click', function(){
 		dropIndex++;
 		dropIndexFind(dropIndex);
 		dropText_change();
@@ -252,7 +256,7 @@ function initAccordionList() {
     var accTit = accordionList.find(">dt");
     var accCont = accordionList.find(">dd");
 
-    accTit.find(">a").on("click",function() {
+    accTit.find(">a").off('click').on('click',function() {
         if($(this).parent().hasClass("active") == false) {
             accTit.removeClass("active");
             accCont.slideUp(300);
@@ -262,7 +266,7 @@ function initAccordionList() {
                 $(window).resize()
 				
 				//youtube
-				$('.accordion_list > dt').on('click', function(){
+				$('.accordion_list > dt').off('click').on('click', function(){
 					for(i=0; i<8; i++) {
 						$("iframe")[i].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 					}
@@ -278,23 +282,12 @@ function initAccordionList() {
     })
 }
 
-//popup
-function initSearchBtn() {
-	$(".btn_search").click(function () {
-		$('html, body').css("overflow","hidden")
-		$("#popup_search").css("display","block");
-	});
-	$(".close_btn").click(function () {
-		$("#popup_search").css("display", "none")
-		$('html, body').css("overflow","visible")
-	});
-}
 
 function scrollDown() {
 	var scrollDown =  $('.btn_scrolldown button'),
 		contentTop = $('.wrap .content').offset().top;
 
-	scrollDown.on('click', function(){
+	scrollDown.off('click').on('click', function(){
 		 $('html, body').animate({
 			 scrollTop: contentTop
 		}, 600);
@@ -309,7 +302,6 @@ $(document).ready(function() {
 	tabUI();            // 탭 메뉴 tab
 	dropdownNav();		// history. dropdown_nav
 	initAccordionList();  //AccordionList
-	initSearchBtn();
 	scrollDown();
 })
 

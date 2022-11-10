@@ -5,7 +5,7 @@ function cardListToggle(){
     var toggleCon=card_wrap.find("dl>dd");
     var more_btn=$('.more_btn');
 
-    more_btn.on("click",function() {
+    more_btn.off('click').on('click',function() {
         if($(this).parent().hasClass("active") == false) {
             more_btn.removeClass("active");
             toggleCon.slideUp(300);
@@ -25,7 +25,7 @@ function cardListToggle(){
 }
 
 function fullPopEffect() {
-    $('.popOpen').on('click', function() {
+    $('.popOpen').off('click').on('click', function() {
         $('.popup.full_modal').show()
     })
 }

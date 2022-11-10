@@ -5,7 +5,7 @@
 		subNav1Cont = $(".sub_nav1 .depth > ul"),
 		speed = 300;
 
-	subNav1Btn.on('click', function(e){
+	subNav1Btn.off('click').on('click', function(e){
 		e.preventDefault();
 		
 		if($(this).parent().hasClass('on')){
@@ -27,12 +27,12 @@
 		tabMenuList = tabMenu1.find(".tab_list1 ul"),
 		tabMenuBtn2 = tabMenuList.find("a");
 
-	tabMenuBtn.on('click', function(){
+	tabMenuBtn.off('click').on('click', function(){
 		$(this).toggleClass('on');
 		tabMenuList.toggleClass('on');
 	});
 	
-	tabMenuBtn2.on('click', function(){
+	tabMenuBtn2.off('click').on('click', function(){
 		var $text = $(this).text();
 		
 		tabMenuBtn.text($text);
@@ -78,7 +78,7 @@
 	});
 	
 	// 네비 클릭
-	fixNavBtn.on('click', function(e){
+	fixNavBtn.off('click').on('click', function(e){
 		e.preventDefault();
 		var target = $(this.hash).offset().top,
 			winW = $(window).width();

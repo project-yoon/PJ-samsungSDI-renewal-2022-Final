@@ -46,7 +46,7 @@ function initSubtab() {
             tabMenu.removeClass("on").eq(0).addClass("on");
             tabItem.hide().eq(0).show();
         }
-        tabArea.on("click", "ul.tab_menu button", function () {
+        tabArea.off('click').on('click', "ul.tab_menu button", function () {
             var currTabMenu = $(this).parent().parent().parent().find("ul.tab_menu li"),
                 currTabItem = $(this).parent().parent().parent().find(".tab_item"),
                 currIdx = $(this).parent().index();

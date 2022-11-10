@@ -133,15 +133,6 @@
 	margin-top: -11px;
 	background: url(../../assets/images/common/ico_download.png) no-repeat center center;
 }
-.btn_ti_download {
-	position: relative;
-	border: 1px solid #888888;
-	border-radius: 7px;
-	padding: 15px 40px 15px 16px;
-	font-weight: 400;
-	font-size: 16px;
-	color: #666666;
-}
 
 /* ol list */
 ol.round_num {
@@ -873,7 +864,7 @@ table .td {
 	.tab_list ul::-webkit-scrollbar {display: none;}
 	.tab_list ul li {flex-shrink: 0;line-height: 0;width: auto !important;}
 	.tab_list ul li:first-child {margin-left: 0;}	
-	.tab_list ul li a {font-size: 16px;height: 30px;line-height: 30px;}
+	.tab_list ul li a {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;height: 30px;font-size: 16px;line-height: 30px;}
 	.tab_list ul li.active a:after {content: '';display: block;position: absolute;top: 27px;left: 0;width: 100%;height: 3px;background: #222;}
 
 	/* Pagination */

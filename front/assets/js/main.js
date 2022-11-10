@@ -1,11 +1,5 @@
 $(document).ready(function () { 
-    // keyinfo
-    $('.btn_keyinfo').on('click', function () {
-        $('.keyinfo').fadeIn()
-    });
-    $('.keyinfo .close').on('click', function () {
-        $('.keyinfo').fadeOut()
-    });
+
 
     // 메인 스와이퍼
     var swiper = new Swiper(".newsSlide", {

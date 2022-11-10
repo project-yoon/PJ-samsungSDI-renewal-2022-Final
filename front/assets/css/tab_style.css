@@ -57,7 +57,7 @@
 /* 인베스트먼트에 있는 네비 Start */
 .fix_nav {position: relative;}
 .fix_nav:before {content:'';position: absolute;left: 0;bottom: 0;width: 100%;height: 1px;background-color: #eee;z-index: -1;}
-.fix_nav ul {display: flex;max-width: 1200px;margin: 0 auto;}
+.fix_nav ul {display: flex;justify-content: space-between;max-width: 1200px;margin: 0 auto;}
 .fix_nav li {width: 100%;text-align: center;}
 .fix_nav a {display: block;padding: 25px 20px;font-size: 20px;font-weight: 400;color:#888;border-bottom: 4px solid transparent;}
 .fix_nav li.on a {border-color:#222;color:#222;font-weight: 700;}

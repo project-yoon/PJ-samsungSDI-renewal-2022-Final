@@ -231,7 +231,7 @@
 
 		<!-- page visual title -->
 		<div class="sub_visual">
-			<h2 class="subH">★팝업가이드</h2>
+			<h2 class="subH">POPUP</h2>
 		</div>
 
 		<!-- Start Of Contents -->
@@ -240,11 +240,32 @@
 
 				<!-- 컨텐츠 구성 예시, 재구성 시 제거 -->
 				<div class="cont_head">
-					<h3 class="body_title">★Title</h3>
-					<p class="txt color_g2">★Sub Text</p>
+					<h3 class="body_title">Full POPUP</h3>
 				</div>
 				<div class="cont_body">
-					★Contents
+					<div style="margin: 10px 0 40px;">
+						<button type="button" class="btn lg" id="full_popup"><span>Full</span></button>
+					</div>
+				</div>
+				<div class="cont_head">
+					<h3 class="body_title">Button POPUP</h3>
+				</div>
+				<div class="cont_body">
+					<div style="margin: 10px 0 40px;">
+						<button type="button" class="btn lg" id="btn_1"><span>Button 1 piece</span></button>
+						<button type="button" class="btn lg" id="btn_2"><span>Button 2 piece</span></button>
+						<button type="button" class="btn lg" id="btn_none"><span>none Button</span></button>
+					</div>
+				</div>
+				<div class="cont_head">
+					<h3 class="body_title">Alert Popup</h3>
+				</div>
+				<div class="cont_body">
+					<div style="margin: 10px 0 0px;">
+						<button type="button" class="btn lg" id="alert_img"><span>images alert</span></button>
+						<button type="button" class="btn lg" id="alert_info"><span>info alert</span></button>
+					</div>
+
 				</div>
 				<!-- //컨텐츠 구성 예시 -->
 
@@ -256,7 +277,7 @@
 </div>
 <!-- // container -->
 <!-- full -->
-<div class="popup full_modal" style="display: block;"> <!-- [D]: 개발 시 인라인 스타일 제거 -->
+<div class="popup full_modal pop0"> <!-- [D]: 개발 시 인라인 스타일 제거 -->
 	<div class="pop_head">
 		<h3 class="titmain">풀 팝업 가이드</h3>
 	</div>
@@ -274,7 +295,7 @@
 
 <!-- basic 팝업 -->
 <!-- 버튼이 1개일 경우, 스크롤이 되는 경우 -->
-<div class="popup basic_modal">
+<div class="popup basic_modal pop1" id="pop1">
 	<div class="pop_head">
 		<div class="logo"><img src="../../assets/images/layout/pop_logo.png" alt="삼성SDI"></div>
 		<h3 class="titmain">버튼 노출 케이스</h3>
@@ -297,9 +318,9 @@
 	<div class="pop_foot flex">
 		<p class="copyright txt_caption color_g3">COPYRIGHT 2022 SAMSUNG SDI CO.,LTD. ALL RIGHT RESERVED.</p>
 		<div class="hide_cont">
-			<form>
-				<input type="checkbox" id="chk1" name="popHide">
-				<label for="chk1" class="txt_infoR">오늘 하루 보지 않기</label>
+			<form name="formPop">
+				<input id="chk_today1" onclick="closeWin('pop1',this);" type='checkbox' name='chkbox[]' value='checkbox' >
+				<label value='checkbox' for="chk_today1" class="txt_infoR">오늘 하루동안 보지 않기</label>
 			</form>
 		</div>
 	</div>
@@ -309,7 +330,7 @@
 </div>
 
 <!-- 버튼이 2개일 경우, 스크롤이 되는 경우 -->
-<div class="popup basic_modal">
+<div class="popup basic_modal pop2" id="pop2">
 	<div class="pop_head">
 		<div class="logo"><img src="../../assets/images/layout/pop_logo.png" alt="삼성SDI"></div>
 		<h3 class="titmain">버튼 2개 노출 / 스크롤 있는 케이스</h3>
@@ -334,9 +355,9 @@
 	<div class="pop_foot flex">
 		<p class="copyright txt_caption color_g3">COPYRIGHT 2022 SAMSUNG SDI CO.,LTD. ALL RIGHT RESERVED.</p>
 		<div class="hide_cont">
-			<form>
-				<input type="checkbox" id="chk2" name="popHide">
-				<label for="chk1" class="txt_infoR">오늘 하루 보지 않기</label>
+			<form name="formPop">
+				<input id="chk_today2" onclick="closeWin('pop2',this);" type='checkbox' name='chkbox[]' value='checkbox' >
+				<label value='checkbox' for="chk_today2" class="txt_infoR">오늘 하루동안 보지 않기</label>
 			</form>
 		</div>
 	</div>
@@ -346,7 +367,7 @@
 </div>
 
 <!-- 버튼이 없는 경우 -->
-<div class="popup basic_modal">
+<div class="popup basic_modal pop3" id="pop3">
 	<div class="pop_head">
 		<div class="logo"><img src="../../assets/images/layout/pop_logo.png" alt="삼성SDI"></div>
 		<h3 class="titmain">버튼이 없는 케이스</h3>
@@ -367,9 +388,9 @@
 	<div class="pop_foot flex">
 		<p class="copyright txt_caption color_g3">COPYRIGHT 2022 SAMSUNG SDI CO.,LTD. ALL RIGHT RESERVED.</p>
 		<div class="hide_cont">
-			<form>
-				<input type="checkbox" id="chk3">
-				<label for="chk1" class="txt_infoR">오늘 하루 보지 않기</label>
+			<form name="formPop">
+				<input id="chk_today3" onclick="closeWin('pop3',this);" type='checkbox' name='chkbox[]' value='checkbox' >
+				<label value='checkbox' for="chk_today3" class="txt_infoR">오늘 하루동안 보지 않기</label>
 			</form>
 		</div>
 	</div>
@@ -380,17 +401,18 @@
 
 <!-- Alert 팝업 -->
 <!-- 1. 이미지 alert -->
-<div class="popup alert_modal type1">
+<div class="popup alert_modal type1" id="type1">
 	<div class="pop_body">
 		<div class="pop_img">
 			<img src="../../assets/images/business/visual_business_04.png" alt="이미지대체텍스트">
 		</div>
 	</div>
 	<div class="pop_foot flex">
+		
 		<div class="hide_cont">
-			<form>
-				<input type="checkbox" id="chk4" name="popHide">
-				<label for="chk1" class="txt_infoR">오늘 하루 보지 않기</label>
+			<form name="formPop">
+				<input id="chk_today" onclick="closeWin('type1',this);" type='checkbox' name='chkbox[]' value='checkbox' >
+				<label value='checkbox' for="chk_today" class="txt_infoR">오늘 하루동안 보지 않기</label>
 			</form>
 		</div>
 		<a href="javascript:void(0);" class="close">닫기</a>
@@ -411,7 +433,18 @@
 	</div>
 </div>
 <!-- //2. 안내 alert -->
-<div id="bg_modal" style="display: block;"></div>
+<div id="bg_modal" ></div>
+
+<!-- 
+	<div class="hide_cont">
+		
+	<form>
+		<input type="checkbox" id="chk4" name="popHide">
+		<label for="chk1" class="txt_infoR">오늘 하루 보지 않기</label>
+	</form>
+
+</div> 
+-->
 
 <hr>
 
@@ -447,5 +480,53 @@
 	</footer>
 </div>
 
+<script>
+	
+
+	$('#full_popup').on('click', function() {
+        $('.popup.pop0').show()
+    })
+	$('#btn_1').on('click', function() {
+        $('.popup.pop1').show()
+    })
+	$('#btn_2').on('click', function() {
+        $('.popup.pop2').show()
+    })
+	$('#btn_none').on('click', function() {
+        $('.popup.pop3').show()
+    })
+	$('#alert_img').on('click', function() {
+        $('.popup.type1').show()
+    })
+	$('#alert_info').on('click', function() {
+        $('.popup.type2').show()
+    })
+	$('.popup .check').on('click', function(){
+		$('.popup').hide()
+		$('#bg_modal').hide()
+		$('html, body').css('overflow','visible')
+	})
+
+</script>
+<script>
+	function setCookie(name, value, expirehours) {
+        var todayDate = new Date();
+        todayDate.setHours(todayDate.getHours() + expirehours);
+        document.cookie = name + "=" + escape(value) + "; path=/; expires=" +todayDate.toGMTString() + ";"}
+    function closeWin(id, checkbox) {if (checkbox.checked) {setCookie(id, "done", 1);}$(this).closest('.popup').fadeOut();}
+    cookiedata = document.cookie;
+        // pop1
+        if (cookiedata.indexOf("pop1=done") < 0) {// $(".pop1").fadeIn();
+        } else {$(".pop1").fadeOut();$(this).closest('.pop1').fadeOut();}
+        // pop2
+        if (cookiedata.indexOf("pop2=done") < 0) {// $(".pop2").fadeIn();
+        } else {$(".pop2").fadeOut();$(this).closest('.pop2').fadeOut();}
+        // pop3
+        if (cookiedata.indexOf("pop3=done") < 0) {// $(".pop3").fadeIn();
+        } else {$(".pop3").fadeOut();$(this).closest('.pop3').fadeOut();}
+        // type1
+        if (cookiedata.indexOf("type1=done") < 0) {// $(".type1").fadeIn(); 쿠키없을경우접속시노출
+        } else {$(".type1").fadeOut();$(this).closest('.type1').fadeOut();}
+</script>
 </body>
 </html>
