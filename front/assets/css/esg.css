@@ -1,31 +1,112 @@
 @charset "UTF-8";
 /* 공통 */
+/* 미경 */
 .pc {display:block;}
 .mo {display:none;}
+h3.mb40 {margin-bottom: 40px !important;}
+p {line-height: 1.4;}
+.cont_txt:not(:last-child) {margin-bottom: 60px;}
+.cont_txt h4 {margin-bottom: 24px;}
+.cont_txt h4 + p:not(:last-child) {margin-bottom: 40px;}
+.cont_item:not(:last-child) {margin-bottom: 120px;}
+.cont_head:not(:last-child) {margin-bottom: 40px;}
+.cont_head h3 {margin-bottom: 30px;}
+.cont_body b.img_tit {display: block; margin-bottom: 30px;}
 
-.social .sub_visual {background-image: url('../../assets/images/esg/visual_esg_03.png');}
+/* bullet */
+.dot_bullet li {padding-left: 11px; position: relative;}
+.dot_bullet li::before {content: ""; width: 3px; height: 3px; background: #222222; position: absolute; left: 0; top: 10px;}
+.straight_bullet li {padding-left: 10px; position: relative;}
+.straight_bullet li:before {content: ""; width: 5px; height: 1px; background: #666666; position: absolute; left: 0; top: 10px;}
 
-/* 사회->안전과 보건
+.sustainability .sub_visual,
+.important_issue .sub_visual,
+.risk_management .sub_visual,
+.sustainable_policy .sub_visual,
+.initiative .sub_visual {background-image: url('../../assets/images/esg/visual_esg_01.png');}
+.environment .sub_visual,
+.net_zero .sub_visual {background-image: url('../../assets/images/esg/visual_esg_02.png');}
+.safety_health .sub_visual,
+.social_responsibility .sub_visual,
+.social_contribution .sub_visual,
+.social_list .sub_visual,
+.social_view .sub_visual,
+.social_diversity .sub_visual {
+	background: url("../../assets/images/esg/visual_esg_03.png") no-repeat center / cover;
+}
+.directorate .sub_visual {background: url("../../assets/images/esg/visual_esg_04.png") no-repeat center / cover;}
+
+
+/* info_list */
+.info_list li {
+	position: relative;
+	padding-left: 12px;
+	line-height: 1.4;
+	white-space: nowrap;
+}
+
+.info_list li::after {
+	position: absolute;
+	top: 9px;
+	left: 0;
+	content: '';
+	width: 3px;
+	height: 3px;
+	background-color: #666;
+}
+
+.inquire_btn {
+	display: inline-block;
+	padding-right: 23px;
+	padding-bottom: 5px;
+	background: url(../images/etc/ico_inquire01.png) no-repeat center / cover;
+	background-size: 14px;
+	background-position: bottom 8px right 2px;
+	border-bottom: 1px solid #222;
+}
+
+/* ESG 전략 - 지속가능경영 정책
 **********************************************************/
-.bg_txt {padding:30px;background-color:#435CE7;border-radius:20px;font-weight:700;font-size:30px;color:#fff;text-align:center;}
-.bg_txt span {display:block;margin-top:12px;font-weight:400;font-size:16px;}
+.sustainable_policy .cont_body ul {gap: 30px 20px; flex-wrap: wrap;}
+.sustainable_policy .cont_body ul li {border: 1px solid #dddddd; border-radius: 20px;}
+.sustainable_policy .cont_body ul li a {padding: 40px 40px 40px 110px; display: block; position: relative; background-size: 40px; background-repeat: no-repeat; background-position: left 31px center;}
+.sustainable_policy .cont_body ul li a::after {content: ""; width: 18px; height: 18px; background: url('../images/esg/ico_arrow.png')no-repeat; background-size: cover; position: absolute; right: 40px; top: 50%; transform: translateY(-50%);}
+.sustainable_policy .cont_body ul li:nth-child(1) a {background-image: url('../images/esg/ico_sustainable_policy01.png');}
+.sustainable_policy .cont_body ul li:nth-child(2) a {background-image: url('../images/esg/ico_sustainable_policy02.png');}
+.sustainable_policy .cont_body ul li:nth-child(3) a {background-image: url('../images/esg/ico_sustainable_policy03.png');}
+.sustainable_policy .cont_body ul li:nth-child(4) a {background-image: url('../images/esg/ico_sustainable_policy04.png');}
+.sustainable_policy .cont_body ul li:nth-child(5) a {background-image: url('../images/esg/ico_sustainable_policy05.png');}
+.sustainable_policy .cont_body ul li:nth-child(6) a {background-image: url('../images/esg/ico_sustainable_policy06.png');}
+.sustainable_policy .cont_body ul li:nth-child(7) a {background-image: url('../images/esg/ico_sustainable_policy07.png');}
+.sustainable_policy .cont_body ul li:nth-child(8) a {background-image: url('../images/esg/ico_sustainable_policy08.png');}
 
-.rule_list ul {flex-wrap:wrap;gap:20px;}
-.rule_list li {height:270px;padding:20px 14px 90px;border:1px solid #eee;border-radius:20px;background-position:right 24px bottom 28px;background-repeat:no-repeat;background-size:56px 56px;}
-.rule_list span {display:block;margin-bottom:14px;line-height:1.4;}
-.rule_list span:last-child {margin-bottom:0;}
-.rule_list .tit {font-weight:700;}
+/* ESG 전략 - 이니셔티브와 인증
+**********************************************************/
+.initiative .esg_result .cont_body figure {margin-bottom: 20px;}
+.initiative .esg_result .cont_body ul li:not(:last-child) {margin-bottom: 10px;}
+.initiative .participation .cont_body ul li {margin-bottom: 60px; display: flex; align-items: center; gap: 41px; position: relative;}
+.initiative .participation .cont_body ul li:last-child {margin-bottom: 0;}
+.initiative .participation .cont_body ul li b {display: inline-block; position: absolute; left: 368px; top: 10px;}
+.initiative .participation .cont_body ul li .cont_img {width: 327px;}
+.initiative .participation .cont_body ul li p {padding-top: 24px; width: calc(100% - 368px); min-height: 90px;}
 
-.rule_list li:nth-child(1) {background-image:url('../../assets/images/esg/ico_social_tab01_01.png');} 
-.rule_list li:nth-child(2) {background-image:url('../../assets/images/esg/ico_social_tab01_02.png');} 
-.rule_list li:nth-child(3) {background-image:url('../../assets/images/esg/ico_social_tab01_03.png');} 
-.rule_list li:nth-child(4) {background-image:url('../../assets/images/esg/ico_social_tab01_04.png');} 
-.rule_list li:nth-child(5) {background-image:url('../../assets/images/esg/ico_social_tab01_05.png');} 
-.rule_list li:nth-child(6) {background-image:url('../../assets/images/esg/ico_social_tab01_06.png');} 
-.rule_list li:nth-child(7) {background-image:url('../../assets/images/esg/ico_social_tab01_07.png');} 
-.rule_list li:nth-child(8) {background-image:url('../../assets/images/esg/ico_social_tab01_08.png');} 
-.rule_list li:nth-child(9) {background-image:url('../../assets/images/esg/ico_social_tab01_09.png');} 
-.rule_list li:nth-child(10) {background-image:url('../../assets/images/esg/ico_social_tab01_10.png');} 
+/* 환경 - Move to Net-Zero
+**********************************************************/
+.net_zero .cont_txt .table-scroll {margin-top: 0;}
+.net_zero .cont_txt .dot_bullet li:not(:last-child) {margin-bottom: 30px;}
+.net_zero .cont_txt .dot_bullet li::before {color: #666666;}
+
+/* 사회 - 안전과 보건
+**********************************************************/
+.safety_health .cont_txt:not(:last-child) {margin-bottom: 60px;}
+.safety_health .cont_txt b {margin-bottom: 14px !important;}
+.safety_health .cont_txt b + p {margin-bottom: 30px;}
+.safety_health .cont_txt ol.round_num {padding: 60px; border-radius: 20px; background: #F6F7FE;}
+.safety_health .cont_txt ol.round_num > li {margin:16px 0 0 0;}
+.safety_health .cont_txt ol.round_num > li:first-child {margin:0;}
+.safety_health .cont_txt ol.round_num > li::before {top: 0; line-height: 14px; font-weight: 600; color: #435CE7; border:2px solid #435CE7;}
+.safety_health .cont_txt ol.round_num > li p:first-child {margin-bottom: 12px;}
+.safety_health .cont_item.quality .cont_txt .sub_tit {margin-bottom: 30px;}
 
 /* 사회->다양성과 포용
 **********************************************************/
@@ -33,17 +114,188 @@
 .social_tab06 .visual {margin-bottom:40px;border-radius:20px;overflow:hidden;}
 .social_tab06 p {line-height:1.4;}
 
+/* 사회 - 사회적 책임
+**********************************************************/
+.social_responsibility .cont_item:not(:last-child) {
+	margin-bottom: 120px;
+}
+
+.social_responsibility .cont_head:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.social_responsibility .btn_download {
+	margin-bottom: 40px;
+	padding: 16px 40px 16px 20px;
+}
+
+.social_responsibility .btn_download .btn_name {
+	position: relative;
+}
+
+.social_responsibility .btn_download .btn_name:after {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 50%;
+	right: -23px;
+	margin-top: -11px;
+	background: url(../../assets/images/common/ico_download.png) no-repeat center center;
+}
+
+.social_responsibility .cont_body .txt_info {
+	display: block;
+	margin-bottom: 30px;
+}
+
+/* 사회 - 사회공헌
+**********************************************************/
+.social_contribution .cont_item:not(:last-child) {
+	margin-bottom: 120px;
+}
+.social_contribution .cont_body > p {
+	margin-bottom: 60px;
+}
+.social_contribution .cont_body>figure {
+	margin-bottom: 30px;
+}
+.social_contribution .info_list {
+	flex-wrap: wrap;
+}
+.social_contribution .flex_between.cont_info {
+	flex-wrap: wrap;
+	gap: 60px 0;
+}
+.social_contribution .cont_info figure {
+	margin-bottom: 30px;
+}
+.social_contribution .cont_info b {
+	display: block;
+	margin-bottom: 20px;
+}
+.social_contribution .cont_info .info_list {
+	gap: 16px;
+}
+.social_contribution .cont_info .info_list.mo_list li {
+	margin-bottom: 16px;
+}
+.social_contribution .cont_info .move_btn {
+	margin-top: 32px;
+}
+.social_contribution .cont_txt:not(:last-child) {
+	margin-bottom: 60px;
+}
+.social_contribution .cont_txt h4 {
+	display: block;
+	margin-bottom: 24px;
+}
+
+/* 사회 - 사회공헌
+**********************************************************/
+.social_contribution .cont_item:not(:last-child) {
+	margin-bottom: 120px;
+}
+.social_contribution .cont_body > p {
+	margin-bottom: 60px;
+}
+.social_contribution .cont_body>figure {
+	margin-bottom: 30px;
+}
+.social_contribution .info_list {
+	flex-wrap: wrap;
+}
+.social_contribution .flex_between.cont_info {
+	flex-wrap: wrap;
+	gap: 60px 0;
+}
+.social_contribution .cont_info figure {
+	margin-bottom: 30px;
+}
+.social_contribution .cont_info b {
+	display: block;
+	margin-bottom: 20px;
+}
+.social_contribution .cont_info .info_list {
+	gap: 16px;
+}
+.social_contribution .cont_info .info_list.mo_list li {
+	margin-bottom: 16px;
+}
+.social_contribution .cont_info .move_btn {
+	margin-top: 32px;
+}
+.social_contribution .cont_txt:not(:last-child) {
+	margin-bottom: 60px;
+}
+.social_contribution .cont_txt h4 {
+	display: block;
+	margin-bottom: 24px;
+}
+
+/* 사회 - 다양성과 포용
+**********************************************************/
+.social_diversity .cont_body figure {
+	margin-bottom: 40px;
+}
+
 /* social_view
 **********************************************************/
-.social .view_cont .view_txt {line-height:1.4;}
+.social .view_cont .view_txt {
+	line-height:1.4;
+}
+
+/* 지배구조 - 이사회
+**********************************************************/
+.directorate .cont_body p {
+	margin-bottom: 30px;
+}
 
 /* 테블릿
 **********************************************************/
 @media all and (max-width: 1280px) {
+	
+	/* ESG 전략 - 지속가능경영 정책
+	**********************************************************/
+	.sustainable_policy .cont_body ul {flex-direction: column;}
+    .sustainable_policy .cont_body ul li {width: 100%; border-radius: 14px;}
+    .sustainable_policy .cont_body ul li a {padding: 26px 26px 26px 70px; background-size: 30px; background-position: left 24px center;}
+    .sustainable_policy .cont_body ul li a::after {width: 16px; height: 16px; right: 24px;}
+
+	/* ESG 전략 - 이니셔티브와 인증
+	**********************************************************/
+	.initiative .esg_result .cont_body figure {margin-bottom: 16px;}
+	.initiative .participation .cont_body figure {max-width: 375px; margin: 0 auto;}
+	.initiative .participation .cont_body figure img.pc {display: none;}
+	.initiative .participation .cont_body figure img.mo {display: block;}
+	.initiative .participation .cont_body ul li {margin-bottom: 50px; flex-direction: column; gap: 16px; align-items: flex-start;}
+    .initiative .participation .cont_body ul li b {position: initial;}
+    .initiative .participation .cont_body ul li p {padding: 0; width: 100%; height: auto;}
+	
+	/* 환경 - Move to Net-Zero
+	**********************************************************/
+	.net_zero .accordion > dl.accordion_list {border-top: 1px solid #EEEEEE;}
+
 	/* 사회->안전과 보건
 	**********************************************************/
 	.rule_list ul {gap:15px;}
 	.rule_list li {width: calc(50% - 7.5px);height:auto;}
+
+	/* 사회 - 사회공헌
+	**********************************************************/
+	.social_contribution .cont_item:not(:last-child) {
+		margin-bottom: 50px;
+	}
+	.social_contribution .cont_txt:not(:last-child) {
+		margin-bottom: 50px;
+	}
+
+	/* 사회 - 다양성과 포용
+	**********************************************************/
+	.social_diversity .cont_body figure {
+		margin-bottom: 30px;
+	}
 }
 
 /* 모바일
@@ -51,17 +303,115 @@
 @media all and (max-width: 720px) {
 	.pc {display:none;}
 	.mo {display:block;}
+	h3.mb40 {margin-bottom: 30px !important;}
+	p {line-height: 1.3;}
+	figure {max-width: 375px;margin: 0 auto;}
+	.cont_txt:not(:last-child) {margin-bottom: 50px;}
+	.cont_txt h4 {margin-bottom: 16px;}
+	.cont_txt h4 + p:not(:last-child) {margin-bottom: 30px;}
+
+	.cont_item:not(:last-child) {margin-bottom: 70px;}
+	.cont_head:not(:last-child) {margin-bottom: 30px;}
+	.cont_head h3 {margin-bottom: 16px;}
+	.cont_body b.img_tit {margin-bottom: 20px;}
+
+	.social_contribution .cont_body>p {
+		margin-bottom: 40px;
+	}
+	.info_list li {
+		line-height: 1.3;
+	}
 
 	/* 공통 */
-	.social .sub_visual {background-image: url('../../assets/images/esg/visual_esg_03_mo.png');}
+	.sustainability .sub_visual,
+	.important_issue .sub_visual,
+	.risk_management .sub_visual,
+	.sustainable_policy .sub_visual,
+	.initiative .sub_visual {background-image: url('../../assets/images/esg/visual_esg_01_mo.png');}
+	.environment .sub_visual,
+	.net_zero .sub_visual {background-image: url('../../assets/images/esg/visual_esg_02_mo.png');}
+	.safety_health .sub_visual,
+	.social_responsibility .sub_visual,
+	.social_contribution .sub_visual,
+	.social_list .sub_visual,
+	.social_diversity .sub_visual,
+	.social_view .sub_visual {background-image: url('../../assets/images/esg/visual_esg_03_mo.png');}
 	
-	/* 사회->안전과 보건
+	/* ESG 전략 - 중요 이슈 분석
 	**********************************************************/
-	.bg_txt {padding:18px;border-radius:14px;font-size:14px;}
-	.bg_txt span {font-size:12px;}
+	.important_issue .cont_body figure {margin-bottom: 30px;}
+	.important_issue .cont_body ol.round_num {padding: 30px; background: #F6F7FE; border-radius: 14px;}
+	.important_issue .cont_body ol.round_num li {padding-left: 32px; margin: 14px 0 0;}
+	.important_issue .cont_body ol.round_num li:first-child {margin-top: 0;}
+	.important_issue .cont_body ol.round_num li:before {width: 24px; height: 24px; font-size: 16px; font-weight: 500; border: 0; background: #888888; color: #fff; line-height: 25px; top: 0;}
+	.important_issue .cont_body ol.round_num li:nth-child(-n+7)::before {background: #435CE7;}
 
-	.rule_list li {width:100%;padding:18px 18px 18px 88px;background-position:18px 24px;background-size:40px 40px;}
-	.rule_list span {margin-bottom:8px;}
+	/* ESG 전략 - 리스크 관리
+	**********************************************************/
+	.risk_management .risk_system .cont_body {overflow-x: auto;}
+    .risk_management .risk_system .cont_body figure {width: 843px; max-width: none;}
+
+	/* 사회 - 안전과 보건
+	**********************************************************/
+	.safety_health .cont_txt b {margin-bottom: 6px !important;}
+	.safety_health .cont_txt b + p {margin-bottom: 20px;}
+	.safety_health .cont_txt ol.round_num {padding: 30px; border-radius: 14px; line-height: 12px;}
+	.safety_health .cont_txt ol.round_num > li {padding-left: 22px;}
+	.safety_health .cont_txt ol.round_num > li::before {width: 16px; height: 16px;}
+
+	/* 사회 - 사회적 책임
+	**********************************************************/
+	.social_responsibility .cont_item:not(:last-child) {
+		margin-bottom: 50px;
+	}
+	.social_responsibility .cont_head:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.social_responsibility .btn_download {
+		display: block;
+		width: 100%;
+		max-width: 375px;
+		margin: 0 auto 30px;
+		font-size: 16px;
+	}
+	.social_responsibility .cont_body .txt_info {
+		margin-bottom: 20px;
+	}
+
+	/* 사회 - 사회공헌
+	**********************************************************/
+	.social_contribution .cont_body > .flex_between > .flex_item_2n {
+		width: 100%;
+	}
+	.social_contribution .flex_between.cont_info {
+		gap: 50px 0;
+	}
+	.social_contribution .info_list.mo_list {
+		display: flex;
+	}
+	.social_contribution .cont_info .info_list.mo_list li {
+		width: calc((100% - 16px) / 2);
+		margin-bottom: 0;
+	}
+	.social_contribution .cont_info figure {
+		margin-bottom: 24px;
+	}
+	.social_contribution .cont_info .info_list {
+		gap: 10px;
+	}
+	.social_contribution .cont_info b {
+		margin-bottom: 16px;
+	}
+	.social_contribution .cont_info .move_btn {
+		margin-top: 25px;
+	}
+	.social_contribution .cont_info .move_btn .inquire_btn {
+		background-size: 12px;
+		background-position: bottom 6px right 4px;
+	}
+	.social_contribution .cont_txt h4 {
+		margin-bottom: 16px;
+	}
 
 	/* 사회->다양성과 포용
 	**********************************************************/

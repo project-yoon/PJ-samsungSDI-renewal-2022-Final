@@ -141,14 +141,14 @@ ol.round_num {
 	padding: 0;
 	counter-reset: list-number;
 }
-ol.round_num li {
+ol.round_num > li {
 	counter-increment: list-number;
 	position: relative;
 	padding-left: 25px;
 	margin: 17px 0 0 6px;
 	line-height: 1.5;
 }
-ol.round_num li:before {
+ol.round_num > li:before {
 	content: counter(list-number);
 	position: absolute;
 	top: 3px;

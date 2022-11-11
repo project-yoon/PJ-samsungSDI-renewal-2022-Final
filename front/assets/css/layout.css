@@ -10,7 +10,7 @@ nav#skip_navi a:focus {top: 0px;}
 /* keyinfo_wrap */
 .utill {display: none;}
 /* header.header {position: fixed;z-index: 9;top: 0px;left: 0px;width: 100%;height: 80px;border-bottom: 1px solid transparent;background-color: transparent;transition: 0.3s ease border-bottom-color,0.3s ease background-color,0.3s ease transform;} */
-header.header {position: fixed;z-index: 9;top: 0px;left: 0px;width: 100%;height: 80px;background: #fff;transition: height 0.3s;}
+header.header {position: fixed;z-index: 90;top: 0px;left: 0px;width: 100%;height: 80px;background: #fff;transition: height 0.3s;}
 header.header::after{content: '';display: block;position: absolute;top: 79px;left: 0;width: 100%;height: 1px;background-color: #EEEEEE;}
 header.header.on,
 header.header.gnb_open {border-bottom-color: #EEEEEE;background-color: #ffffff;}
@@ -92,7 +92,7 @@ header.header nav.user_menu > ul > li > ul.language > li > a.active {font-weight
 
 /* Sitemap
 ****************************************************************/
-aside#sitemap {display: none;position: fixed;z-index: 22;top: 0px;right: 0px;width: 100%;height: 100%; transition: 0.3s ease width;}
+aside#sitemap {display: none;position: fixed;z-index: 100;top: 0px;right: 0px;width: 100%;height: 100%; transition: 0.3s ease width;}
 aside#sitemap nav.gnb {padding: 72px 0 170px 0;overflow-x: hidden;overflow-y: scroll;height: 100%;background-color: #ffffff;}
 aside#sitemap nav.gnb ul li {position: relative;line-height: 0;}
 aside#sitemap nav.gnb ul li a {display: block;line-height: 1;}
@@ -256,7 +256,8 @@ footer#footer p.copyright {font-size: 16px;color: #666666;}
 .keyinfo .more {margin-bottom: 40px;} 
 .keyinfo .more a {display: block; line-height: 1.4; color:#fff;} 
 .keyinfo .more a:after {content:''; display: inline-block; vertical-align:middle; width: 10px; height: 17px; margin: -6px 0 0 8px; background: url('../../assets/images/main/ico_arr_right.png') no-repeat center / cover;} 
-.keyinfo .stock_info .price {width: 350px; height: 140px; padding: 30px 70px 30px 40px; border-radius: 20px; background-color: rgba(67 92 231 / 30%);} 
+.keyinfo .stock_info .price {width: 350px; height: 140px; border-radius: 20px; background-color: rgba(67 92 231 / 30%);} 
+.keyinfo .stock_info .price a {display: block;width: 100%;height: 100%;padding: 30px 40px;}
 .keyinfo .key_info_util {display: flex; justify-content:space-between; position: absolute; left: 0; bottom: 90px; width: 100%;} 
 .keyinfo .key_info_util > ul {gap: 10px;} 
 .keyinfo .key_info_util > ul li {width: 130px; background-color: #fff; border-radius: 20px; text-align: center;} 
@@ -392,7 +393,7 @@ dl.search_none li {position: relative;margin-bottom: 10px;}
 dl.search_none li:before {content:'-';display: inline-block;margin-right: 5px;}
 }
 @media (max-width: 720px) {
-.wrap section.content .content_inner {padding: 118px 24px 90px;}
+/* .wrap section.content .content_inner {padding: 118px 24px 90px;} */
 /* popup_search */
 #popup_search {top: 0;}
 #popup_search .pop_inner {padding: 20px 24px;}
