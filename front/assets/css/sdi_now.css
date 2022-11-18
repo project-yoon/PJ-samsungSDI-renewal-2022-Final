@@ -40,13 +40,16 @@
 }
 
 /* sub_visual */
-.news .sub_visual {
+.news .sub_visual,
+.news_view .sub_visual {
 	background: url(../images/sdi_now/visual_sdinow_01.png) no-repeat center / cover;
 }
-.column .sub_visual {
+.column .sub_visual,
+.column_view .sub_visual {
 	background: url(../images/sdi_now/visual_sdinow_02.png) no-repeat center / cover;
 }
-.media .sub_visual {
+.media .sub_visual,
+.media_view .sub_visual {
 	background: url(../images/sdi_now/visual_sdinow_03.png) no-repeat center / cover;
 }
 
@@ -78,12 +81,15 @@
     color: #888888;
 }
 .view_body .view_list ul li {
-    padding-left: 11px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #888888;
-    vertical-align: middle;
     position: relative;
+    padding-left: 11px;
+    font-weight: 400;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #888888;
+}
+.view_body .view_list ul li:not(:last-child) {
+    margin-bottom: 14px;
 }
 .view_body .view_list ul li::before {
     content: "";
@@ -114,23 +120,6 @@
 
 /* 미디어
 **********************************************************/
-/* .view_body .youtube_view {
-    width: 100%;
-    padding-bottom: 55%;
-    padding-top: 13px;
-    height: 0;
-    overflow: hidden;
-    position: relative;
-}
-.view_body embed,
-.view_body iframe,
-.view_body object {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-} */
 
 /* 테블릿
 **********************************************************/
@@ -176,5 +165,6 @@
     }
     .view_body .view_list ul li {
         font-size: 14px;
+        line-height: 1.3;
     }
 }

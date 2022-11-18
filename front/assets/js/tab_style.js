@@ -20,6 +20,31 @@
 	});
 }
 
+
+//서브네비 있는 페이지
+function sticky() {
+	var headerH = $('#header_wrap header').height();
+    var navPosY = $('.sub_nav1').offset().top - headerH
+
+    $(window).on("wheel", function(e) {
+		var mouseMove = e.originalEvent.deltaY;
+
+        if(mouseMove > 0 && $(window).scrollTop() >= navPosY ) {
+			$('body').addClass('sticky')
+        } else if(mouseMove < 0 && $(window).scrollTop() <= navPosY ) {
+			$('body').removeClass('sticky')
+        }
+		if($('.content_inner').offset().top <= $(window).scrollTop() + headerH) {
+			$('#header_wrap').addClass('none')
+
+		} else if($('.content_inner').offset().top >= $(window).scrollTop()) {
+			$('#header_wrap').removeClass('none')
+		}
+
+    })
+}
+
+
  function tabMenu1() {
 	 // 비즈니스에 있는 탭
 	var	tabMenu1 = $(".tab_area1"),
@@ -99,6 +124,7 @@ $(document).ready(function(){
 	subNav1(); // 인베스트먼트에 있는 네비
 	tabMenu1(); // 비즈니스에 있는 탭
 	fixNav(); // 픽스되는 네비
+	sticky();
 });
 
 

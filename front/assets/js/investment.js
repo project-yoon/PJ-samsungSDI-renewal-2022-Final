@@ -24,14 +24,14 @@ function cardListToggle(){
     })
 }
 
-function fullPopEffect() {
-    $('.popOpen').off('click').on('click', function() {
-        $('.popup.full_modal').show()
-    })
-}
+// function fullPopEffect() {
+//     $('.popOpen').off('click').on('click', function() {
+//         $('.popup.full_modal').show()
+//     })
+// }
 
 
 $(document).ready(function() {
     cardListToggle();
-    fullPopEffect();
+    // fullPopEffect();
 })

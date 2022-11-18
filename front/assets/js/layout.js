@@ -183,7 +183,7 @@ function initSitemapGnb() {
         //body overflow 처리 및 그로 인한 레이아웃 흔들림 방지
             
 		var winW = $(window).width();
-		if(winW > 1919){
+		if(winW > 1280){
 			pannel.fadeIn(300).addClass('on');
 		}else{
 			sitemap.fadeIn(300).addClass('on');	
@@ -208,12 +208,12 @@ function initSitemapGnb() {
 	$(window).on("resize", function(){
 		var winW = $(window).width();
 
-		if(winW > 1919 && sitemap.hasClass('on')){
+		if(winW > 1280 && sitemap.hasClass('on')){
 			sitemap.fadeOut(300).removeClass('on');
 			pannel.fadeIn(300).addClass('on');
 		}
 		
-		if(winW <= 1919 && pannel.hasClass('on')){
+		if(winW <= 1280 && pannel.hasClass('on')){
 			sitemap.fadeIn(300).addClass('on');
 			pannel.fadeOut(300).removeClass('on');
 		}
@@ -498,6 +498,27 @@ function popEffect() {
 	})
 }
 
+function modalShowAndHide() {
+    $('.popOpen').on('click', function(e) { //popup 오픈
+        e.preventDefault();
+        var popId = $(this).attr('data-id');
+
+		$('html, body').css('overflow','hidden')
+        $(`.popup[data-id="${popId}"]`).show();
+        
+        if($('.popup.full_modal')) {
+            $('#bg_modal').hide()
+        }        
+    })
+	$('.popup .btn_close button, .popup .cancel, .popup .close').off('click').on('click', function(e){
+        e.preventDefault()
+		$('.popup').hide()
+		$('#bg_modal').hide()
+		$('html, body').css('overflow','visible')
+	})
+}
+
+
 $(document).ready(function() {
 	if($(".quick").length > 0) {
 		initTopMove(); //Top move
@@ -511,5 +532,6 @@ $(document).ready(function() {
     initSitemapGnb(); //Sitemap GNB
     initHeaderSubNaviSticky() //Header & Sub Navi Sticky
     initSubVisual(); //Sub Visual
-    popEffect()//popup
+    // popEffect()//popup
+    modalShowAndHide()//popup
 })

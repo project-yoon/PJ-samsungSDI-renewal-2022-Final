@@ -59,7 +59,26 @@ function initSubtab() {
     }
 }
 
+//패럴랙스 스크롤링 이벤트
+function parallex () {
+
+    gsap.to(".visual_info.full .titsub1", {
+        scrollTrigger: {
+            trigger: ".visual_info.full",
+            scrub: true,
+            pin: true,
+            start: "top top",
+            end: "+=100%"
+        },
+        stagger:2,
+        y: -100, 
+        duration: 2,
+        opacity: 1,
+    })
+}
+
 $(document).ready(function() {
     initSubtabNaviSticky(); // initSubtabNaviSticky
     initSubtab(); // initSubtab
+    parallex();
 })

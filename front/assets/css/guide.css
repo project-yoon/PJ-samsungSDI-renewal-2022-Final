@@ -115,23 +115,32 @@
 /* Common Button - btn_ti_download*/
 .btn_ti_download {
 	position: relative;
-	border: 1px solid #888888;
-	border-radius: 7px;
 	padding: 15px 40px 15px 16px;
-	font-weight: 400;
 	font-size: 16px;
 	color: #666666;
+	border-radius: 7px;
 }
-.btn_ti_download:after {
+.btn_ti_download .btn_name {
+	position: relative;
+}
+.btn_ti_download .btn_name:after {
 	content: '';
 	display: block;
 	width: 16px;
 	height: 16px;
 	position: absolute;
 	top: 50%;
-	right: 16px;
+	right: -25px;
 	margin-top: -11px;
 	background: url(../../assets/images/common/ico_download.png) no-repeat center center;
+}
+.btn_download {
+	padding: 15px 40px 15px 16px;
+	font-size: 16px;
+	color: #666666;
+	background: url(../../assets/images/common/ico_download.png) no-repeat center center;
+	background-position: top 50% right 15px;
+	border-radius: 7px;
 }
 
 /* ol list */
@@ -141,14 +150,14 @@ ol.round_num {
 	padding: 0;
 	counter-reset: list-number;
 }
-ol.round_num > li {
+ol.round_num>li {
 	counter-increment: list-number;
 	position: relative;
 	padding-left: 25px;
 	margin: 17px 0 0 6px;
 	line-height: 1.5;
 }
-ol.round_num > li:before {
+ol.round_num>li:before {
 	content: counter(list-number);
 	position: absolute;
 	top: 3px;
@@ -473,7 +482,15 @@ table .td {
 .list_cont .filter_tit .category {margin-bottom: 16px;}
 /* view_cont */
 .view_head {margin-bottom: 60px;}
-.view_body {padding: 80px 100px;border-top: 1px solid #222222;}
+.view_body {border-top: 1px solid #222222;}
+.view_body .cont_box {padding: 80px 100px;}
+.view_body .file_box li a {display: inline-block;padding-left: 28px;background-size: 16px;background-repeat: no-repeat;}
+.view_body .file_box li a.pdf_file {background-image: url(../images/common/icon_pdf.png);}
+.view_body .file_box li a.xls_file {background-image: url(../images/common/icon_xls.png);}
+.view_body .file_box li a.doc_file {background-image: url(../images/common/icon_doc.png);}
+.view_body .file_box li a.hwp_file {background-image: url(../images/common/icon_hwp.png);}
+.view_body .file_box li a.zip_file {background-image: url(../images/common/icon_zip.png);}
+.view_body .file_box li {padding: 28px 10px; width: 100%; border-bottom: 1px solid #dddddd;}
 .view_head .tit .category {margin-bottom: 22px;font-size: 16px;font-weight: 700;color: #435CE7;}
 .view_head .tit {text-align: center;}
 .view_head .tit span {display: block;}
@@ -718,9 +735,13 @@ table .td {
 	.view_head {
 		margin-bottom: 30px;
 	}
-	.view_body {
+	.view_body .cont_box {
 		padding: 50px 0;
 	}
+	.view_body .file_box li {
+		padding: 16px 0;
+	}
+
 	/* drop */
 	.dropdown_menu  {display: block;}
 	/* accordion

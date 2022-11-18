@@ -23,67 +23,67 @@
 /* 채용전형
 **********************************************************/
 .employment h3 {margin-bottom: 30px;}
-.employment .tab_cont .cont_body {padding-top: 60px;}
-.employment .tab_cont .cont_body h4 {max-width: 122px; width: 100%; color: #ffffff;}
-.employment .tab_cont .cont_body > ul > li {margin-bottom: 20px; padding: 60px 71px 60px 60px; display: flex; flex-direction: row; flex-wrap: wrap; background: #435CE7; border-radius: 20px; justify-content: space-between;}
-.employment .tab_cont .cont_body > ul > li:nth-child(2) {background: #283895;}
-.employment .tab_cont .cont_body > ul > li:nth-child(3) {background: #6B41E2;}
-.employment .tab_cont .cont_body > ul > li:nth-child(3) .tit_desc ul {width: 100%; max-width: 608px;}
-.employment .tab_cont .cont_body > ul > li:last-child {margin-bottom: 0;}
-.employment .tab_cont .cont_body > ul > li .tit_desc {margin-left: 169px; min-width: 70%;}
-.employment .tab_cont .cont_body > ul > li .tit_desc p {margin-bottom: 78px; line-height: 1.4; color: #ffffff;}
-.employment .tab_cont .cont_body > ul > li .tit_desc ul {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; position: relative;}
-.employment .tab_cont .cont_body > ul > li .tit_desc ul::after {content: ""; width: 93%; height: 1px; background: #ffffff; opacity: 0.3; position: absolute; left: 10px; top: -23px;}
-.employment .tab_cont .cont_body > ul > li .tit_desc ul li {font-weight: 500; position: relative; color: #ffffff;}
-.employment .tab_cont .cont_body > ul > li .tit_desc ul li::before {content: ""; width: 12px; height: 12px; background: #ffffff; border-radius: 12px; position: absolute; left: 50%; transform: translateX(-50%); top: -28px;}
+.employment .cont_body {padding-top: 60px;}
+.employment .cont_body h4 {max-width: 122px; width: 100%; color: #ffffff;}
+.employment .cont_body > ul > li {margin-bottom: 20px; padding: 60px 71px 60px 60px; display: flex; flex-direction: row; flex-wrap: wrap; background: #435CE7; border-radius: 20px; justify-content: space-between;}
+.employment .cont_body > ul > li:nth-child(2) {background: #283895;}
+.employment .cont_body > ul > li:nth-child(3) {background: #6B41E2;}
+.employment .cont_body > ul > li:nth-child(3) .tit_desc ul {width: 100%; max-width: 608px;}
+.employment .cont_body > ul > li:last-child {margin-bottom: 0;}
+.employment .cont_body > ul > li .tit_desc {margin-left: 169px; min-width: 70%;}
+.employment .cont_body > ul > li .tit_desc p {margin-bottom: 78px; line-height: 1.4; color: #ffffff;}
+.employment .cont_body > ul > li .tit_desc ul {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; position: relative;}
+.employment .cont_body > ul > li .tit_desc ul::after {content: ""; width: 93%; height: 1px; background: #ffffff; opacity: 0.3; position: absolute; left: 10px; top: -23px;}
+.employment .cont_body > ul > li .tit_desc ul li {font-weight: 500; position: relative; color: #ffffff;}
+.employment .cont_body > ul > li .tit_desc ul li::before {content: ""; width: 12px; height: 12px; background: #ffffff; border-radius: 12px; position: absolute; left: 50%; transform: translateX(-50%); top: -28px;}
 
 
 /* 직무소개
 **********************************************************/
 .job_desc h3 {margin-bottom: 30px;}
-.job_desc .tab_cont .cont_body .accordion {padding-top: 60px;}
-.job_desc .tab_cont .cont_body .accordion > dl.accordion_list > dd {padding: 60px 100px;}
-.job_desc .tab_cont .cont_body .accordion > dl > dt > a {display: flex; flex-direction: row; flex-wrap: wrap; align-items: center;}
-.job_desc .tab_cont .cont_body .accordion > dl > dt > a strong {display: inline-block; max-width: 250px; width: 100%;}
-.job_desc .tab_cont .cont_body .accordion > dl > dt.active > a strong {color: #222222;}
-.job_desc .tab_cont .cont_body .accordion > dl > dt > a p {margin-left: 40px; width: 100%; max-width: 789px;}
-.job_desc .tab_cont .cont_body .accordion > dl > dt.active > a p {color: #666666;}
-.job_desc .tab_cont .cont_body .accordion_tit {display: none;}
-.job_desc .tab_cont .cont_body .accordion_tit h4 {padding-bottom: 20px; font-size: 24px;}
-.job_desc .tab_cont .cont_body .accordion_video .youtube_wrap {padding-bottom:55%; padding-top: 13px; width:100%; height: 0; overflow: hidden; position:relative;}
-.job_desc .tab_cont .cont_body .accordion_video .youtube_wrap iframe,
-.job_desc .tab_cont .cont_body .accordion_video .youtube_wrap object,
-.job_desc .tab_cont .cont_body .accordion_video .youtube_wrap embed {width:100%; height:100%; position:absolute; left:0px; top:0px;}
-.job_desc .tab_cont .cont_body .accordion_cont {margin-top: 40px; padding: 60px 72px; border-radius: 20px; background: #F6F7FE;}
-.job_desc .tab_cont .cont_body .accordion_cont b {margin: 60px 0 20px; display: block; color: #435CE7;}
-.job_desc .tab_cont .cont_body .accordion_cont b:first-child {margin: 0 0 20px;}
-.job_desc .tab_cont .cont_body .accordion_cont .roles_txt dl:not(:first-child) {margin-top: 30px;}
-.job_desc .tab_cont .cont_body .accordion_cont .roles_txt > dl > dt {margin-bottom: 12px;}
-.job_desc .tab_cont .cont_body .accordion_cont .roles_txt > dl > dd,
-.job_desc .tab_cont .cont_body .accordion_cont .requirements_txt li {padding-left: 8px; margin: 0 0 12px 8px; line-height: 1.4; color: #666666; position: relative;}
-.job_desc .tab_cont .cont_body .accordion_cont .roles_txt > dl > dd::before,
-.job_desc .tab_cont .cont_body .accordion_cont .requirements_txt li::before {content: ""; display: inline-block; width: 2px; height: 2px; background: #666666; position: absolute; left: 0; top: 10px;}
+.job_desc .cont_body .accordion {padding-top: 60px;}
+.job_desc .cont_body .accordion > dl.accordion_list > dd {padding: 60px 100px;}
+.job_desc .cont_body .accordion > dl > dt > a {display: flex; flex-direction: row; flex-wrap: wrap; align-items: center;}
+.job_desc .cont_body .accordion > dl > dt > a strong {display: inline-block; max-width: 250px; width: 100%;}
+.job_desc .cont_body .accordion > dl > dt.active > a strong {color: #222222;}
+.job_desc .cont_body .accordion > dl > dt > a p {margin-left: 40px; width: 100%; max-width: 789px;}
+.job_desc .cont_body .accordion > dl > dt.active > a p {color: #666666;}
+.job_desc .cont_body .accordion_tit {display: none;}
+.job_desc .cont_body .accordion_tit h4 {padding-bottom: 20px; font-size: 24px;}
+.job_desc .cont_body .accordion_video .youtube_wrap {padding-bottom:55%; padding-top: 13px; width:100%; height: 0; overflow: hidden; position:relative;}
+.job_desc .cont_body .accordion_video .youtube_wrap iframe,
+.job_desc .cont_body .accordion_video .youtube_wrap object,
+.job_desc .cont_body .accordion_video .youtube_wrap embed {width:100%; height:100%; position:absolute; left:0px; top:0px;}
+.job_desc .cont_body .accordion_cont {margin-top: 40px; padding: 60px 72px; border-radius: 20px; background: #F6F7FE;}
+.job_desc .cont_body .accordion_cont b {margin: 60px 0 20px; display: block; color: #435CE7;}
+.job_desc .cont_body .accordion_cont b:first-child {margin: 0 0 20px;}
+.job_desc .cont_body .accordion_cont .roles_txt dl:not(:first-child) {margin-top: 30px;}
+.job_desc .cont_body .accordion_cont .roles_txt > dl > dt {margin-bottom: 12px;}
+.job_desc .cont_body .accordion_cont .roles_txt > dl > dd,
+.job_desc .cont_body .accordion_cont .requirements_txt li {padding-left: 8px; margin: 0 0 12px 8px; line-height: 1.4; color: #666666; position: relative;}
+.job_desc .cont_body .accordion_cont .roles_txt > dl > dd::before,
+.job_desc .cont_body .accordion_cont .requirements_txt li::before {content: ""; display: inline-block; width: 2px; height: 2px; background: #666666; position: absolute; left: 0; top: 10px;}
 
 /* 복리후생
 **********************************************************/
-.welfare .tab_cont h3 {margin-bottom: 60px;}
-.welfare .tab_cont .cont_body .tit h4 {margin-bottom: 30px;}
-.welfare .tab_cont .cont_body:not(:last-child) {margin-bottom: 120px;}
+.welfare h3 {margin-bottom: 60px;}
+.welfare .cont_body .tit h4 {margin-bottom: 30px;}
+.welfare .cont_body:not(:last-child) {margin-bottom: 120px;}
 
 /* 채용공고
 **********************************************************/
 .application h3 {margin-bottom: 30px;}
-.application .tab_cont .cont_head {margin-bottom: 60px;}
-.application .tab_cont .search_wrap {margin-bottom: 90px;}
+.application .cont_head {margin-bottom: 60px;}
+.application .search_wrap {margin-bottom: 90px;}
 
-.application .tab_cont .list_cont {padding: 0; border: none;}
-.application .tab_cont .list_cont li p {margin-bottom: 24px; text-align: center; line-height: 1.4;}
-.application .tab_cont .list_cont ul.pc {display: block;}
-.application .tab_cont .list_cont ul.pc li {border-radius: 20px; border: 1px solid #dddddd;}
-.application .tab_cont .list_cont ul.pc li a {padding: 40px 30px;}
-.application .tab_cont .list_cont ul.pc li a span {margin: 0 auto 24px; display: block; width: 55%; text-align: center;}
-.application .tab_cont .list_cont ul.pc li a span:last-child {margin: 0; display: block; width: 100%; text-align: center;}
-.application .tab_cont .list_cont ul.mo {display: none !important;}
+.application .list_cont {padding: 0; border: none;}
+.application .list_cont li p {margin-bottom: 24px; text-align: center; line-height: 1.4;}
+.application .list_cont ul.pc {display: block;}
+.application .list_cont ul.pc li {border-radius: 20px; border: 1px solid #dddddd;}
+.application .list_cont ul.pc li a {padding: 40px 30px;}
+.application .list_cont ul.pc li a span {margin: 0 auto 24px; display: block; width: 55%; text-align: center;}
+.application .list_cont ul.pc li a span:last-child {margin: 0; display: block; width: 100%; text-align: center;}
+.application .list_cont ul.mo {display: none !important;}
 
 /* 채용공고 상세보기
 **********************************************************/
@@ -95,7 +95,6 @@
 .application_view .view_body p {line-height: 1.4;}
 .application_view .view_body .cont_box {padding: 80px 100px;}
 .application_view .view_body .file_box li {padding: 28px 10px; width: 100%; border-bottom: 1px solid #dddddd;}
-.application_view .view_body .file_box li a {padding-left: 28px; display: inline-block; background: url('../images/career/icon_excel.png') no-repeat; background-size: 16px 15px; vertical-align: middle;}
 .application_view .view_body h4 {padding-left: 36px; margin-bottom: 24px;line-height: 1.4;background-repeat: no-repeat;background-position: left center; background-size: 24px;}
 .application_view .view_body h4.bg1 {background-image: url('../images/career/recruit_img_01.png');}
 .application_view .view_body h4.bg2 {background-image: url('../images/career/recruit_img_02.png');}
@@ -152,6 +151,8 @@
 .life .list_cont ul li a .list_tit span:not(:last-child) {margin-bottom: 10px;}
 .life .list_cont ul li a p {margin-bottom: 10px; line-height: 1.2; word-break: break-word;}
 .life .list_cont ul li .list_play {width: 60px; height: 60px; position: absolute; right: 30px; bottom: 139px;}
+.life .tab_nav1 {margin-bottom: 90px;}
+
 
 /* 삼성SDI Life 상세페이지
 **********************************************************/
@@ -192,29 +193,29 @@
 
     /* 채용전형 */
     .employment h3 {margin-bottom: 16px;}
-    .employment .tab_cont .cont_body {padding-top: 30px;}
-    .employment .tab_cont .cont_body > ul > li {padding: 30px; flex-direction: column; flex-wrap: wrap; justify-content: flex-start;}
-    .employment .tab_cont .cont_body > ul > li h4 {margin-bottom: 16px;}
-    .employment .tab_cont .cont_body > ul > li .tit_desc {margin-left: 0;}
-    .employment .tab_cont .cont_body > ul > li .tit_desc p {margin-bottom: 30px;}
-    .employment .tab_cont .cont_body > ul > li .tit_desc ul {flex-direction: column;}
-    .employment .tab_cont .cont_body > ul > li .tit_desc ul::after {width: 1px; height: 87%; left: 3px; top: 14px;}
-    .employment .tab_cont .cont_body > ul > li .tit_desc ul li {margin-bottom: 14px; padding-left: 18px; position: relative;}
-    .employment .tab_cont .cont_body > ul > li .tit_desc ul li:last-child {margin-bottom: 0;}
-    .employment .tab_cont .cont_body > ul > li .tit_desc ul li::before {content: ""; width: 8px; height: 8px; background: #ffffff; border-radius: 8px; position: absolute; left: 0; top: 50%; transform: translate(0, -50%);}
+    .employment .cont_body {padding-top: 30px;}
+    .employment .cont_body > ul > li {padding: 30px; flex-direction: column; flex-wrap: wrap; justify-content: flex-start;}
+    .employment .cont_body > ul > li h4 {margin-bottom: 16px;}
+    .employment .cont_body > ul > li .tit_desc {margin-left: 0;}
+    .employment .cont_body > ul > li .tit_desc p {margin-bottom: 30px;}
+    .employment .cont_body > ul > li .tit_desc ul {flex-direction: column;}
+    .employment .cont_body > ul > li .tit_desc ul::after {width: 1px; height: 87%; left: 3px; top: 14px;}
+    .employment .cont_body > ul > li .tit_desc ul li {margin-bottom: 14px; padding-left: 18px; position: relative;}
+    .employment .cont_body > ul > li .tit_desc ul li:last-child {margin-bottom: 0;}
+    .employment .cont_body > ul > li .tit_desc ul li::before {content: ""; width: 8px; height: 8px; background: #ffffff; border-radius: 8px; position: absolute; left: 0; top: 50%; transform: translate(0, -50%);}
 
     /* 직무소개 */
-    .job_desc .tab_cont .cont_body .accordion {padding-top: 54px;}
-    .job_desc .tab_cont .cont_body .accordion > dl > dt > a p {display: none;}
-    .job_desc .tab_cont .cont_body .accordion > dl.accordion_list > dd {padding: 30px 0;}
-    .job_desc .tab_cont .cont_body .accordion_video {margin-top: 23px;}
-    .job_desc .tab_cont .cont_body .accordion_cont {padding: 30px; margin-top: 24px;}
-    .job_desc .tab_cont .cont_body .accordion_tit {display: block;}
+    .job_desc .cont_body .accordion {padding-top: 54px;}
+    .job_desc .cont_body .accordion > dl > dt > a p {display: none;}
+    .job_desc .cont_body .accordion > dl.accordion_list > dd {padding: 30px 0;}
+    .job_desc .cont_body .accordion_video {margin-top: 23px;}
+    .job_desc .cont_body .accordion_cont {padding: 30px; margin-top: 24px;}
+    .job_desc .cont_body .accordion_tit {display: block;}
 
     /* 복리후생 */
-    .welfare .tab_cont h3 {margin-bottom: 30px;}
-    .welfare .tab_cont .cont_body .tit h4 {margin-bottom: 6px;}
-    .welfare .tab_cont .cont_body:not(:last-child) {margin-bottom: 50px;}
+    .welfare h3 {margin-bottom: 30px;}
+    .welfare .cont_body .tit h4 {margin-bottom: 6px;}
+    .welfare .cont_body:not(:last-child) {margin-bottom: 50px;}
 
     /* 채용공고 */
     .application h3 {margin-bottom: 16px;}
@@ -235,6 +236,7 @@
     .life .list_cont ul li a .list_img {border-radius: 14px;}
     .life .list_cont ul li .list_play {position: absolute; right: 34px; bottom: 153px;}
     .life .list_cont ul li a .list_tit {height: 183px;}
+    .life .tab_nav1 {margin-bottom: 40px;}
 
     /* SDI_Life 상세페이지 */
     .life_view .view_head .tit h3 {margin-bottom: 24px;}
@@ -255,19 +257,19 @@
     .life_view .sub_visual {background: url('../images/career/visual_career_03_mo.png') no-repeat center / cover;}
 
     /* 직무소개 */
-    .job_desc .tab_cont .cont_body .accordion_tit h4 {padding-bottom: 16px; font-size: 18px;}
+    .job_desc .cont_body .accordion_tit h4 {padding-bottom: 16px; font-size: 18px;}
 
     /* 채용공고 */
-    .application .tab_cont .cont_head {margin-bottom: 30px;}
-    .application .tab_cont .search_wrap {margin-bottom: 11px;}
-    .application .tab_cont .list_cont ul.pc {display: none !important;}
-    .application .tab_cont .list_cont ul.mo {display: block !important;}
-    .application .tab_cont .list_cont ul.mo li {margin-bottom: 0;}
-    .application .tab_cont .list_cont ul.mo li a {padding: 30px 0; border-bottom: 1px solid #dddddd;}
-    .application .tab_cont .list_cont ul.mo li a p {margin: 16px 0; text-align: left;}
-    .application .tab_cont .list_cont ul.mo li a span {vertical-align: middle;}
-    .application .tab_cont .list_cont ul.mo li a span span {display: inline-block; width: 100%; max-width: 145px;}
-    .application .tab_cont .list_cont ul.mo li a .region::before {content: ""; margin: 0 6px; display: inline-block; width: 1px; height: 10px; background: #dddddd;}
+    .application .cont_head {margin-bottom: 30px;}
+    .application .search_wrap {margin-bottom: 11px;}
+    .application .list_cont ul.pc {display: none !important;}
+    .application .list_cont ul.mo {display: block !important;}
+    .application .list_cont ul.mo li {margin-bottom: 0;}
+    .application .list_cont ul.mo li a {padding: 30px 0; border-bottom: 1px solid #dddddd;}
+    .application .list_cont ul.mo li a p {margin: 16px 0; text-align: left;}
+    .application .list_cont ul.mo li a span {vertical-align: middle;}
+    .application .list_cont ul.mo li a span span {display: inline-block; width: 100%; max-width: 145px;}
+    .application .list_cont ul.mo li a .region::before {content: ""; margin: 0 6px; display: inline-block; width: 1px; height: 10px; background: #dddddd;}
 
     /* 채용공고 상세보기 */
     .application_view .view_body .basic_table table colgroup col:nth-child(1) {width: 20.18% !important;}
@@ -295,6 +297,6 @@
 /* 모바일
 **********************************************************/
 @media all and (max-width: 374px) {
-    .application .tab_cont .list_cont ul.mo li a span span {width: 100%; max-width: 100px;}
+    .application .list_cont ul.mo li a span span {width: 100%; max-width: 100px;}
     .titsub2B, .titsub2B_req {font-size: 14px;}
 }

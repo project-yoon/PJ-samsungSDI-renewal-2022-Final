@@ -75,6 +75,7 @@ span.pc {position: relative;display: inline-block;z-index: -1;}
 }
 .guide_info .info_body .video video {
     border-radius: 20px;
+    cursor: pointer;
 }
 .guide_info .info_list {
     padding: 40px;
@@ -157,16 +158,12 @@ ol.round_num li:last-child {
     height: 300px;
     background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 100%);
 }
-.visual_info.full::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 100%);
-    transform: matrix(1, 0, 0, -1, 0, 0);
+
+.visual_info.full .inner {
+    transform: translateX(-50%);
+}
+.visual_info.full .inner .titsub1 {
+    opacity: 0;
 }
 
 .business .sub_visual {
@@ -385,9 +382,9 @@ ol.round_num li:last-child {
 }
 .list_move_btn {
     padding-right: 20px;
-    line-height: 1.45;
     background: url(../images/common/ico_move_w.png) no-repeat right center;
     background-size: 7px;
+    background-position-y: 5px;
 }
 
 /* 테블릿
@@ -443,6 +440,8 @@ ol.round_num li:last-child {
     .guide_info .info_body .video {
         height: 100%;
         margin: 0 auto 20px;
+    }
+    .guide_info .info_body .video video {
         border-radius: 14px;
     }
     .guide_info .info_list {
@@ -676,7 +675,7 @@ ol.round_num li:last-child {
     }
 
     .list_move_btn {
-        background-position-y: 4.3px;
+        background-position-y: 3px;
     }
 }
 
