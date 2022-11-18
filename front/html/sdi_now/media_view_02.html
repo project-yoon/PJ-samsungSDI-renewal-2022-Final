@@ -4,19 +4,17 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>통합검색 | 삼성SDI 공식사이트</title>
-<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+<title>Media 기사보기 | 삼성SDI 공식사이트</title>
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/layout.css">
 <link rel="stylesheet" href="../../assets/css/guide.css">
 <link rel="stylesheet" href="../../assets/css/common.css">
-<link rel="stylesheet" href="../../assets/css/search.css">
+<link rel="stylesheet" href="../../assets/css/tab_style.css">
+<link rel="stylesheet" href="../../assets/css/sdi_now.css">
 <script src="../../assets/js/jquery-1.11.3.min.js"></script>
-<script src="../../assets/js/swiper-bundle.min.js"></script>
 <script src="../../assets/js/layout.js"></script>
-<script src="../../assets/js/template.js"></script>
 <script src="../../assets/js/guide.js"></script>
-
+<script src="../../assets/js/tab_style.js"></script>
 <script src="../../assets/js/sdi_now.js"></script>
 </head>
 <body>
@@ -28,7 +26,7 @@
 	<div class="utill">
 		<button type="button" class="btn_keyinfo">KeyInfo</button>
 	</div>
-	<header class="header on">
+	<header class="header on ">
 		<h1><a href="#">삼성SDI</a></h1>
 		<nav class="gnb">
 			<h2 class="blind">Global Navi</h2>
@@ -598,623 +596,96 @@
 
 <hr>
 
-<div id="container" class="search_result">
+<div id="container" class="media_view">
 	<div class="wrap">
+		<div class="sub_visual">
+			<h2 class="subH">Media</h2>
+		</div>
         <section class="content">
-			<h3 class="blind">검색 결과 페이지</h3>
-			<div class="content_inner">
-				<div class="search_wrap">
-					<div>
-						<input type="text" placeholder="무엇이 궁금하신가요?" value="Cell">
-						<button type="button"><span class="blind">무엇이 궁금하신가요?</span></button>
+			<h3 class="blind">SDI Now Media 게시글 상세페이지</h3>
+			<div class="sub_nav1 type1">
+				<div class="sub_nav1_inner">
+					<div class="home"><a href="../main/index.html">Home</a></div>
+					<div class="depth">
+						<a href="./index.html">SDINOW</a>
+						<ul>
+							<li><a href="../about_sdi/index.html">SAMSUNG SDI</a></li>
+							<li><a href="../esg/sustainability_tab01.html">ESG</a></li>
+							<li><a href="../business/index.html">BUSINESS</a></li>
+							<li><a href="../investment/index.html">INVESTMENT</a></li>
+							<li><a href="../career/index.html">CAREER</a></li>
+							<li><a href="../sdi_now/index.html">SDINOW</a></li>
+						</ul>
 					</div>
-				</div>
-				<div class="search_result_count">
-					<p><span class="count">57개</span>의 검색 결과가 있습니다.</p>
-				</div>
-				<!-- 탭 -->
-				<div class="tab_area" data-role="tab"> 
-					<div class="tab_nav wide search_type">
-						<div class="inner" style="padding: 0;">
-							<!-- 탭 메뉴 -->
-							<div class="tab_list_filter">
-								<button title="선택하세요">
-									<span class="category">전체</span>
-									<span class="total_num">57</span>
-								</button>
-								<ul role="tablist" aria-label="Tabs">
-									<li class="active">
-										<a href="javascript:void(0);" class="tab-button" id="tab-01" aria-controls="tab-panel-01" role="tab" aria-selected="true" tabindex="0">
-											<span class="category">전체</span>
-											<span class="count">57</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);" class="tab-button" id="tab-02" aria-controls="tab-panel-02" role="tab" aria-selected="false" tabindex="-1">
-											<span class="category">Business</span>
-											<span class="count">5</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);" class="tab-button" id="tab-03" aria-controls="tab-panel-03" role="tab" aria-selected="false" tabindex="-1">
-											<span class="category">삼성SDI New</span>
-											<span class="count">37</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);" class="tab-button" id="tab-04" aria-controls="tab-panel-04" role="tab" aria-selected="false" tabindex="-1">
-											<span class="category">Media</span>
-											<span class="count">5</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);" class="tab-button" id="tab-05" aria-controls="tab-panel-05" role="tab" aria-selected="false" tabindex="-1">
-											<span class="category">Column</span>
-											<span class="count">6</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);" class="tab-button" id="tab-06" aria-controls="tab-panel-06" role="tab" aria-selected="false" tabindex="-1">
-											<span class="category">Career</span>
-											<span class="count">2</span>
-										</a>
-									</li>
+					<div class="depth">
+						<a href="./media.html">Media</a>
+						<ul>
+							<li><a href="./index.html">삼성SDI News</a></li>
+							<li><a href="./column.html">Column</a></li>
+							<li><a href="./media.html">Media</a></li>
+						</ul>
+					</div>
+				</div>		
+			</div>
+			<div class="content_inner">
+				<div class="body_cont">
+					<!-- view_cont -->
+					<div class="view_cont">
+						<div class="view_head">
+							<div class="tit">
+								<h3 class="titmain">BMW iX xDrive 50 이게 리얼 역대급 전기차</h3>
+								<span class="date">2022.08.23</span>
+							</div>
+							<div class="sns_cont">
+								<ul class="sns">
+									<li><a href="#" title="페이스북으로 공유하기" target="_blank"><img src="../../assets/images/layout/icon_sns02.png" alt="Facebook"></a></li>
+									<li><a href="#" title="트위터로 공유하기" target="_blank"><img src="../../assets/images/layout/icon_sns03.png" alt="Twitter"></a></li>
+									<li><a href="#" title="URL 복사하기" target="_blank"><img src="../../assets/images/layout/icon_sns05.png" alt="URL"></a></li>
 								</ul>
 							</div>
-							<!-- //탭 메뉴 -->
-						</div>		
-					</div>
-					<!-- 탭 내용 -->
-					<div class="tab_conts">
-						<!-- TAB1  -->
-						<div class="tab_cont" id="tab-panel-01" aria-labelledby="tab-01" role="tabpanel" tabindex="0">
-							<div class="tab_inner">
-								<!-- 삼성SDI News -->
-								<div class="list_cont">
-									<div class="list_cont_tit">
-										<span class="total txt_infoR">삼성SDI News <span class="total_num">5</span></span>
-									</div>
-									<ul class="flex">
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_01.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Culture</span>
-													<p>알아두면 쓸모 있는 배터리 꿀팁!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_02.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>갤럭시 폴드 속에 삼성SDI가 있다?!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_03.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기차 배터리 구성,<br> 셀? 모듈? 팩? 바로 알자!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_04.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Trend</span>
-													<p>DTM 레이싱 소개 &#45; 삼성SDI,<br> 레이싱 경주에 출전하다</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_05.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기자전거가 주목 받는 이유</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-									</ul>
-									<div class="btn_area">
-										<a href="javascript:void(0)" class="list_move_btn" title="삼성SDI News 검색 목록으로 이동하기">더보기</a>
-									</div>
-								</div>
-
-								<!-- Media -->
-								<div class="list_cont">
-									<div class="list_cont_tit">
-										<span class="total txt_infoR">Media <span class="total_num">5</span></span>
-									</div>
-									<ul class="flex">
-										<li class="flex_item_3n">
-											<a href="../sdi_now/media_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_01.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Culture</span>
-													<p>알아두면 쓸모 있는 배터리 꿀팁!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/media_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_02.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>갤럭시 폴드 속에 삼성SDI가 있다?!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/media_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_03.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기차 배터리 구성,<br> 셀? 모듈? 팩? 바로 알자!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/media_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_04.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Trend</span>
-													<p>DTM 레이싱 소개 &#45; 삼성SDI,<br> 레이싱 경주에 출전하다</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/media_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_05.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기자전거가 주목 받는 이유</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-									</ul>
-									<div class="btn_area">
-										<a href="javascript:void(0)" class="list_move_btn" title="Media 검색 목록으로 이동하기">더보기</a>
-									</div>
-								</div>
-
-								<!-- Column -->
-								<div class="list_cont">
-									<div class="list_cont_tit">
-										<span class="total txt_infoR">Column <span class="total_num">5</span></span>
-									</div>
-									<ul class="flex">
-										<li class="flex_item_3n">
-											<a href="../sdi_now/column_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_01.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Culture</span>
-													<p>알아두면 쓸모 있는 배터리 꿀팁!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/column_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_02.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>갤럭시 폴드 속에 삼성SDI가 있다?!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/column_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_03.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기차 배터리 구성,<br> 셀? 모듈? 팩? 바로 알자!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/column_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_04.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Trend</span>
-													<p>DTM 레이싱 소개 &#45; 삼성SDI,<br> 레이싱 경주에 출전하다</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/column_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_05.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기자전거가 주목 받는 이유</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-									</ul>
-									<div class="btn_area">
-										<a href="javascript:void(0)" class="list_move_btn" title="Column 검색 목록으로 이동하기">더보기</a>
-									</div>
-								</div>
-
-								<!-- Career -->
-								<div class="list_cont">
-									<div class="list_cont_tit">
-										<span class="total txt_infoR">Career <span class="total_num">2</span></span>
-									</div>
-									<ul class="list_column">
-										<li>
-											<a href="../career/career_tab04_view.html">
-												<div class="flex_between">
-													<div class="list_column_tit flex">
-														<span class="category titsub2">&#91;삼성 SDI&#93;</span>
-														<p class="titsub2">기술혁신센터 경력사원 수시 채용</p>
-													</div>
-													<span class="data txt_infoR color_g3">2022.01.01~2022.12.31</span>
-													<b class="category txtB color_g3">3급신입</b>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="../career/career_tab04_view.html">
-												<div class="flex_between">
-													<div class="list_column_tit flex">
-														<span class="category titsub2">&#91;삼성 SDI&#93;</span>
-														<p class="titsub2">중대형전지사업부 경력사원 수시 채용</p>
-													</div>
-													<span class="data txt_infoR color_g3">2022.01.01~2022.12.31</span>
-													<b class="category txtB color_g3">경력&#47;박사</b>
-												</div>
-											</a>
-										</li>
-									</ul>
-									<div class="btn_area">
-										<a href="javascript:void(0)" class="list_move_btn" title="Career 검색 목록으로 이동하기">더보기</a>
-									</div>
+						</div> 
+						<div class="view_body">
+							<ul class="file_box">
+								<!-- 해당하는 파일유형으로 사용해주세요 -->
+								<li><a href="javascript:void(0);" title="첨부파일 PDF파일 다운로드" class="txt_infoR color_g1 pdf_file" download>첨부파일 다운로드.pdf</a></li>
+								<!-- <li><a href="javascript:void(0);" title="첨부파일 XLS파일 다운로드" class="txt_infoR color_g1 xls_file" download>첨부파일 다운로드.xls</a></li> -->
+								<!-- <li><a href="javascript:void(0);" title="첨부파일 XLSX파일 다운로드" class="txt_infoR color_g1 xls_file" download>첨부파일 다운로드.xlsx</a></li> -->
+								<!-- <li><a href="javascript:void(0);" title="첨부파일 DOC파일 다운로드" class="txt_infoR color_g1 doc_file" download>첨부파일 다운로드.doc</a></li> -->
+								<!-- <li><a href="javascript:void(0);" title="첨부파일 DOCX파일 다운로드" class="txt_infoR color_g1 doc_file" download>첨부파일 다운로드.docx</a></li> -->
+								<!-- <li><a href="javascript:void(0);" title="첨부파일 HWP파일 다운로드" class="txt_infoR color_g1 hwp_file" download>첨부파일 다운로드.hwp</a></li> -->
+								<!-- <li><a href="javascript:void(0);" title="첨부파일 ZIP파일 다운로드" class="txt_infoR color_g1 zip_file" download>첨부파일 다운로드.zip</a></li> -->
+							</ul>
+							<div class="cont_box">
+								<div class="youtube_view">
+									<iframe src="https://www.youtube.com/embed/GhZwYrKo_9s" title="BMW iX xDrive 50 이게 리얼 역대급 전기차ㅣ배터리 실험실" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
-						<!-- //TAB1 -->	
-
-						<!-- TAB2  -->
-						<div class="tab_cont" id="tab-panel-02" aria-labelledby="tab-02" role="tabpanel" tabindex="0" hidden="true" aria-expanded="true">
-							<div class="tab_inner">
-								<!-- Business -->
-								<div class="list_cont">
-									<div class="list_cont_tit">
-										<span class="total txt_infoR">Business <span class="total_num">5</span></span>
-									</div>
-									<ul class="flex">
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_01.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Culture</span>
-													<p>알아두면 쓸모 있는 배터리 꿀팁!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_02.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>갤럭시 폴드 속에 삼성SDI가 있다?!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_03.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기차 배터리 구성,<br> 셀? 모듈? 팩? 바로 알자!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_04.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Trend</span>
-													<p>DTM 레이싱 소개 &#45; 삼성SDI,<br> 레이싱 경주에 출전하다</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_05.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기자전거가 주목 받는 이유</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-									</ul>
-									<div class="btn_area">
-										<a href="javascript:void(0)" class="list_move_btn" title="Business 검색 목록으로 이동하기">더보기</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //TAB2 -->	
-
-						<!-- TAB3  -->
-						<div class="tab_cont" id="tab-panel-03" aria-labelledby="tab-03" role="tabpanel" tabindex="0" hidden="true" aria-expanded="true">
-							<div class="tab_inner">
-								<!-- sdi news -->
-								<div class="list_cont">
-									<div class="list_cont_tit">
-										<span class="total txt_infoR">삼성SDI News <span class="total_num">37</span></span>
-									</div>
-									<ul class="flex">
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_01.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Culture</span>
-													<p>알아두면 쓸모 있는 배터리 꿀팁!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_02.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>갤럭시 폴드 속에 삼성SDI가 있다?!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_03.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기차 배터리 구성,<br> 셀? 모듈? 팩? 바로 알자!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_04.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Trend</span>
-													<p>DTM 레이싱 소개 &#45; 삼성SDI,<br> 레이싱 경주에 출전하다</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_05.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기자전거가 주목 받는 이유</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-									</ul>
-									<div class="btn_area">
-										<a href="javascript:void(0)" class="list_move_btn" title="삼성SDI News 검색 목록으로 이동하기">더보기</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //TAB3 -->	
-
-						<!-- TAB4  -->
-						<div class="tab_cont" id="tab-panel-04" aria-labelledby="tab-04" role="tabpanel" tabindex="0" hidden="true" aria-expanded="true">
-							<div class="tab_inner">
-								<!-- Media -->
-								<div class="list_cont">
-									<div class="list_cont_tit">
-										<span class="total txt_infoR">Media <span class="total_num">5</span></span>
-									</div>
-									<ul class="flex">
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_01.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Culture</span>
-													<p>알아두면 쓸모 있는 배터리 꿀팁!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_02.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>갤럭시 폴드 속에 삼성SDI가 있다?!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_03.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기차 배터리 구성,<br> 셀? 모듈? 팩? 바로 알자!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_04.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Trend</span>
-													<p>DTM 레이싱 소개 &#45; 삼성SDI,<br> 레이싱 경주에 출전하다</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_05.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기자전거가 주목 받는 이유</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-									</ul>
-									<div class="btn_area">
-										<a href="javascript:void(0)" class="list_move_btn" title="Media 검색 목록으로 이동하기">더보기</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //TAB4 -->	
-
-						<!-- TAB5  -->
-						<div class="tab_cont" id="tab-panel-05" aria-labelledby="tab-05" role="tabpanel" tabindex="0" hidden="true" aria-expanded="true">
-							<div class="tab_inner">
-								<!-- Column -->
-								<div class="list_cont">
-									<div class="list_cont_tit">
-										<span class="total txt_infoR">Column <span class="total_num">6</span></span>
-									</div>
-									<ul class="flex">
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_01.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Culture</span>
-													<p>알아두면 쓸모 있는 배터리 꿀팁!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_02.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>갤럭시 폴드 속에 삼성SDI가 있다?!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_03.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기차 배터리 구성,<br> 셀? 모듈? 팩? 바로 알자!</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_04.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Trend</span>
-													<p>DTM 레이싱 소개 &#45; 삼성SDI,<br> 레이싱 경주에 출전하다</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-										<li class="flex_item_3n">
-											<a href="../sdi_now/news_view.html">
-												<div class="filter_img"><img src="../../assets/images/sdi_now/column_img_05.jpg" alt=""></div>
-												<div class="filter_tit">
-													<span class="category txt_infoB_req">Technology</span>
-													<p>전기자전거가 주목 받는 이유</p>
-													<span class="date txt_infoR color_g3">2022.08.23</span>
-												</div>
-											</a>
-										</li>
-									</ul>
-									<div class="btn_area">
-										<a href="javascript:void(0)" class="list_move_btn" title="Column 검색 목록으로 이동하기">더보기</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //TAB5 -->	
-
-						<!-- TAB6  -->
-						<div class="tab_cont" id="tab-panel-06" aria-labelledby="tab-06" role="tabpanel" tabindex="0" hidden="true" aria-expanded="true">
-							<div class="tab_inner">
-								<!-- Career -->
-								<div class="list_cont">
-									<div class="list_cont_tit">
-										<span class="total txt_infoR">Career <span class="total_num">2</span></span>
-									</div>
-									<ul class="list_column">
-										<li>
-											<a href="../career/career_tab04_view.html">	
-												<div class="flex_between">
-													<div class="list_column_tit flex">
-														<span class="category titsub2">&#91;삼성 SDI&#93;</span>
-														<p class="titsub2">기술혁신센터 경력사원 수시 채용</p>
-													</div>
-													<span class="data txt_infoR color_g3">2022.01.01~2022.12.31</span>
-													<b class="category txtB color_g3">3급신입</b>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="../career/career_tab04_view.html">
-												<div class="flex_between">
-													<div class="list_column_tit flex">
-														<span class="category titsub2">&#91;삼성 SDI&#93;</span>
-														<p class="titsub2">중대형전지사업부 경력사원 수시 채용</p>
-													</div>
-													<span class="data txt_infoR color_g3">2022.01.01~2022.12.31</span>
-													<b class="category txtB color_g3">경력&#47;박사</b>
-												</div>
-											</a>
-										</li>
-									</ul>
-									<div class="btn_area">
-										<a href="javascript:void(0)" class="list_move_btn" title="Career 검색 목록으로 이동하기">더보기</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //TAB6 -->	
-					</div>
-					<!-- //탭 내용 -->
+					</div> 
+				</div>
+				<!-- //view_cont -->
+				
+				<ul class="move_area wide_mo">
+					<li class="prev">
+						<a href="javascript:void(0);">
+							<em>이전글</em> 
+							<span>삼성SDI, 전고체 전지 파일럿 라인 착공</span>
+						</a>
+					</li>
+					<li class="next on"><!-- [D]: 활성화 시 .on -->
+						<a href="javascript:void(0);">
+							<em>다음글</em>
+							<span>삼성SDI, 인터배터리 2020 참가</span>
+						</a>
+					</li>
+				</ul>
+				<div class="btn_area">
+					<a href="../sdi_now/media.html" class="btn btn_primary md" title="목록으로 돌아가기">List</a>
 				</div>
 			</div>
-		</section> 
+        </section> 
 	</div>
 </div>
-
 <div id="bg_modal"></div>
 
 <hr>
