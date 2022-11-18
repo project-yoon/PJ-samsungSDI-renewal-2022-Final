@@ -79,7 +79,7 @@ function initHeaderGNB(){
                 $(this).removeClass('open');
                 $(this).siblings('.more').removeClass('open');
                 GNB.parent('.header').css({'height':depth_2_height});
-                // e.stopPropagation();
+                e.stopPropagation();
                 return false;
             }
             else{

@@ -366,11 +366,11 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	display: flex; 
 	align-items: flex-start;
 }
-.bld_row *:not(:first-child) {
+.bld_row >*:not(:first-child) {
 	margin-left: 20px;
 }
 .ml_auto {
-	margin-left: auto;
+	margin-left: auto !important;
 }
 
 .flx_row {
@@ -391,6 +391,20 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 }
 .flx_col_2:nth-child(n + 3) {
 	margin-top: 30px;
+}
+.flx_col_2.report_image {
+	max-width: 555px;
+	height: 100%;
+	max-height: 375px;
+}
+.flx_col_2.report_image img {
+	height: 100%;
+}
+.flx_col_2 .right_cont {
+	width: 100%;
+	max-width: 550px;
+	margin-left: 20px;
+	padding: 40px;
 }
 
 .flx_col_3 {
@@ -494,7 +508,7 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 
 .sustainable_management_main_old .report_wrap .report_image {
 	border: 1px solid #eee;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 .sustainable_management_main_old .report_wrap .report_info {
 	display: flex;
@@ -624,6 +638,39 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 		font-weight: 500;
 		font-size: 18px;
 	}
+	.sustainable_management_new .sustainable_management_new_head .report_image {
+		display: none;
+	}
+	.sustainable_management_new .sustainable_management_new_head .btn_wrap {
+		justify-content: center;
+		margin-top: 40px;
+		gap: 16px;
+	}
+	.sustainable_management_new .sustainable_management_new_head .btn_wrap a {
+		width: 100%;
+		max-width: 375px;
+	}
+	.flx_col_2 .right_cont {
+		width: 100%;
+		max-width: none;
+		margin-left: 0;
+		padding: 0;
+	}
+	[class *='flx_col'] {
+		width: 100%;
+	}
+	[class *='flx_col']+[class *='flx_col'] {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.btn.btn_xs {
+		min-width: unset;
+	}
+
+	.bld_row.toCol_tb {
+		display: block;
+		margin-bottom: 20px;
+	}
 
 }
 
@@ -687,6 +734,10 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	**********************************************************/
 	.risk_management .risk_system .cont_body {overflow-x: auto;}
     .risk_management .risk_system .cont_body figure {width: 843px; max-width: none;}
+
+	/* 환경 - Move to Net-Zero
+	**********************************************************/
+	.net_zero .cont_txt .dot_bullet li::before {top: 10px;}
 
 	/* 사회 - 안전과 보건
 	**********************************************************/
@@ -752,6 +803,8 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	.partner .partner_process {max-width: none; width: 916px;}
 	.committee .work_process {max-width: none; width: 1065px;}
 	
+	.pop_quick {right: 16px; bottom: 24px;}
+
 	.popup.full_modal .supplementary_provision h4 {margin-bottom: 20px;}
 	.popup.full_modal .supplementary_provision ul li {margin-bottom: 16px; font-size: 14px;}
 
@@ -763,7 +816,6 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	.popup.full_modal .tbl_keep .responsive_table table {width: 1034px; max-width: none;}
 
 	.pop_quick {right: 16px; bottom: 24px;}
-
 
 	/* 사회 - 사회적 책임
 	**********************************************************/
@@ -847,7 +899,7 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	}
 
 	.operation_progress_wrap {padding: 30px;}
-	.bld_row *:not(:first-child) {margin-left: 0px; margin-bottom: 20px;}
+	.bld_row >*:not(:first-child) {margin-left: 0px; margin-bottom: 20px;}
 
 
 	/* social_view
@@ -874,30 +926,9 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	
 	/* 지속가능경영보고서
 	**********************************************************/
-	.sustainable_management_new .sustainable_management_new_head .report_image {
-		display: none;
-	}
-
-	.sustainable_management_new .sustainable_management_new_head .btn_wrap {
-		flex-direction: column;
-	}
-	
-	.sustainable_management_new .sustainable_management_new_head .btn_wrap {
-		margin-top: 40px;
-		gap: 16px;
-	}
-
-	[class *= 'flx_col'] {
-		width: 100%;
-	}
-	[class *= 'flx_col'] + [class *= 'flx_col'] {
-		margin-left: 0;
-		margin-top: 20px;
-	}
-
-	.btn.btn_xs {
-		min-width: unset;
-	}
+	.sustainable_management_new .sustainable_management_new_head .btn_wrap {flex-direction: column;justify-content: inherit;}
+	.sustainable_management_new .sustainable_management_new_head .btn_wrap a {max-width: none;}
+	.sustainable_management_main_old .report_wrap .report_image {border-radius: 14px;}
 }
 
 @media all and (max-width: 450px) {

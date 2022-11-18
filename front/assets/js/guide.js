@@ -206,12 +206,23 @@ function dropdownNav(){
 	var dropNext = $(".btn_hs_next");
 
 	dropText.off('click').on('click', function(){
-		$(this).toggleClass('on');
+		var list = $(this).parent().children('ul')
+		if($(this).hasClass('on') == false) {
+			$(this).addClass('on')
+			list.slideDown(300)
+		} else if ($(this).hasClass('on') == true) {
+			$(this).removeClass('on')
+			list.slideUp(300)
+		} 
+
 	});
 
 	dropLink.off('click').on('click', function(e){
-		 dropIndex = dropList.find(">a.active").parent().index();
-		 dropText.removeClass('on');
+		e.preventDefault()
+		var value = $(this).data('value')
+		dropIndex = dropList.find(">a.active").parent().index();
+		dropText.removeClass('on').text(value);
+		$(this).parent('li').parent('ul').slideUp(300)
 	});
 	dropPrev.off('click').on('click', function(){
 		dropIndex--;

@@ -328,7 +328,7 @@ footer#footer p.copyright {font-size: 16px;color: #666666;}
 .pop_btn .close_btn {width: 32px;height: 32px;background: url(../images/common/ico_close_btn.png) no-repeat center / cover;}
 /* search_result */
 .search_result .search_wrap {margin-bottom: 30px;}
-.search_result .tab_nav {margin-bottom: 60px;}
+.search_result .tab_nav {margin-bottom: 60px; position: relative;}
 .tab_nav .tab_list {display: block;}
 .tab_nav .dropdown_menu {display: none;}
 .dropdown_menu>button {min-width: auto;}
