@@ -3,7 +3,7 @@
 .pc {display: block;}
 .mo {display: none;}
 /* iframe  */
-.iframe-wrap{background: #eee;}
+/* .iframe-wrap{background: #eee;} */
 
 /* sub_visual */
 .ir_activity .sub_visual {background: url('../images/investment/visual_investment_01.png') no-repeat center / cover;}

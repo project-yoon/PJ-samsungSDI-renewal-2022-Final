@@ -413,7 +413,7 @@ dl.search_none li:before {content:'-';display: inline-block;margin-right: 5px;}
 
 /* gnb 숨김 처리
 **********************************************************/
-@media all and (max-width: 1919px) { 
+@media all and (max-width: 1600px) { 
 	header.header nav.gnb {display:none;}
 	header.header nav.user_menu > ul > li > button.btn_gnb_all {display:none;}
 	header.header nav.user_menu > ul > li > button.btn_sitemap {display:block;width: 24px;height: 24px;background-image: url(../../assets/images/layout/btn_g_sitemap.svg);}
