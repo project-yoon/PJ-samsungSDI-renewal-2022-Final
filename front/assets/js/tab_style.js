@@ -23,24 +23,25 @@
 
 //서브네비 있는 페이지
 function sticky() {
-	var headerH = $('#header_wrap header').height();
-    var navPosY = $('.sub_nav1').offset().top - headerH
-
-    $(window).on("wheel", function(e) {
+	$(window).on("wheel", function(e) {
+		var headerH = $('#header_wrap header').height();
 		var mouseMove = e.originalEvent.deltaY;
-
-        if(mouseMove > 0 && $(window).scrollTop() >= navPosY ) {
-			$('body').addClass('sticky')
-        } else if(mouseMove < 0 && $(window).scrollTop() <= navPosY ) {
-			$('body').removeClass('sticky')
-        }
-		if($('.content_inner').offset().top <= $(window).scrollTop() + headerH) {
-			$('#header_wrap').addClass('none')
-
-		} else if($('.content_inner').offset().top >= $(window).scrollTop()) {
-			$('#header_wrap').removeClass('none')
+		// 1. 내려갈때
+		// 		서브탭 안지났다면 (1-1) : 헤더 O, 서브탭 X
+		// 		서브탭   지났다면 (1-2) : 헤더 X, 서브탭 O
+		// 2. 올라갈때
+		// 		서브탭 상관없이  : 헤더 O, 서브탭 X
+        if(mouseMove < 0 ) { // 2
+			$('body').removeClass('sticky');
+			$('#header_wrap').removeClass('none');
+		}else if(mouseMove > 0 ) { // 1
+			if($('.content_inner').offset().top <= $(window).scrollTop() + headerH) { // 1-2
+				$('body').addClass('sticky');
+				$('#header_wrap').addClass('none'); 				
+			} else if($('.content_inner').offset().top >= $(window).scrollTop()) { // 1-1
+				$('#header_wrap').removeClass('none'); 
+			}
 		}
-
     })
 }
 

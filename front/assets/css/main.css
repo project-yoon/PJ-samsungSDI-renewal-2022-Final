@@ -197,8 +197,14 @@ section.content {
 .main .cont_item.investment>ul>li:nth-child(1) {
     width: 100%;
     max-width: 585px;
-    background: #ddd;
+    background: #fff;
     border-radius: 20px;
+}
+.main .cont_item.investment .iframe-wrap {
+    padding: 40px 0 0 40px;
+}
+.main .cont_item.investment .iframe-wrap iframe {
+    width: 100%;
 }
 .main .cont_item.investment>ul>li:not(:first-child) {
     width: 100%;
@@ -543,6 +549,9 @@ section.content {
     /* investment */
     .main .cont_item.investment>ul>li:nth-child(1) {
         height: 163px;
+    }
+    .main .cont_item.investment .iframe-wrap {
+        padding: 24px 0 0 24px;
     }
     .main .cont_item.investment>ul>li:not(:first-child) {
         justify-content: flex-start;

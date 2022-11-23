@@ -83,26 +83,26 @@ function initSubPageNavi() {
 }
 
 function videoPop() {
-    $('.about .video').off('click').on('click', function(){
-        $('.popup.full_modal').attr('tabindex','0').show().focus()
-    })
+    // $('.about .video').off('click').on('click', function(){
+    //     $('.popup.full_modal').attr('tabindex','0').show().focus()
+    // })
 
-    $('.about .video').on('keydown', function(e){
-        if(e.which==13) {
-            $('.popup.full_modal').attr('tabindex','0').show().focus()
-        }
-    })
+    // $('.about .video').on('keydown', function(e){
+    //     if(e.which==13) {
+    //         $('.popup.full_modal').attr('tabindex','0').show().focus()
+    //     }
+    // })
 
-    $('.popup.full_modal .btn_close').off('click').on('click', function(){
-        $('.popup.full_modal video').get(0).pause()
-        $('.about .tab_item.active a').attr('tabindex','0').focus()
-    })
+    // $('.popup.full_modal .btn_close').off('click').on('click', function(){
+    //     $('.popup.full_modal video').get(0).pause()
+    //     $('.about .tab_item.active a').attr('tabindex','0').focus()
+    // })
 
 }
 
 $(document).ready(function() {
 	initSubPageNavi(); //Sub Page Navi
-    videoPop();	
+    // videoPop();	
 
 
 	if($(".map_box").length){

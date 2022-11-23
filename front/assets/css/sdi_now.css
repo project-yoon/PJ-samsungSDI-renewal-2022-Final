@@ -4,41 +4,6 @@
     position: relative;
 }
 
-/* 기본 테이블(표)
-***********************************************************************/
-.basic_table {
-    /* margin-top: 40px; */
-	overflow: hidden;
-}
-.basic_table table {
-    width: 100%;
-    background-color: white;
-    border-top: 2px solid #222222;
-	margin-left: -1px;
-}
-.basic_table table tr th,
-.basic_table table tr td {
-    padding: 24px 0;
-    text-align: center;
-    border-bottom: 1px solid #DDDDDD;
-}
-.basic_table table tr th,
-.basic_table table tr td {
-    border-left: 1px solid #DDDDDD; 
-}
-.basic_table table thead tr:first-child th:first-child,
-.basic_table table tbody tr th:first-child {
-    border-left-width: 0px;
-}
-.basic_table table thead tr th {
-	font-weight: 500;
-	font-size: 16px;
-	background: #F5F5F5;
-}
-.basic_table table tbody tr td {
-	font-size: 16px;
-}
-
 /* sub_visual */
 .news .sub_visual,
 .news_view .sub_visual {
@@ -118,12 +83,19 @@
     color: #888888;
 }
 
-/* 미디어
+/* Column
 **********************************************************/
+.column .tab_list1 {margin-bottom: 90px;}
+
+/* Media
+**********************************************************/
+.media .list_cont .filter_img {padding-top: 55.264%;}
 
 /* 테블릿
 **********************************************************/
 @media all and (max-width: 1280px) {
+    /* Column */
+    .column .tab_list1 {margin-bottom: 40px;}
 }
 
 /* 모바일

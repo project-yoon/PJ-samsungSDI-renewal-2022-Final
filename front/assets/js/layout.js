@@ -17,6 +17,62 @@ function initPopCookieSet() {
     cookiedata = document.cookie;
 }
 
+// full type check
+function Full_GNB_CHK(){
+    const subEl = document.querySelector('.sub_visual');
+    const windowWidth = $( window ).width() <= 720;
+    if (subEl !== null && windowWidth != true){
+        $(window).on("load scroll",function() {
+            const SCR_curr = $(this).scrollTop();
+            if (SCR_curr == 0) {
+                GNB_TRANSPARENT();
+                $('nav.gnb')
+                .on("mouseenter",function() {
+                    GNB_FULLCOLOR();
+                })
+                .on("mouseleave",function() {
+                    GNB_TRANSPARENT();
+                })
+            }else if (SCR_curr > 0 ) {
+                GNB_FULLCOLOR();
+                $('nav.gnb')
+                .on("mouseenter",function() {
+                    GNB_FULLCOLOR();
+                })
+                .on("mouseleave",function() {
+                    GNB_FULLCOLOR();
+                })
+            } else {
+                GNB_TRANSPARENT();
+                $('nav.gnb')
+                .on("mouseenter",function() {
+                    GNB_FULLCOLOR();
+                })
+                .on("mouseleave",function() {
+                    GNB_TRANSPARENT();
+                })
+            }
+        });
+    }else{
+        GNB_FULLCOLOR();
+        $('nav.gnb')
+        .on("mouseenter",function() {
+            GNB_FULLCOLOR();
+        })
+        .on("mouseleave",function() {
+            GNB_FULLCOLOR();
+        })
+    }
+    function GNB_TRANSPARENT(){
+        $('.header').removeClass('on');
+        $('.header').css({'background':'transparent'});
+    }
+    function GNB_FULLCOLOR(){
+        $('.header').addClass('on');
+        $('.header').css({'background':'#fff'});
+    }
+}
+
 //New! Header GNB
 function initHeaderGNB(){
     var GNB = $('.gnb');
@@ -481,22 +537,22 @@ function bodyOverflowAntiShaking(overflowHiddenIs) {
     }
 }
 
-function popEffect() {
-	$('.popOpen').off('click').on('click', function(){
-		$('#bg_modal').show()
+// function popEffect() {
+// 	$('.popOpen').off('click').on('click', function(){
+// 		$('#bg_modal').show()
 
-        if($('.popup.full_modal')) {
-            $('#bg_modal').hide()
-        }
-		$('html, body').css('overflow','hidden')
-	})
+//         if($('.popup.full_modal')) {
+//             $('#bg_modal').hide()
+//         }
+// 		$('html, body').css('overflow','hidden')
+// 	})
 
-	$('.popup .btn_close button, .popup .cancel, .popup .close').off('click').on('click', function(){
-		$('.popup').hide()
-		$('#bg_modal').hide()
-		$('html, body').css('overflow','visible')
-	})
-}
+// 	$('.popup .btn_close button, .popup .cancel, .popup .close').off('click').on('click', function(){
+// 		$('.popup').hide()
+// 		$('#bg_modal').hide()
+// 		$('html, body').css('overflow','visible')
+// 	})
+// }
 
 function modalShowAndHide() {
     $('.popOpen').on('click', function(e) { //popup 오픈
@@ -504,17 +560,23 @@ function modalShowAndHide() {
         var popId = $(this).attr('data-id');
 
 		$('html, body').css('overflow','hidden')
-        $(`.popup[data-id="${popId}"]`).show();
+        $(`.popup[data-id="${popId}"]`).attr('tabindex', '0').show().focus();
         
         if($('.popup.full_modal')) {
             $('#bg_modal').hide()
         }        
     })
 	$('.popup .btn_close button, .popup .cancel, .popup .close').off('click').on('click', function(e){
+        var popParent = $(this).parent().parent()
+        if($(popParent).children().has('video').length === 1) {  //자식으로 video 있는지 검사
+            popParent.find('video').get(0).pause()
+        }else {}
+
         e.preventDefault()
 		$('.popup').hide()
-		$('#bg_modal').hide()
+        $('#bg_modal').hide()
 		$('html, body').css('overflow','visible')
+        $(`.popOpen[data-id=${popParent.data('id')}]`).attr('tabindex', '0').focus()
 	})
 }
 
@@ -525,6 +587,7 @@ $(document).ready(function() {
 	}
     initPopCookieSet(); // cookie setting
 	// initHeaderGnb(); Header GNB
+    Full_GNB_CHK();
     initHeaderGNB(); //New! Header GNB
     initHeaderSitemapLangauage(); //Header & Sitemap User Menu
     initSearchBtn();
