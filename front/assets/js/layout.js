@@ -543,30 +543,42 @@ function modalShowAndHide() {
         popId = ''
         popBg = $('#bg_modal');
     
-
     $(popBtn).on('click', function(e) { //popup 오픈
         e.preventDefault();
         popId = $(this).data('id');
         var popThis = $(`.popup[data-id='${popId}']`)
 
 		$('html, body').css('overflow','hidden')
-        $(popBg).show()
+
+        if(!$(popThis).hasClass('.full_modal')) {
+            $(popBg).show()
+        }
 
         $(popThis).attr('tabindex', '0').addClass('active').focus();
 
     })
-	$('.popup .btn_close button, .popup .cancel, .popup .close').off('click').on('click', function(e){
-        var popParent = $(this).parent().parent()
-        if($(popParent).children().has('video').length === 1) {  //자식으로 video 있는지 검사
-            popParent.find('video').get(0).pause()
+	$('.popup .btn_close, .popup .cancel, .popup .close').off('click').on('click', function(e){
+        e.preventDefault()
+
+        var popThis = $(this).parent().parent()
+        if($(popThis).children().has('video').length === 1) {  //자식으로 video 있는지 검사
+            popThis.find('video').get(0).pause()
         }else {}
 
-        e.preventDefault()
-		$('.popup').removeClass('active')
         $(popBg).hide()
+		$(popThis).removeClass('active').removeAttr('tabindex')
 		$('html, body').css('overflow','visible')
-        $(`.popOpen[data-id=${popParent.data('id')}]`).attr('tabindex', '0').focus()
+        $(`.popOpen[data-id=${popThis.data('id')}]`).attr('tabindex', '0').focus()
 	})
+
+    $('.pop_quick .btn_top').on('click', function(){
+        var idx = $(this).parent().parent().children('.pop_body').children('.pop_inner')
+        $(idx).animate({scrollTop: 0}, 400)
+
+
+        console.log('aaaa', $(idx).offset().top)
+    })
+
 }
 
 
