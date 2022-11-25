@@ -29,7 +29,7 @@
 		<button type="button" class="btn_keyinfo">KeyInfo</button>
 	</div>
 	<header class="header on">
-		<h1><a href="#">삼성SDI</a></h1>
+		<h1><a href="../main/index.html">삼성SDI</a></h1>
 		<nav class="gnb">
 			<h2 class="blind">Global Navi</h2>
 			<ul>
@@ -213,11 +213,11 @@
 			</ul>
 			<div class="sns_wrap">
 				<ul class="sns">
-					<li><a href="#" title="New Window Open" target="_blank"><img src="../../assets/images/layout/ico_sns_f_w01.png" alt="Face book"></a></li>
-					<li><a href="#" title="New Window Open" target="_blank"><img src="../../assets/images/layout/ico_sns_f_w02.png" alt="Twitter"></a></li>
-					<li><a href="#" title="New Window Open" target="_blank"><img src="../../assets/images/layout/ico_sns_f_w03.png" alt="You Tube"></a></li>
-					<li><a href="#" title="New Window Open" target="_blank"><img src="../../assets/images/layout/ico_sns_f_w04.png" alt="Naver Blog"></a></li>
-					<li><a href="#" title="New Window Open" target="_blank"><img src="../../assets/images/layout/ico_sns_f_w05.png" alt="Linked in"></a></li>
+					<li><a href="https://www.facebook.com/samsungsdi" title="삼성SDI 페이스북 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_facebook_w.svg" alt="Facebook"></a></li>
+					<li><a href="https://twitter.com/sdiin" title="삼성SDI 트위터 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_twitter_w.svg" alt="Twitter"></a></li>
+					<li><a href="https://www.youtube.com/user/SDISamsung" title="삼성SDI 유투브 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_utube_w.svg" alt="YouTube"></a></li>
+					<li><a href="https://blog.naver.com/sdibattery" title="삼성SDI 네이버 블로그 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_blog_w.svg" alt="Naver Blog"></a></li>
+					<li><a href="https://www.linkedin.com/company/Samsung-sdi" title="삼성SDI 링크드인 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_linkedin_w.svg" alt="Linked in"></a></li>
 				</ul>
 			</div>
 		</nav>	
@@ -228,7 +228,6 @@
 <!--  container -->
 <div id="container" class="★PAGECLASS">  <!-- 페이지 키클래스 -->
 	<div class="wrap">
-
 		<!-- page visual title -->
 		<div class="sub_visual">
 			<h2 class="subH">POPUP</h2>
@@ -237,14 +236,13 @@
 		<!-- Start Of Contents -->
 		<section class="content">
 			<div class="content_inner">
-
 				<!-- 컨텐츠 구성 예시, 재구성 시 제거 -->
 				<div class="cont_head">
 					<h3 class="body_title">Full POPUP</h3>
 				</div>
 				<div class="cont_body">
 					<div style="margin: 10px 0 40px;">
-						<button type="button" class="btn lg" id="full_popup"><span>Full</span></button>
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_full"><span>Full</span></button>
 					</div>
 				</div>
 				<div class="cont_head">
@@ -252,9 +250,9 @@
 				</div>
 				<div class="cont_body">
 					<div style="margin: 10px 0 40px;">
-						<button type="button" class="btn lg" id="btn_1"><span>Button 1 piece</span></button>
-						<button type="button" class="btn lg" id="btn_2"><span>Button 2 piece</span></button>
-						<button type="button" class="btn lg" id="btn_none"><span>none Button</span></button>
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_one_btn"><span>Button 1 piece</span></button>
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_two_btn"><span>Button 2 piece</span></button>
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_none_btn"><span>none Button</span></button>
 					</div>
 				</div>
 				<div class="cont_head">
@@ -262,8 +260,8 @@
 				</div>
 				<div class="cont_body">
 					<div style="margin: 10px 0 0px;">
-						<button type="button" class="btn lg" id="alert_img"><span>images alert</span></button>
-						<button type="button" class="btn lg" id="alert_info"><span>info alert</span></button>
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_alert_img" ><span>images alert</span></button>
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_alert_info"><span>info alert</span></button>
 					</div>
 
 				</div>
@@ -276,8 +274,9 @@
 	</div>
 </div>
 <!-- // container -->
+<div id="bg_modal" >
 <!-- full -->
-<div class="popup full_modal pop0"> <!-- [D]: 개발 시 인라인 스타일 제거 -->
+<div class="popup full_modal" data-id="pop_layout_full"> <!-- [D]: 개발 시 인라인 스타일 제거 -->
 	<div class="pop_head">
 		<h3 class="titmain">풀 팝업 가이드</h3>
 	</div>
@@ -293,9 +292,10 @@
 	</div>
 </div>
 
+<!-- //2. 안내 alert -->
 <!-- basic 팝업 -->
 <!-- 버튼이 1개일 경우, 스크롤이 되는 경우 -->
-<div class="popup basic_modal pop1" id="pop1">
+<div class="popup basic_modal" data-id="pop_layout_one_btn">
 	<div class="pop_head">
 		<div class="logo"><img src="../../assets/images/layout/pop_logo.png" alt="삼성SDI"></div>
 		<h3 class="titmain">버튼 노출 케이스</h3>
@@ -330,7 +330,7 @@
 </div>
 
 <!-- 버튼이 2개일 경우, 스크롤이 되는 경우 -->
-<div class="popup basic_modal pop2" id="pop2">
+<div class="popup basic_modal" data-id="pop_layout_two_btn">
 	<div class="pop_head">
 		<div class="logo"><img src="../../assets/images/layout/pop_logo.png" alt="삼성SDI"></div>
 		<h3 class="titmain">버튼 2개 노출 / 스크롤 있는 케이스</h3>
@@ -367,7 +367,7 @@
 </div>
 
 <!-- 버튼이 없는 경우 -->
-<div class="popup basic_modal pop3" id="pop3">
+<div class="popup basic_modal" data-id="pop_layout_none_btn">
 	<div class="pop_head">
 		<div class="logo"><img src="../../assets/images/layout/pop_logo.png" alt="삼성SDI"></div>
 		<h3 class="titmain">버튼이 없는 케이스</h3>
@@ -401,7 +401,7 @@
 
 <!-- Alert 팝업 -->
 <!-- 1. 이미지 alert -->
-<div class="popup alert_modal type1" id="type1">
+<div class="popup alert_modal type1" data-id="pop_layout_alert_img">
 	<div class="pop_body">
 		<div class="pop_img">
 			<img src="../../assets/images/business/visual_business_04.png" alt="이미지대체텍스트">
@@ -420,7 +420,7 @@
 </div>
 <!-- //1. 이미지 alert -->
 <!-- 2. 안내 alert -->
-<div class="popup alert_modal type2">
+<div class="popup alert_modal type2" data-id="pop_layout_alert_info">
 	<div class="pop_body">
 		<strong class="titsub2B">안내문구</strong>
 		<p class="pop_txt">확인하는 문구 들어가는 자리입니다.<br>문구는 최대 2줄까지만 작성해주세요.</p>
@@ -432,8 +432,7 @@
 		<a href="javascript:void(0);" class="check">확인</button>
 	</div>
 </div>
-<!-- //2. 안내 alert -->
-<div id="bg_modal" ></div>
+</div>
 
 <!-- 
 	<div class="hide_cont">
@@ -468,11 +467,11 @@
 	   <div class="footer_line"></div>
 	   <div class="inner">
 		  <ul class="sns">
-			 <li><a href="https://www.facebook.com/samsungsdi" title="삼성SDI 페이스북 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_f_01.png" alt="Facebook"></a></li>
-			 <li><a href="https://twitter.com/sdiin" title="삼성SDI 트위터 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_f_02.png" alt="Twitter"></a></li>
-			 <li><a href="https://www.youtube.com/user/SDISamsung" title="삼성SDI 유투브 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_f_03.png" alt="YouTube"></a></li>
-			 <li><a href="https://blog.naver.com/sdibattery" title="삼성SDI 네이버 블로그 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_f_04.png" alt="Naver Blog"></a></li>
-			 <li><a href="https://www.linkedin.com/company/Samsung-sdi" title="삼성SDI 링크드인 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_f_05.png" alt="Linked in"></a></li>
+			 <li><a href="https://www.facebook.com/samsungsdi" title="삼성SDI 페이스북 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_facebook.svg" alt="Facebook"></a></li>
+			 <li><a href="https://twitter.com/sdiin" title="삼성SDI 트위터 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_twitter.svg" alt="Twitter"></a></li>
+			 <li><a href="https://www.youtube.com/user/SDISamsung" title="삼성SDI 유투브 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_utube.svg" alt="YouTube"></a></li>
+			 <li><a href="https://blog.naver.com/sdibattery" title="삼성SDI 네이버 블로그 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_blog.svg" alt="Naver Blog"></a></li>
+			 <li><a href="https://www.linkedin.com/company/Samsung-sdi" title="삼성SDI 링크드인 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_linkedin.svg" alt="Linked in"></a></li>
 		  </ul>
 		  <address>삼성SDI(주) : 경기도 용인시 기흥구 공세로 150-20 [17084]</address>
 		  <p class="copyright">COPYRIGHT 2022 SAMSUNG SDI CO.,LTD. <br class="mo">ALL RIGHT RESERVED.</p>
@@ -483,29 +482,6 @@
 <script>
 	
 
-	$('#full_popup').on('click', function() {
-        $('.popup.pop0').show()
-    })
-	$('#btn_1').on('click', function() {
-        $('.popup.pop1').show()
-    })
-	$('#btn_2').on('click', function() {
-        $('.popup.pop2').show()
-    })
-	$('#btn_none').on('click', function() {
-        $('.popup.pop3').show()
-    })
-	$('#alert_img').on('click', function() {
-        $('.popup.type1').show()
-    })
-	$('#alert_info').on('click', function() {
-        $('.popup.type2').show()
-    })
-	$('.popup .check').on('click', function(){
-		$('.popup').hide()
-		$('#bg_modal').hide()
-		$('html, body').css('overflow','visible')
-	})
 
 </script>
 <script>
