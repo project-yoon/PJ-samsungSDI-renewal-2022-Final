@@ -197,7 +197,7 @@ function dropdownNav(){
 		});
 	});
 
-	//mav 버튼 타입 - 클릭
+	// mav 버튼 타입 - 클릭
 	var dropIndex = 0;
 	var dropList = $(".dropdown_menu ul li");
 	var dropText = $(".dropdown_menu button");
@@ -219,9 +219,7 @@ function dropdownNav(){
 
 	dropLink.off('click').on('click', function(e){
 		e.preventDefault()
-		var value = $(this).data('value')
 		dropIndex = dropList.find(">a.active").parent().index();
-		dropText.removeClass('on').text(value);
 		$(this).parent('li').parent('ul').slideUp(300)
 	});
 	dropPrev.off('click').on('click', function(){
@@ -258,8 +256,48 @@ function dropdownNav(){
 			scrollTop : targetTop - $(".header").height() - $("#sub_navi").height() - $(".utill").height() - 20
 		}, 600);
 	}
-	
+
 }
+
+function dropdownTab() {
+	if($('.dropdown_menu_tab').length){
+		$('.dropdown_menu_tab').each(function() {
+			var $dropNavWrap = $(this),
+				$dropNavUl = $dropNavWrap.find('ul'),
+				$dropNavLink = $dropNavUl.find('li a'),
+				$dropNavBtn = $dropNavWrap.find('button'),
+				$dropBody = $('.dropdown_tab_wrap');
+		
+			var dataIdx = '';
+			var listOn = '드롭다운 메뉴 열림',
+				listOff = '드롭다운 메뉴 닫힘';
+		
+			$($dropNavBtn).on('click', function(e) {
+				e.preventDefault()
+				if(!$(this).hasClass('on')) {
+					$(this).attr('title',listOn).addClass('on')
+					$dropNavUl.slideDown(300)
+				}else {
+					$(this).attr('title',listOff).removeClass('on')
+					$dropNavUl.slideUp(300)
+				}
+		
+			})
+		
+			$($dropNavLink).on('click', function(e){
+				e.preventDefault();
+				dataIdx = $(this).data('tab');
+		
+				$(this).addClass('active').parent().siblings().children().removeClass('active')
+				$dropNavBtn.attr('title',listOff).removeClass('on').text($(this).text()).focus()
+				$dropNavUl.slideUp(300)
+				$dropBody.find(`.dropdown_tab_item#${dataIdx}`).attr({'tabindex':0}).addClass('active').siblings().removeClass('active')
+			})
+		})
+	}
+
+}
+
 //AccordionList
 function initAccordionList() {
     var accordion = $(".accordion")
@@ -314,6 +352,7 @@ $(document).ready(function() {
 	dropdownNav();		// history. dropdown_nav
 	initAccordionList();  //AccordionList
 	scrollDown();
+	dropdownTab() // 드롭다운형태 탭
 })
 
 

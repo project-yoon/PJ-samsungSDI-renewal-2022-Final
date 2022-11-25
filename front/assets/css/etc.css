@@ -2,6 +2,8 @@
 /* 원본 */
 
 /* 공통 */
+.pc {display: block;}
+.mo {display: none;}
 .txtLeft {text-align: left !important;}
 .txtCenter {text-align: center !important;}
 .txtRight {text-align: right !important;}
@@ -29,6 +31,7 @@ td.txt_left {
 	padding: 24px;
 	min-width: 73px;
 	background: #F5F5F5;
+	text-align: left;
 }
 .row_table table tbody tr th span {
 	display: block;
@@ -57,44 +60,14 @@ table td.pd40 {
 	padding: 40px;
 }
 
-/* 고객센터
-***********************************************************************/
-.body_title {
-	margin-bottom: 30px;
-}
-
-.information .content_inner {
-	position: relative;
-}
-
-.information .btn_inquiry {
-	padding: 15px 24px;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 100%;
-	color: #888888;
-	background: #EEEEEE;
-	border: 1px solid #EEEEEE;
-	border-radius: 30px;
-}
-
-.information .btn_inquiry:focus,
-.information .btn_inquiry:hover {
-	color: #ffffff;
-	background: #283895;
-	border: 1px solid #283895;
-}
-
-.information .basic_table {
-	margin-bottom: 30px;
-}
-
-.information p.txt_infoR {
-	line-height: 1.4;
-}
-
-.information p.txt_infoR b {
-	display: block;
+.sub_title_info.info_list li::after {
+	position: absolute;
+	top: 9px;
+	left: 0;
+	content: '';
+	width: 3px;
+	height: 3px;
+	background-color: #222;
 }
 
 /* 보안신고센터 
@@ -107,7 +80,7 @@ table td.pd40 {
 	line-height: 1.4;
 }
 .security_report p.txtR {
-	margin-top: 20px;
+	margin-top: 30px;
 	color: #666;
 }
 .security_report .report_cont {
@@ -154,37 +127,34 @@ table td.pd40 {
 }
 .security_report .report_cont .item .btn {
 	display: block;
+	margin: 0 auto;
 	line-height: 60px;
 }
 
 /* B2B대금결제 
 ***********************************************************************/
-.b2b_billing p.txtR {
-	margin: 20px 0 120px;
+.b2b_billing h3+p.txtR {
+	margin: 30px 0 120px;
 	line-height: 1.4;
 	color: #666;
 }
-.b2b_billing p.mx900 {
-	max-width: 900px;
-}
-.b2b_billing .mobile_txt {
-	display: none;
+.b2b_billing p.txtR {
+	line-height: 1.4;
+	color: #666;
 }
 .b2b_billing .b2b_flow {
-	margin-top: 40px;
+	margin: 40px 0;
 }
 .b2b_billing .b2b_flow_inner {
 	display: flex;
-	justify-content: space-between;
+	justify-content: right;
+	gap: 0 60px;
 }
 .b2b_billing .b2b_flow figure {
 	width: 100%;
 	height: 100%;
 	max-width: 760px;
 	max-height: 340px;
-}
-.b2b_billing .b2b_flow figure .mobile {
-	display: none;
 }
 .b2b_billing .b2b_flow ol {
 	width: 100%;
@@ -212,7 +182,7 @@ table td.pd40 {
 	display: inline-block;
 }
 .b2b_billing .row_table {
-	margin: 40px 0 120px;
+	margin-bottom: 120px;
 }
 .b2b_billing .row_table table tbody tr th {
 	line-height: 1.4;
@@ -233,6 +203,9 @@ table td.pd40 {
 	width: 100%;
 	margin-top: 30px;
 }
+.b2b_billing .responsive_table table tr td {
+	padding: 24px 30px;
+}
 .b2b_billing .responsive_table.on {
 	display: block;
 }
@@ -242,15 +215,16 @@ table td.pd40 {
 .b2b_billing .document_list {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0 30px;
+	gap: 24px 20px;
 }
 .b2b_billing .document_list li {
-	width: 33.333%;
-	text-align: left;
+	width: calc((100% - 40px)/3);
 }
 .b2b_billing .sub_title_info li {
+	position: relative;
 	line-height: 1.4;
 	text-align: left;
+	padding-left: 10px;
 }
 .b2b_billing .sub_title_info li span {
 	display: block;
@@ -266,12 +240,12 @@ table td.pd40 {
 }
 .b2b_billing .procedure_list>li:not(:last-child) {
 	position: relative;
-	margin-bottom: 90px;
+	margin-bottom: 88px;
 }
 .b2b_billing .procedure_list>li:not(:last-child)::after {
 	content: '';
 	position: absolute;
-	bottom: -45px;
+	bottom: -50px;
 	left: 50%;
 	transform: translate(-50%, 0);
 	width: 14px;
@@ -283,7 +257,7 @@ table td.pd40 {
 	margin-bottom: 16px;
 	font-weight: 700;
 }
-.b2b_billing .info_txt {
+.b2b_billing p span.txt_infoR {
 	display: block;
 	margin-top: 16px;
 	color: #888;
@@ -295,34 +269,37 @@ table td.pd40 {
 	padding-bottom: 70px;
 	border-bottom: 1px solid #eee;
 }
+.privacy_policy .dropdown_menu_tab>button {
+	font-weight: 400;
+	font-size: 16px;
+	color: #222;
+}
 .privacy_policy .line_b {
 	border-bottom: none;
 }
-.privacy_policy .header {
+.privacy_policy .policy_header {
+	display: flex;
+	align-items: flex-start;
 	margin: 120px 0 60px 0;
 }
+
 .privacy_policy .header h3.titmain {
 	margin: 0 0 20px 0;
 }
 .privacy_policy .header p.txtR {
 	color: #666666;
 }
-.privacy_policy .tp_version_navi {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
 .privacy_policy .info {
 	margin-bottom: 90px;
 }
 .privacy_policy .table_info {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 .privacy_policy .table_info:last-child {
 	margin-bottom: 0;
 }
 .privacy_policy .table_info .sub_title_03 {
-	margin-bottom: 20px;
+	margin: 60px 0 20px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 1.4;
@@ -370,15 +347,6 @@ table td.pd40 {
 .privacy_policy .sub_title_info li:not(:last-child) {
 	margin-bottom: 14px;
 }
-.privacy_policy .sub_title_info.info_list li::after {
-	position: absolute;
-	top: 9px;
-	left: 0;
-	content: '';
-	width: 2px;
-	height: 2px;
-	background-color: #666;
-}
 .privacy_policy .table-scroll,
 .privacy_policy .table-scroll-all {
 	margin-bottom: 40px;
@@ -388,7 +356,6 @@ table td.pd40 {
 }
 .privacy_policy .responsive_table table tbody tr th {
 	line-height: 1.4;
-	color: #666;
 }
 .privacy_policy .table-scroll-all table tbody tr th {
 	font-weight: 400;
@@ -450,31 +417,49 @@ table td.pd40 {
 .privacy_policy .main_point_date li:not(:last-child) {
 	margin-bottom: 14px;
 }
-
 /* 고객센터
 ***********************************************************************/
+.body_title {
+	margin-bottom: 30px;
+}
+
 .information .content_inner {
 	position: relative;
 }
 
 .information .btn_inquiry {
 	padding: 15px 24px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1;
+	color: #888888;
 	background: #EEEEEE;
 	border: 1px solid #EEEEEE;
 	border-radius: 30px;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 100%;
-	color: #888888;
 }
 
 .information .btn_inquiry:focus,
 .information .btn_inquiry:hover {
 	color: #ffffff;
 	background: #283895;
-	;
 	border: 1px solid #283895;
-	;
+}
+
+.information .basic_table {
+	margin-bottom: 30px;
+}
+.information .basic_table table tbody tr th:first-child {
+	background: #fff;
+}
+.information .basic_table table tbody tr td {
+	color: #222;
+}
+.information p.txt_infoR {
+	line-height: 1.4;
+}
+
+.information p.txt_infoR b {
+	display: block;
 }
 
 /* 사이트맵 */
@@ -508,33 +493,14 @@ table td.pd40 {
 	margin-bottom: 30px;
 }
 
-.sdi_sitemap .sdi_menu i.inquire_btn {
-	display: inline-block;
-	width: 14px;
-	height: 14px;
-	margin-left: 5px;
-	background: url(../images/etc/ico_inquire01.png) no-repeat center / cover;
-}
-
-/* 이용약관 탭 */
-.tp_version_cont{display: none;}
-.tp_version_cont.current{display: inherit;}
-
-.PPtabs {position: absolute;top:0;right:0;z-index: 10;}
-.PPtabs button {position: relative;width: 340px;margin-bottom: 5px;padding: 16px  45px 16px 20px;border-radius:10px;border:1px solid #ddd;background-color: #fff;font-size: 14px;color:#333;text-align: left;line-height: 1;}
-.PPtabs button:after {content:'';position: absolute;top:50%;right:20px;width:16px;height: 16px;background: url('../../assets/images/common/bullet_sn_select.png') no-repeat center center;transform:translateY(-50%);}
-.PPtabs button.on:after {transform:rotate(180deg) translateY(50%);}
-.PPtabs ul {position: absolute;display: none;width: 100%;height: 160px;border-radius:10px;border:1px solid #ddd;background-color: #fff;cursor:pointer;overflow-x:hidden;overflow-y:auto;}
-.PPtabs li {padding: 16px  20px;box-sizing:border-box;font-size: 14px;font-weight: 500;}
-.PPtabs li:hover {color: #435CE7;background: #F6F7FE;border: 0 none;}
-.PPtabs ul.expanded {display: block;}
-.PPtabs ul.expanded li {display: block;}
 
 /* 테블릿
 **********************************************************/
 @media all and (max-width: 1280px) {
 
 	/* 공통 */
+	.pc {display: none;}
+	.mo {display: block;}
 	.wrap section.content .content_inner {
 		padding: 164px 24px 90px;
 	}
@@ -551,7 +517,7 @@ table td.pd40 {
 	/* 고객센터
 	***********************************************************************/
 	.line_b {
-		margin-bottom: 70px;
+		margin-bottom: 60px;
 		border-bottom: 0;
 	}
 
@@ -583,7 +549,7 @@ table td.pd40 {
 
 	/* 보안신고센터
 	***********************************************************************/
-	.security_report p.txt {
+	.security_report p.txtR {
 		margin-top: 16px;
 		line-height: 1.3;
 	}
@@ -607,6 +573,7 @@ table td.pd40 {
 	.security_report .report_cont .item>.txt {
 		padding: 30px;
 		margin-bottom: 16px;
+		border-radius: 14px;
 	}
 	.security_report .report_cont .item>.txt::after {
 		top: 30px;
@@ -619,14 +586,21 @@ table td.pd40 {
 		width: 80%;
 		line-height: 1.3;
 	}
-	.security_report .report_cont .item button {
+	.security_report .report_cont .item .btn {
+		height: 54px;
 		font-size: 16px;
+		line-height: 54px;
 	}
+	
 
 	/* B2B대금결제
 	***********************************************************************/
-	.b2b_billing p.txtR {
+	.b2b_billing h3+p.txtR {
 		margin: 16px 0 70px;
+		line-height: 1.3;
+	}
+	.b2b_billing p.txtR {
+		margin: 16px 0 0;
 		line-height: 1.3;
 	}
 	.b2b_billing p.txt {
@@ -639,17 +613,12 @@ table td.pd40 {
 		display: block;
 	}
 	.b2b_billing .b2b_flow figure {
-		width: 100%;
-		height: auto;
 		max-width: none;
 		max-height: none;
-		text-align: center;
 	}
-	.b2b_billing .b2b_flow figure .web {
-		display: none;
-	}
-	.b2b_billing .b2b_flow figure .mobile {
-		display: block;
+	.b2b_billing .b2b_flow figure img {
+		max-width: 375px;
+		max-height: 354px;
 		margin: 0 auto;
 	}
 	.b2b_billing .b2b_flow ol {
@@ -659,10 +628,11 @@ table td.pd40 {
 	}
 	.b2b_billing .b2b_flow ol.round_num li {
 		margin: 0 0 14px 0;
+		padding-left: 23px;
 		font-size: 16px;
 	}
 	.b2b_billing .b2b_flow ol.round_num li:before {
-		top: 1px;
+		top: 5px;
 	}
 	.b2b_billing .procedure_list>li {
 		padding: 24px;
@@ -671,7 +641,7 @@ table td.pd40 {
 		margin-bottom: 52px;
 	}
 	.b2b_billing .procedure_list>li:not(:last-child)::after {
-		bottom: -30px;
+		bottom: -32px;
 	}
 	.b2b_billing .procedure_list li b {
 		font-size: 16px;
@@ -679,8 +649,8 @@ table td.pd40 {
 	.b2b_billing .procedure_list li .row_table {
 		margin: 16px 0 0;
 	}
-	.b2b_billing .row_table table tbody tr th.p20 {
-		padding: 20px;
+	.b2b_billing .row_table table tbody tr th {
+		padding: 19px;
 		line-height: 1.3;
 	}
 	.b2b_billing .row_table {
@@ -722,14 +692,15 @@ table td.pd40 {
 
 	/* 이용약관
 	***********************************************************************/
-	.privacy_policy .tp_version_navi {
-		position: static;
-		margin-bottom: 30px;
-	}
-	.privacy_policy .header {
+	.privacy_policy .policy_header {
 		margin: 54px 0 30px 0;
+		flex-direction: column;
 	}
-	.privacy_policy .table_info .txt {
+	.privacy_policy .dropdown_menu {
+		margin-top: 30px;
+	}
+
+	.privacy_policy .table_info .txtR {
 		line-height: 1.3;
 	}
 	.privacy_policy .info {
@@ -738,6 +709,7 @@ table td.pd40 {
 	.privacy_policy .info b {
 		margin-bottom: 16px;
 		font-size: 16px;
+		line-height: 1.3;
 	}
 	.privacy_policy .table_info .sub_title_info {
 		/* padding-left: 8px; */
@@ -806,20 +778,12 @@ table td.pd40 {
 	}
 	.sdi_sitemap .titsub1B {
 		margin: 0 0 30px;
-		padding-bottom: 20px;
+		padding-bottom: 14px;
 		border-bottom: 1px solid #ddd;
 	}
 	.sdi_sitemap .sdi_menu_list li:not(:last-child) {
 		margin-bottom: 20px;
 	}
-	.sdi_sitemap .sdi_menu i.inquire_btn {
-		width: 12px;
-		height: 12px;
-		margin-left: 3px;
-	}
-
-	.PPtabs {position: static;top:auto;right: auto;margin-bottom: 40px;}
-	.PPtabs button {width: 100%;}
 }
 
 /* 모바일
@@ -831,7 +795,7 @@ table td.pd40 {
 		display: block;
 	}
 	.titmain {
-		max-width: 176px;
+		/* max-width: 176px; */
 		line-height: 1.3;
 	}
 	ol.round_num li {
@@ -857,12 +821,6 @@ table td.pd40 {
 		margin-top: 60px;
 		font-size: 24px;
 	}
-	.information p.txt {
-		margin-top: 16px;
-		font-size: 16px;
-		line-height: 1.3;
-		color: #666666;
-	}
 	.information p.txt_info {
 		font-size: 14px;
 		line-height: 155%;
@@ -871,6 +829,7 @@ table td.pd40 {
 	}
 	.information .btn_inquiry {
 		min-width: auto;
+		height: 28px;
 		padding: 7px 14px;
 		font-size: 14px;
 	}

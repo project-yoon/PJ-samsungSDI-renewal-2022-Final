@@ -240,16 +240,6 @@ section.content {
     right: 0;
     z-index: 2;
 }
-.main .cont_item.investment .inquire_btn {
-    display: inline-block;
-    padding-right: 23px;
-    padding-bottom: 5px;
-    color: #fff;
-    background: url(../images/main/ico_inquire01.png) no-repeat center / cover;
-    background-size: 14px;
-    background-position: bottom 8px right 2px;
-    border-bottom: 1px solid #fff;
-}
 
 /* sdi_news */
 .main .cont_item.sdi_news .tit_txt a {

@@ -16,6 +16,9 @@ span.pc {position: relative;display: inline-block;z-index: -1;}
     background: url(../images/etc/ico_inquire01.png) no-repeat center / cover;
 }
 
+section.content .content_inner {
+    padding-top: 180px;
+}
 .sub_visual.full h2 {
     position: static;
     transform: none;
@@ -138,7 +141,7 @@ ol.round_num li:last-child {
     border-radius: 10px;
 }
 .tab_nav {
-    margin-bottom: 70px;
+    margin-bottom: 120px;
 }
 
 
@@ -270,6 +273,9 @@ ol.round_num li:last-child {
 .item p {
     line-height: 1.4;
 }
+.business .tab_nav {
+    margin-bottom: 70px;
+}
 
 /* subTab_cont */
 .subTab_cont {
@@ -319,12 +325,15 @@ ol.round_num li:last-child {
 .tab_nav1 {
     margin-bottom: 90px;
 }
+.isi section.content .content_inner {
+    padding-top: 90px;
+}
 .isi .tab_item h3 {
     margin-bottom: 40px;
     line-height: 1.4;
 }
-.isi .tab_item h3.second_tit {
-    margin-top: 90px;
+.isi .tab_item .txt_cont+h3 {
+    margin-top: 120px;
 }
 
 .item_cont .txt_cont b,
@@ -341,7 +350,7 @@ ol.round_num li:last-child {
 .item_cont p,
 .tab_item p {
     line-height: 1.4;
-    color: #666;
+    color: #222;
 }
 
 .img_cont .flex_item_4n {
@@ -393,14 +402,14 @@ ol.round_num li:last-child {
     .isi .mo {
         display: none;
     }
-    .tab_nav .tab_list {
-        display: block !important;
-    }
-    .tab_nav.wide {
+    /* .tab_nav.wide {
         width: calc(100vw);
         margin-left: calc(-50vw + 50%);
         margin-bottom: 35px;
         border-bottom: 1px solid #EEEEEE;
+    } */
+    section.content .content_inner {
+        padding-top: 120px;
     }
 
     /* features_cont */
@@ -517,12 +526,15 @@ ol.round_num li:last-child {
         margin-bottom: 16px;
         line-height: 1.3;
     }
-    .isi .tab_item h3.second_tit {
-        margin-top: 40px;
+    .isi .tab_item .txt_cont+h3 {
+        margin-top: 70px;
     }
     .item_cont .txt_cont:not(:last-child),
     .tab_item .txt_cont:not(:last-child) {
         margin-bottom: 40px;
+    }
+    #tab-panel-02 .tab_item .txt_cont:nth-child(11) {
+        margin-bottom: 70px;
     }
     .item_cont .txt_cont b,
     .tab_item .txt_cont b {
@@ -546,11 +558,11 @@ ol.round_num li:last-child {
         padding: 0;
     }
     
-    .tab_list ul {
-        gap: 0;
+    .tab_nav.wide {
+        margin-bottom: 40px;
     }
     .tab_list ul li {
-        width: calc(100% / 3)!important;
+        /* width: calc(100% / 3)!important; */
     }
     .ess .tab_list ul li {
         width: calc(100% / 4) !important;
@@ -558,8 +570,12 @@ ol.round_num li:last-child {
     .materials .tab_list ul li {
         width: calc(100% / 2) !important;
     }
+    .business .tab_list ul li a,
+    .automotive_battery .tab_list ul li a {
+        padding: 0 20px 14px;
+    }
     .subTab_cont ul.tab_menu {
-        margin-bottom: 20px;
+        margin-bottom: 35px;
         padding: 0 24px;
     }
     .subTab_cont {
@@ -577,12 +593,11 @@ ol.round_num li:last-child {
     .sub_visual.full {
         padding: 0 24px;
     }
-
     section.content .content_inner {
-        padding: 90px 24px;
+        padding-top: 85px;
     }
     .isi section.content .content_inner {
-        padding: 40px 24px 90px ;
+        padding-top: 40px;
     }
     
     /* sub_visual */
@@ -639,10 +654,6 @@ ol.round_num li:last-child {
         width: 100%;
     }
 
-    .tab_nav {
-        margin-bottom: 35px;
-    }
-
     /* info_cont */
     .info_cont {
         display: block !important;
@@ -679,6 +690,5 @@ ol.round_num li:last-child {
     }
 }
 
-@media all and (max-width: 374px) { 
-
+@media all and (max-width: 376px) { 
 }

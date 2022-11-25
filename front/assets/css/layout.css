@@ -4,7 +4,7 @@
 ****************************************************************/
 nav#skip_navi a {
   position: fixed;
-  z-index: 89;
+  z-index: 101;
   top: -999px;
   left: 0px;
   width: 100%;
@@ -16,6 +16,24 @@ nav#skip_navi a {
 }
 nav#skip_navi a:focus {
   top: 0px;
+}
+
+/*button
+********************/
+.inquire_btn {
+  display: inline-block;
+  padding-right: 23px;
+  padding-bottom: 5px;
+  background: url(../images/etc/ico_inquire01.svg) no-repeat center / cover;
+  background-size: 14px auto;
+  background-position: bottom 8px right 2px;
+  border-bottom: 1px solid #222222;
+}
+
+.inquire_btn.wh {
+  background-image: url(../images/main/ico_inquire01.png);
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 /* Header
@@ -823,8 +841,13 @@ section.content .inner {
   border-radius: 10px;
   box-shadow: 5px 10px 24px rgba(34, 34, 34, 0.25);
   background: #fff;
-  z-index: 9999;
+  z-index: 105;
 }
+
+.popup.active {
+  display: block;
+}
+
 .popup .hide_cont input[type="checkbox"] {
   width: 0;
   height: 0;
@@ -878,7 +901,14 @@ section.content .inner {
   border-radius: 0;
   box-shadow: none;
   transition: 0.2 ease;
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
 }
+.popup.full_modal.active {
+  display: flex;
+}
+
 .popup.full_modal .pop_head {
   margin-bottom: 76px;
 }
@@ -886,15 +916,12 @@ section.content .inner {
   text-align: center;
 }
 .popup.full_modal .pop_body {
-  height: 65.55%;
+  height: 100%;
+  overflow: hidden scroll;
 }
 .popup.full_modal .pop_body .pop_inner {
-  padding-right: 20px;
-  margin: 0 auto;
-  width: 1226px;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  margin: 0 auto 180px;
+  width: 1200px;
 }
 .popup.full_modal .pop_body .pop_inner::-webkit-scrollbar {
   width: 6px;
@@ -1063,8 +1090,7 @@ section.content .inner {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: #000000;
-  opacity: 0.4;
+  background-color: #00000066;
 }
 
 /* Footer
@@ -1634,13 +1660,15 @@ dl.search_none li:last-child {
     margin-bottom: 40px;
   }
   .tab_nav.wide {
-    width: auto;
+    width: calc(100vw);
+    margin-left: calc(-50vw + 50%);
+    margin-bottom: 35px;
+    border-bottom: 1px solid #EEEEEE;
+    /* width: auto;
     margin-left: 0;
-    border-bottom: 0;
+    border-bottom: 0; */
   }
-  .tab_nav .tab_list {
-    display: none;
-  }
+
   .tab_nav .dropdown_menu {
     display: block;
   }
@@ -1876,7 +1904,7 @@ dl.search_none li:last-child {
 }
 .sub_nav1 .depth {
   position: relative;
-  width: 100%;
+  width: calc(100% / 3);
   max-width: 380px;
   margin-left: -1px;
 }
@@ -1929,9 +1957,7 @@ dl.search_none li:last-child {
   color: #435ce7;
   font-weight: 500;
 }
-.sub_nav1.type1 .depth {
-  width: 33.27%;
-}
+
 .sub_nav1::after {
   display: none;
 }
@@ -1942,7 +1968,7 @@ body.sticky .sub_nav1 {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 91;
+  z-index: 101;
   background: #fff;
 }
 
@@ -2324,6 +2350,13 @@ body.sticky #header_wrap.none {
 
 /* 모바일 */
 @media all and (max-width: 720px) {
+    /*button
+  ********************/
+  .inquire_btn {
+    padding-bottom: 4px;
+    background-size: 13px auto;
+    background-position: bottom 5px right 2px;
+  }
   /* Header
 	****************************************************************/
   /* utill */
@@ -2469,12 +2502,9 @@ body.sticky #header_wrap.none {
   .popup.full_modal {
     padding-top: 20px;
   }
-  .popup.full_modal .pop_body {
-    height: 85.35%;
-  }
   .popup.full_modal .pop_body .pop_inner {
-    padding-right: 0;
     width: calc(100% - 48px);
+    margin-bottom: 90px;
   }
   .popup.full_modal .pop_body .pop_inner::-webkit-scrollbar {
     display: none;
@@ -2592,6 +2622,10 @@ body.sticky #header_wrap.none {
   .sub_nav1 .home + .depth {
     display: none;
   }
+
+  .sub_nav1 .depth {
+    width: 50%;
+  }
   .sub_nav1 .depth > a {
     padding: 12px 30px 12px 20px;
     line-height: 1.4;
@@ -2601,9 +2635,7 @@ body.sticky #header_wrap.none {
     width: 6px;
     height: 4px;
   }
-  .sub_nav1.type1 .depth {
-    width: 50%;
-  }
+
   .sub_nav1 .depth ul a {
 	font-size: 14px;
   }
@@ -2617,7 +2649,7 @@ body.sticky #header_wrap.none {
   }
 
   .fix_nav {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .fix_nav.on {
     padding-top: 44px;

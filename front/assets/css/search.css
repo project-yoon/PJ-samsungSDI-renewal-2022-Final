@@ -27,13 +27,10 @@
     background: url(../images/common/ico_close_btn.png) no-repeat center / cover;
 }
 
-
 .search_result .tab_nav {
     margin-bottom: 60px;
 }
-.tab_nav .tab_list {
-    display: block;
-}
+
 .tab_nav .dropdown_menu {
     display: none;
 }
@@ -110,9 +107,7 @@
         margin-left: 0;
         border-bottom: 0;
     }
-    .tab_nav .tab_list {
-        display: none;
-    }
+
     .tab_nav .dropdown_menu {
         display: block;
     }

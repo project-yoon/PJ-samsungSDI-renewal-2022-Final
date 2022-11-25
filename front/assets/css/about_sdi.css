@@ -824,9 +824,7 @@ dl.field_info dt img {
     .mo_img {
         display:none;
     }
-    .tab_nav .tab_list {
-        display:block !important;
-    }
+
     .tab_nav.wide {
         width:calc(100vw);
         margin-left:calc(-50vw + 50%);
@@ -912,9 +910,9 @@ dl.field_info dt img {
         overflow:auto;
         height:190px;
     }
-    #sub_history_wrap .tp_version_navi .dropdown_menu > button.on + ul {
+    /* #sub_history_wrap .tp_version_navi .dropdown_menu > button.on + ul {
         display:block;
-    }
+    } */
     #sub_history_wrap .tp_version_navi .dropdown_menu > ul > li {
         width:100%;
     }
@@ -1366,10 +1364,7 @@ dl.field_info dt img {
         height:45px;
         line-height:45px;
     }
-    .about .tab_list ul li.active a:after {
-        top:auto;
-        bottom:0;
-    }
+
     .profile_box .txt_area dt {
         margin-bottom:16px;
     }
@@ -1434,10 +1429,6 @@ dl.field_info dt img {
     .network_cont .tab_list ul a {
         height:45px;
         line-height:45px;
-    }
-    .network_cont .tab_list ul li.active a:after {
-        top:auto;
-        bottom:0;
     }
 
     .network ul.tab_menu {

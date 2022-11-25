@@ -26,48 +26,48 @@ $(document).ready(function() {
 	initTermsPolicyVersionSort() //약관 & 정책 버전별 분류
 })
 */
-function subTab(e) {
+// function subTab(e) {
 
-	$('.PPtabs button').off('click').on('click',function(){
-		$(this).toggleClass('on');
-		$('.PPtabs ul').toggleClass('expanded');
-		tabSeleted();
-	});
+// 	$('.PPtabs button').off('click').on('click',function(){
+// 		$(this).toggleClass('on');
+// 		$('.PPtabs ul').toggleClass('expanded');
+// 		tabSeleted();
+// 	});
 
 
-	// 서브셀렉터 작동
-	var subTab = $('.PPtabs ul li');
-	subTab.off('click').on('click', function(){
-		var tab_id = $(this).attr('data-tab');
-		$([$(this).parent()[0]]).toggleClass('expanded');
-		$(this).addClass('ppactive').siblings('.ppactive').removeClass('ppactive');
-		$(this).parent().parent().parent().find('.tp_version_cont').removeClass('current');
-		$(this).parent().parent().parent().find('#'+tab_id).addClass('current');
-		//$('#'+tab_id).addClass('current');
+// 	// 서브셀렉터 작동
+// 	var subTab = $('.PPtabs ul li');
+// 	subTab.off('click').on('click', function(){
+// 		var tab_id = $(this).attr('data-tab');
+// 		$([$(this).parent()[0]]).toggleClass('expanded');
+// 		$(this).addClass('ppactive').siblings('.ppactive').removeClass('ppactive');
+// 		$(this).parent().parent().parent().find('.tp_version_cont').removeClass('current');
+// 		$(this).parent().parent().parent().find('#'+tab_id).addClass('current');
+// 		//$('#'+tab_id).addClass('current');
 
-		var conText = $(this).text();
-		$(this).parent().parent().find('button').toggleClass('on');
-		$(this).parent().parent().find('button').text(conText);
-	});
-	function motherTab(e) {
-		// 전체 탭을 눌렀을때
-		var $eTarget = $(e.currentTarget); 
-		var $targetPanel = $('[aria-labelledby="' + $eTarget.attr('id') + '"]');
-		$($targetPanel).find('.PPtabs-container .tp_version_cont').removeClass('current');
-		$($targetPanel).find('.PPtabs-container .tp_version_cont:eq(0)').addClass('current');
-		$($targetPanel).siblings().find('.PPtabs-container .tp_version_cont:eq(0)').addClass('current');
+// 		var conText = $(this).text();
+// 		$(this).parent().parent().find('button').toggleClass('on');
+// 		$(this).parent().parent().find('button').text(conText);
+// 	});
+// 	function motherTab(e) {
+// 		// 전체 탭을 눌렀을때
+// 		var $eTarget = $(e.currentTarget); 
+// 		var $targetPanel = $('[aria-labelledby="' + $eTarget.attr('id') + '"]');
+// 		$($targetPanel).find('.PPtabs-container .tp_version_cont').removeClass('current');
+// 		$($targetPanel).find('.PPtabs-container .tp_version_cont:eq(0)').addClass('current');
+// 		$($targetPanel).siblings().find('.PPtabs-container .tp_version_cont:eq(0)').addClass('current');
 
-		var firstTxt = $($targetPanel).find('.PPtabs-container .PPtabs li:eq(0)').text();
+// 		var firstTxt = $($targetPanel).find('.PPtabs-container .PPtabs li:eq(0)').text();
 
-		$('.PPtabs button').removeClass('on').text(firstTxt);
-		$('.PPtabs ul').removeClass('expanded');
-	}
-	$('[role="tab"]').off('click').on('click', motherTab);
+// 		$('.PPtabs button').removeClass('on').text(firstTxt);
+// 		$('.PPtabs ul').removeClass('expanded');
+// 	}
+// 	$('[role="tab"]').off('click').on('click', motherTab);
 
-	var itemAll = $('.tab_list .tab_item a');
+// 	var itemAll = $('.tab_list .tab_item a');
 
 	
-};
+// };
 function tabSeleted(){
 const tabKeyUpEvt = (e) => {
 	init(e);

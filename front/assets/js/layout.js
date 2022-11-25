@@ -537,34 +537,23 @@ function bodyOverflowAntiShaking(overflowHiddenIs) {
     }
 }
 
-// function popEffect() {
-// 	$('.popOpen').off('click').on('click', function(){
-// 		$('#bg_modal').show()
-
-//         if($('.popup.full_modal')) {
-//             $('#bg_modal').hide()
-//         }
-// 		$('html, body').css('overflow','hidden')
-// 	})
-
-// 	$('.popup .btn_close button, .popup .cancel, .popup .close').off('click').on('click', function(){
-// 		$('.popup').hide()
-// 		$('#bg_modal').hide()
-// 		$('html, body').css('overflow','visible')
-// 	})
-// }
 
 function modalShowAndHide() {
-    $('.popOpen').on('click', function(e) { //popup 오픈
+    var popBtn = $('.popOpen'),
+        popId = ''
+        popBg = $('#bg_modal');
+    
+
+    $(popBtn).on('click', function(e) { //popup 오픈
         e.preventDefault();
-        var popId = $(this).attr('data-id');
+        popId = $(this).data('id');
+        var popThis = $(`.popup[data-id='${popId}']`)
 
 		$('html, body').css('overflow','hidden')
-        $(`.popup[data-id="${popId}"]`).attr('tabindex', '0').show().focus();
-        
-        if($('.popup.full_modal')) {
-            $('#bg_modal').hide()
-        }        
+        $(popBg).show()
+
+        $(popThis).attr('tabindex', '0').addClass('active').focus();
+
     })
 	$('.popup .btn_close button, .popup .cancel, .popup .close').off('click').on('click', function(e){
         var popParent = $(this).parent().parent()
@@ -573,8 +562,8 @@ function modalShowAndHide() {
         }else {}
 
         e.preventDefault()
-		$('.popup').hide()
-        $('#bg_modal').hide()
+		$('.popup').removeClass('active')
+        $(popBg).hide()
 		$('html, body').css('overflow','visible')
         $(`.popOpen[data-id=${popParent.data('id')}]`).attr('tabindex', '0').focus()
 	})
