@@ -848,6 +848,19 @@ section.content .inner {
   display: block;
 }
 
+.popup .pop_head {
+  position: relative;
+}
+.popup .pop_head .btn_close {
+  position: absolute;
+  top: 0; right: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../images/common/ico_close_btn.png) no-repeat center;
+  background-size: contain;
+}
+
 .popup .hide_cont input[type="checkbox"] {
   width: 0;
   height: 0;
@@ -882,12 +895,34 @@ section.content .inner {
 .popup .pop_foot .close {
   color: #222;
 }
-.popup .btn_close {
-  position: absolute;
+
+/*toast pop*/
+.pop_toast {
+  visibility: hidden;
+  position: fixed;
+  left: 50%; bottom: 90px;
+  transform: translateX(-50%);
+  z-index: 106;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
 }
-.popup .btn_close button {
-  width: 32px;
-  height: 32px;
+.pop_toast.active {
+  visibility: visible;
+  opacity: 1;
+}
+.pop_toast .toast_message {
+  display: inline-block;
+  background-color: #22222299;
+  color: #fff;
+  border-radius: 16px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.pop_toast .toast_message .point {
+  color: #FF5B5B;
 }
 
 /* full_modal */
@@ -902,7 +937,6 @@ section.content .inner {
   box-shadow: none;
   transition: 0.2 ease;
   /* display: flex; */
-  display: none;
   flex-direction: column;
 }
 .popup.full_modal.active {
@@ -912,17 +946,22 @@ section.content .inner {
 .popup.full_modal .pop_head {
   margin-bottom: 76px;
 }
+
+.popup.full_modal .pop_head .btn_close {
+  right: 80px;
+}
+
 .popup.full_modal .pop_head h3 {
   text-align: center;
 }
 .popup.full_modal .pop_body {
-  height: 100%;
   overflow: hidden scroll;
 }
 .popup.full_modal .pop_body .pop_inner {
+  max-width: 1200px;
   margin: 0 auto 180px;
-  width: 1200px;
 }
+
 .popup.full_modal .pop_body .pop_inner::-webkit-scrollbar {
   width: 6px;
 }
@@ -936,10 +975,6 @@ section.content .inner {
 }
 .popup.full_modal .pop_body .pop_inner .pop_cont {
   width: 100%;
-}
-.popup.full_modal .btn_close {
-  right: 80px;
-  top: 80px;
 }
 
 /* basic_modal */
@@ -1012,10 +1047,6 @@ section.content .inner {
 .popup.basic_modal .pop_foot {
   justify-content: space-between;
 }
-.popup.basic_modal .btn_close {
-  right: 40px;
-  top: 40px;
-}
 
 /* alert_modal */
 .popup.alert_modal {
@@ -1077,7 +1108,7 @@ section.content .inner {
   line-height: 1;
 }
 .popup.alert_modal.type2 .pop_foot a:not(:first-child) {
-  margin-left: 80px;
+  margin-left: 20px;
 }
 
 /* Modal BG
@@ -1085,7 +1116,7 @@ section.content .inner {
 #bg_modal {
   display: none;
   position: fixed;
-  z-index: 11;
+  z-index: 104;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -1803,6 +1834,10 @@ dl.search_none li:last-child {
   }
 }
 @media (max-width: 720px) {
+  /*toast pop*/
+  .pop_toast {
+    bottom: 70px;
+  }
   /* .wrap section.content .content_inner {padding: 118px 24px 90px;} */
   /* popup_search */
   #popup_search {
@@ -2111,10 +2146,7 @@ body.sticky #header_wrap.none {
   /* popup
 	****************************************************************/
   /* common */
-  .popup .btn_close button {
-    width: 21px;
-    height: 21px;
-  }
+
   .popup .btn_area button {
     padding: 0 8px;
     font-size: 16px;
@@ -2125,7 +2157,7 @@ body.sticky #header_wrap.none {
 
   /* full_modal */
   .popup.full_modal .pop_body .pop_inner {
-    width: calc(100% - 80px);
+    margin: 0 40px 90px;
   }
 
   /* basic_modal */
@@ -2152,10 +2184,6 @@ body.sticky #header_wrap.none {
   }
   .popup.basic_modal .pop_foot .copyright {
     margin-bottom: 16px;
-  }
-  .popup.basic_modal .btn_close {
-    right: 21px;
-    height: 21px;
   }
 
   /* alert_modal */
@@ -2498,23 +2526,31 @@ body.sticky #header_wrap.none {
     border-radius: 7px;
   }
 
+  .popup .pop_head {
+    position: relative;
+  }
+  .popup .pop_head .btn_close {
+    width: 24px;
+    height: 24px;
+    background-size: 22px auto;
+  }
+
   /* full_modal */
   .popup.full_modal {
     padding-top: 20px;
   }
+
   .popup.full_modal .pop_body .pop_inner {
-    width: calc(100% - 48px);
-    margin-bottom: 90px;
+    margin: 0 24px 90px;
   }
   .popup.full_modal .pop_body .pop_inner::-webkit-scrollbar {
     display: none;
   }
   .popup.full_modal .pop_head {
-    margin-bottom: 34px;
+    margin-bottom: 20px;
   }
-  .popup.full_modal .btn_close {
+  .popup.full_modal .pop_head .btn_close {
     right: 20px;
-    top: 20px;
   }
 
   /* basic_modal */

@@ -70,6 +70,8 @@
 }
 .accordion > dl.accordion_list > dd ul li p {
     margin-bottom: 38px;
+    font-weight: 500;
+    color: #222;
 }
 .btn_cont a:not(:last-child) {
     margin-right: 20px;
@@ -418,6 +420,7 @@
     border-bottom: 1px solid #ddd;
     padding: 30px 0;
     display: flex;
+    font-weight: 500;
 }
 .disclosure .division_head li,
 .notice .division_head li {
@@ -817,6 +820,9 @@
     .dividend_details .stock_info dt {
         margin-bottom: 14px;
     }
+    .dividend_details .stock_info dd {
+        line-height: 1.3;
+    }
 
     /* 주식정보 - 주주 현황 */
     .shareholders .graph_circle .graph_pic {
@@ -938,6 +944,7 @@
     .notice .division_cont li p.division_date,
     .notice .division_cont li p.division_tit {
         display: block;
+        font-size: 14px;
     }
 
     /* 공시 상세 */

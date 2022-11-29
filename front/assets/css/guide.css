@@ -1129,8 +1129,10 @@ table .td {
 	}
 	/* btn_area */
     .btn.md {
-        max-width: 327px;
         width: 100%;
+        max-width: 327px;
+		height: 54px;
+		line-height: 54px;
     }
 	.notice_txt {
 		font-size: 14px;

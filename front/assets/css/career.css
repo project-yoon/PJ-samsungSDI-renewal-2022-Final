@@ -132,6 +132,19 @@
     transform: translateX(-50%);
     top: -28px;
 }
+.employment .btn_area a {
+    display: inline-block;
+    min-width: 240px;
+    height: 60px;
+    padding: 0 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #DDDDDD;
+    border-radius: 7px;
+}
 
 /* 직무소개
 **********************************************************/
@@ -295,14 +308,17 @@
 }
 .application_view .view_head .tit div.flex {
     justify-content: center;
+    align-items: flex-end;
 }
 .application_view .view_head .tit div.flex span:not(:last-child) {
-    margin-right: 10px;
-    vertical-align: middle;
+    position: relative;
+    margin-right: 20px;
 }
 .application_view .view_head .tit div.flex span:not(:last-child)::after {
     content: "";
-    margin-left: 10px;
+    position: relative;
+    right: -10px;
+    top: 2px;
     display: inline-block;
     width: 1px;
     height: 14px;
@@ -524,7 +540,7 @@
     border-radius: 7px;
     font-size: 18px;
     line-height: 60px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
 }
 .application_view .view_body .btn_area a:hover {
@@ -633,14 +649,7 @@
 .popup.faq_modal h3 + div p a {
     text-decoration: underline;
 }
-.popup.faq_modal .btn_close {
-    right: 54px;
-    top: 58px;
-}
-.popup.faq_modal .btn_close button {
-    width: 32px;
-    height: 32px;
-}
+
 .popup.faq_modal .accordion_list p {
     width: 90%;
 }
@@ -765,6 +774,9 @@
     }
     .job_desc .cont_head h3 {
         margin-bottom: 16px;
+    }
+    .job_desc .cont_head p {
+        line-height: 1.3;
     }
     .job_desc .cont_body .accordion > dl > dt > a p {
         display: none;
@@ -949,8 +961,19 @@
         top: 1.34%;
     }
     .application_view .view_body .btn_area a {
-        max-width: 327px;
         width: 100%;
+        max-width: 327px;
+        height: 54px;
+        line-height: 54px;
+    }
+
+    /* 채용전형
+    **********************************************************/
+    .employment .btn_area a {
+        width: 100%;
+        max-width: 327px;
+        height: 54px;
+        line-height: 54px;
     }
 
     /* SDI_Life */
@@ -980,16 +1003,6 @@
     }
     .popup.faq_modal .pop_body {
         padding-top: 30px;
-    }
-    .popup.faq_modal .btn_close,
-    .popup.img_modal .btn_close {
-        right: 24px;
-        top: 17px;
-    }
-    .popup.faq_modal .btn_close button,
-    .popup.img_modal .btn_close button {
-        width: 21px;
-        height: 21px;
     }
     .popup .accordion_list strong {
         margin-bottom: 16px;

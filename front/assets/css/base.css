@@ -84,7 +84,7 @@ a:active {text-decoration:none;}
 .blocker::-webkit-scrollbar{display:none;}
 label { vertical-align: middle;} /*cursor:pointer;*/
 button {background-color:transparent; cursor:pointer; border:0;}
-input,button,select,textarea {color: #333333;font-family: 'Montserrat', 'NotoKr', sans-serif;font-size: 18px;font-weight: 300;border: 0px;padding: 0px;margin: 0px;background: none;vertical-align: middle;}
+input,button,select,textarea {color: #222;font-family: 'Montserrat', 'NotoKr', sans-serif;font-size: 18px;font-weight: 300;border: 0px;padding: 0px;margin: 0px;background: none;vertical-align: middle;}
 select,input[type="text"],input[type="password"],input[type="email"],input[type="tel"],textarea {line-height: 24px;padding: 9px 20px 10px;height: 40px;border: 1px solid #C7C7C7;box-sizing: border-box;background-color: #ffffff;-webkit-appearance: none;border-radius: 0px;-webkit-border-radius: 0px;}
 select {padding-right: 60px;background: url(../images/template/bullet_select.png) no-repeat calc( 100% - 20px ) center;}
 textarea {padding: 15px 20px;line-height: 28px;resize: none;height: 200px;}

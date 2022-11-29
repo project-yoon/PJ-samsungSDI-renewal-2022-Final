@@ -572,13 +572,34 @@ function modalShowAndHide() {
 	})
 
     $('.pop_quick .btn_top').on('click', function(){
-        var idx = $(this).parent().parent().children('.pop_body').children('.pop_inner')
+        var idx = $(this).parent().parent().children('.pop_body')
         $(idx).animate({scrollTop: 0}, 400)
 
-
-        console.log('aaaa', $(idx).offset().top)
     })
 
+}
+
+
+function showToast () {
+    $('.showToast').on('click', function() {
+        var timer = 0
+        var tarIdx =  $(this).data('id')
+        // console.log(timer)
+
+        if(timer === 0) {
+            $(`.pop_toast[data-id=${tarIdx}]`).addClass('active')
+
+            timer = 1            
+            setTimeout(function() {
+                timer = 0
+                $(`.pop_toast[data-id=${tarIdx}]`).removeClass('active')
+            }, 1000)
+        }
+
+
+
+        
+    })
 }
 
 
@@ -598,4 +619,5 @@ $(document).ready(function() {
     initSubVisual(); //Sub Visual
     // popEffect()//popup
     modalShowAndHide()//popup
+    showToast ()//toast
 })

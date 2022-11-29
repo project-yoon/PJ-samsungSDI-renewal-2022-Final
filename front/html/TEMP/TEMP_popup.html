@@ -259,11 +259,19 @@
 					<h3 class="body_title">Alert Popup</h3>
 				</div>
 				<div class="cont_body">
-					<div style="margin: 10px 0 0px;">
+					<div style="margin: 10px 0 40px;">
 						<button type="button" class="btn lg popOpen" data-id="pop_layout_alert_img" ><span>images alert</span></button>
 						<button type="button" class="btn lg popOpen" data-id="pop_layout_alert_info"><span>info alert</span></button>
 					</div>
-
+				</div>
+				<div class="cont_head">
+					<h3 class="body_title">Toast Popup</h3>
+				</div>
+				<div class="cont_body">
+					<div style="margin: 10px 0 0px;">
+						<button type="button" class="btn lg showToast" data-id="pop_toast" ><span>기본 케이스</span></button>
+						<button type="button" class="btn lg showToast" data-id="pop_toast_att"><span>강조컬러 케이스</span></button>
+					</div>
 				</div>
 				<!-- //컨텐츠 구성 예시 -->
 
@@ -420,7 +428,7 @@
 	</div>
 	<div class="pop_foot flex">
 		<a href="javascript:void(0);" class="cancel">취소</a>
-		<a href="javascript:void(0);" class="check">확인</button>
+		<a href="javascript:void(0);" class="check">확인</a>
 	</div>
 </div>
 <div id="bg_modal" >
@@ -436,6 +444,20 @@
 
 </div> 
 -->
+
+
+<!-- <div class="pop_toast">
+	<p class="toast_message">해당 게시물의 URL이 복사되었습니다.</p>
+</div> -->
+
+<div class="pop_toast" data-id="pop_toast">
+	<p class="toast_message">해당 게시물의 URL이 복사되었습니다.</p>
+</div>
+
+<div class="pop_toast" data-id="pop_toast_att">
+	<p class="toast_message">강조 컬러는 <span class="point">#FF5B5B</span>로 해주세요. 최대 30자까지</p>
+</div>
+
 
 <hr>
 

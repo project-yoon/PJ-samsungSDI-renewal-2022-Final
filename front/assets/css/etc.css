@@ -70,6 +70,10 @@ table td.pd40 {
 	background-color: #222;
 }
 
+.b2b_billing .b2b_flow ol.round_num li:before {
+	top: 5px;
+}
+
 /* 보안신고센터 
 ***********************************************************************/
 .security_report .security_report_container {
@@ -224,7 +228,7 @@ table td.pd40 {
 	position: relative;
 	line-height: 1.4;
 	text-align: left;
-	padding-left: 10px;
+	padding-left: 25px;
 }
 .b2b_billing .sub_title_info li span {
 	display: block;
@@ -630,9 +634,6 @@ table td.pd40 {
 		margin: 0 0 14px 0;
 		padding-left: 23px;
 		font-size: 16px;
-	}
-	.b2b_billing .b2b_flow ol.round_num li:before {
-		top: 5px;
 	}
 	.b2b_billing .procedure_list>li {
 		padding: 24px;
