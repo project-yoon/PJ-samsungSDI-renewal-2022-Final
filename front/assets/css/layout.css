@@ -200,7 +200,7 @@ header.header nav.gnb > ul > li > .depth_menu > ul > li > a {
   transition: 0.3s ease color;
 }
 header.header nav.gnb > ul > li > .depth_menu > ul > li > a.btn_link {
-  color: #222222;
+  color: #435ce7;
   padding-right: 25px;
   margin-right: -25px;
 }
