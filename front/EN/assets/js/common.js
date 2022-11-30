@@ -22,6 +22,7 @@ function initPopCookieSet() {
 // full type check
 function Full_GNB_CHK() {
   const subEl = document.querySelector(".sub_visual");
+  const fullEl = document.querySelector('.full');
   const windowWidth = $(window).width() <= 720;
   if (subEl !== null && windowWidth != true) {
     $(window).on("load scroll", function () {
@@ -57,13 +58,46 @@ function Full_GNB_CHK() {
     });
   } else {
     GNB_FULLCOLOR();
-    $("nav.gnb")
-      .on("mouseenter", function () {
-        GNB_FULLCOLOR();
-      })
-      .on("mouseleave", function () {
-        GNB_FULLCOLOR();
-      });
+        $('nav.gnb')
+        .on("mouseenter",function() {
+            GNB_FULLCOLOR();
+        })
+        .on("mouseleave",function() {
+            GNB_FULLCOLOR();
+        })
+        if (fullEl !== null){
+            $(window).on("load scroll",function() {
+                const SCR_curr = $(this).scrollTop();
+                if (SCR_curr == 0) {
+                    GNB_TRANSPARENT();
+                    $('nav.gnb')
+                    .on("mouseenter",function() {
+                        GNB_FULLCOLOR();
+                    })
+                    .on("mouseleave",function() {
+                        GNB_TRANSPARENT();
+                    })
+                }else if (SCR_curr > 0 ) {
+                    GNB_FULLCOLOR();
+                    $('nav.gnb')
+                    .on("mouseenter",function() {
+                        GNB_FULLCOLOR();
+                    })
+                    .on("mouseleave",function() {
+                        GNB_FULLCOLOR();
+                    })
+                } else {
+                    GNB_TRANSPARENT();
+                    $('nav.gnb')
+                    .on("mouseenter",function() {
+                        GNB_FULLCOLOR();
+                    })
+                    .on("mouseleave",function() {
+                        GNB_TRANSPARENT();
+                    })
+                }
+            });
+        }
   }
   function GNB_TRANSPARENT() {
     $(".header").removeClass("on");
@@ -245,13 +279,19 @@ function initSitemapGnb() {
     //body overflow 처리 및 그로 인한 레이아웃 흔들림 방지
 
     var winW = $(window).width();
-    if (winW > 1280) {
-      pannel.fadeIn(300).addClass("on");
-    } else {
-      sitemap.fadeIn(300).addClass("on");
-      // bgModal.css({ opacity: 0.8 });
-      // bgModal.fadeIn(300);
-    }
+		if(winW < 1280){
+            sitemap.fadeIn(300).addClass('on');	
+		}else{
+			pannel.fadeIn(300).addClass('on');
+			// bgModal.css({"opacity": 0.8})
+	        // bgModal.fadeIn(300);
+		}
+    // if(winW > 1280){
+		// 	pannel.fadeIn(300).addClass('on');
+		// }else{
+		// 	sitemap.fadeIn(300).addClass('on');	
+		// 	bgModal.css({"opacity": 0.8})
+    //   bgModal.fadeIn(300);
   });
   // 패널 끄기
   pannelClose.off("click").on("click", function (e) {
@@ -872,13 +912,14 @@ function tabUI() {
       targetPanelWrap = targetTabWrap.querySelector(".tab_conts");
     };
 
-    tabGroups.forEach((el) => {
-      let contents = el.querySelectorAll(".tab_cont");
-      for (let i = 0; i < contents.length; i++) {
-        contents[i].setAttribute("aria-hidden", "true");
+    //처음 세팅
+    let contsDef = document.querySelectorAll('.tab_cont')
+    contsDef.forEach(el => {
+      for (let i = 0; i < el.classList.length; i++) {
+        el.classList[i] == 'active' ? el.setAttribute('aria-hidden', 'false') : el.setAttribute('aria-hidden', 'true')
       }
-    });
-
+    }) 
+    
     // 클릭 이벤트
     const tabClickEvt = (e) => {
       init(e);
@@ -930,13 +971,12 @@ function tabUI() {
       // 연결 된 tabpanel 숨김 해제
       targetPanelWrap
         .querySelector(`[aria-labelledby="${currentTarget.id}"]`)
-        .setAttribute("aria-hidden", "true");
+        .setAttribute("aria-hidden", "false");
       targetPanelWrap
         .querySelector(`[aria-labelledby="${currentTarget.id}"]`)
         .setAttribute("tabindex", "0");
-      targetPanelWrap.querySelector(
-        `[aria-labelledby="${currentTarget.id}"]`
-      ).style.display = "block";
+      targetPanelWrap
+      .querySelector(`[aria-labelledby="${currentTarget.id}"]`).classList.add('active')
     };
     // tab active remove event
     const tabRemoveEvt = (tabListWrap, tabPanelWrap) => {
@@ -954,9 +994,9 @@ function tabUI() {
       });
       // 기존에 선택 된 tabpanel 숨김
       for (let tabPanel of targetPanelWrap.children) {
-        tabPanel.setAttribute("aria-hidden", "false");
+        tabPanel.setAttribute("aria-hidden", "true");
         tabPanel.setAttribute("tabindex", "-1");
-        tabPanel.style.display = "none";
+        tabPanel.classList.remove('active');
       }
     };
     // 키보드 Home key Event (선택된 탭 리스트 중 첫 번째 리스트로 포커스 이동)
