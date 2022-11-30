@@ -74,17 +74,21 @@
 	.section table td.author {text-align:center; white-space:nowrap;}
 	.section table td ul {list-style:none; margin:0; padding:0; font-style:italic;}
 	.section table td ul li {margin:2px 0;}
+	.section table tr:hover td{background:#eeeff3 !important;}
+	.section table tr.LANG td{border-style: dashed;border-color: #ddd;font-size: 11px;background: #fdfdfd;}
+	.section table tr.LANG td:first-child{border-left-style: solid;border-left-color: #ccc;}
+	.section table tr.LANG td:last-child{border-right-style: solid;border-right-color: #ccc;}
 	.section table tr.tr-bgtype2 td {background:#f4f4f4; color:#666;}
-	.section table tr:hover td {background:#eeeff3;}
 	.section table tr.tr-bgtype3 td {background:#fdfce6; color:#666;}
 	.section table tr.tr-bgtype4 td {background:#fde6e9; color:#666;}
 	.modi{position: relative;color: #cc4949;}
 	.modi::after{content: 'MODIFY';font-size: 6px;color: #fff;line-height: 0.7;text-decoration: underline;position: absolute;bottom: 1px;left: -40px;background:#ff1e1e;height: 11px;}/*#e26666*/
 	/* .name, .date {display: none;} */
+	.hide {display: none;}
 	.iframe_wrap {position: relative;}
 	.btn_togglebtn {display: inline-block;padding: 2px 5px;margin: 0;background: #9f7952;border: 0;border-radius: 3px;color: #fff;font: bold 12px/1.5 'Malgun Gothic', Tahoma, Sans-serif;cursor: pointer;z-index: 20;}
 	.iframe_wrap iframe {overflow: auto;position: fixed;right: 50px;border: 1px solid #ccc;width: 375px;width: 393px;height: 600px;background: #fff;z-index: 10;}
-	.no a {pointer-events: none;color: #cdd1d7;}
+	.no, .no a {pointer-events: none;color: #cdd1d7;}
 </style>
 
 </head>
@@ -190,7 +194,7 @@
 						<td></td>
 						<td></td>
 						<td>/TEMP/</td>
-						<td class="file"><a target="_blank" href="front/html/TEMP/TEMP_sub_basic.html">Basic layout</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/TEMP/TEMP_sub_basic.html">Basic layout</a></td>
 						<td class="mo"><a href="guide/html/guide/guide_rule_CSS.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name"></td>
@@ -306,12 +310,27 @@
 					<tr>
 						<td class="tit"></td>
 						<td></td>
+						<td>Popup</td>
+						<td></td>
+						<td></td>
+						<td>/TEMP/</td>
+						<td class="file"><a target="_blank" href="front/KR/html/TEMP/TEMP_popup.html">Layer popup</a></td>
+						<td class="mo"><a href="front/KR/html/TEMP/TEMP_popup.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name"></td>
+						<td class="date"></td>
+						<td class="desc">상시업데이트</td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
 						<td>Edit Conts</td>
 						<td></td>
 						<td></td>
 						<td>/guide/</td>
-						<td class="file"><a target="_blank" href="front/html/career/career_tab04_view_temp.html">Edit Conts</a></td>
-						<td class="mo"><a href="front/html/career/career_tab04_view_temp.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/career_tab04_view_temp.html">Edit Conts</a></td>
+						<td class="mo"><a href="front/KR/html/career/career_tab04_view_temp.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name"></td>
 						<td class="date"></td>
@@ -353,42 +372,66 @@
 						<td></td>
 						<td></td>
 						<td>/main/</td>
-						<td class="file no"><a target="_blank" href="guide/html/guide/index.html">index</a></td>
-						<td class="mo no"><a href="guide/html/guide/index.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">○</td>
+						<td class="file"><a target="_blank" href="front/KR/html/main/index.html">index</a></td>
+						<td class="mo"><a href="front/KR/html/main/index.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
 						<td class="name">2022-11-18</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em>스크롤모션</em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
-						<td class="desc">[PC] GNB 변경 5주차 예정</td>
-						<td class="note"><em>스크롤모션 포함</em></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
 					</tr>
 					<tr>
-						<td class="tit">GNB</td>
-						<td></td>
+						<td class="tit">HEADER</td>
+						<td>GNB</td>
 						<td></td>
 						<td></td>
 						<td></td>
 						<td>/main/</td>
-						<!-- <td class="file no"><a target="_blank" href="guide/html/guide/index.html">index</a></td> -->
-						<td class="file"><a target="_blank" href="front/html/TEMP/TEMP_sub_GNB.html">GNB</a></td>
-						<td class="mo"><a href="front/html/TEMP/TEMP_sub_GNB.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/TEMP/TEMP_sub_GNB.html">GNB</a></td>
+						<td class="mo"><a href="front/KR/html/TEMP/TEMP_sub_GNB.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-11-18</td>
 						<td class="date"></td>
 						<td class="desc"></td>
 						<td class="note"><em></em></td>
 					</tr>
-					<tr>
-						<td class="tit"></td>
-						<td>팝업</td>
-						<td>(레이어팝업)</td>
-						<td></td>
-						<td></td>
-						<td>/main/</td>
-						<td class="file"><a target="_blank" href="front/html/TEMP/TEMP_popup.html">Layer popup</a></td>
-						<td class="mo"><a href="front/html/TEMP/TEMP_popup.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">●</td>
-						<td class="name">2022-11-04</td>
-						<td class="date"></td>
+					<tr class="LANG">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file no" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">2022-12-02</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -399,11 +442,31 @@
 						<td></td>
 						<td></td>
 						<td>/main/</td>
-						<td class="file"><a target="_blank" href="front/html/main/key_info.html">key Info popup</a></td>
-						<td class="mo"><a href="front/html/main/key_info.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/main/key_info.html">key Info popup</a></td>
+						<td class="mo"><a href="front/KR/html/main/key_info.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-11-04</td>
 						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file no" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">2022-12-02</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -414,13 +477,33 @@
 						<td></td>
 						<td></td>
 						<td>/main/</td>
-						<td class="file"><a target="_blank" href="front/html/main/pannel.html">pannel</a></td>
-						<td class="mo no"><a href="front/html/main/pannel.html" class="btnIframe">모바일없음</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/main/pannel.html">pannel</a></td>
+						<td class="mo no"><a href="front/KR/html/main/pannel.html" class="btnIframe">only-PC</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-11-04</td>
 						<td class="date"></td>
 						<td class="desc"></td>
 						<td class="note"><em> PC 전용 </em></td>
+					</tr>
+					<tr class="LANG">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file no" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">2022-12-02</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
 					</tr>
 					<tr>
 						<td class="tit"></td>
@@ -429,12 +512,32 @@
 						<td></td>
 						<td></td>
 						<td>/search/</td>
-						<td class="file"><a target="_blank" href="front/html/search/search.html">search popup</a></td>
-						<td class="mo"><a href="front/html/search/search.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/search/search.html">search popup</a></td>
+						<td class="mo"><a href="front/KR/html/search/search.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date"></td>
 						<td class="desc">search 카테고리와 동일</td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
 				</tbody>
@@ -472,13 +575,31 @@
 						<td></td>
 						<td></td>
 						<td>/about_sdi/</td>
-						<!-- <td class="file"><a target="_blank" href="front/html/about_sdi/index.html">index</a></td> -->
-						<!-- <td class="mo"><a href="front/html/about_sdi/index.html" class="btnIframe">미리보기</a></td> -->
-						<td class="file"><a target="_blank" href="front/html/about_sdi/index.html">index</a></td>
-						<td class="mo"><a href="front/html/about_sdi/index.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/about_sdi/index.html">index</a></td>
+						<td class="mo"><a href="front/KR/html/about_sdi/index.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-11-04</td>
 						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -489,14 +610,34 @@
 						<td></td>
 						<td></td>
 						<td>/about_sdi/</td>
-						<td class="file"><a target="_blank" href="front/html/about_sdi/history.html">history</a></td>
-						<td class="mo"><a href="front/html/about_sdi/history.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/about_sdi/history.html">history</a></td>
+						<td class="mo"><a href="front/KR/html/about_sdi/history.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-11-04</td>
 						<td class="date"></td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>	
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
 					<tr>
 						<td class="tit"></td>
 						<td>CI</td>
@@ -504,16 +645,34 @@
 						<td></td>
 						<td></td>
 						<td>/about_sdi/</td>
-						<!-- <td class="file"><a target="_blank" href="front/html/about_sdi/ci.html">ci</a></td> -->
-						<!-- <td class="mo"><a href="front/html/about_sdi/ci.html" class="btnIframe">미리보기</a></td> -->
-						<td class="file"><a target="_blank" href="front/html/about_sdi/ci.html">ci</a></td>
-						<td class="mo"><a href="front/html/about_sdi/ci.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/about_sdi/ci.html">ci</a></td>
+						<td class="mo"><a href="front/KR/html/about_sdi/ci.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-11-04</td>
-						<td class="date"></td>
+						<td class="date">2022-11-10</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>	
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
 					<tr>
 						<td class="tit"></td>
 						<td>R&D</td>
@@ -521,16 +680,34 @@
 						<td></td>
 						<td></td>
 						<td>/about_sdi/</td>
-						<!-- <td class="file"><a target="_blank" href="front/html/about_sdi/research_development.html">research_development</a></td> -->
-						<!-- <td class="mo"><a href="front/html/about_sdi/research_development.html" class="btnIframe">미리보기</a></td> -->
-						<td class="file"><a target="_blank" href="front/html/about_sdi/research_development.html">research_development</a></td>
-						<td class="mo"><a href="front/html/about_sdi/research_development.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/about_sdi/research_development.html">research_development</a></td>
+						<td class="mo"><a href="front/KR/html/about_sdi/research_development.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-11-04</td>
 						<td class="date"></td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>	
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
 					<tr>
 						<td class="tit"></td>
 						<td>Global Network</td>
@@ -538,16 +715,34 @@
 						<td></td>
 						<td></td>
 						<td>/about_sdi/</td>
-						<!-- <td class="file"><a target="_blank" href="front/html/about_sdi/global_network.html">global_network</a></td> -->
-						<!-- <td class="mo"><a href="front/html/about_sdi/global_network.html" class="btnIframe">미리보기</a></td> -->
-						<td class="file"><a target="_blank" href="front/html/about_sdi/global_network.html">global_network</a></td>
-						<td class="mo"><a href="front/html/about_sdi/global_network.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/about_sdi/global_network.html">global_network</a></td>
+						<td class="mo"><a href="front/KR/html/about_sdi/global_network.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-11-04</td>
 						<td class="date"></td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>	
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
@@ -584,8 +779,8 @@
 						<td></td>
 						<td></td>
 						<td>/career/</td>
-						<td class="file"><a target="_blank" href="front/html/career/index.html">index</a></td>
-						<td class="mo"><a href="front/html/career/index.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/index.html">index</a></td>
+						<td class="mo"><a href="front/KR/html/career/index.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date"></td>
@@ -599,8 +794,8 @@
 						<td>탭 1</td>
 						<td></td>
 						<td>/career/</td>
-						<td class="file"><a target="_blank" href="front/html/career/career_tab01.html">career_tab01</a></td>
-						<td class="mo"><a href="front/html/career/career_tab01.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/career_tab01.html">career_tab01</a></td>
+						<td class="mo"><a href="front/KR/html/career/career_tab01.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
@@ -614,11 +809,31 @@
 						<td>탭 2</td>
 						<td></td>
 						<td>/career/</td>
-						<td class="file"><a target="_blank" href="front/html/career/career_tab02.html">career_tab02</a></td>
-						<td class="mo"><a href="front/html/career/career_tab02.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/career_tab02.html">career_tab02</a></td>
+						<td class="mo"><a href="front/KR/html/career/career_tab02.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-31</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -629,8 +844,8 @@
 						<td>탭 3</td>
 						<td></td>
 						<td>/career/</td>
-						<td class="file"><a target="_blank" href="front/html/career/career_tab03.html">career_tab03</a></td>
-						<td class="mo"><a href="front/html/career/career_tab03.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/career_tab03.html">career_tab03</a></td>
+						<td class="mo"><a href="front/KR/html/career/career_tab03.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
@@ -644,8 +859,8 @@
 						<td>탭 4</td>
 						<td>목록</td>
 						<td>/career/</td>
-						<td class="file"><a target="_blank" href="front/html/career/career_tab04.html">career_tab04</a></td>
-						<td class="mo"><a href="front/html/career/career_tab04.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/career_tab04.html">career_tab04</a></td>
+						<td class="mo"><a href="front/KR/html/career/career_tab04.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
@@ -659,8 +874,8 @@
 						<td></td>
 						<td>상세</td>
 						<td>/career/</td>
-						<td class="file"><a target="_blank" href="front/html/career/career_tab04_view.html">career_tab04_view</a></td>
-						<td class="mo"><a href="front/html/career/career_tab04_view.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/career_tab04_view.html">career_tab04_view</a></td>
+						<td class="mo"><a href="front/KR/html/career/career_tab04_view.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
@@ -674,8 +889,8 @@
 						<td></td>
 						<td>팝업</td>
 						<td>/career/</td>
-						<td class="file"><a target="_blank" href="front/html/career/career_tab04_view_02.html">career_tab04_view_02</a></td>
-						<td class="mo"><a href="front/html/career/career_tab04_view_02.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/career_tab04_view_02.html">career_tab04_view_02</a></td>
+						<td class="mo"><a href="front/KR/html/career/career_tab04_view_02.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
@@ -689,9 +904,9 @@
 						<td>팝업</td>
 						<td></td>
 						<td>/career/</td>
-						<td class="file"><a target="_blank" href="front/html/career/career_faq_popup.html">career_faq_popup</a></td>
-						<!-- <td class="file"><a target="_blank" href="front/html/career/career_tab04_view_02.html">career_tab04_view_02</a></td> -->
-						<td class="mo"><a href="front/html/career/career_faq_popup.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/career_faq_popup.html">career_faq_popup</a></td>
+						<!-- <td class="file"><a target="_blank" href="front/KR/html/career/career_tab04_view_02.html">career_tab04_view_02</a></td> -->
+						<td class="mo"><a href="front/KR/html/career/career_faq_popup.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
@@ -705,8 +920,8 @@
 						<td></td>
 						<td></td>
 						<td>/career/</td>
-						<td class="file"><a target="_blank" href="front/html/career/career_life.html">career_life</a></td>
-						<td class="mo"><a href="front/html/career/career_life.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/career_life.html">career_life</a></td>
+						<td class="mo"><a href="front/KR/html/career/career_life.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
@@ -720,8 +935,8 @@
 						<td></td>
 						<td></td>
 						<td>/career/</td>
-						<td class="file"><a target="_blank" href="front/html/career/career_life_view.html">career_life_view</a></td>
-						<td class="mo"><a href="front/html/career/career_life_view.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/career/career_life_view.html">career_life_view</a></td>
+						<td class="mo"><a href="front/KR/html/career/career_life_view.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
@@ -763,11 +978,31 @@
 						<td></td>
 						<td></td>
 						<td>/sdi_now/</td>
-						<td class="file"><a target="_blank" href="front/html/sdi_now/index.html">index</a></td>
-						<td class="mo"><a href="front/html/sdi_now/index.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/sdi_now/index.html">index</a></td>
+						<td class="mo"><a href="front/KR/html/sdi_now/index.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -778,11 +1013,31 @@
 						<td></td>
 						<td></td>
 						<td>/sdi_now/</td>
-						<td class="file"><a target="_blank" href="front/html/sdi_now/news_view.html">news_view</a></td>
-						<td class="mo"><a href="front/html/sdi_now/news_view.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/sdi_now/news_view.html">news_view</a></td>
+						<td class="mo"><a href="front/KR/html/sdi_now/news_view.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -793,11 +1048,31 @@
 						<td></td>
 						<td></td>
 						<td>/sdi_now/</td>
-						<td class="file"><a target="_blank" href="front/html/sdi_now/column.html">column</a></td>
-						<td class="mo"><a href="front/html/sdi_now/column.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/sdi_now/column.html">column</a></td>
+						<td class="mo"><a href="front/KR/html/sdi_now/column.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -808,11 +1083,31 @@
 						<td></td>
 						<td></td>
 						<td>/sdi_now/</td>
-						<td class="file"><a target="_blank" href="front/html/sdi_now/column_view.html">column_view</a></td>
-						<td class="mo"><a href="front/html/sdi_now/column_view.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/sdi_now/column_view.html">column_view</a></td>
+						<td class="mo"><a href="front/KR/html/sdi_now/column_view.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -823,8 +1118,8 @@
 						<td></td>
 						<td></td>
 						<td>/sdi_now/</td>
-						<td class="file"><a target="_blank" href="front/html/sdi_now/media.html">media</a></td>
-						<td class="mo"><a href="front/html/sdi_now/media.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/sdi_now/media.html">media</a></td>
+						<td class="mo"><a href="front/KR/html/sdi_now/media.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
@@ -838,8 +1133,8 @@
 						<td></td>
 						<td></td>
 						<td>/sdi_now/</td>
-						<td class="file"><a target="_blank" href="front/html/sdi_now/media_view.html">media_view</a></td>
-						<td class="mo"><a href="front/html/sdi_now/media_view.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/sdi_now/media_view.html">media_view</a></td>
+						<td class="mo"><a href="front/KR/html/sdi_now/media_view.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-26</td>
@@ -881,11 +1176,31 @@
 						<td></td>
 						<td></td>
 						<td>/etc/</td>
-						<td class="file"><a target="_blank" href="front/html/search/search.html">search</a></td>
-						<td class="mo"><a href="front/html/search/search.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/search/search.html">search</a></td>
+						<td class="mo"><a href="front/KR/html/search/search.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-24</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -896,11 +1211,31 @@
 						<td></td>
 						<td></td>
 						<td>/etc/</td>
-						<td class="file"><a target="_blank" href="front/html/search/search_result.html">search_result</a></td>
-						<td class="mo"><a href="front/html/search/search_result.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/search/search_result.html">search_result</a></td>
+						<td class="mo"><a href="front/KR/html/search/search_result.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-27</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -911,11 +1246,31 @@
 						<td></td>
 						<td></td>
 						<td>/etc/</td>
-						<td class="file"><a target="_blank" href="front/html/search/search_not_found.html">search_not_found</a></td>
-						<td class="mo"><a href="front/html/search/search_not_found.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/search/search_not_found.html">search_not_found</a></td>
+						<td class="mo"><a href="front/KR/html/search/search_not_found.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-21</td>
 						<td class="date">2022-10-24</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -954,11 +1309,31 @@
 						<td></td>
 						<td></td>
 						<td>/business/</td>
-						<td class="file"><a target="_blank" href="front/html/business/index.html">index</a></td>
-						<td class="mo"><a href="front/html/business/index.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/business/index.html">index</a></td>
+						<td class="mo"><a href="front/KR/html/business/index.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date"></td>
+						<td class="date">2022-11-10</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -969,11 +1344,31 @@
 						<td></td>
 						<td></td>
 						<td>/business/</td>
-						<td class="file"><a target="_blank" href="front/html/business/automotive_battery.html">automotive_battery</a></td>
-						<td class="mo"><a href="front/html/business/automotive_battery.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/business/automotive_battery.html">automotive_battery</a></td>
+						<td class="mo"><a href="front/KR/html/business/automotive_battery.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date"></td>
+						<td class="date">2022-11-10</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -984,11 +1379,31 @@
 						<td></td>
 						<td></td>
 						<td>/business/</td>
-						<td class="file"><a target="_blank" href="front/html/business/ess.html">ess</a></td>
-						<td class="mo"><a href="front/html/business/ess.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/business/ess.html">ess</a></td>
+						<td class="mo"><a href="front/KR/html/business/ess.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date"></td>
+						<td class="date">2022-11-10</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -999,11 +1414,31 @@
 						<td></td>
 						<td></td>
 						<td>/business/</td>
-						<td class="file"><a target="_blank" href="front/html/business/electronic_materials.html">electronic_materials</a></td>
-						<td class="mo"><a href="front/html/business/electronic_materials.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/business/electronic_materials.html">electronic_materials</a></td>
+						<td class="mo"><a href="front/KR/html/business/electronic_materials.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date"></td>
+						<td class="date">2022-11-10</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1014,11 +1449,31 @@
 						<td></td>
 						<td></td>
 						<td>/business/</td>
-						<td class="file"><a target="_blank" href="front/html/business/isi.html">isi</a></td>
-						<td class="mo"><a href="front/html/business/isi.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/business/isi.html">isi</a></td>
+						<td class="mo"><a href="front/KR/html/business/isi.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
 						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1057,11 +1512,31 @@
 						<td></td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/index.html">index</a></td>
-						<td class="mo"><a href="front/html/investment/index.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/index.html">index</a></td>
+						<td class="mo"><a href="front/KR/html/investment/index.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1072,11 +1547,31 @@
 						<td>탭 1</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/stock_tab01.html">stock_tab01</a></td>
-						<td class="mo"><a href="front/html/investment/stock_tab01.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/stock_tab01.html">stock_tab01</a></td>
+						<td class="mo"><a href="front/KR/html/investment/stock_tab01.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1087,11 +1582,31 @@
 						<td>탭 2</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/stock_tab02.html">stock_tab02</a></td>
-						<td class="mo"><a href="front/html/investment/stock_tab02.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/stock_tab02.html">stock_tab02</a></td>
+						<td class="mo"><a href="front/KR/html/investment/stock_tab02.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1102,11 +1617,31 @@
 						<td>탭 3</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/stock_tab03.html">stock_tab03</a></td>
-						<td class="mo"><a href="front/html/investment/stock_tab03.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/stock_tab03.html">stock_tab03</a></td>
+						<td class="mo"><a href="front/KR/html/investment/stock_tab03.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1117,11 +1652,31 @@
 						<td>탭 4</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/stock_tab04.html">stock_tab04</a></td>
-						<td class="mo"><a href="front/html/investment/stock_tab04.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/stock_tab04.html">stock_tab04</a></td>
+						<td class="mo"><a href="front/KR/html/investment/stock_tab04.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1132,14 +1687,34 @@
 						<td>탭 1</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/financial_tab01.html">financial_tab01</a></td>
-						<td class="mo"><a href="front/html/investment/financial_tab01.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/financial_tab01.html">financial_tab01</a></td>
+						<td class="mo"><a href="front/KR/html/investment/financial_tab01.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
-					</tr>					
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
 					<tr>
 						<td class="tit"></td>
 						<td></td>
@@ -1147,11 +1722,31 @@
 						<td>탭 2</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/financial_tab02.html">financial_tab02</a></td>
-						<td class="mo"><a href="front/html/investment/financial_tab02.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/financial_tab02.html">financial_tab02</a></td>
+						<td class="mo"><a href="front/KR/html/investment/financial_tab02.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1162,11 +1757,31 @@
 						<td>탭 3</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/financial_tab03.html">financial_tab03</a></td>
-						<td class="mo"><a href="front/html/investment/financial_tab03.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/financial_tab03.html">financial_tab03</a></td>
+						<td class="mo"><a href="front/KR/html/investment/financial_tab03.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1177,11 +1792,11 @@
 						<td>탭 4</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/financial_tab04.html">financial_tab04</a></td>
-						<td class="mo"><a href="front/html/investment/financial_tab04.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/financial_tab04.html">financial_tab04</a></td>
+						<td class="mo"><a href="front/KR/html/investment/financial_tab04.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1192,11 +1807,31 @@
 						<td>탭 5</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/financial_tab05.html">financial_tab05</a></td>
-						<td class="mo"><a href="front/html/investment/financial_tab05.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/financial_tab05.html">financial_tab05</a></td>
+						<td class="mo"><a href="front/KR/html/investment/financial_tab05.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1207,11 +1842,31 @@
 						<td>탭 1</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/corporate_tab01.html">corporate_tab01</a></td>
-						<td class="mo"><a href="front/html/investment/corporate_tab01.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/corporate_tab01.html">corporate_tab01</a></td>
+						<td class="mo"><a href="front/KR/html/investment/corporate_tab01.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1222,11 +1877,31 @@
 						<td>탭 2</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/corporate_tab02.html">corporate_tab02</a></td>
-						<td class="mo"><a href="front/html/investment/corporate_tab02.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/corporate_tab02.html">corporate_tab02</a></td>
+						<td class="mo"><a href="front/KR/html/investment/corporate_tab02.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1237,11 +1912,31 @@
 						<td>탭 3</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/corporate_tab03.html">corporate_tab03</a></td>
-						<td class="mo"><a href="front/html/investment/corporate_tab03.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/corporate_tab03.html">corporate_tab03</a></td>
+						<td class="mo"><a href="front/KR/html/investment/corporate_tab03.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1252,11 +1947,31 @@
 						<td>탭 4</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/corporate_tab04.html">corporate_tab04</a></td>
-						<td class="mo"><a href="front/html/investment/corporate_tab04.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/corporate_tab04.html">corporate_tab04</a></td>
+						<td class="mo"><a href="front/KR/html/investment/corporate_tab04.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1267,11 +1982,11 @@
 						<td>탭 1</td>
 						<td></td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/disclosure_tab01.html">disclosure_tab01</a></td>
-						<td class="mo"><a href="front/html/investment/disclosure_tab01.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/investment/disclosure_tab01.html">disclosure_tab01</a></td>
+						<td class="mo"><a href="front/KR/html/investment/disclosure_tab01.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1282,12 +1997,12 @@
 						<td>탭 2</td>
 						<td>목록</td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/disclosure_tab02.html">disclosure_tab02</a></td>
-						<td class="mo"><a href="front/html/investment/disclosure_tab02.html" class="btnIframe">미리보기</a></td>
-						<!-- <td class="mo no"><a href="front/html/investment/ir_tab02.html" class="btnIframe">미리보기</a></td> -->
+						<td class="file"><a target="_blank" href="front/KR/html/investment/disclosure_tab02.html">disclosure_tab02</a></td>
+						<td class="mo"><a href="front/KR/html/investment/disclosure_tab02.html" class="btnIframe">미리보기</a></td>
+						<!-- <td class="mo no"><a href="front/KR/html/investment/ir_tab02.html" class="btnIframe">미리보기</a></td> -->
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1298,12 +2013,12 @@
 						<td></td>
 						<td>상세</td>
 						<td>/investment/</td>
-						<td class="file"><a target="_blank" href="front/html/investment/disclosure_view.html">disclosure_view</a></td>
-						<td class="mo"><a href="front/html/investment/disclosure_view.html" class="btnIframe">미리보기</a></td>
-						<!-- <td class="mo no"><a href="front/html/investment/ir_tab02_view.html" class="btnIframe">미리보기</a></td> -->
+						<td class="file"><a target="_blank" href="front/KR/html/investment/disclosure_view.html">disclosure_view</a></td>
+						<td class="mo"><a href="front/KR/html/investment/disclosure_view.html" class="btnIframe">미리보기</a></td>
+						<!-- <td class="mo no"><a href="front/KR/html/investment/ir_tab02_view.html" class="btnIframe">미리보기</a></td> -->
 						<td class="stat">●</td>
 						<td class="name">2022-10-28</td>
-						<td class="date">2022-11-01</td>
+						<td class="date">2022-11-10<del>2022-11-01</del></td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1312,7 +2027,6 @@
 		</div>
 	</div>
 	<!-- //INVESTMENT -->
-
 	<!-- ESG -->
 	<div class="section">
 		<h2 class="title" style="background:#1c5cb0;color:#ffffff;">ESG</h2>
@@ -1343,12 +2057,32 @@
 						<td>탭 1</td>
 						<td></td>
 						<td>/esg/</td>
-						<!-- <td class="file"><a target="_blank" href="front/html/esg/sustainability_tab01.html">sustainability_tab01</a></td> -->
-						<!-- <td class="mo"><a href="front/html/esg/sustainability_tab01.html" class="btnIframe">미리보기</a></td> -->
-						<td class="file no"><a target="_blank" href="javascript:void(0);">sustainability_tab01</a></td>
-						<td class="mo no"><a href="javascript:void(0);" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<!-- <td class="file"><a target="_blank" href="front/KR/html/esg/sustainability_tab01.html">sustainability_tab01</a></td> -->
+						<!-- <td class="mo"><a href="front/KR/html/esg/sustainability_tab01.html" class="btnIframe">미리보기</a></td> -->
+						<td class="file"><a target="_blank" href="front/KR/html/esg/sustainability_tab01.html">sustainability_tab01</a></td>
+						<td class="mo"><a href="front/KR/html/esg/sustainability_tab01.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1360,10 +2094,30 @@
 						<td>탭 2</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/sustainability_tab02.html">sustainability_tab02</a></td>
-						<td class="mo no"><a href="front/html/esg/sustainability_tab02.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/sustainability_tab02.html">sustainability_tab02</a></td>
+						<td class="mo"><a href="front/KR/html/esg/sustainability_tab02.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1375,10 +2129,30 @@
 						<td>탭 3</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/sustainability_tab03.html">sustainability_tab03</a></td>
-						<td class="mo no"><a href="front/html/esg/sustainability_tab03.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/sustainability_tab03.html">sustainability_tab03</a></td>
+						<td class="mo"><a href="front/KR/html/esg/sustainability_tab03.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1390,10 +2164,30 @@
 						<td>탭 4</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/sustainability_tab04.html">sustainability_tab04</a></td>
-						<td class="mo no"><a href="front/html/esg/sustainability_tab04.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/sustainability_tab04.html">sustainability_tab04</a></td>
+						<td class="mo"><a href="front/KR/html/esg/sustainability_tab04.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1405,10 +2199,30 @@
 						<td>탭 5</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/sustainability_tab05.html">sustainability_tab05</a></td>
-						<td class="mo no"><a href="front/html/esg/sustainability_tab05.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/sustainability_tab05.html">sustainability_tab05</a></td>
+						<td class="mo"><a href="front/KR/html/esg/sustainability_tab05.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1420,10 +2234,30 @@
 						<td>탭 1</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/environment_tab01.html">environment_tab01</a></td>
-						<td class="mo no"><a href="front/html/esg/environment_tab01.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/environment_tab01.html">environment_tab01</a></td>
+						<td class="mo"><a href="front/KR/html/esg/environment_tab01.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1435,10 +2269,30 @@
 						<td>탭 2</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/environment_tab02.html">environment_tab02</a></td>
-						<td class="mo no"><a href="front/html/esg/environment_tab02.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/environment_tab02.html">environment_tab02</a></td>
+						<td class="mo"><a href="front/KR/html/esg/environment_tab02.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1450,10 +2304,30 @@
 						<td>탭 1</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/social_tab01.html">social_tab01</a></td>
-						<td class="mo no"><a href="front/html/esg/social_tab01.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/social_tab01.html">social_tab01</a></td>
+						<td class="mo"><a href="front/KR/html/esg/social_tab01.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1465,10 +2339,30 @@
 						<td>탭 2</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/social_tab02.html">social_tab02</a></td>
-						<td class="mo no"><a href="front/html/esg/social_tab021.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/social_tab02.html">social_tab02</a></td>
+						<td class="mo"><a href="front/KR/html/esg/social_tab021.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
 						<td class="name">2022-11-18</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1480,10 +2374,30 @@
 						<td>탭 3</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/social_tab03.html">social_tab03</a></td>
-						<td class="mo no"><a href="front/html/esg/social_tab03.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/social_tab03.html">social_tab03</a></td>
+						<td class="mo"><a href="front/KR/html/esg/social_tab03.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1495,10 +2409,30 @@
 						<td>탭 4</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/social_tab04.html">social_tab04</a></td>
-						<td class="mo no"><a href="front/html/esg/social_tab04.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/social_tab04.html">social_tab04</a></td>
+						<td class="mo"><a href="front/KR/html/esg/social_tab04.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1510,11 +2444,31 @@
 						<td>탭 5</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file"><a target="_blank" href="front/html/esg/social_tab05.html">social_tab05</a></td>
-						<td class="mo"><a href="front/html/esg/social_tab05.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/social_tab05.html">social_tab05</a></td>
+						<td class="mo"><a href="front/KR/html/esg/social_tab05.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-11-04</td>
-						<td class="date"></td>
+						<td class="date">2022-11-11</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1525,10 +2479,30 @@
 						<td>탭 6</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/social_tab06.html">social_tab06</a></td>
-						<td class="mo no"><a href="front/html/esg/social_tab06.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/social_tab06.html">social_tab06</a></td>
+						<td class="mo"><a href="front/KR/html/esg/social_tab06.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1540,11 +2514,31 @@
 						<td></td>
 						<td>상세</td>
 						<td>/esg/</td>
-						<td class="file"><a target="_blank" href="front/html/esg/social_view.html">social_view</a></td>
-						<td class="mo"><a href="front/html/esg/social_view.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/social_view.html">social_view</a></td>
+						<td class="mo"><a href="front/KR/html/esg/social_view.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-11-04</td>
-						<td class="date"></td>
+						<td class="date">2022-11-11</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1555,10 +2549,30 @@
 						<td>탭 1</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/governance_tab01.html">governance_tab01</a></td>
-						<td class="mo no"><a href="front/html/esg/governance_tab01.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
-						<td class="name">2022-11-18</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/governance_tab01.html">governance_tab01</a></td>
+						<td class="mo"><a href="front/KR/html/esg/governance_tab01.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
+						<td class="name">2022-11-11</td>
+						<td class="date"></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1570,10 +2584,30 @@
 						<td>탭2</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/governance_tab02.html">governance_tab02</a></td>
-						<td class="mo no"><a href="front/html/esg/governance_tab02.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/governance_tab02.html">governance_tab02</a></td>
+						<td class="mo"><a href="front/KR/html/esg/governance_tab02.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
 						<td class="name">2022-11-18</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1585,10 +2619,30 @@
 						<td>탭 3</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/governance_tab03.html">governance_tab03</a></td>
-						<td class="mo no"><a href="front/html/esg/governance_tab03.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/governance_tab03.html">governance_tab03</a></td>
+						<td class="mo"><a href="front/KR/html/esg/governance_tab03.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
 						<td class="name">2022-11-18</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1600,10 +2654,30 @@
 						<td>탭 4</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/governance_tab04.html">governance_tab04</a></td>
-						<td class="mo no"><a href="front/html/esg/governance_tab04.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/governance_tab04.html">governance_tab04</a></td>
+						<td class="mo"><a href="front/KR/html/esg/governance_tab04.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
 						<td class="name">2022-11-18</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1615,10 +2689,30 @@
 						<td>탭 5</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/governance_tab05.html">governance_tab05</a></td>
-						<td class="mo no"><a href="front/html/esg/governance_tab05.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/governance_tab05.html">governance_tab05</a></td>
+						<td class="mo"><a href="front/KR/html/esg/governance_tab05.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
 						<td class="name">2022-11-18</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1630,10 +2724,30 @@
 						<td>탭 6</td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/governance_tab06.html">governance_tab06</a></td>
-						<td class="mo no"><a href="front/html/esg/governance_tab06.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/governance_tab06.html">governance_tab06</a></td>
+						<td class="mo"><a href="front/KR/html/esg/governance_tab06.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
 						<td class="name">2022-11-18</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1645,10 +2759,30 @@
 						<td></td>
 						<td></td>
 						<td>/esg/</td>
-						<td class="file no"><a target="_blank" href="front/html/esg/report.html">report</a></td>
-						<td class="mo no"><a href="front/html/esg/report.html" class="btnIframe">미리보기</a></td>
-						<td class="stat">△</td>
+						<td class="file"><a target="_blank" href="front/KR/html/esg/report.html">report</a></td>
+						<td class="mo"><a href="front/KR/html/esg/report.html" class="btnIframe">미리보기</a></td>
+						<td class="stat">●</td>
 						<td class="name">2022-11-18</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
 						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
@@ -1688,11 +2822,31 @@
 						<td></td>
 						<td></td>
 						<td>/etc/</td>
-						<td class="file"><a target="_blank" href="front/html/etc/security_report.html">security_report</a></td>
-						<td class="mo"><a href="front/html/etc/security_report.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/etc/security_report.html">security_report</a></td>
+						<td class="mo"><a href="front/KR/html/etc/security_report.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-14</td>
 						<td class="date">2022-10-17</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1703,11 +2857,31 @@
 						<td></td>
 						<td></td>
 						<td>/etc/</td>
-						<td class="file"><a target="_blank" href="front/html/etc/b2b_billing.html">b2b_billing</a></td>
-						<td class="mo"><a href="front/html/etc/b2b_billing.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/etc/b2b_billing.html">b2b_billing</a></td>
+						<td class="mo"><a href="front/KR/html/etc/b2b_billing.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-14</td>
 						<td class="date">2022-10-18</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1718,11 +2892,31 @@
 						<td></td>
 						<td></td>
 						<td>/etc/</td>
-						<td class="file"><a target="_blank" href="front/html/etc/privacy_policy.html">privacy_policy</a></td>
-						<td class="mo"><a href="front/html/etc/privacy_policy.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/etc/privacy_policy.html">privacy_policy</a></td>
+						<td class="mo"><a href="front/KR/html/etc/privacy_policy.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-14</td>
 						<td class="date">2022-10-21 <del>2022-10-17</del></td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1733,11 +2927,31 @@
 						<td></td>
 						<td></td>
 						<td>/etc/</td>
-						<td class="file"><a target="_blank" href="front/html/etc/information.html">information</a></td>
-						<td class="mo"><a href="front/html/etc/information.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/etc/information.html">information</a></td>
+						<td class="mo"><a href="front/KR/html/etc/information.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-14</td>
 						<td class="date">2022-10-17</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
@@ -1748,11 +2962,31 @@
 						<td></td>
 						<td></td>
 						<td>/etc/</td>
-						<td class="file"><a target="_blank" href="front/html/etc/sitemap.html">sitemap</a></td>
-						<td class="mo"><a href="front/html/etc/sitemap.html" class="btnIframe">미리보기</a></td>
+						<td class="file"><a target="_blank" href="front/KR/html/etc/sitemap.html">sitemap</a></td>
+						<td class="mo"><a href="front/KR/html/etc/sitemap.html" class="btnIframe">미리보기</a></td>
 						<td class="stat">●</td>
 						<td class="name">2022-10-14</td>
 						<td class="date">2022-10-17</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>영문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/EN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
+						<td class="desc"></td>
+						<td class="note"><em> </em></td>
+					</tr>
+					<tr class="LANG no">
+						<td class="tit" colspan="5"></td>
+						<td>중문</td>
+						<td class="file" colspan="2"><a target="_blank" href="front/CN/html/ROOT/FILE.html">files</a></td>
+						<td class="stat"></td>
+						<td class="name">yyyy-mm-dd</td>
+						<td class="date">yyyy-mm-dd</td>
 						<td class="desc"></td>
 						<td class="note"><em> </em></td>
 					</tr>
