@@ -11,6 +11,7 @@
 		<script src="../../assets/js/common.js"></script>
         <link rel="stylesheet" href="../../assets/css/about_sdi.css">
 		<script src="../../assets/js/about_sdi.js"></script>
+		<script src="../../assets/js/business.js"></script>
 	</head>
 	<body>
 		<nav id="skip_navi">
@@ -617,7 +618,26 @@
 							<h3 class="subH">삼성SDI는<br>더 넓은 세계를 향해 나아가겠습니다.</h3>
 							<div class="map_box">
 								<ul class="map_header">
-									<li>
+                                    <li>
+                                        <input id="chk_all" type="radio" name="chk_type" value="all">
+                                        <label for="chk_all"><span class="chkspan"></span>전체</label>
+                                    </li>
+                                    <li>
+                                        <input id="chk_product" type="radio" name="chk_type" value="product" class="chk_sub">
+                                        <label for="chk_product"><span class="chkspan"></span>생산법인</label>
+                                    </li>
+                                    <li>
+                                        <input id="chk_sale" type="radio" name="chk_type" value="sale" class="chk_sub">
+                                        <label for="chk_sale"><span class="chkspan"></span>판매법인</label>
+                                    </li>
+                                    <li>
+                                        <input id="chk_develop" type="radio" name="chk_type" value="develop" class="chk_sub">
+                                        <label for="chk_develop"><span class="chkspan"></span>연구개발</label>
+                                    </li>
+
+
+
+                                    <!-- <li>
 										<span class="chk_type"><input type="checkbox" id="chk_all"></span>
 										<label for="chk_all" class="txt_infoR">전체</label>
 									</li>
@@ -632,7 +652,7 @@
 									<li>
 										<span class="chk_type"><input type="checkbox" id="chk_develop" class="chk_sub"></span>
 										<label for="chk_develop" class="txt_infoR">연구개발</label>
-									</li>
+									</li> -->
 								</ul>
 								<!-- //map_btn_list -->
 								<div class="map_body wide">
