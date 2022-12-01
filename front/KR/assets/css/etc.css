@@ -497,7 +497,9 @@ table td.pd40 {
 	display: inline-block;
 	margin-bottom: 30px;
 }
-
+.sdi_sitemap .sdi_menu .inquire_btn {
+	border-bottom: 0;
+}
 
 /* 테블릿
 **********************************************************/

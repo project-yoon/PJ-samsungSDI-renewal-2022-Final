@@ -147,6 +147,15 @@
 	border-radius: 7px;
 }
 
+.linkpoink {position: relative;}
+.linkpoink #move {
+  position: absolute;
+  display: inline-block;
+  width: 1px; height: 1px;
+  left: 0; top: 0;
+  transform: translateY(-150px);
+}
+
 /* ol list */
 ol.round_num {
 	list-style: none;
@@ -3038,6 +3047,10 @@ nav#skip_navi a {
     /* search_result */
     .list_column li .list_column_tit {
       max-width: 212px;
+    }
+
+    .linkpoink #move {
+      transform: translateY(-120px);
     }
   }
   /* 통합검색 종료 */
