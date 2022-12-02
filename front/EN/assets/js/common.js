@@ -601,50 +601,64 @@ function bodyOverflowAntiShaking(overflowHiddenIs) {
     $("body").css({ overflow: "" });
   }
 }
+
 function modalShowAndHide() {
   var popBtn = $(".popOpen"),
-    popId = "";
-  popBg = $("#bg_modal");
+      popId = '';
+      popBg = $("#bg_modal");
 
-  $(popBtn).on("click", function (e) {
-    //popup 오픈
-    e.preventDefault();
-    popId = $(this).data("id");
-    var popThis = $(`.popup[data-id='${popId}']`);
+  var modal = {
 
-    $("html, body").css("overflow", "hidden");
+    openModal: function (target) {
+      var $select_id = $(`.popup[data-id="${target}"]`),
+          $body = $('body')
 
-    if (!$(popThis).hasClass(".full_modal")) {
-      $(popBg).show();
-    }
+      $body.css("overflow", "hidden");
+      $select_id.attr('tabindex', 0).addClass('active').focus()
+      $select_id.hasClass('.full_modal') ? $(popBg).show() : null   
 
-    $(popThis).attr("tabindex", "0").addClass("active").focus();
-  });
-  $(".popup .btn_close, .popup .cancel, .popup .close")
-    .off("click")
-    .on("click", function (e) {
-      e.preventDefault();
+    },
+    hideModal: function (target) {
+      var $select_id = $(`.popup[data-id="${target}"]`),
+          $body = $('body'),
+          $pop_scroll = $select_id.find('.pop_body')
 
-      var popThis = $(this).parent().parent();
-      if ($(popThis).children().has("video").length === 1) {
-        //자식으로 video 있는지 검사
-        popThis.find("video").get(0).pause();
-      } else {
-      }
+      $select_id.attr('tabindex', -1).removeClass('active')
+      $select_id.children().has("video").length === 1 ? modal.pause($select_id) : null
+      $pop_scroll.scrollTop(0)
+      $body.css("overflow", "visible");
 
-      $(popBg).hide();
-      $(popThis).removeClass("active").removeAttr("tabindex");
-      $("html, body").css("overflow", "visible");
-      $(`.popOpen[data-id=${popThis.data("id")}]`)
-        .attr("tabindex", "0")
-        .focus();
-    });
+      $(`.popOpen[data-id=${target}]`).focus()
 
-  $(".pop_quick .btn_top").on("click", function () {
-    var idx = $(this).parent().parent().children(".pop_body");
-    $(idx).animate({ scrollTop: 0 }, 400);
-  });
+    },
+    pause: function(target) {
+      target.find("video").get(0).pause();
+    } ,
+    init: function() {
+      //모달 열기
+      popBtn.on('click', function(e) {
+        e.preventDefault()
+        popId = $(this).data('id')
+        modal.openModal(popId)
+      })
+
+      //모달 닫기
+      $(".popup .btn_close, .popup .cancel, .popup .close").on('click', function (e) {
+        e.preventDefault();
+        modal.hideModal(popId);
+      })
+
+      //모달 스크롤버튼 이동
+      $(".pop_quick .btn_top").on("click", function () {
+        var target = $(this).parent().parent().children(".pop_body");
+        $(target).animate({ scrollTop: 0 }, 400);
+      });
+    },
+  }
+
+  modal.init()
 }
+
 function showToast() {
   $(".showToast").on("click", function (e) {
     e.preventDefault()
@@ -692,16 +706,17 @@ function subNav1() {
 
 //  --- tab_style.js
 //서브네비 있는 페이지에서 sticky
+
 function sticky() {
   var lastTop = 0;
   var $body = $("body"),
-    $header = $("#header_wrap");
+      $header = $("#header_wrap"),
+      $mainCont = $('#container');
   var headerH = $($header).children(".header").height();
 
-  if ($("#container").find(".sub_nav1").length != 0) {
-    //sub_nav1이 있을때만 실행
+  if ($($mainCont).find(".sub_nav1").length != 0 && $($mainCont).height() > 1350) {
+    //sub_nav1이 있을때 && 컨테이너 높이가 1350 이상일때만 실행
     sub_nav_sticky();
-  } else {
   }
 
   function sub_nav_sticky() {
@@ -1222,7 +1237,7 @@ function initAccordionList() {
 }
 function scrollDown() {
   var scrollDown = $(".btn_scrolldown button"),
-    contentTop = $(".wrap .content").offset().top;
+    contentTop = $(".sub_visual").next().offset().top;
 
   scrollDown.off("click").on("click", function () {
     $("html, body").animate(
@@ -1248,7 +1263,6 @@ $(document).ready(function () {
   initSitemapGnb(); //Sitemap GNB
   initHeaderSubNaviSticky(); //Header & Sub Navi Sticky
   initSubVisual(); //Sub Visual
-  // popEffect()          //popup
   modalShowAndHide(); //popup
   showToast(); //toast
   //  --- tab_style.js

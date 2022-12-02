@@ -570,12 +570,18 @@
 .life .list_cont ul li .list_img {
     position: relative;
     padding-top: 105.264%;
+    width: 100%;
+    overflow: hidden;
     background: #dddddd;
 }
 .life .list_cont ul li .list_img img {
+    display: block;
+    width: 100%;
+    height: auto;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .life .list_cont ul li a .list_tit {
     padding: 30px;

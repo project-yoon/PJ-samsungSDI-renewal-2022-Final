@@ -46,6 +46,35 @@ $(document).ready(function () {
         }
     }, { passive: false });
 
+    // 메인 윈도우 터치 이벤트
+    var touchStartX; // 터치 시작 포지션 X
+    var touchStartY; // 터치 시작 포지션 Y
+    var maxOffsetX = 20;
+    var minOffsetY = 50;
+    
+    window.addEventListener('touchstart', (evt) => {
+        var touch = evt.touches[0];
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+    });
+    
+    window.addEventListener('touchmove', (evt) => {
+        evt.preventDefault(); // 스크롤 동작 방지
+    }, { passive:false })
+    
+    window.addEventListener('touchend', (evt) =>{
+        if (evt.touches.length === 0) {
+            var touch = evt.changedTouches[evt.changedTouches.length - 1];
+            var offsetX = touchStartX - touch.clientX; // 터치 이동거리 X
+            var offsetY = touchStartY - touch.clientY; // 터치 이동거리 Y
+            var swiped = Math.abs(offsetX) <= maxOffsetX && Math.abs(offsetY) >= minOffsetY; // 터치 스와이프 판단
+            
+            if (swiped) { 
+                scrollSection(offsetY);
+            }
+        }
+    });
+
     // 메인 스와이퍼
     var swiper = new Swiper(".newsSlide", {
         slidesPerView: "auto",
