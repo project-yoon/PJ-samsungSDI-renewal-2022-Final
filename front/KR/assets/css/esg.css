@@ -665,7 +665,7 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	.pc {display:none;}
 	.mo {display:block;}
 	h3.mb40 {margin-bottom: 30px !important;}
-	p {line-height: 1.3;}
+	/* p {line-height: 1.3;} */
 	figure {max-width: 375px;margin: 0 auto;}
 
 	.dot_bullet > li {margin-bottom: 15px !important;padding-left: 10px;}
