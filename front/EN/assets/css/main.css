@@ -64,17 +64,16 @@ section.content {
 }
 
 .main .cont_item.business li a {
-    display: block;
+    display: flex;
+    align-items: center;
     height: 180px;
     padding: 40px;
     color: #fff;
     background-size: cover;
     background-position: center;
 }
-
-.main .cont_item.business li p {
-    margin-bottom: 12px;
-    opacity: 0.6;
+.main .cont_item.business li b {
+    line-height: 1.4;
 }
 
 .main .cont_item.business li:nth-child(1) a {
@@ -106,6 +105,13 @@ section.content {
     padding-bottom: 50px;
     color: #fff;
     background-size: cover;
+}
+.main .cont_item.esg li .cont_txt {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    line-height: 1.3;
+    text-align: center;
 }
 
 .main .cont_item.esg li:nth-child(1) a {
@@ -146,11 +152,15 @@ section.content {
 
 .main .cont_item.career>ul>li:not(:first-child) p {
     margin-bottom: 77px;
+    font-size: 16px;
 }
 
 .main .cont_item.career>ul>li:nth-child(1) {
     width: 100%;
     max-width: 585px;
+}
+.main .cont_item.career>ul>li:nth-child(3) b {
+    line-height: 1.3;
 }
 
 .main .cont_item.career li .item_head {
@@ -166,7 +176,7 @@ section.content {
     gap: 50px;
     height: 100%;
     max-height: 171px;
-    padding: 30px;
+    padding: 20px 70px 17px 70px;
     align-items: flex-end;
     justify-content: space-around;
     text-align: center;
@@ -181,11 +191,15 @@ section.content {
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    max-width: 80px;
+    max-width: 100px;
     height: 100%;
-    max-height: 110px;
+    max-height: 135px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80px;
+    background-position: top 0 center;
+}
+.main .cont_item.career li .item_body li .txt_info {
+    line-height: 1.4;
 }
 
 .main .cont_item.career li .item_body li:nth-child(1) {
@@ -257,25 +271,32 @@ section.content {
     align-items: flex-end;
     width: 100%;
     height: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 24px;
+    text-align: center;
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: 30px;
 }
+.main .cont_item.investment>ul>li>a b {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    line-height: 1.4;
+}
 
 .main .cont_item.investment>ul>li:nth-child(2) a {
-    background-image: url(../images/main/ico_career05.png);
-    background-position: top 55px center;
+    background-image: url(../images/main/ico_career05.svg);
+    background-position: top 54px center;
 }
 
 .main .cont_item.investment>ul>li:nth-child(3) a {
-    background-image: url(../images/main/ico_career06.png);
-    background-position: top 60px center;
+    background-image: url(../images/main/ico_career06.svg);
+    background-position: top 58px center;
 }
 
 .main .cont_item.investment>ul>li:nth-child(4) a {
-    background-image: url(../images/main/ico_career07.png);
-    background-position: top 53px center;
+    background-image: url(../images/main/ico_career07.svg);
+    background-position: top 55px center;
 }
 
 .main .cont_item.investment .move_btn {
@@ -351,11 +372,11 @@ section.content {
     margin-bottom: 20px;
     line-height: 1.4;
     word-break: keep-all;
-    /* 두줄 이상 말줄임
+    /* 두줄 이상 말줄임 */
     white-space: normal;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden; */
+    overflow: hidden;
 }
 
 .main .cont_item.sdi_news .swiper-slide .item_body p {
@@ -423,7 +444,7 @@ section.content {
     }
 
     .main .cont_item ul {
-        gap: 14px;
+        gap: 12px;
     }
 
     .main .cont_item ul li {
@@ -432,10 +453,6 @@ section.content {
 
     .main .cont_item>ul>li>a {
         border-radius: 14px;
-    }
-
-    .main .cont_item ul li p {
-        font-size: 13px;
     }
 
     /* business */
@@ -470,10 +487,11 @@ section.content {
 
     .main .cont_item.career>ul>li:not(:first-child) {
         width: calc((100% - 14px) / 2);
-        height: 158px;
+        height: 215px;
     }
 
     .main .cont_item.career>ul>li:not(:first-child) a {
+        position: relative;
         max-width: none;
         padding: 20px;
     }
@@ -490,15 +508,23 @@ section.content {
     }
 
     .main .cont_item.career li .item_body {
-        gap: 70px;
+        gap: 30px;
+        padding: 30px 24px;
         border-radius: 0 0 14px 14px;
     }
 
-    .main .cont_item.career ul .item_body b {
+    .main .cont_item.career li .item_body li {
+        background-size: 60px;
+    }
+    .main .cont_item.career li .item_body li .txt_info {
         white-space: nowrap;
+        line-height: 1.3;
     }
 
     .main .cont_item.career>ul>li .data {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
         gap: 4px;
         margin-top: -23px;
     }
@@ -608,7 +634,7 @@ section.content {
 
     /* career */
     .main .cont_item.career>ul>li {
-        height: 206px;
+        height: 228px;
     }
 
     .main .cont_item.career li .item_head {
@@ -616,25 +642,21 @@ section.content {
     }
 
     .main .cont_item.career li .item_body {
-        gap: 20px;
-        max-height: 146px;
+        gap: 0;
+        max-height: 168px;
     }
 
     .main .cont_item.career li .item_body li {
-        max-width: 60px;
-        max-height: 86px;
+        max-width: 87px;
+        max-height: 108px;
     }
 
     .main .cont_item.career li .item_body li b {
         font-size: 16px;
     }
 
-    .main .cont_item.career>ul>li .data {
-        margin-top: 0;
-    }
-
-    .main .cont_item.career>ul>li .data .subH {
-        margin-bottom: -5px;
+    .main .cont_item.career>ul>li:not(:first-child) b {
+        line-height: 1.3;
     }
 
     /* investment */
@@ -723,6 +745,7 @@ section.content {
     }
 
     .main .cont_item.sdi_news .tit_txt a {
+        line-height: 1.3;
         padding-right: 30px;
         background-size: 14px;
     }
