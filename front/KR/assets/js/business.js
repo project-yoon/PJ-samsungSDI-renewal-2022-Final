@@ -61,21 +61,71 @@ function initSubtab() {
 
 //패럴랙스 스크롤링 이벤트
 function parallex () {
+    var winScrollTop;
+    var section = $('.scroll_wrap .sItem')
+    var offsetTop = [];
+    var offsetBottom = [];
 
-    gsap.to(".visual_info.full .titsub1", {
-        scrollTrigger: {
-            trigger: ".visual_info.full",
-            scrub: true,
-            pin: true,
-            start: "top top",
-            end: "+=100%"
-        },
-        stagger:2,
-        y: -100, 
-        duration: 2,
-        opacity: 1,
+    var maxItemsCount = section.length //스크롤이동 할 화면의 최대갯수
+    var currentIdx = 0; //섹션 번호 판별
+    var lastY =  0; //방향을 구하기 위한 변수
+
+    var time_chk = 0
+    var timer = 1500
+
+    function setValue() {
+        winScrollTop = $(window).scrollTop();
+
+        section.each(function(idx, el) {
+            offsetTop[idx] = $(el).offset().top;
+            offsetBottom[idx] = offsetTop[idx] + $(el).height()
+        })
+
+    }
+
+    function secMove(idx) {
+        console.log(offsetTop[idx])
+        $('html').scrollTop(offsetTop[idx])
+    }
+
+    function checkInSection (lastDirection) {
+        if(time_chk === 0) {
+            time_chk = 1
+
+            if (lastDirection === 'down') {
+                currentIdx >= maxItemsCount ? currentIdx = maxItemsCount : currentIdx = currentIdx + 1
+                secMove(currentIdx)
+            } else if (lastDirection === 'up') {
+                currentIdx <= 0 ? currentIdx = 0 : currentIdx = currentIdx - 1
+                secMove(currentIdx)
+            }
+
+            setTimeout(function() {
+                time_chk = 0
+            }, timer)
+
+        }
+    }
+
+    function init () {
+        setValue()
+        checkInSection()
+    }
+
+    $(window).scroll(function(e) {
+        e.preventDefault();
+        winScrollTop = $(window).scrollTop();
+
+        if(winScrollTop)
+
+        lastY >= winScrollTop ? lastDirection = 'up' : lastDirection = 'down'
+        checkInSection(lastDirection)
+        lastY = winScrollTop
+
     })
+    init()
 }
+
 
 $(document).ready(function() {
     initSubtabNaviSticky(); // initSubtabNaviSticky

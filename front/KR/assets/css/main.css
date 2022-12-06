@@ -223,17 +223,18 @@ section.content {
     background-size: 30px;
 }
 .main .cont_item.investment>ul>li:nth-child(2) a {
-    background-image: url(../images/main/ico_career05.png);
-    background-position: top 55px center;
+    background-image: url(../images/main/ico_career05.svg);
+    background-position: top 54px center;
 }
 .main .cont_item.investment>ul>li:nth-child(3) a {
-    background-image: url(../images/main/ico_career06.png);
-    background-position: top 60px center;
+    background-image: url(../images/main/ico_career06.svg);
+    background-position: top 58px center;
 }
 .main .cont_item.investment>ul>li:nth-child(4) a {
-    background-image: url(../images/main/ico_career07.png);
-    background-position: top 53px center;
+    background-image: url(../images/main/ico_career07.svg);
+    background-position: top 55px center;
 }
+
 .main .cont_item.investment .move_btn {
     position: absolute;
     top: 30px;
@@ -300,11 +301,11 @@ section.content {
     margin-bottom: 20px;
     line-height: 1.4;
     word-break: keep-all;
-    /* 두줄 이상 말줄임
+    /* 두줄 이상 말줄임 */
     white-space: normal;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden; */
+    overflow: hidden;
 }
 .main .cont_item.sdi_news .swiper-slide .item_body p {
     width: 310px;
@@ -369,9 +370,6 @@ section.content {
     }
     .main .cont_item>ul>li>a {
         border-radius: 14px;
-    }
-    .main .cont_item ul li p {
-        font-size: 13px;
     }
 
     /* business */
@@ -509,6 +507,9 @@ section.content {
     .main .cont_item.business li a {
         height: 100px;
         padding: 30px;
+    }
+    .main .cont_item.business li p {
+        font-size: 12px;
     }
 
     /* esg */
