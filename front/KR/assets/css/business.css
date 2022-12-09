@@ -198,6 +198,24 @@ ol.round_num li:last-child {
     background: linear-gradient(180deg, #121212 0%, #273479 30.41%, #425BE6 100%);
 }
 
+/*스크롤 모션*/
+.scroll_event_wrap {
+    height: 100vh;
+    /* height: auto; */
+}
+
+.nested_wrap .swiper-nested {
+    flex-direction: unset;
+}
+.nested_wrap .swiper-nested .swiper-slide {
+    opacity: 0.2;
+    transition-delay: .5s;
+    transition: .5s;
+}
+.nested_wrap .swiper-nested .swiper-slide.swiper-slide-active{
+    opacity: 1;
+}
+
 /* features_cont */
 .features_cont {
     margin-bottom: 180px;

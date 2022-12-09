@@ -776,66 +776,6 @@ function tabMenu1() {
     }
   });
 }
-function fixNav() {
-  // about sdi 에 있는 네비
-  var fixNav = $(".fix_nav"),
-    fixNavBtn = fixNav.find("a"),
-    fixNavStart = $("section.content").offset().top,
-    fixCont = $(".fix_items > .item");
-
-  $(window).on("scroll", function () {
-    var sTop = $(window).scrollTop();
-
-    if (sTop >= fixNavStart) {
-      fixNav.addClass("on");
-    } else {
-      fixNav.removeClass("on");
-    }
-
-    fixCont.each(function (index, item) {
-      var target =
-          $(this).offset().top -
-          fixNav.outerHeight() -
-          $("header").outerHeight() -
-          $("#header_wrap .utill").outerHeight(),
-        targetIndex = $(this).index();
-
-      if (sTop >= target - 50) {
-        fixNavBtn.parent().removeClass("on");
-        fixNavBtn.parent().eq(targetIndex).addClass("on");
-      }
-    });
-  });
-
-  // 네비 클릭
-  fixNavBtn.off("click").on("click", function (e) {
-    e.preventDefault();
-    var target = $(this.hash).offset().top,
-      winW = $(window).width();
-
-    if (winW > 761) {
-      $("html, body").animate(
-        {
-          scrollTop:
-            target - fixNav.outerHeight() - $("header").outerHeight() - 30,
-        },
-        300
-      );
-    } else {
-      $("html, body").animate(
-        {
-          scrollTop:
-            target -
-            fixNav.outerHeight() -
-            $("header").outerHeight() -
-            $("#header_wrap .utill").outerHeight() -
-            30,
-        },
-        300
-      );
-    }
-  });
-}
 
 //  --- guide.js
 function searchNav() {
@@ -1240,19 +1180,22 @@ function initAccordionList() {
       }
     });
 }
-function scrollDown() {
-  var scrollDown = $(".btn_scrolldown button"),
-    contentTop = $(".sub_visual").next().offset().top;
 
-  scrollDown.off("click").on("click", function () {
-    $("html, body").animate(
-      {
-        scrollTop: contentTop,
-      },
-      600
-    );
-  });
-}
+// function scrollDown() {
+//   var scrollDown = $(".btn_scrolldown button")
+
+//   if(scrollDown.length >= 1) {
+//     contentTop = $(".sub_visual").next().offset().top;
+//     scrollDown.off("click").on("click", function () {
+//       $("html, body").animate(
+//         {
+//           scrollTop: contentTop,
+//         },
+//         600
+//       );
+//     });
+//   }
+// }
 
 $(document).ready(function () {
   if ($(".quick").length > 0) {
@@ -1273,7 +1216,6 @@ $(document).ready(function () {
   //  --- tab_style.js
   subNav1(); // 인베스트먼트에 있는 네비
   tabMenu1(); // 비즈니스에 있는 탭
-  fixNav(); // 픽스되는 네비
   sticky();
   //  --- guide.js
   initFilterSearch();
@@ -1282,6 +1224,6 @@ $(document).ready(function () {
   tabUI(); // 탭 메뉴 tab
   dropdownNav(); // history. dropdown_nav
   initAccordionList(); //AccordionList
-  scrollDown();
+  // scrollDown();
   dropdownTab(); // 드롭다운형태 탭
 });

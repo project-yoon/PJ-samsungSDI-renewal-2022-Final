@@ -839,6 +839,9 @@ table .td {
 		margin-bottom: 24px;
 		line-height: 1.3;
 	}
+  .view_body .file_box li a {
+    padding-left: 24px;
+  }
 
 	/* filter & subTab_cont */
 	.filter ul.filter_menu,
@@ -1148,12 +1151,13 @@ table .td {
 		font-size: 16px;
 	}
 	/* btn_area */
-    .btn.md {
-        width: 100%;
-        max-width: 327px;
-		height: 54px;
-		line-height: 54px;
-    }
+  .btn.md {
+  width: 100%;
+  max-width: 327px;
+  height: 54px;
+  font-size: 16px;
+  line-height: 54px;
+  }
 	.notice_txt {
 		font-size: 14px;
 		line-height: 1.3;
@@ -1990,6 +1994,13 @@ nav#skip_navi a {
   .quick button:not(:last-child) {
     margin-bottom: 14px;
   }
+  .quick .btn_top {
+    opacity: 0.8;
+  }
+  .quick .btn_top,
+  .quick button:not(:last-child) {
+    filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
+  }
   /* gnb BG
   ****************************************************************/
   #bg_gnb_modal {
@@ -2456,6 +2467,10 @@ nav#skip_navi a {
     width: 100%;
     height: 100%;
     padding: 30px 40px;
+    overflow: hidden;
+  }
+  .keyinfo .stock_info .price .iframe-wrap iframe {
+    width: 269px; overflow: hidden;
   }
   .keyinfo .key_info_util {
     display: flex;
@@ -3411,7 +3426,13 @@ nav#skip_navi a {
       margin-bottom: 50px;
       padding: 0;
       border-radius: 0;
-      background-color: #eee;
+    }
+    .keyinfo .stock_info .price .iframe-wrap {
+      padding: 0;
+      background: none;
+    }
+    .keyinfo .stock_info .price .iframe-wrap iframe {
+      width: auto;
     }
     .keyinfo .key_info_util {
       position: static;
@@ -3504,7 +3525,7 @@ nav#skip_navi a {
       position: relative;
       width: 100%;
       padding: 17px 45px 17px 20px;
-      border-radius: 10px;
+      border-radius: 7px;
       border: 1px solid #ddd;
       background-color: #fff;
       font-size: 14px;
@@ -3530,13 +3551,13 @@ nav#skip_navi a {
       display: none;
       flex-wrap: wrap;
       max-height: 190px;
-      border-radius: 10px;
+      border-radius: 7px;
       border: 1px solid #ddd;
       background-color: #fff;
       overflow-y: auto;
       position: absolute;
       left: 0;
-      top: 61px;
+      top: 59px;
       width: 100%;
       z-index: 10
     }

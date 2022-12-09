@@ -59,7 +59,7 @@ function initSubtab() {
     }
 }
 
-//패럴랙스 스크롤링 이벤트
+//패럴랙스 스크롤링 이벤트 //스크롤 이벤트 활용
 function parallex () {
     var winScrollTop;
     var section = $('.scroll_wrap .sItem')
@@ -84,8 +84,7 @@ function parallex () {
     }
 
     function secMove(idx) {
-        console.log(offsetTop[idx])
-        $('html').scrollTop(offsetTop[idx])
+        $(window).scrollTop(offsetTop[idx])
     }
 
     function checkInSection (lastDirection) {
@@ -117,7 +116,6 @@ function parallex () {
         winScrollTop = $(window).scrollTop();
 
         if(winScrollTop)
-
         lastY >= winScrollTop ? lastDirection = 'up' : lastDirection = 'down'
         checkInSection(lastDirection)
         lastY = winScrollTop
@@ -126,9 +124,55 @@ function parallex () {
     init()
 }
 
+//스와이퍼 버티컬 //휠 이벤트 활용
+function swiperBusiness () {
+    var duration = 800;
+    var toggleEdge = false
+
+    var swiper = new Swiper('.scroll_event_wrap', {
+        speed: duration,
+        direction: 'vertical',
+        mousewheel: true,
+        slidesPerView: 'auto',
+        enabled: true,
+        nextEl: '.swiper-button-next'
+    })
+
+    //내부 슬라이드용 
+    var nestedSwiper = new Swiper('.swiper-nested', {
+        direction: 'vertical',
+        mousewheel: true,
+        slidesPerView: 'auto',
+        enabled: true, 
+        nested: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        on: {
+            slideChangeTransitionEnd: function() {
+                if (this.realIndex == 1) {
+                    toggleEdge = true
+                    setEvent(toggleEdge)
+                } else {
+                    toggleEdge = false
+                    setEvent(toggleEdge)
+                }
+            }
+        }
+    })
+
+    function setEvent (toggleEdge) {
+        nestedSwiper.params.touchReleaseOnEdges = toggleEdge;
+        nestedSwiper.params.mousewheel.releaseOnEdges = toggleEdge;
+        swiper.params.touchReleaseOnEdges = toggleEdge;
+        swiper.params.mousewheel.releaseOnEdges = toggleEdge;
+    }
+
+    swiper;
+}
+
 
 $(document).ready(function() {
     initSubtabNaviSticky(); // initSubtabNaviSticky
     initSubtab(); // initSubtab
-    parallex();
+    swiperBusiness();
 })
