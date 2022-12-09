@@ -31,7 +31,6 @@ td.txt_left {
 	padding: 24px;
 	min-width: 73px;
 	background: #F5F5F5;
-	text-align: left;
 }
 .row_table table tbody tr th span {
 	display: block;
@@ -65,9 +64,9 @@ table td.pd40 {
 	top: 9px;
 	left: 0;
 	content: '';
-	width: 3px;
-	height: 3px;
-	background-color: #222;
+	width: 2px;
+	height: 2px;
+	background-color: #666;
 }
 
 .b2b_billing .b2b_flow ol.round_num li:before {
@@ -85,6 +84,7 @@ table td.pd40 {
 }
 .security_report p.txtR {
 	margin-top: 30px;
+	line-height: 1.4;
 	color: #666;
 }
 .security_report .report_cont {
@@ -123,7 +123,7 @@ table td.pd40 {
 }
 .security_report .report_cont .item>.txt span.txt {
 	display: inline-block;
-	width: 60%;
+	width: 80%;
 	line-height: 1.5;
 }
 .security_report .report_cont .item .titsub1B_req {
@@ -158,13 +158,13 @@ table td.pd40 {
 	width: 100%;
 	height: 100%;
 	max-width: 760px;
-	max-height: 340px;
+	max-height: 422px;
 }
 .b2b_billing .b2b_flow ol {
 	width: 100%;
-	height: 100%;
-	max-height: 340px;
 	max-width: 320px;
+	height: 100%;
+	max-height: 428px;
 	padding: 40px 30px;
 	background: #F6F7FE;
 	border-radius: 20px;
@@ -210,6 +210,9 @@ table td.pd40 {
 .b2b_billing .responsive_table table tr td {
 	padding: 24px 30px;
 }
+.b2b_billing .responsive_table table tr td p {
+	line-height: 1.4;
+}
 .b2b_billing .responsive_table.on {
 	display: block;
 }
@@ -228,7 +231,7 @@ table td.pd40 {
 	position: relative;
 	line-height: 1.4;
 	text-align: left;
-	padding-left: 25px;
+	padding-left: 11px;
 }
 .b2b_billing .sub_title_info li span {
 	display: block;
@@ -278,13 +281,14 @@ table td.pd40 {
 	font-size: 16px;
 	color: #222;
 }
-.privacy_policy .line_b {
-	border-bottom: none;
-}
 .privacy_policy .policy_header {
 	display: flex;
-	align-items: flex-start;
+	align-items: flex-end;
+	justify-content: space-between;
 	margin: 120px 0 60px 0;
+}
+.privacy_policy .policy_header .body_title {
+	margin-bottom: 0;
 }
 
 .privacy_policy .header h3.titmain {
@@ -318,6 +322,12 @@ table td.pd40 {
 }
 .privacy_policy .table_info .sub_title_03 + .sub_title_04  {
 	margin-top: 0;
+}
+.privacy_policy .table_info .sub_title_03 + .sub_title_04 + span {
+	margin-top: 14px;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #888;
 }
 .privacy_policy .table_info .sub_title_04 + .info_list {
 	margin: -24px 0 40px;
@@ -440,6 +450,7 @@ table td.pd40 {
 	background: #EEEEEE;
 	border: 1px solid #EEEEEE;
 	border-radius: 30px;
+	min-width: unset;
 }
 
 .information .btn_inquiry:focus,
@@ -486,6 +497,7 @@ table td.pd40 {
 .sdi_sitemap .sdi_menu li {
 	width: 100%;
 	max-width: 200px;
+	line-height: 1.4;
 }
 
 .sdi_sitemap .sdi_menu li.mw270 {
@@ -496,7 +508,9 @@ table td.pd40 {
 	display: inline-block;
 	margin-bottom: 30px;
 }
-
+.sdi_sitemap .sdi_menu .inquire_btn {
+	border-bottom: 0;
+}
 
 /* 테블릿
 **********************************************************/
@@ -513,6 +527,9 @@ table td.pd40 {
 		margin-bottom: 16px;
 		line-height: 1.3;
 	}
+	.body_title + p.txtR {
+		line-height: 1.3;
+	}
 
 	ol.index_cont {
 		line-height: 1.3;
@@ -521,12 +538,13 @@ table td.pd40 {
 	/* 고객센터
 	***********************************************************************/
 	.line_b {
-		margin-bottom: 60px;
+		margin-bottom: 57px;
 		border-bottom: 0;
 	}
 
 	.line_b h2.subH {
 		margin: 0;
+		line-height: 1.3;
 	}
 
 	.information p.txt {
@@ -549,6 +567,10 @@ table td.pd40 {
 	}
 	.information .basic_table {
 		margin-bottom: 16px;
+	}
+	.information .basic_table table tbody tr th:first-child,
+	.information .basic_table table tbody tr td {
+    line-height: 1.3;
 	}
 
 	/* 보안신고센터
@@ -627,6 +649,7 @@ table td.pd40 {
 	}
 	.b2b_billing .b2b_flow ol {
 		max-width: none;
+		max-height: 324px;
 		margin-top: 30px;
 		padding: 30px 25px;
 	}
@@ -646,29 +669,31 @@ table td.pd40 {
 	}
 	.b2b_billing .procedure_list li b {
 		font-size: 16px;
+		line-height: 1.3;
 	}
 	.b2b_billing .procedure_list li .row_table {
 		margin: 16px 0 0;
 	}
-	.b2b_billing .row_table table tbody tr th {
-		padding: 19px;
-		line-height: 1.3;
-	}
 	.b2b_billing .row_table {
 		margin: 30px 0 70px;
 	}
+	.b2b_billing .procedure_list li .row_table th{
+		text-align: left;
+	}
 	.b2b_billing .row_table table tbody tr th {
+		padding: 22px 12px;
 		font-size: 14px;
+		line-height: 1.3;
 	}
 	.b2b_billing .row_table table tbody tr td {
 		font-size: 14px;
 		line-height: 1.3;
 	}
 	.row_table table tr td.left {
-		padding: 16px 20px;
+		padding: 16px 6px 16px 20px;
 	}
 	.sub_title_info li {
-		margin-left: 10px;
+		margin-left: 20px;
 	}
 	.b2b_billing .procedure_list {
 		margin-top: 30px;
@@ -693,9 +718,16 @@ table td.pd40 {
 
 	/* 이용약관
 	***********************************************************************/
+	.privacy_policy .line_b {
+		margin-bottom: 37px;
+	}
 	.privacy_policy .policy_header {
-		margin: 54px 0 30px 0;
 		flex-direction: column;
+		align-items: flex-start;
+		margin: 37px 0 40px 0;
+	}
+	.privacy_policy .policy_header .body_title {
+		margin-bottom: 16px;
 	}
 	.privacy_policy .dropdown_menu {
 		margin-top: 30px;
@@ -754,6 +786,9 @@ table td.pd40 {
 	.privacy_policy .list_type {
 		margin: 16px 0 30px;
 	}
+	.privacy_policy .main_point_date {
+		line-height: 1.3;
+	}
 
 	/* 사이트맵
 	***********************************************************************/
@@ -765,17 +800,23 @@ table td.pd40 {
 	.sdi_sitemap .sdi_menu>li {
 		display: inline-block;
 		width: 100%;
-		max-width: calc(100% / 2);
+		max-width: calc((100% - 10px) / 2);
 		margin-bottom: 30px;
 	}
 	.sdi_sitemap .sdi_menu>li:last-child {
 		margin-bottom: 0;
+	}
+	.sdi_sitemap .sdi_menu li {
+		line-height: 1.3;
 	}
 	.sdi_sitemap .sdi_menu li.mw270 {
 		max-width: 140px;
 	}
 	.sdi_sitemap .sdi_menu li .tit {
 		margin-bottom: 20px;
+	}
+	.sdi_sitemap .sitemap_cont.line_b {
+		margin-bottom: 70px;
 	}
 	.sdi_sitemap .titsub1B {
 		margin: 0 0 30px;
@@ -810,6 +851,18 @@ table td.pd40 {
 	}
 	.information .btn_inquiry {
 		font-size: 14px;
+	}
+
+	/* 보안신고센터 
+	***********************************************************************/
+	.security_report .line_b {
+		margin-bottom: 37px;
+	}
+	.security_report .security_report_container {
+    margin-top: 70px;
+	}
+	.security_report .report_cont .item>.txt span.txt {
+		width: 77%;
 	}
 
 	/* 고객센터 

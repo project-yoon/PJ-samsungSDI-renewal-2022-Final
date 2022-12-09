@@ -70,13 +70,11 @@ section.content .content_inner {
     gap: 70px;
 }
 .guide_info .info_body .video {
+    overflow: hidden;
     width: 100%;
     max-width: 540px;
-    height: 100%;
-    max-height: 305px;
+    height: 304px;
     margin: 0 auto;
-}
-.guide_info .info_body .video video {
     border-radius: 20px;
     cursor: pointer;
 }
@@ -447,7 +445,6 @@ ol.round_num li:last-child {
         display: block;
     }
     .guide_info .info_body .video {
-        height: 100%;
         margin: 0 auto 20px;
     }
     .guide_info .info_body .video video {
@@ -684,11 +681,13 @@ ol.round_num li:last-child {
     .power_bank .notice_cont .bgcolors-b3 {
         background-position: top 17px left 24px;
     }
-
     .list_move_btn {
         background-position-y: 3px;
     }
 }
 
 @media all and (max-width: 376px) { 
+    .guide_info .info_body .video {
+        height: 194px;
+    }
 }

@@ -10,13 +10,13 @@ function cardListToggle(){
             more_btn.removeClass("active");
             toggleCon.slideUp(300);
             $(this).parent().addClass("active");
-			$(this).attr("title", "내용닫힘");
+			$(this).attr("title", "Close");
             $(this).parent().find('dd').slideDown(300,function() {
                 $(window).resize()
             });
         } else if($(this).parent().hasClass("active") == true) {
             $(this).parent().removeClass("active");
-			$(this).attr("title", "내용열림");
+			$(this).attr("title", "Open");
             $(this).parent().find('dd').slideUp(300,function() {
                 $(window).resize()
             });

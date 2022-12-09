@@ -165,7 +165,7 @@ function initHeaderGNB() {
       });
       $(".depth_detail").each(function () {
         GNB.parent(".header").css({
-          height: depth_3_heightMax + depth_2_height,
+          height: depth_3_heightMax + depth_2_height + 20,
         });
       });
       if ($(this).hasClass("open") == true) {
@@ -625,6 +625,11 @@ function modalShowAndHide() {
 
       $select_id.attr('tabindex', -1).removeClass('active')
       $select_id.children().has("video").length === 1 ? modal.pause($select_id) : null
+
+      if ($select_id.children().has(".video_iframe")) {
+        $(".video_iframe iframe")[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+      }
+
       $pop_scroll.scrollTop(0)
       $body.css("overflow", "visible");
 
@@ -1202,7 +1207,7 @@ function initAccordionList() {
         accTit.removeClass("active");
         accCont.slideUp(300);
         $(this).parent().addClass("active");
-        $(this).attr("title", "내용닫힘");
+        $(this).attr("title", "Close");
         $(this)
           .parent()
           .next()
@@ -1225,7 +1230,7 @@ function initAccordionList() {
           });
       } else if ($(this).parent().hasClass("active") == true) {
         $(this).parent().removeClass("active");
-        $(this).attr("title", "내용열림");
+        $(this).attr("title", "Open");
         $(this)
           .parent()
           .next()

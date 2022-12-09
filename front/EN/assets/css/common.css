@@ -1358,7 +1358,7 @@ nav#skip_navi a {
     position: relative;
     display: inline-block;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1;
     word-break: keep-all;
     transition: 0.3s ease color;
@@ -1987,6 +1987,12 @@ nav#skip_navi a {
   .quick button:not(:last-child) {
     margin-bottom: 14px;
   }
+  .quick .btn_top {
+    opacity: 0.8;
+  }
+  .quick .btn_top {
+    filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
+  }
   /* gnb BG
   ****************************************************************/
   #bg_gnb_modal {
@@ -2422,7 +2428,7 @@ nav#skip_navi a {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 118px 0 280px;
+    padding: 118px 0 240px;
   }
   .keyinfo .more {
     margin-bottom: 40px;
@@ -2448,11 +2454,15 @@ nav#skip_navi a {
     border-radius: 20px;
     background-color: rgba(67 92 231 / 30%);
   }
-  .keyinfo .stock_info .price a {
+  .keyinfo .stock_info .price .iframe-wrap {
     display: block;
     width: 100%;
     height: 100%;
     padding: 30px 40px;
+    overflow: hidden;
+  }
+  .keyinfo .stock_info .price .iframe-wrap iframe {
+    width: 269px; overflow: hidden;
   }
   .keyinfo .key_info_util {
     display: flex;
@@ -2464,26 +2474,29 @@ nav#skip_navi a {
   }
   .keyinfo .key_info_util > ul {
     gap: 10px;
+    width: 100%;
   }
   .keyinfo .key_info_util > ul li {
-    width: 130px;
     background-color: #fff;
     border-radius: 20px;
-    text-align: center;
+    text-align: left;
+  }
+  .keyinfo .key_info_util > ul li.flex_item_3n {
+    width: calc((100% - 20px)/3);
   }
   .keyinfo .key_info_util > ul a {
-    display: table-cell;
+    display: block;
     vertical-align: bottom;
-    width: 1000px;
-    padding: 75px 17px 13px;
+    width: 100%;
+    padding: 24px 34px 24px 100px;
     background-repeat: no-repeat;
-    background-position: center 25px;
-    background-size: 40px 40px;
+    background-position: center left 34px;
+    background-size: 40px;
   }
   .keyinfo .key_info_util > ul a span {
     display: table-cell;
     vertical-align: middle;
-    width: 1000px;
+    /* width: 1000px; */
     height: 42px;
     line-height: 1.3;
   }
@@ -2491,19 +2504,10 @@ nav#skip_navi a {
     background-image: url("../../assets/images/main/ico_key01.png");
   }
   .keyinfo .key_info_util li:nth-child(2) a {
-    background-image: url("../../assets/images/main/ico_key02.png");
-  }
-  .keyinfo .key_info_util li:nth-child(3) a {
     background-image: url("../../assets/images/main/ico_key03.png");
   }
-  .keyinfo .key_info_util li:nth-child(4) a {
-    background-image: url("../../assets/images/main/ico_key04.png");
-  }
-  .keyinfo .key_info_util li:nth-child(5) a {
+  .keyinfo .key_info_util li:nth-child(3) a {
     background-image: url("../../assets/images/main/ico_key05.png");
-  }
-  .keyinfo .key_info_util li:nth-child(6) a {
-    background-image: url("../../assets/images/main/ico_key06.png");
   }
   .keyinfo .key_info_util .wanted {
     border-radius: 20px;
@@ -3405,7 +3409,13 @@ nav#skip_navi a {
       margin-bottom: 50px;
       padding: 0;
       border-radius: 0;
-      background-color: #eee;
+    }
+    .keyinfo .stock_info .price .iframe-wrap {
+      padding: 0;
+      background: none;
+    }
+    .keyinfo .stock_info .price .iframe-wrap iframe {
+      width: auto;
     }
     .keyinfo .key_info_util {
       position: static;
@@ -3418,17 +3428,10 @@ nav#skip_navi a {
       width: 100%;
       margin-bottom: 30px;
     }
-    .keyinfo .key_info_util > ul li {
-      width: calc((100% - 9px) / 2);
-      border-radius: 14px;
-    }
-    .keyinfo .key_info_util > ul a {
-      padding: 59px 10px 7px;
+    .keyinfo .key_info_util>ul a {
+      padding: 14px 34px 14px 78px;
+      background-position: center left 26px;
       background-size: 30px;
-      background-position: center 25px;
-    }
-    .keyinfo .key_info_util > ul a span {
-      height: 37px;
     }
     .keyinfo .key_info_util .wanted {
       width: 100%;
@@ -3601,6 +3604,17 @@ nav#skip_navi a {
       height: 26px;
       background-image: url(../../assets/images/layout/btn_KeyInfo_mo.png);
       background-size: 100%;
+    }
+    .keyinfo .key_info_util>ul {
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 9px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .keyinfo .key_info_util>ul li.flex_item_3n {
+      width: 100%;
+      border-radius: 14px;
     }
     header.header {
       top: 46px;
