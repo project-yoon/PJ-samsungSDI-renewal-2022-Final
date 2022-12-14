@@ -680,7 +680,7 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 
 	.cont_item:not(:last-child) {margin-bottom: 70px;}
 	.cont_head:not(:last-child) {margin-bottom: 16px;}
-	.cont_head h3 {margin-bottom: 16px;}
+	.cont_head h3 {margin-bottom: 16px;line-height: 1.3;}
 	.cont_body b.img_tit {margin-bottom: 20px;}
 
 	.social_contribution .cont_body>p {
@@ -905,13 +905,12 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	.ethical_management figure {margin-bottom: 30px;}
 	.ethical_management .btn_wrap {margin-top: 50px;}
 
-
-
 	/* 지속가능경영보고서
 	**********************************************************/
 	.sustainable_management_new .sustainable_management_new_head .btn_wrap {flex-direction: column;justify-content: inherit;}
 	.sustainable_management_new .sustainable_management_new_head .btn_wrap a {max-width: none;}
 	.sustainable_management_main_old .report_wrap .report_image {border-radius: 14px;}
+	.sustainable_management_new .management_item dt {line-height: 1.3;}
 }
 
 @media all and (max-width: 450px) {

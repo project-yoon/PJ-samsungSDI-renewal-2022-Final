@@ -3597,7 +3597,7 @@ nav#skip_navi a {
       /*button
     ********************/
     .inquire_btn {
-      padding-bottom: 4px;
+      padding-bottom: 0;
       background-size: 13px auto;
       background-position: bottom 5px right 2px;
     }

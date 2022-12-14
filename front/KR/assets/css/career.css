@@ -698,6 +698,10 @@
     }
     .talent .talent_tit h3 {
         margin-bottom: 18px;
+        line-height: 1.3;
+    }
+    .talent .talent_tit p {
+        line-height: 1.3;
     }
     .talent .talent_cont ul {
         flex-direction: column;

@@ -754,6 +754,9 @@
     .credit_rating .definition_box h3 {
         margin-bottom: 16px;
     }
+    .credit_rating .definition_box p {
+        line-height: 1.3;
+    }
     .credit_rating .definition_box .basic_table {
         margin-bottom: 16px;
     }

@@ -623,16 +623,15 @@ function modalShowAndHide() {
           $body = $('body'),
           $pop_scroll = $select_id.find('.pop_body')
 
-      $select_id.attr('tabindex', -1).removeClass('active')
+      $pop_scroll.scrollTop(0)
       $select_id.children().has("video").length === 1 ? modal.pause($select_id) : null
 
-      if ($select_id.children().has(".video_iframe")) {
+      if ($select_id.children().has(".video_iframe").length >= 1) {
         $(".video_iframe iframe")[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
       }
 
-      $pop_scroll.scrollTop(0)
+      $select_id.attr('tabindex', -1).removeClass('active')
       $body.css("overflow", "visible");
-
       $(`.popOpen[data-id=${target}]`).focus()
 
     },
