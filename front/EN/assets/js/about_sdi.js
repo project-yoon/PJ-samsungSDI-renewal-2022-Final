@@ -65,15 +65,80 @@ function initSubPageNavi() {
         }
     })
 }
+
+function fixNav() {
+    // about sdi 에 있는 네비
+    var fixNav = $(".fix_nav"),
+      fixNavBtn = fixNav.find("a"),
+      fixNavStart = $("section.content").offset().top,
+      fixCont = $(".fix_items > .item");
+  
+    $(window).on("scroll", function () {
+      var sTop = $(window).scrollTop();
+  
+      if (sTop >= fixNavStart) {
+        fixNav.addClass("on");
+      } else {
+        fixNav.removeClass("on");
+      }
+  
+      fixCont.each(function (index, item) {
+        var target =
+            $(this).offset().top -
+            fixNav.outerHeight() -
+            $("header").outerHeight() -
+            $("#header_wrap .utill").outerHeight(),
+          targetIndex = $(this).index();
+  
+        if (sTop >= target - 50) {
+          fixNavBtn.parent().removeClass("on");
+          fixNavBtn.parent().eq(targetIndex).addClass("on");
+        }
+      });
+    });
+  
+    // 네비 클릭
+    fixNavBtn.off("click").on("click", function (e) {
+      e.preventDefault();
+      var target = $(this.hash).offset().top,
+        winW = $(window).width();
+  
+      if (winW > 761) {
+        $("html, body").animate(
+          {
+            scrollTop:
+              target - fixNav.outerHeight() - $("header").outerHeight() - 30,
+          },
+          300
+        );
+      } else {
+        $("html, body").animate(
+          {
+            scrollTop:
+              target -
+              fixNav.outerHeight() -
+              $("header").outerHeight() -
+              $("#header_wrap .utill").outerHeight() -
+              30,
+          },
+          300
+        );
+      }
+    });
+  }
+  
+
 $(document).ready(function() {
     initSubPageNavi(); //Sub Page Navi
     if($(".map_box").length){
         var chkBtn = $('.map_header input:radio'),
             mapList = $('.map_body .map_list');
+        mapList.eq(0).show();
         chkBtn.off('click').on('click', function(){
             mapList.fadeOut(0);
             var index = $(this).parent().index();
             $(this).is(':checked') == true ?mapList.eq(index).fadeIn(0):"";
         });
     }
+    fixNav() 
 })

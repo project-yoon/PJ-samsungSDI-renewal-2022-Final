@@ -475,7 +475,7 @@
     justify-content: space-between;
 }
 
-/* 공시 상세페이지
+/* 공시 detail page
 ********************************************************** */
 .disclosure_view .view_head .tit .category {
     margin-bottom: 22px;
@@ -782,6 +782,7 @@
     .credit_rating .definition_box h3 {
         margin-bottom: 16px;
     }
+
     .credit_rating .definition_box .basic_table {
         margin-bottom: 16px;
     }

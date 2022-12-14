@@ -13,10 +13,6 @@
 .column_view .sub_visual {
 	background: url(../images/sdi_now/visual_sdinow_02.png) no-repeat center / cover;
 }
-.media .sub_visual,
-.media_view .sub_visual {
-	background: url(../images/sdi_now/visual_sdinow_03.png) no-repeat center / cover;
-}
 
 /* filter */
 .column .list_cont .filter_tit p {
@@ -88,13 +84,12 @@
 **********************************************************/
 .column .tab_list1 {margin-bottom: 90px;}
 
-/* Media
-**********************************************************/
-.media .list_cont .filter_img {padding-top: 55.264%;}
-
 /* 테블릿
 **********************************************************/
 @media all and (max-width: 1280px) {
+    /* sub_visual */
+    .news .sub_visual h2 {top: 150px;}
+
     /* Column */
     .column .tab_list1 {margin-bottom: 40px;}
 }
@@ -106,16 +101,15 @@
     .news .sub_visual {
         background: url(../images/sdi_now/visual_sdinow_01_mo.png) no-repeat center / cover;
     }
+    .news .sub_visual h2 {
+        top: 25px;  
+    }
     .column .sub_visual {
         background: url(../images/sdi_now/visual_sdinow_02_mo.png) no-repeat center / cover;
     }
-    .media .sub_visual {
-        background: url(../images/sdi_now/visual_sdinow_03_mo.png) no-repeat center / cover;
-    }
 
     /* list_cont */
-    .news .list_cont .filter_tit p,
-    .media .list_cont .filter_tit p {
+    .news .list_cont .filter_tit p {
         margin-bottom: 16px;
     }
 
