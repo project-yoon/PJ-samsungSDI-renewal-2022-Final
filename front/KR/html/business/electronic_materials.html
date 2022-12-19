@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="../../assets/css/common.css">
 <link rel="stylesheet" href="../../assets/css/business.css">
 <script src="../../assets/js/jquery-1.11.3.min.js"></script>
-<script src="../../assets/js/gsap.min.js"></script>
-<script src="../../assets/js/ScrollTrigger.min.js"></script>
+<script src="../../assets/js/jquery.scrollify.js"></script>
+<script src="../../assets/js/swiper-bundle.min.js"></script>
 <script src="../../assets/js/common.js"></script>
 <script src="../../assets/js/business.js"></script>
 </head>
@@ -185,9 +185,9 @@
 			<ul>
 				<li class="item_01"><button type="button" class="btn_language">Language</button>
 					<ul class="language">
-						<li><a href="#" class="active">KR</a></li>
-						<li><a href="#">EN</a></li>
-						<li><a href="#">CN</a></li>
+						<li><a href="../main/index.html" class="active">KR</a></li>
+						<li><a href="../../../EN/html/main/index.html">EN</a></li>
+						<li><a href="../../../CN/html/main/index.html">CN</a></li>
 					</ul>
 				</li>
 				<li class="item_02"><button type="button" class="btn_keyinfo" onclick="$('.keyinfo').fadeIn();">KeyInfo</button></li>
@@ -204,8 +204,8 @@
 		<h2 class="blind">Sitemap</h2>
 		<div class="pannel_util">
 			<ul>
-				<li class="on"><a href="javascript: void(0);" class="kr">KR</a></li>
-				<li><a href="javascript: void(0);" class="en">EN</a></li>
+				<li class="on"><a href="../main/index.html" class="kr">KR</a></li>
+				<li><a href="../../../EN/html/main/index.html" class="en">EN</a></li>
 				<li><a href="javascript: void(0);" class="cn">CN</a></li>
 			</ul>
 			<div class="close"><a href="javascript: void(0);">닫기</a></div>
@@ -441,9 +441,9 @@
 		<nav class="user_menu">
 			<h3 class="blind">User Menu</h3>
 			<ul class="language">
-				<li><a href="#" class="active">KR</a></li>
-				<li><a href="#">EN</a></li>
-				<li><a href="#">CN</a></li>
+				<li><a href="../main/index.html" class="active">KR</a></li>
+				<li><a href="../../../EN/html/main/index.html">EN</a></li>
+				<li><a href="../../../CN/html/main/index.html">CN</a></li>
 			</ul>
 			<button type="button" class="btn_close" aria-label="Close">Sitemap Close</button>
 		</nav>
@@ -504,7 +504,7 @@
 				<li><a href="javascript:void(0);"><b>BUSINESS</b></a>
 					<button class="depth_open">Open</button>
 					<ul>
-						<li><a href="../business/index.html" title="소형배터리로 이동하기">소형배터리</a></li>
+						<li><a href="../business/index.html" title="소형 배터리로 이동하기">소형 배터리</a></li>
 						<li><a href="../business/automotive_battery.html" title="자동차 배터리로 이동하기">자동차 배터리</a></li>
 						<li><a href="../business/ess.html" title="ESS로 이동하기">ESS</a></li>
 						<li><a href="../business/electronic_materials.html" title="전자재료로 이동하기">전자재료</a></li>
@@ -582,10 +582,8 @@
 			<div class="sns_wrap">
 				<ul class="sns">
 					<li><a href="https://www.facebook.com/samsungsdi" title="삼성SDI 페이스북 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_facebook_w.svg" alt="Facebook"></a></li>
-					<li><a href="https://twitter.com/sdiin" title="삼성SDI 트위터 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_twitter_w.svg" alt="Twitter"></a></li>
 					<li><a href="https://www.youtube.com/user/SDISamsung" title="삼성SDI 유투브 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_utube_w.svg" alt="YouTube"></a></li>
 					<li><a href="https://blog.naver.com/sdibattery" title="삼성SDI 네이버 블로그 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_blog_w.svg" alt="Naver Blog"></a></li>
-					<li><a href="https://www.linkedin.com/company/Samsung-sdi" title="삼성SDI 링크드인 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_linkedin_w.svg" alt="Linked in"></a></li>
 				</ul>
 			</div>
 		</nav>	
@@ -595,42 +593,46 @@
 <hr>
 
 <div id="container" class="materials">
-	<div class="wrap">
-		<div class="sub_visual full">
-			<h2 class="subH">전자재료</h2>
-			<p class="titsub1">눈에 보이지 않는 생활 속에 디지털 혁명의 커다란 힘이 있습니다.</p>
-			<div class="sub_nav">
-				<ul>
-					<li><a href="./index.html" class="titsub2">소형 배터리</a></li>
-					<li><a href="./automotive_battery.html" class="titsub2">자동차 배터리</a></li>
-					<li><a href="./ess.html" class="titsub2">ESS</a></li>
-					<li class="on"><a href="./electronic_materials.html" class="titsub2">전자재료</a></li>
-					<li><a href="./isi.html" class="titsub2">Important Safety Information</a></li>
+	<div class="wrap scroll_ani_wrap">
+		<div class="slide">
+			<div class="sub_visual full">
+				<h2 class="subH">전자재료</h2>
+				<p class="titsub1">눈에 보이지 않는 생활 속에 디지털 혁명의 커다란 힘이 있습니다.</p>
+				<div class="sub_nav">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><a href="./index.html" class="titsub2"><span>소형 배터리</span></a></li>
+						<li class="swiper-slide"><a href="./automotive_battery.html" class="titsub2"><span>자동차 배터리</span></a></li>
+						<li class="swiper-slide"><a href="./ess.html" class="titsub2"><span>ESS</span></a></li>
+						<li class="swiper-slide on"><a href="./electronic_materials.html" class="titsub2"><span>전자재료</span></a></li>
+						<li class="swiper-slide"><a href="./isi.html" class="titsub2"><span>Important Safety Information</span></a></li>
+					</ul>
+				</div>
+				<div class="btn_scrolldown">
+					<button class="swiper-button-next"><span class="blind">하단 내용으로 이동하기</span></button>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="visual_info full">
+				<ul class="businessAniArea">
+					<li class="titsub1">
+						삼성SDI는 1994년 반도체용 공정 소재인 EMC* 개발을 시작으로 전자재료 사업에 <br class="pc">
+						첫발을 내디뎠으며, 반도체, 디스플레이, 배터리에 이르기까지 앞선 기술과 전문화된 역량을 <br class="pc">
+						바탕으로 세계 최고 수준의 사업 경쟁력을 확보하고 있습니다. <br class="pc">
+						특히, 유망 디스플레이로 각광받고 있는 OLED 소재 연구개발에 지속해서 투자해 <br class="pc">
+						ETL 양산과 OLED 발광 소재인 인광 그린 호스트를 독자기술로 개발하는 데 성공했습니다.
+					</li>
+					<li class="titsub1">
+						또한 IT 심장이라고 할 수 있는 배터리 핵심소재인 분리막 사업에도 역량을 집중해 <br class="pc">
+						지속해서 성장하고 있으며, 2014년 시장점유율 기준, SOH, SOD를 비롯한 총 5개 제품을 <br class="pc">
+						세계 Top3에 자리매김했습니다. 앞으로도 세계 최고 고객사와 긴밀하게 협력해 시장을 <br class="pc">
+						지속해서 확대하고 차세대 플렉시블 디스플레이 소재를 적시에 공급할 수 있는 <br class="pc">
+						체제를 구축해 시장을 선도해 나가겠습니다.
+					</li>
 				</ul>
 			</div>
-			<div class="btn_scrolldown">
-				<button><span class="blind">하단 내용으로 이동하기</span></button>
-			</div>
 		</div>
-		<div class="visual_info full">
-			<div class="inner wide">
-				<p class="titsub1">
-					삼성SDI는 1994년 반도체용 공정 소재인 EMC* 개발을 시작으로 전자재료 사업에 <br class="pc">
-					첫발을 내디뎠으며, 반도체, 디스플레이, 배터리에 이르기까지 앞선 기술과 전문화된 역량을 <br class="pc">
-					바탕으로 세계 최고 수준의 사업 경쟁력을 확보하고 있습니다. <br class="pc">
-					특히, 유망 디스플레이로 각광받고 있는 OLED 소재 연구개발에 지속해서 투자해 <br class="pc">
-					ETL 양산과 OLED 발광 소재인 인광 그린 호스트를 독자기술로 개발하는 데 성공했습니다.
-				</p>
-				<p class="titsub1">
-					또한 IT 심장이라고 할 수 있는 배터리 핵심소재인 분리막 사업에도 역량을 집중해 <br class="pc">
-					지속해서 성장하고 있으며, 2014년 시장점유율 기준, SOH, SOD를 비롯한 총 5개 제품을 <br class="pc">
-					세계 Top3에 자리매김했습니다. 앞으로도 세계 최고 고객사와 긴밀하게 협력해 시장을 <br class="pc">
-					지속해서 확대하고 차세대 플렉시블 디스플레이 소재를 적시에 공급할 수 있는 <br class="pc">
-					체제를 구축해 시장을 선도해 나가겠습니다.
-				</p>
-			</div>
-		</div>
-		<section class="content">
+		<section class="content slide">
 			<div class="content_inner">
 				<div class="features_cont">
 					<h2 class="subH">Features</h2>
@@ -808,6 +810,8 @@
 				</div>
 			</div>
 		</section>
+
+
 	</div>
 </div>
 <div id="bg_modal"></div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,14 @@
 <title>BUSINESS - 자동차 배터리 | 삼성SDI 공식사이트</title>
 <link rel="stylesheet" href="../../assets/css/base.css">
 <link rel="stylesheet" href="../../assets/css/common.css">
+<link rel="stylesheet" href="../../assets/css/business.css">
 <script src="../../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../../assets/js/jquery.scrollify.js"></script>
+<script src="../../assets/js/swiper-bundle.min.js"></script>
 <script src="../../assets/js/common.js"></script>
-<script src="../../assets/js/gsap.min.js"></script>
-<script src="../../assets/js/ScrollTrigger.min.js"></script>
 <script src="../../assets/js/business.js"></script>
 </head>
+
 <body>
 <nav id="skip_navi">
 	<a href="#container">본문 바로가기</a>
@@ -182,9 +185,9 @@
 			<ul>
 				<li class="item_01"><button type="button" class="btn_language">Language</button>
 					<ul class="language">
-						<li><a href="#" class="active">KR</a></li>
-						<li><a href="#">EN</a></li>
-						<li><a href="#">CN</a></li>
+						<li><a href="../main/index.html" class="active">KR</a></li>
+						<li><a href="../../../EN/html/main/index.html">EN</a></li>
+						<li><a href="../../../CN/html/main/index.html">CN</a></li>
 					</ul>
 				</li>
 				<li class="item_02"><button type="button" class="btn_keyinfo" onclick="$('.keyinfo').fadeIn();">KeyInfo</button></li>
@@ -201,8 +204,8 @@
 		<h2 class="blind">Sitemap</h2>
 		<div class="pannel_util">
 			<ul>
-				<li class="on"><a href="javascript: void(0);" class="kr">KR</a></li>
-				<li><a href="javascript: void(0);" class="en">EN</a></li>
+				<li class="on"><a href="../main/index.html" class="kr">KR</a></li>
+				<li><a href="../../../EN/html/main/index.html" class="en">EN</a></li>
 				<li><a href="javascript: void(0);" class="cn">CN</a></li>
 			</ul>
 			<div class="close"><a href="javascript: void(0);">닫기</a></div>
@@ -437,9 +440,9 @@
 		<nav class="user_menu">
 			<h3 class="blind">User Menu</h3>
 			<ul class="language">
-				<li><a href="#" class="active">KR</a></li>
-				<li><a href="#">EN</a></li>
-				<li><a href="#">CN</a></li>
+				<li><a href="../main/index.html" class="active">KR</a></li>
+				<li><a href="../../../EN/html/main/index.html">EN</a></li>
+				<li><a href="../../../CN/html/main/index.html">CN</a></li>
 			</ul>
 			<button type="button" class="btn_close" aria-label="Close">Sitemap Close</button>
 		</nav>
@@ -500,7 +503,7 @@
 				<li><a href="javascript:void(0);"><b>BUSINESS</b></a>
 					<button class="depth_open">Open</button>
 					<ul>
-						<li><a href="../business/index.html" title="소형배터리로 이동하기">소형배터리</a></li>
+						<li><a href="../business/index.html" title="소형 배터리로 이동하기">소형 배터리</a></li>
 						<li><a href="../business/automotive_battery.html" title="자동차 배터리로 이동하기">자동차 배터리</a></li>
 						<li><a href="../business/ess.html" title="ESS로 이동하기">ESS</a></li>
 						<li><a href="../business/electronic_materials.html" title="전자재료로 이동하기">전자재료</a></li>
@@ -578,10 +581,8 @@
 			<div class="sns_wrap">
 				<ul class="sns">
 					<li><a href="https://www.facebook.com/samsungsdi" title="삼성SDI 페이스북 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_facebook_w.svg" alt="Facebook"></a></li>
-					<li><a href="https://twitter.com/sdiin" title="삼성SDI 트위터 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_twitter_w.svg" alt="Twitter"></a></li>
 					<li><a href="https://www.youtube.com/user/SDISamsung" title="삼성SDI 유투브 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_utube_w.svg" alt="YouTube"></a></li>
 					<li><a href="https://blog.naver.com/sdibattery" title="삼성SDI 네이버 블로그 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_blog_w.svg" alt="Naver Blog"></a></li>
-					<li><a href="https://www.linkedin.com/company/Samsung-sdi" title="삼성SDI 링크드인 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_linkedin_w.svg" alt="Linked in"></a></li>
 				</ul>
 			</div>
 		</nav>	
@@ -591,37 +592,41 @@
 <hr>
 
 <div id="container" class="automotive_battery">
-	<div class="wrap">
-		<div class="sub_visual full">
-			<h2 class="subH">자동차 배터리</h2>
-			<p class="titsub1">배터리는 자동차의 지속 가능한 혁신을 위한 열쇠입니다.</p>
-			<div class="sub_nav">
-				<ul>
-					<li><a href="./index.html" class="titsub2">소형 배터리</a></li>
-					<li class="on"><a href="./automotive_battery.html" class="titsub2">자동차 배터리</a></li>
-					<li><a href="./ess.html" class="titsub2">ESS</a></li>
-					<li><a href="./electronic_materials.html" class="titsub2">전자재료</a></li>
-					<li><a href="./isi.html" class="titsub2">Important Safety Information</a></li>
+	<div class="wrap scroll_ani_wrap">
+		<div class="slide">
+			<div class="sub_visual full">
+				<h2 class="subH">자동차 배터리</h2>
+				<p class="titsub1">배터리는 자동차의 지속 가능한 혁신을 위한 열쇠입니다.</p>
+				<div class="sub_nav">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><a href="./index.html" class="titsub2"><span>소형 배터리</span></a></li>
+						<li class="swiper-slide on"><a href="./automotive_battery.html" class="titsub2"><span>자동차 배터리</span></a></li>
+						<li class="swiper-slide"><a href="./ess.html" class="titsub2"><span>ESS</span></a></li>
+						<li class="swiper-slide"><a href="./electronic_materials.html" class="titsub2"><span>전자재료</span></a></li>
+						<li class="swiper-slide"><a href="./isi.html" class="titsub2"><span>Important Safety Information</span></a></li>
+					</ul>
+				</div>
+				<div class="btn_scrolldown">
+					<button class="button-next"><span class="blind">하단 내용으로 이동하기</span></button>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="visual_info full">
+				<ul class="businessAniArea">
+					<li class="titsub1">
+						우리는 지금 기존 내연기관의 자동차에서 전기 자동차로의 패러다임 전환을 맞이하고 있습니다. <br class="pc">
+						변화 속에서 삼성SDI는 모바일 기기용 배터리 분야에서 축적해 온 경험과 노하우를 바탕으로 <br class="pc">
+						전기 자동차를 위한 고효율, 고에너지 밀도의 배터리를 개발하고 있습니다.
+					</li>
+					<li class="titsub1">
+						이러한 지속적인 R&D 투자로 전기 자동차에 요구되는 독창적이고 혁신적인 제품을 지속해서<br>
+						출시하며 시장을 선도해 나가고 있습니다.
+					</li>							
 				</ul>
 			</div>
-			<div class="btn_scrolldown">
-				<button><span class="blind">하단 내용으로 이동하기</span></button>
-			</div>
 		</div>
-		<div class="visual_info full">
-			<div class="inner">
-				<p class="titsub1">
-					우리는 지금 기존 내연기관의 자동차에서 전기 자동차로의 패러다임 전환을 맞이하고 있습니다. <br class="pc">
-					변화 속에서 삼성SDI는 모바일 기기용 배터리 분야에서 축적해 온 경험과 노하우를 바탕으로 <br class="pc">
-					전기 자동차를 위한 고효율, 고에너지 밀도의 배터리를 개발하고 있습니다.
-				</p>
-				<p class="titsub1">
-					이러한 지속적인 R&D 투자로 전기 자동차에 요구되는 독창적이고 혁신적인 제품을 지속해서<br>
-					출시하며 시장을 선도해 나가고 있습니다.
-				</p>
-			</div>
-		</div>
-		<section class="content">
+		<section class="content slide">
 			<div class="content_inner">
 				<div class="features_cont">
 					<h2 class="subH">Features</h2>
@@ -756,7 +761,7 @@
 		</section>
 	</div>
 </div>
-
+<div id="bg_modal"></div>
 
 <hr>
 
