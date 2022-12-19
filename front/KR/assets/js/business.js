@@ -59,120 +59,45 @@ function initSubtab() {
     }
 }
 
-//패럴랙스 스크롤링 이벤트 //스크롤 이벤트 활용
-function parallex () {
-    var winScrollTop;
-    var section = $('.scroll_wrap .sItem')
-    var offsetTop = [];
-    var offsetBottom = [];
+function scrollMove () {
+    var winTop = 0;
+    $.scrollify({
+        section: ".scroll_ani_wrap .slide",
+        scrollSpeed: 1100,
+        touchScroll: true,
+        updateHash: true,
+        setHeights: false,
+        after:function() {
+            winTop = $(window).scrollTop()
+            target(winTop)
+        },
 
-    var maxItemsCount = section.length //스크롤이동 할 화면의 최대갯수
-    var currentIdx = 0; //섹션 번호 판별
-    var lastY =  0; //방향을 구하기 위한 변수
+      });
 
-    var time_chk = 0
-    var timer = 1500
+    function target(winTop) {
+        var target = $('.scroll_ani_wrap .slide')[1]
+        var targetTop = $(target).offset().top
+        var targetBottom = $(target).offset().top + $(target).height()
 
-    function setValue() {
-        winScrollTop = $(window).scrollTop();
-
-        section.each(function(idx, el) {
-            offsetTop[idx] = $(el).offset().top;
-            offsetBottom[idx] = offsetTop[idx] + $(el).height()
-        })
-
-    }
-
-    function secMove(idx) {
-        $(window).scrollTop(offsetTop[idx])
-    }
-
-    function checkInSection (lastDirection) {
-        if(time_chk === 0) {
-            time_chk = 1
-
-            if (lastDirection === 'down') {
-                currentIdx >= maxItemsCount ? currentIdx = maxItemsCount : currentIdx = currentIdx + 1
-                secMove(currentIdx)
-            } else if (lastDirection === 'up') {
-                currentIdx <= 0 ? currentIdx = 0 : currentIdx = currentIdx - 1
-                secMove(currentIdx)
-            }
-
-            setTimeout(function() {
-                time_chk = 0
-            }, timer)
-
+        if(targetTop <= winTop && targetBottom >= winTop){
+            $(target).addClass('active')
+        } else {
+            // $(target).removeClass('active')
         }
     }
 
-    function init () {
-        setValue()
-        checkInSection()
-    }
-
-    $(window).scroll(function(e) {
+    $(".btn_scrolldown .button-next").click(function(e) {
         e.preventDefault();
-        winScrollTop = $(window).scrollTop();
 
-        if(winScrollTop)
-        lastY >= winScrollTop ? lastDirection = 'up' : lastDirection = 'down'
-        checkInSection(lastDirection)
-        lastY = winScrollTop
-
-    })
-    init()
-}
-
-//스와이퍼 버티컬 //휠 이벤트 활용
-function swiperBusiness () {
-    var duration = 800;
-    var toggleEdge = false
-
-    var swiper = new Swiper('.scroll_event_wrap', {
-        speed: duration,
-        direction: 'vertical',
-        mousewheel: true,
-        slidesPerView: 'auto',
-        enabled: true,
-        nextEl: '.swiper-button-next'
-    })
-
-    //내부 슬라이드용 
-    var nestedSwiper = new Swiper('.swiper-nested', {
-        direction: 'vertical',
-        mousewheel: true,
-        slidesPerView: 'auto',
-        enabled: true, 
-        nested: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        on: {
-            slideChangeTransitionEnd: function() {
-                if (this.realIndex == 1) {
-                    toggleEdge = true
-                    setEvent(toggleEdge)
-                } else {
-                    toggleEdge = false
-                    setEvent(toggleEdge)
-                }
-            }
-        }
-    })
-
-    function setEvent (toggleEdge) {
-        nestedSwiper.params.touchReleaseOnEdges = toggleEdge;
-        nestedSwiper.params.mousewheel.releaseOnEdges = toggleEdge;
-        swiper.params.touchReleaseOnEdges = toggleEdge;
-        swiper.params.mousewheel.releaseOnEdges = toggleEdge;
-    }
-
-    swiper;
+        $.scrollify.next();
+    });
 }
 
 
 $(document).ready(function() {
+    // $(window).scrollTop(0)
     initSubtabNaviSticky(); // initSubtabNaviSticky
     initSubtab(); // initSubtab
-    swiperBusiness();
+
+    scrollMove()
 })

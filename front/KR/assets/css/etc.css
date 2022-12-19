@@ -8,6 +8,30 @@
 .txtCenter {text-align: center !important;}
 .txtRight {text-align: right !important;}
 
+/* 리스트 라운드 */
+ul.sub_title_info li {
+	padding-left: 10px;
+}
+ol.sub_title_info li {
+	padding-left: 11px;
+}
+.sub_title_info.info_list li::after {
+	position: absolute;
+	top: 9px;
+	left: 0;
+	content: '';
+}
+ul.sub_title_info.info_list li::after {
+	width: 2px;
+	height: 2px;
+	background-color: #666;
+}
+ol.sub_title_info.info_list li::after {
+	width: 3px;
+	height: 3px;
+	background-color: #222;
+}
+
 .wrap section.content .content_inner {
 	padding: 200px 0 180px;
 }
@@ -58,16 +82,6 @@ td.txt_left {
 }
 table td.pd40 {
 	padding: 40px;
-}
-
-.sub_title_info.info_list li::after {
-	position: absolute;
-	top: 9px;
-	left: 0;
-	content: '';
-	width: 3px;
-	height: 3px;
-	background-color: #222;
 }
 
 .b2b_billing .b2b_flow ol.round_num li:before {
@@ -170,7 +184,8 @@ table td.pd40 {
 	border-radius: 20px;
 }
 .b2b_billing .b2b_flow ol.round_num li {
-	margin: 0 0 16px 0;
+	margin: 0 0 16px;
+	padding-left: 25px;
 	font-weight: 500;
 }
 .b2b_billing .b2b_flow ol.round_num li:last-child {
@@ -228,7 +243,6 @@ table td.pd40 {
 	position: relative;
 	line-height: 1.4;
 	text-align: left;
-	padding-left: 25px;
 }
 .b2b_billing .sub_title_info li span {
 	display: block;
@@ -343,7 +357,6 @@ table td.pd40 {
 }
 .privacy_policy .sub_title_info li {
 	position: relative;
-	padding-left: 10px;
 }
 .privacy_policy .round_num li {
 	padding-left: 20px;
@@ -420,6 +433,9 @@ table td.pd40 {
 }
 .privacy_policy .main_point_date li:not(:last-child) {
 	margin-bottom: 14px;
+}
+.privacy_policy .main_point_date li {
+	line-height: 1.4;
 }
 /* 고객센터
 ***********************************************************************/
@@ -513,12 +529,16 @@ table td.pd40 {
 	}
 
 	.body_title {
-		margin-bottom: 16px;
+		margin-bottom: 0;
 		line-height: 1.3;
 	}
 
 	ol.index_cont {
 		line-height: 1.3;
+	}
+
+	.sub_title_info {
+		padding-left: 10px;
 	}
 
 	/* 고객센터
@@ -670,9 +690,6 @@ table td.pd40 {
 	.row_table table tr td.left {
 		padding: 16px 20px;
 	}
-	.sub_title_info li {
-		margin-left: 10px;
-	}
 	.b2b_billing .procedure_list {
 		margin-top: 30px;
 	}
@@ -697,7 +714,7 @@ table td.pd40 {
 	/* 이용약관
 	***********************************************************************/
 	.privacy_policy .policy_header {
-		margin: 54px 0 30px 0;
+		margin: 40px 0;
 		flex-direction: column;
 	}
 	.privacy_policy .dropdown_menu {
@@ -755,7 +772,7 @@ table td.pd40 {
 		color: #222;
 	}
 	.privacy_policy .list_type {
-		margin: 16px 0 30px;
+		margin: -14px 0 30px;
 	}
 
 	/* 사이트맵
@@ -811,6 +828,13 @@ table td.pd40 {
 		height: 16px;
 		line-height: 16px;
 	}
+	ol.sub_title_info li {
+		padding-left: 10px;
+	}
+	ol.sub_title_info.info_list li::after {
+		width: 2px;
+		height: 2px;
+	}
 	.information .btn_inquiry {
 		font-size: 14px;
 	}
@@ -857,8 +881,9 @@ table td.pd40 {
 	}
 	.privacy_policy .list_type {
 		font-size: 14px;
+	}
+	.privacy_policy .main_point_date li {
 		line-height: 1.3;
-		
 	}
 
 	/* 사이트맵

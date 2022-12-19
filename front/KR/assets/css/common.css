@@ -207,12 +207,13 @@ ol.index_cont {
 
 /* .tab_list_filter */
 .tab_list_filter ul {display:flex;}
-.tab_list_filter li {display: flex;justify-content: center;align-items: center;width: 100%;height: 80px;padding: 0 17px;border-bottom: 4px solid transparent;}
-.tab_list_filter a {display:block;position:relative;color:#888;text-align:center;line-height:1.4;font-weight: 400;font-size: 20px;}
+.tab_list_filter li {width: 100%;/*padding: 0 17px;*/border-bottom: 4px solid transparent;}
+.tab_list_filter a {display: flex;justify-content: center;align-items: center;position:relative;width: 100%;height: 100%;min-height: 80px;color:#888;text-align:center;line-height:1.4;font-weight: 400;font-size: 20px;}
 .tab_list_filter li.active {border-color: #222;}
 .tab_list_filter li.active a {color:#222;font-weight: 700;border-color: #222;}
 .tab_list_filter li.active .count {color:#435CE7;}
 .tab_list_filter a span {position: relative;z-index: -1;display: inline;}
+.tab_list_filter a span.category {margin-right: 5px;}
 .tab_list_filter button {display: none;}
 
 /* Tabs */
@@ -252,11 +253,12 @@ ol.index_cont {
 
 /*  subvisual full 에 있는 nav*/
 .sub_nav {position: absolute;left:50%;bottom: 18%;width: 100%;max-width: 1200px;transform:translateX(-50%);z-index: 3;}
-.sub_nav ul {display: table;width: 100%;padding: 0 24px;margin: 0 auto;white-space: nowrap;}
-.sub_nav li {display:table-cell;vertical-align: middle;width: calc(100% / 5);padding-right: 4px;}
-.sub_nav li:last-child {padding-right: 0;}
-.sub_nav a {display: block;height: 50px;font-weight: 400;border-bottom: 4px solid rgba(255 255 255  / 65%);color:rgba(255 255 255  / 65%);}
-.sub_nav li.on a {color:#fff;border-color: #fff;font-weight: 700;}
+.sub_nav ul {display: flex; width: 100%;}
+.sub_nav ul li {width: calc(100% / 5); font-size: 20px; margin-right: 4px; padding-bottom: 26px; box-sizing: border-box; border-bottom: 4px solid #ffffffa6; }
+.sub_nav ul li:last-child {margin-right: 0px; }
+.sub_nav ul li a {color: #ffffffa6; height: 50px; display: flex; justify-content: center; align-items: center; line-height: 1.2;}
+.sub_nav ul li.on {border-bottom-color: #fff;}
+.sub_nav ul li.on a {color: #fff; font-weight: 700;}
 
 /*
 클래스 수정예정
@@ -340,7 +342,7 @@ table .td {
 }
 
 .basic_table {
-    margin-top: 40px;
+  margin-top: 30px;
 	overflow: hidden;
 }
 .basic_table table {
@@ -374,7 +376,7 @@ table .td {
 }
 .basic_table table tbody tr td {
 	font-size: 16px;
-	color: #666666;
+	color: #222222;
 }
 /* Responsive table(표)
 ***********************************************************************/
@@ -433,7 +435,7 @@ table .td {
 	background: #F5F5F5;
 }
 .responsive_table table tbody tr th {
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 16px;
 	padding: 24px 0;
 	min-width: 73px;
@@ -604,7 +606,7 @@ table .td {
     display: none;
     position: relative;
     z-index: 2;
-    padding: 40px 0;
+    padding: 60px 0;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
@@ -688,10 +690,12 @@ table .td {
 	}
 
 	/*  subvisual full 에 있는 nav*/
-	.sub_nav {bottom: 15%;overflow-x:auto;overflow-y:hidden;}
+  .sub_nav {bottom: 15%; overflow-x: auto; overflow-y: hidden;}
 	.sub_nav::-webkit-scrollbar {display: none;}
-	.sub_nav li {width: auto !important;}
-	.sub_nav a {height: 40px;padding: 0 16px;}
+
+  .sub_nav ul {padding: 0 24px;}
+  .sub_nav ul li {width: auto; font-size: 16px; padding: 16px; white-space: nowrap;}
+  .sub_nav ul li a {height: 40px; }
 
 	/* list_cont */
 	.list_cont ul {
@@ -835,6 +839,9 @@ table .td {
 		margin-bottom: 14px;
 		font-size: 14px;
 	}
+  .view_head .tit .date {
+    font-size: 14px;
+  }
 	.view_head .tit h3 {
 		margin-bottom: 24px;
 		line-height: 1.3;
@@ -935,7 +942,7 @@ table .td {
 	.tab_list ul::-webkit-scrollbar {display: none;}
 	.tab_list ul li {flex-shrink: 0;line-height: 0;width: auto !important;}
 	.tab_list ul li:first-child {margin-left: 0;}
-	.tab_list ul li a {padding-bottom: 14px;font-size: 16px;line-height: 20px;white-space: nowrap;}
+	.tab_list ul li a {padding: 0 20px 14px;font-size: 16px;line-height: 20px;white-space: nowrap;}
 	.tab_list ul li.active:after {content: '';display: block;position: absolute;bottom: 0;left: 0;width: 100%;height: 3px;background: #222;}
 	/* Pagination */
 	/* page number */
@@ -1018,16 +1025,19 @@ table .td {
   .list_cont .total {
       margin-bottom: 16px;
   }
+  .list_cont .filter_tit .category {
+    margin-bottom: 10px;
+  }
   .list_cont {
       margin-bottom: 50px;
       padding: 24px 0 0;
       border-bottom: 0;
   }
-    .list_cont ul {
-		gap: 50px 0;
-        flex-direction: column;
-        justify-content: center;
-    }
+  .list_cont ul {
+  gap: 50px 0;
+      flex-direction: column;
+      justify-content: center;
+  }
 	.list_cont .filter_img {
 		margin-bottom: 24px;
 	}
@@ -1232,8 +1242,8 @@ nav#skip_navi a {
   }
   header.header.on,
   header.header.gnb_open {
-    border-bottom-color: #435ce7;
-    border-bottom: 1px solid #435ce7;
+    /* border-bottom-color: #435ce7; */
+    /* border-bottom: 1px solid #435ce7; */
     background-color: #ffffff;
   }
   header.header.gnb_open {
@@ -1463,8 +1473,8 @@ nav#skip_navi a {
     height: 18px;
     background: url("../../assets/images/common/ico_arr_open.png") no-repeat 50%;
   }
-  header.header nav.gnb > ul > li > .depth_menu > ul > li.nav_hov a:hover,
-  header.header nav.gnb > ul > li > .depth_menu > ul > li.nav_hov a:focus {
+  header.header nav.gnb > ul > li > .depth_menu > ul > li a:hover,
+  header.header nav.gnb > ul > li > .depth_menu > ul > li a:focus {
     color: #435ce7;
   }
   header.header nav.gnb .depth_detail {
@@ -1862,11 +1872,11 @@ nav#skip_navi a {
     line-height: 0;
     background: #f5f5f5;
     width: 100%;
-    padding: 24px 0;
+    padding: 24px;
   }
   aside#sitemap .sns_wrap ul.sns {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
   aside#sitemap .sns_wrap ul.sns li {
     margin-left: 31px;
@@ -1986,7 +1996,7 @@ nav#skip_navi a {
     display: flex;
     flex-direction: column;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     bottom: 50px;
     right: 50px;
     line-height: 1;
@@ -1999,7 +2009,7 @@ nav#skip_navi a {
   }
   .quick .btn_top,
   .quick button:not(:last-child) {
-    filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.25));
   }
   /* gnb BG
   ****************************************************************/
@@ -3151,7 +3161,6 @@ nav#skip_navi a {
     position: relative;
     width: calc(100% / 3);
     max-width: 380px;
-    margin-left: -1px;
   }
   .sub_nav1 .depth:before {
     content: "";
@@ -3597,7 +3606,6 @@ nav#skip_navi a {
       /*button
     ********************/
     .inquire_btn {
-      padding-bottom: 0;
       background-size: 13px auto;
       background-position: bottom 5px right 2px;
     }

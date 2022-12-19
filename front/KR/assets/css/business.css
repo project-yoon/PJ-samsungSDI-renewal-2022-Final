@@ -73,10 +73,12 @@ section.content .content_inner {
     overflow: hidden;
     width: 100%;
     max-width: 540px;
-    height: 304px;
     margin: 0 auto;
     border-radius: 20px;
     cursor: pointer;
+}
+.guide_info .info_body .video video {
+    border-radius: 20px;
 }
 .guide_info .info_list {
     padding: 40px;
@@ -160,13 +162,6 @@ ol.round_num li:last-child {
     background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 100%);
 }
 
-.visual_info.full .inner {
-    transform: translateX(-50%);
-}
-.visual_info.full .inner .titsub1 {
-    opacity: 0;
-}
-
 .business .sub_visual {
     background-image: url(../images/business/visual_business_01.png);
 }
@@ -201,37 +196,61 @@ ol.round_num li:last-child {
 /*스크롤 모션*/
 .scroll_event_wrap {
     height: 100vh;
-    /* height: auto; */
 }
 
 .nested_wrap .swiper-nested {
     flex-direction: unset;
+    overflow: hidden;
+    padding: 0 24px;
+    box-sizing: border-box;
 }
+
 .nested_wrap .swiper-nested .swiper-slide {
-    opacity: 0.2;
     transition-delay: .5s;
-    transition: .5s;
+    transition: .3s;
+    line-height:1.8;
+}
+.nested_wrap .swiper-nested .swiper-slide:not(:first-child) {
+    margin-top: 70px;
+}
+
+.nested_wrap .swiper-nested .swiper-slide.swiper-slide-prev {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 .nested_wrap .swiper-nested .swiper-slide.swiper-slide-active{
-    opacity: 1;
+    color: #fff;
+    background: unset;
 }
+.nested_wrap .swiper-nested .swiper-slide.swiper-slide-next {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/*타입 2*/
+ul.businessAniArea {padding: 0 40px;}
+ul.businessAniArea li{ opacity: 0; transform: translateY(30px); line-height: 1.2; }
+ul.businessAniArea li + li {margin-top: 70px;}
+.active ul.businessAniArea li{ opacity: 1; transform: translateY(0); }
+.active ul.businessAniArea li:nth-child(1){ transform: translateY(-30px);  transition: .8s all;  }
+.active ul.businessAniArea li:nth-child(2){ transform: translateY(-40px); transition: .9s all .2s; }
 
 /* features_cont */
 .features_cont {
     margin-bottom: 180px;
 }
 .features_cont li {
-    height: 200px;
-    padding: 30px;
+    padding: 30px 30px 96px;
     background-color: #FFFFFF;
     background-position: bottom 30px right 30px;
-    background-size: 50px;
+    background-size: 56px;
     background-repeat: no-repeat;
     box-shadow: 5px 8px 30px rgb(16 28 93 / 10%);
     border-radius: 20px;
-}
-.automotive_battery .features_cont li {
-    height: 320px;
 }
 
 .business .features_cont li:nth-child(1) {
@@ -412,6 +431,7 @@ ol.round_num li:last-child {
     background-position-y: 5px;
 }
 
+
 /* 테블릿
 **********************************************************/
 @media all and (max-width: 1280px) {
@@ -464,6 +484,7 @@ ol.round_num li:last-child {
     }
     .guide_info .info_body .video {
         margin: 0 auto 20px;
+        border-radius: 14px;
     }
     .guide_info .info_body .video video {
         border-radius: 14px;
@@ -515,6 +536,7 @@ ol.round_num li:last-child {
         background-position: bottom 50% right 30px !important;
         background-size: 36px;
         border-radius: 14px;
+        padding: 30px;
     }
     .img_cont {
         overflow-x: auto;
@@ -702,10 +724,12 @@ ol.round_num li:last-child {
     .list_move_btn {
         background-position-y: 3px;
     }
-}
 
-@media all and (max-width: 376px) { 
-    .guide_info .info_body .video {
-        height: 194px;
-    }
+    /* .nested_wrap .swiper-nested .swiper-slide:not(:first-child) {
+        margin-top: 40px;
+    } */
+
+    ul.businessAniArea {padding: 0 24px;} 
+    ul.businessAniArea li {font-size: 16px;} 
+    
 }

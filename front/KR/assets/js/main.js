@@ -1,6 +1,7 @@
 $(document).ready(function () {
     // 메인 스크롤
 
+    var mainSec = document.querySelector('.main')
     var contItems = [...document.querySelectorAll('.cont_item')];
     var sectionEls = [
         document.querySelector('.sub_visual'),
@@ -39,7 +40,7 @@ $(document).ready(function () {
     }
 
     // 메인 윈도우 휠 이벤트
-    window.addEventListener('wheel', (evt) => {
+    mainSec.addEventListener('wheel', (evt) => {
         if (!evt.ctrlKey) {
             evt.preventDefault();
             scrollSection(evt.deltaY);
@@ -52,17 +53,17 @@ $(document).ready(function () {
     var maxOffsetX = 20;
     var minOffsetY = 50;
     
-    window.addEventListener('touchstart', (evt) => {
+    mainSec.addEventListener('touchstart', (evt) => {
         var touch = evt.touches[0];
         touchStartX = touch.clientX;
         touchStartY = touch.clientY;
     });
     
-    window.addEventListener('touchmove', (evt) => {
+    mainSec.addEventListener('touchmove', (evt) => {
         evt.preventDefault(); // 스크롤 동작 방지
     }, { passive:false })
     
-    window.addEventListener('touchend', (evt) =>{
+    mainSec.addEventListener('touchend', (evt) =>{
         if (evt.touches.length === 0) {
             var touch = evt.changedTouches[evt.changedTouches.length - 1];
             var offsetX = touchStartX - touch.clientX; // 터치 이동거리 X

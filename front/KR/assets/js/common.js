@@ -235,10 +235,23 @@ function initKeyinfoBtn() {
     .off("click")
     .on("click", function () {
       $(".keyinfo").fadeIn();
+      if($('body').find('#container.main')) {
+        $('body').css({
+          'height': '100vh',
+          'overflow':'hidden'
+        })
+      }
+
     });
   $(".keyinfo .close")
     .off("click")
     .on("click", function () {
+      if($('#container').hasClass('.main')) {
+        $('body').css({
+          'height': 'auto',
+          'overflow':'unset'
+        })
+      }
       $(".keyinfo").fadeOut();
     });
 }
@@ -776,6 +789,52 @@ function tabMenu1() {
   });
 }
 
+function subNavCenterSwiper () {
+
+  // var subnavSwiper = new Swiper('.scroll_ani_wrap .sub_nav',{
+  //   slidesPerView: 'auto',
+  //   preventClicks: true,
+  //   preventClicksPropagation: false,
+  // })
+
+  // var $snbSwiperItem = $('.scroll_ani_wrap .sub_nav .swiper-wrapper .swiper-slide a');
+  //   $snbSwiperItem.on('click',function(){
+  //       var target = $(this).parent();
+  //       $snbSwiperItem.parent().removeClass('on')
+  //       target.addClass('on');
+  //       muCenter(target);
+  //   })
+
+//   function muCenter(target){
+//     var snbwrap = $('.scroll_ani_wrap .sub_nav .swiper-wrapper');
+//     var targetPos = target.css().position();
+//     var box = $('.sub_nav');
+//     var boxHarf = box.width()/2;
+//     var pos;
+//     var listWidth=0;
+    
+//     snbwrap.find('.swiper-slide').each(function(){ listWidth += $(this).outerWidth(); })
+    
+//     var selectTargetPos = targetPos.left + target.outerWidth()/2;
+//     if (selectTargetPos <= boxHarf) { // left
+//         pos = 0;
+//     }else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+//         pos = listWidth-box.width();
+//     }else {
+//         pos = selectTargetPos - boxHarf;
+//     }
+    
+//     setTimeout(function(){snbwrap.css({
+//         "transform": "translate3d("+ (pos*-1) +"px, 0, 0)",
+//         "transition-duration": "500ms"
+//     })}, 200);
+// }
+
+//   subnavSwiper
+//   muCenter()
+
+}
+
 //  --- guide.js
 function searchNav() {
   var searchBtn = $(".tab_nav  .tab_list_filter button"),
@@ -1216,6 +1275,7 @@ $(document).ready(function () {
   subNav1(); // 인베스트먼트에 있는 네비
   tabMenu1(); // 비즈니스에 있는 탭
   sticky();
+  // subNavCenterSwiper();
   //  --- guide.js
   initFilterSearch();
   initFilter(); //filter_selected

@@ -117,6 +117,7 @@
     padding: 24px 40px;
     text-align: left;
     line-height: 1.4;
+    color: #666;
 }
 
 /* 이사회
@@ -264,7 +265,7 @@
 /* 주식 정보 - 공통사항
 **********************************************************/
 .list_star {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 .list_star > li {
     position: relative;
@@ -364,7 +365,7 @@
 .shareholders .graph_circle ul li:nth-child(5):before {
     background-color: #7094F0;
 }
-.shareholders .basic_table {margin-top: 24px;}
+.shareholders .basic_table {margin-top: 30px;}
 
 /*주주총회
 **********************************************************/
@@ -824,7 +825,7 @@
         border-radius: 7px;
     }
     .dividend_details .stock_info dt {
-        margin-bottom: 14px;
+        margin-bottom: 16px;
     }
     .dividend_details .stock_info dd {
         line-height: 1.3;
@@ -948,10 +949,12 @@
     }
     .disclosure .division_cont li p.division_date,
     .disclosure .division_cont li p.division_tit,
-    .notice .division_cont li p.division_date,
-    .notice .division_cont li p.division_tit {
+    .notice .division_cont li p.division_date {
         display: block;
         font-size: 14px;
+    }
+    .notice .division_cont li p.division_tit {
+        display: block;
     }
 
     /* 공시 상세 */
@@ -1071,6 +1074,9 @@
         right: 2.09%;
         top: 1.34%;
     }
+    .list_star {
+        margin-top: 0;
+    }
 
     /* 팝업
 	***********************************************************/
@@ -1098,4 +1104,5 @@
     .popup.full_modal .pop_cont .view_file {
         flex-direction: column;
     }
+
 }
