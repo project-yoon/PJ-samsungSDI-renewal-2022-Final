@@ -5,12 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>삼성SDI - About Us | 삼성SDI 공식사이트</title>
+		<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="../../assets/css/base.css">
 		<link rel="stylesheet" href="../../assets/css/common.css">
-		<script src="../../assets/js/jquery-1.11.3.min.js"></script>
-		<script src="../../assets/js/common.js"></script>
 		<link rel="stylesheet" href="../../assets/css/about_sdi.css">
-		<!-- <script src="../../assets/js/about_sdi.js"></script> -->
+		<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+		<script src="../../assets/js/jquery.fullPage.js"></script>
+		<script src="../../assets/js/swiper-bundle.min.js"></script>
+		<script src="../../assets/js/common.js"></script>
+		<script src="../../assets/js/about_sdi.js"></script>
 		</head>
 	<body>
 		<nav id="skip_navi">
@@ -587,54 +590,58 @@
 
 		<!--  container -->
 		<div id="container" class="about">
-			<div class="wrap">
-				<div class="sub_visual full">
-					<h2 class="subH">About Us</h2>
-					<p class="titsub1">친환경 에너지와 첨단 소재 분야를 이끌어 나갑니다.</p>
-
-					<div class="sub_nav">
-						<ul>
-							<li class="on"><a href="./index.html" class="titsub2">About Us</a></li>
-							<li><a href="./history.html" class="titsub2">History</a></li>
-							<li><a href="./ci.html" class="titsub2">CI</a></li>
-							<li><a href="./research_development.html" class="titsub2">R&amp;D</a></li>
-							<li><a href="./global_network.html" class="titsub2">Global Network</a></li>
-						</ul>
-					</div>
-					<div class="btn_scrolldown">
-						<button><span  class="blind">하단 내용으로 이동하기</span></button>
+			<div class="wrap" id="fullpage">
+				<div class="section">
+					<div class="sub_visual full">
+						<h2 class="subH">About Us</h2>
+						<p class="titsub1">친환경 에너지와 첨단 소재 분야를 이끌어 나갑니다.</p>
+	
+						<div class="sub_nav">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide on"><a href="./index.html" class="titsub2"><span>About Us</span></a></li>
+								<li class="swiper-slide"><a href="./history.html" class="titsub2"><span>History</span></a></li>
+								<li class="swiper-slide"><a href="./ci.html" class="titsub2"><span>CI</span></a></li>
+								<li class="swiper-slide"><a href="./research_development.html" class="titsub2"><span>R&amp;D</span></a></li>
+								<li class="swiper-slide"><a href="./global_network.html" class="titsub2"><span>Global Network</span></a></li>
+							</ul>
+						</div>
+						<!-- <div class="btn_scrolldown">
+							<button class="button-next"><span  class="blind">하단 내용으로 이동하기</span></button>
+						</div> -->
 					</div>
 				</div>
-				<div class="visual_info">
-					<dl class="about_story flex_between">
-						<dt class="subH2">
-							<span class="txtR">삼성SDI 스토리</span>
-							미래 친환경 에너지와<br class="pc">  첨단소재,<br class="pc"> <br class="mo">삼성SDI가 함께 합니다.
-						</dt>
-						<dd>
-							<div class="video pc_img">
-								<a href="#" class="popOpen" data-id="pop_sdi_story"><img src="../../assets/images/about_sdi/about_movie_thumb.png" alt="삼성SDI 스토리 미래 친환경 에너지와 첨단소재 영상"></a>
-							</div>
-							<div class="video mo_img">
-								<a href="#" class="popOpen" data-id="pop_sdi_story"><img src="../../assets/images/about_sdi/about_movie_thumb_mo.png" alt="삼성SDI 스토리 미래 친환경 에너지와 첨단소재 영상"></a>
-							</div>
-						</dd>
-					</dl>
-					<h3 class="subH">Core Value</h3>
-					<ul class="value_list flex_between">
-						<li class="flex_item_3n">
-							<b class="titsub2 color_g1">최고</b>
-							<span class="txt_req">Best</span>
-						</li>
-						<li class="flex_item_3n">
-							<b class="titsub2 color_g1">고객</b>
-							<span class="txt_req">Customer</span>
-						</li>
-						<li class="flex_item_3n">
-							<b class="titsub2 color_g1">혁신</b>
-							<span class="txt_req">Innovation</span>
-						</li>
-					</ul>
+				<div class="section" id="targetResponsive">
+					<div class="visual_info">
+						<dl class="about_story flex_between">
+							<dt class="subH2">
+								<span class="txtR">삼성SDI 스토리</span>
+								미래 친환경 에너지와<br class="pc">  첨단소재,<br class="pc"> <br class="mo">삼성SDI가 함께 합니다.
+							</dt>
+							<dd>
+								<div class="video pc_img">
+									<a href="#" class="popOpen" data-id="pop_sdi_story"><img src="../../assets/images/about_sdi/about_movie_thumb.png" alt="삼성SDI 스토리 미래 친환경 에너지와 첨단소재 영상"></a>
+								</div>
+								<div class="video mo_img">
+									<a href="#" class="popOpen" data-id="pop_sdi_story"><img src="../../assets/images/about_sdi/about_movie_thumb_mo.png" alt="삼성SDI 스토리 미래 친환경 에너지와 첨단소재 영상"></a>
+								</div>
+							</dd>
+						</dl>
+						<h3 class="subH">Core Value</h3>
+						<ul class="value_list flex_between">
+							<li class="flex_item_3n">
+								<b class="titsub2 color_g1">최고</b>
+								<span class="txt_req">Best</span>
+							</li>
+							<li class="flex_item_3n">
+								<b class="titsub2 color_g1">고객</b>
+								<span class="txt_req">Customer</span>
+							</li>
+							<li class="flex_item_3n">
+								<b class="titsub2 color_g1">혁신</b>
+								<span class="txt_req">Innovation</span>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<!-- Start Of Contents -->
 				<section class="content">
@@ -792,27 +799,27 @@
 					<div class="video">
 						<!-- mp4 사용 시 -->
 						<div class="video_file">
-							<video width="100%" loop controls muted>
-								<source src="../../assets/video/video_sample.mp4" type="video/mp4">
+							<video loop controls muted>
+								<source src="../../assets/video/about_sdi_video_KR.mp4" type="video/mp4">
 							</video>
 						</div>
 						<!-- mp4 사용 & pc와 모바일 파일이 다를 경우 사용 -->
 						<!-- <div class="video_file">
 							
-							<video width="100%" class="pc" loop controls muted>
+							<video class="pc" loop controls muted>
 								<source src="../../assets/video/about_sdi_video.mp4" type="video/mp4">
 							</video>
-							<video width="100%" class="mo" loop controls muted>
+							<video class="mo" loop controls muted>
 								<source src="../../assets/video/about_sdi_video_mo.mp4" type="video/mp4">
 							</video>
 						</div> -->
 						<!-- url 사용 시 -->
-						<!-- <video width="100%" poster="../../assets/images/business/guide_info01.jpg" loop controls muted>
+						<!-- <video poster="../../assets/images/business/guide_info01.jpg" loop controls muted>
 							<source src="https://www.samsungsdi.co.kr/resources/common/movie/lithium_ion_battery_warning_kor.mp4" type="video/mp4">
 						</video> -->
 						<!-- utube 사용 시 -->
 						<!-- <div class="video_iframe">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/gdXvJaGWyyk?enablejsapi=1&version=3&playerapiid=ytplayerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe height="100%" src="https://www.youtube.com/embed/gdXvJaGWyyk?enablejsapi=1&version=3&playerapiid=ytplayerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div> -->
 					</div>
 				</div>

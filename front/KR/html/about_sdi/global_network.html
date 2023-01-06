@@ -5,11 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>삼성SDI - Global Network | 삼성SDI 공식사이트</title>
+        <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="../../assets/css/base.css">
 		<link rel="stylesheet" href="../../assets/css/common.css">
-		<script src="../../assets/js/jquery-1.11.3.min.js"></script>
-		<script src="../../assets/js/common.js"></script>
         <link rel="stylesheet" href="../../assets/css/about_sdi.css">
+		<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+		<script src="../../assets/js/jquery.fullPage.js"></script>
+        <script src="../../assets/js/swiper-bundle.min.js"></script>
+		<script src="../../assets/js/common.js"></script>
 		<script src="../../assets/js/about_sdi.js"></script>
 		<script src="../../assets/js/business.js"></script>
 	</head>
@@ -589,497 +592,209 @@
 
 		<!--  container -->
 		<div id="container" class="network">
-			<div class="wrap">
-				<div class="sub_visual full">
-					<h2 class="subH">Global Network</h2>
-					<p class="titsub1">세계 각지로 글로벌 네트워크를<br> 확장해 나가고 있습니다.</p>
-					<div class="sub_nav">
-						<ul class="col5ea">
-							<li><a href="./index.html" class="titsub2">About Us</a></li>
-							<li><a href="./history.html" class="titsub2">History</a></li>
-							<li><a href="./ci.html" class="titsub2">CI</a></li>
-							<li><a href="./research_development.html" class="titsub2">R&amp;D</a></li>
-							<li class="on"><a href="./global_network.html" class="titsub2">Global Network</a></li>
-						</ul>
-					</div>
-					<div class="btn_scrolldown">
-						<button><span  class="blind">하단 내용으로 이동하기</span></button>
-					</div>
-				</div>
-				<!-- Start Of Contents -->
-				<section class="content">
-					<h3 class="blind">Global Network 상세페이지</h3>
-					<div class="content_inner">
-						<div class="network_cont">
-							<p class="txtR color_g2">전 세계인의 생활 속에 함께, 새로운 미래를 위해</p>
-							<h3 class="subH">삼성SDI는<br>더 넓은 세계를 향해 나아가겠습니다.</h3>
-							<div class="map_box">
-								<ul class="map_header">
-                                    <li>
-                                        <input id="chk_all" type="radio" name="chk_type" value="all" checked>
-                                        <label for="chk_all"><span class="chkspan"></span>전체</label>
-                                    </li>
-                                    <li>
-                                        <input id="chk_product" type="radio" name="chk_type" value="product" class="chk_sub">
-                                        <label for="chk_product"><span class="chkspan"></span>생산법인</label>
-                                    </li>
-                                    <li>
-                                        <input id="chk_sale" type="radio" name="chk_type" value="sale" class="chk_sub">
-                                        <label for="chk_sale"><span class="chkspan"></span>판매법인</label>
-                                    </li>
-                                    <li>
-                                        <input id="chk_develop" type="radio" name="chk_type" value="develop" class="chk_sub">
-                                        <label for="chk_develop"><span class="chkspan"></span>연구개발</label>
-                                    </li>
-								</ul>
-								<!-- //map_btn_list -->
-								<div class="map_body wide">
-									<div class="bg_img">
-										<img src="../../assets/images/about_sdi/map_box_bg.png" alt="지도 배경" class="pc_img">
-										<img src="../../assets/images/about_sdi/map_box_bg_m.png" alt="지도 배경" class="mo_img">
-									</div>
-									<div class="map_list"><!-- 전체 -->
-										<img src="../../assets/images/about_sdi/map_box_all.png" alt="전체 체크된" class="pc_img">
-										<img src="../../assets/images/about_sdi/map_box_all_m.png" alt="전체 체크된" class="mo_img">
-									</div>
-									<div class="map_list"><!-- 생산법인 -->
-										<img src="../../assets/images/about_sdi/map_box_product.png" alt="생산법인 위치가 체크된 지도" class="pc_img">
-										<img src="../../assets/images/about_sdi/map_box_product_m.png" alt="생산법인 위치가 체크된 지도" class="mo_img">
-									</div>
-									<div class="map_list"><!-- 판매법인 -->
-										<img src="../../assets/images/about_sdi/map_box_sale.png" alt="판매법인 위치가 체크된 지도" class="pc_img">
-										<img src="../../assets/images/about_sdi/map_box_sale_m.png" alt="판매법인 위치가 체크된 지도" class="mo_img">
-									</div>
-									<div class="map_list"><!-- 연구개발 -->
-										<img src="../../assets/images/about_sdi/map_box_develop.png" alt="연구개발 위치가 체크된 지도" class="pc_img">
-										<img src="../../assets/images/about_sdi/map_box_develop_m.png" alt="연구개발 위치가 체크된 지도" class="mo_img">
-									</div>
-								</div>
-							</div>
-							<!-- //map_box -->
-							<div class="tab_area" data-role="tab">
-								<div class="tab_nav wide">
-									<div class="inner">
-										<!-- 탭 메뉴 -->
-										<div class="tab_list">
-											<ul class="col2" role="tablist" aria-label="Tabs">
-												<li class="tab_item active">
-													<a href="javascript:void(0);" class="tab-button" id="tab-01" aria-controls="tab-panel-01" role="tab" aria-selected="true" tabindex="0">국내</a>
-												</li>
-												<li class="tab_item">
-													<a href="javascript:void(0);" class="tab-button" id="tab-02" aria-controls="tab-panel-02" role="tab" aria-selected="false" tabindex="-1">해외</a>
-												</li>
-											</ul>
-										</div>
-										<!-- //탭 메뉴 -->
-									</div>
-								</div>
-
-								<div class="tab_conts">
-									<!-- TAB1 내용 -->
-									<div class="tab_cont active" id="tab-panel-01" aria-labelledby="tab-01" role="tabpanel" tabindex="0">
-										<section class="inner">
-											<h3 class="blind">국내 내용</h3>
-                                                <ul class="network_list flex_between">
-                                                    <li class="flex_item_3n">
-                                                        <div class="list_tit">
-                                                            <h4 class="titsub1B _req">본사</h4>
-                                                            <p class="txt_info color_g2">용인</p>
-                                                        </div>
-                                                        <div class="list_txt">
-                                                            <b class="txtB">기흥 본사</b>
-                                                            <span class="txt_caption color01">주소</span>
-                                                            <p class="txtR color_g2">경기도 용인시 기흥구 공세로 150-20</p>
-                                                            <span class="txt_caption color01">전화번호</span>
-                                                            <p class="txtR color_g2 tel">+82-31-288-4115</p>
-                                                        </div>
+			<div class="wrap" id="fullpage">
+                <div class="section">
+                    <div class="sub_visual full">
+                        <h2 class="subH">Global Network</h2>
+                        <p class="titsub1">세계 각지로 글로벌 네트워크를<br> 확장해 나가고 있습니다.</p>
+                        <div class="sub_nav">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide"><a href="./index.html" class="titsub2"><span>About Us</span></a></li>
+                                <li class="swiper-slide"><a href="./history.html" class="titsub2"><span>History</span></a></li>
+                                <li class="swiper-slide"><a href="./ci.html" class="titsub2"><span>CI</span></a></li>
+                                <li class="swiper-slide"><a href="./research_development.html" class="titsub2"><span>R&amp;D</span></a></li>
+                                <li class="swiper-slide on"><a href="./global_network.html" class="titsub2"><span>Global Network</span></a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="btn_scrolldown">
+                            <button class="button-next"><span  class="blind">하단 내용으로 이동하기</span></button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="section" id="targetResponsive">
+                    <!-- Start Of Contents -->
+                    <section class="content">
+                        <h3 class="blind">Global Network 상세페이지</h3>
+                        <div class="content_inner">
+                            <div class="network_cont">
+                                <p class="txtR color_g2">전 세계인의 생활 속에 함께, 새로운 미래를 위해</p>
+                                <h3 class="subH">삼성SDI는<br>더 넓은 세계를 향해 나아가겠습니다.</h3>
+                                <div class="map_box">
+                                    <ul class="map_header">
+                                        <li>
+                                            <input id="chk_all" type="radio" name="chk_type" value="all" checked>
+                                            <label for="chk_all"><span class="chkspan"></span>전체</label>
+                                        </li>
+                                        <li>
+                                            <input id="chk_product" type="radio" name="chk_type" value="product" class="chk_sub">
+                                            <label for="chk_product"><span class="chkspan"></span>생산법인</label>
+                                        </li>
+                                        <li>
+                                            <input id="chk_sale" type="radio" name="chk_type" value="sale" class="chk_sub">
+                                            <label for="chk_sale"><span class="chkspan"></span>판매법인</label>
+                                        </li>
+                                        <li>
+                                            <input id="chk_develop" type="radio" name="chk_type" value="develop" class="chk_sub">
+                                            <label for="chk_develop"><span class="chkspan"></span>연구개발</label>
+                                        </li>
+                                    </ul>
+                                    <!-- //map_btn_list -->
+                                    <div class="map_body wide">
+                                        <div class="bg_img">
+                                            <img src="../../assets/images/about_sdi/map_box_bg.png" alt="지도 배경" class="pc_img">
+                                            <img src="../../assets/images/about_sdi/map_box_bg_m.png" alt="지도 배경" class="mo_img">
+                                        </div>
+                                        <div class="map_list"><!-- 전체 -->
+                                            <img src="../../assets/images/about_sdi/map_box_all.png" alt="전체 체크된" class="pc_img">
+                                            <img src="../../assets/images/about_sdi/map_box_all_m.png" alt="전체 체크된" class="mo_img">
+                                        </div>
+                                        <div class="map_list"><!-- 생산법인 -->
+                                            <img src="../../assets/images/about_sdi/map_box_product.png" alt="생산법인 위치가 체크된 지도" class="pc_img">
+                                            <img src="../../assets/images/about_sdi/map_box_product_m.png" alt="생산법인 위치가 체크된 지도" class="mo_img">
+                                        </div>
+                                        <div class="map_list"><!-- 판매법인 -->
+                                            <img src="../../assets/images/about_sdi/map_box_sale.png" alt="판매법인 위치가 체크된 지도" class="pc_img">
+                                            <img src="../../assets/images/about_sdi/map_box_sale_m.png" alt="판매법인 위치가 체크된 지도" class="mo_img">
+                                        </div>
+                                        <div class="map_list"><!-- 연구개발 -->
+                                            <img src="../../assets/images/about_sdi/map_box_develop.png" alt="연구개발 위치가 체크된 지도" class="pc_img">
+                                            <img src="../../assets/images/about_sdi/map_box_develop_m.png" alt="연구개발 위치가 체크된 지도" class="mo_img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //map_box -->
+                                <div class="tab_area" data-role="tab">
+                                    <div class="tab_nav wide">
+                                        <div class="inner">
+                                            <!-- 탭 메뉴 -->
+                                            <div class="tab_list">
+                                                <ul class="col2" role="tablist" aria-label="Tabs">
+                                                    <li class="tab_item active">
+                                                        <a href="javascript:void(0);" class="tab-button" id="tab-01" aria-controls="tab-panel-01" role="tab" aria-selected="true" tabindex="0">국내</a>
                                                     </li>
-                                                    <li class="flex_item_3n">
-                                                        <div class="list_tit">
-                                                            <h4 class="titsub1B _req">R&D</h4>
-                                                            <p class="txt_info color_g2">수원</p>
-                                                        </div>
-                                                        <div class="list_txt">
-                                                            <b class="txtB">삼성SDI 연구소</b>
-                                                            <span class="txt_caption color01">주소</span>
-                                                            <p class="txtR color_g2">경기도 수원시 영통구 삼성로 130</p>
-                                                            <span class="txt_caption color01">전화번호</span>
-                                                            <p class="txtR color_g2 tel">+82-31-8061-2114</p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="flex_item_3n">
-                                                        <div class="list_tit">
-                                                            <h4 class="titsub1B _req">전자재료</h4>
-                                                            <p class="txt_info color_g2">수원</p>
-                                                        </div>
-                                                        <div class="list_txt">
-                                                            <b class="txtB">전자재료</b>
-                                                            <span class="txt_caption color01">주소</span>
-                                                            <p class="txtR color_g2">경기도 수원시 영통구 삼성로 130</p>
-                                                            <span class="txt_caption color01">전화번호</span>
-                                                            <p class="txtR color_g2 tel">+82-31-8061-5885</p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="flex_item_3n">
-                                                        <div class="list_tit">
-                                                            <h4 class="titsub1B _req">소형 배터리</h4>
-                                                            <p class="txt_info color_g2">천안</p>
-                                                        </div>
-                                                        <div class="list_txt">
-                                                            <b class="txtB">천안사업장</b>
-                                                            <span class="txt_caption color01">주소</span>
-                                                            <p class="txtR color_g2">충청남도 천안시 서북구 번영로 467 </p>
-                                                            <span class="txt_caption color01">전화번호</span>
-                                                            <p class="txtR color_g2 tel">+82-41-560-3991</p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="flex_item_3n">
-                                                        <div class="list_tit">
-                                                            <h4 class="titsub1B _req">자동차 배터리 &#47; ESS</h4>
-                                                            <p class="txt_info color_g2">울산</p>
-                                                        </div>
-                                                        <div class="list_txt">
-                                                            <b class="txtB">울산 사업장</b>
-                                                            <span class="txt_caption color01">주소</span>
-                                                            <p class="txtR color_g2">울산 울주군 삼남면 반구대로 163</p>
-                                                            <span class="txt_caption color01">전화번호</span>
-                                                            <p class="txtR color_g2 tel">+82-55-380-1117</p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="flex_item_3n">
-                                                        <div class="list_tit">
-                                                            <h4 class="titsub1B _req">전자재료</h4>
-                                                            <p class="txt_info color_g2">청주</p>
-                                                        </div>
-                                                        <div class="list_txt">
-                                                            <b class="txtB">청주 사업장</b>
-                                                            <span class="txt_caption color01">주소</span>
-                                                            <p class="txtR color_g2">충청북도 청주시 청원구 오창읍 과학산업 4로 146</p>
-                                                            <span class="txt_caption color01">전화번호</span>
-                                                            <p class="txtR color_g2 tel">+82-43-200-0114</p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="flex_item_3n">
-                                                        <div class="list_tit">
-                                                            <h4 class="titsub1B _req">전자재료</h4>
-                                                            <p class="txt_info color_g2">구미</p>
-                                                        </div>
-                                                        <div class="list_txt">
-                                                            <b class="txtB">구미 사업장</b>
-                                                            <span class="txt_caption color01">주소</span>
-                                                            <p class="txtR color_g2">경상북도 구미시 구미대로 58</p>
-                                                            <span class="txt_caption color01">전화번호</span>
-                                                            <p class="txtR color_g2 tel">+82-54-468-2804</p>
-                                                        </div>
+                                                    <li class="tab_item">
+                                                        <a href="javascript:void(0);" class="tab-button" id="tab-02" aria-controls="tab-panel-02" role="tab" aria-selected="false" tabindex="-1">해외</a>
                                                     </li>
                                                 </ul>
-										</section>
-									</div>
-
-									<!-- TAB2 내용 -->
-									<div class="tab_cont" id="tab-panel-02" aria-labelledby="tab-02" role="tabpanel" tabindex="0" aria-hidden="true" aria-expanded="true">
-										<section class="inner">
-											<h3 class="blind">해외 내용 </h3>
-                                            <!-- subTab_cont -->
-                                            <div class="subTab_cont">
-                                                <ul class="tab_menu wide">
-                                                    <li><button>전체</button></li>
-                                                    <li><button>아메리카</button></li>
-                                                    <li><button>유럽</button></li>
-                                                    <li><button>아시아</button></li>
-                                                </ul>
-                                                <div class="tab_item">
-                                                    <ul class="network_list global_list flex">
+                                            </div>
+                                            <!-- //탭 메뉴 -->
+                                        </div>
+                                    </div>
+    
+                                    <div class="tab_conts">
+                                        <!-- TAB1 내용 -->
+                                        <div class="tab_cont active" id="tab-panel-01" aria-labelledby="tab-01" role="tabpanel" tabindex="0">
+                                            <section class="inner">
+                                                <h3 class="blind">국내 내용</h3>
+                                                    <ul class="network_list flex_between">
                                                         <li class="flex_item_3n">
                                                             <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">AMERICA-Auburn Hill &#40;production &#47; Sales&#41;</p>
+                                                                <h4 class="titsub1B _req">본사</h4>
+                                                                <p class="txt_info color_g2">용인</p>
                                                             </div>
                                                             <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI America, Inc</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">4121 N. Atlantic Blvd., Auburn Hills, MI 48326 USA</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+1-248-843-7871</p>
+                                                                <b class="txtB">기흥 본사</b>
+                                                                <span class="txt_caption color01">주소</span>
+                                                                <p class="txtR color_g2">경기도 용인시 기흥구 공세로 150-20</p>
+                                                                <span class="txt_caption color01">전화번호</span>
+                                                                <p class="txtR color_g2 tel">+82-31-288-4115</p>
                                                             </div>
                                                         </li>
                                                         <li class="flex_item_3n">
                                                             <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">AMERICA &#45; San Jose &#40;Sales&#41;</p>
+                                                                <h4 class="titsub1B _req">R&D</h4>
+                                                                <p class="txt_info color_g2">수원</p>
                                                             </div>
                                                             <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI America, Inc<br class="mo"> &#40;San Jose Branch&#41;</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">3655 North 1st Street, San Jose, CA 95134, USA</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+1-408-504-6063</p>
+                                                                <b class="txtB">삼성SDI 연구소</b>
+                                                                <span class="txt_caption color01">주소</span>
+                                                                <p class="txtR color_g2">경기도 수원시 영통구 삼성로 130</p>
+                                                                <span class="txt_caption color01">전화번호</span>
+                                                                <p class="txtR color_g2 tel">+82-31-8061-2114</p>
                                                             </div>
                                                         </li>
                                                         <li class="flex_item_3n">
                                                             <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">AUSTRIA &#45; Premstätten &#40;Production&#41;</p>
+                                                                <h4 class="titsub1B _req">전자재료</h4>
+                                                                <p class="txt_info color_g2">수원</p>
                                                             </div>
                                                             <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Battery Systems GmbH</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">Frikusweg 1, 8141 Premstätten, Austria</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+43-3135-5183014</p>
+                                                                <b class="txtB">전자재료</b>
+                                                                <span class="txt_caption color01">주소</span>
+                                                                <p class="txtR color_g2">경기도 수원시 영통구 삼성로 130</p>
+                                                                <span class="txt_caption color01">전화번호</span>
+                                                                <p class="txtR color_g2 tel">+82-31-8061-5885</p>
                                                             </div>
                                                         </li>
                                                         <li class="flex_item_3n">
                                                             <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Electronic Materials</h4>
-                                                                <p class="txt_info color_g2">GERMANY &#45; Dresden &#40;Sales&#41;</p>
+                                                                <h4 class="titsub1B _req">소형 배터리</h4>
+                                                                <p class="txt_info color_g2">천안</p>
                                                             </div>
                                                             <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Hungary Zrt.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">01099 Elisabeth-Boer-Straße 9 Dresden Germany</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+49-351-79890-252</p>
+                                                                <b class="txtB">천안사업장</b>
+                                                                <span class="txt_caption color01">주소</span>
+                                                                <p class="txtR color_g2">충청남도 천안시 서북구 번영로 467 </p>
+                                                                <span class="txt_caption color01">전화번호</span>
+                                                                <p class="txtR color_g2 tel">+82-41-560-3991</p>
                                                             </div>
                                                         </li>
                                                         <li class="flex_item_3n">
                                                             <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">GERMANY &#45; Munich &#40;Sales&#41;</p>
+                                                                <h4 class="titsub1B _req">자동차 배터리 &#47; ESS</h4>
+                                                                <p class="txt_info color_g2">울산</p>
                                                             </div>
                                                             <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Europe GmbH</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">Reichenbachstr.2, 85737 Ismaning, Germany</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+49-89-9292-7799(20)</p>
+                                                                <b class="txtB">울산 사업장</b>
+                                                                <span class="txt_caption color01">주소</span>
+                                                                <p class="txtR color_g2">울산 울주군 삼남면 반구대로 163</p>
+                                                                <span class="txt_caption color01">전화번호</span>
+                                                                <p class="txtR color_g2 tel">+82-55-380-1117</p>
                                                             </div>
                                                         </li>
                                                         <li class="flex_item_3n">
                                                             <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">GERMANY &#45; Munich &#40;R&D&#41;</p>
+                                                                <h4 class="titsub1B _req">전자재료</h4>
+                                                                <p class="txt_info color_g2">청주</p>
                                                             </div>
                                                             <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Europe GmbH</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">Reichenbachstr.2, 85737 Ismaning, Germany</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+49-89-9292-7799(20)</p>
+                                                                <b class="txtB">청주 사업장</b>
+                                                                <span class="txt_caption color01">주소</span>
+                                                                <p class="txtR color_g2">충청북도 청주시 청원구 오창읍 과학산업 4로 146</p>
+                                                                <span class="txt_caption color01">전화번호</span>
+                                                                <p class="txtR color_g2 tel">+82-43-200-0114</p>
                                                             </div>
                                                         </li>
                                                         <li class="flex_item_3n">
                                                             <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">GERMANY &#45; Braunschweig &#40;Sales&#41;</p>
+                                                                <h4 class="titsub1B _req">전자재료</h4>
+                                                                <p class="txt_info color_g2">구미</p>
                                                             </div>
                                                             <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Europe GmbH &#40;Braunschweig Branch&#41;</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">Frankfurter Str. 3C, 38122 Braunschweig, Germany</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+49-531-12045308</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">UK &#45; Warwick &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Europe GmbH &#40;UK Office&#41;</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">13B Warwick innovation center, Gallows Hill Warwick UK CV34 6UW</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+44-7840-508070</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Electronic Materials</h4>
-                                                                <p class="txt_info color_g2">Hungary &#45; Göd &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Hungary Zrt.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">2131 Göd, Schenek István utca 1, hungary</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+36-2-788-7020</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Beijing &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI China Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">Room 2101-2, 21st Floor, Samsung Tower, Building 1, Yard 31, Jinghui Street, Chaoyang District, Beijing</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-10-8458-5611</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Hong Kong &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI &#40;Hongkong&#41; Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">Unit 701, 7 Floor. Tower 2, Metroplaza, 223 Hing Fong Road, Kwai Fong, N.T. Hong Kong</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+852-3743-0527</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Shanghai &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI China Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    200051) Samsung SDI, 19F, Building 1, Jinhongqiao International Center, No 523, Loushanguan Rd., Changning District, Shanghai China
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-21-6232-0101</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Shenzhen &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI China Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    518064 RM CDE , 20F SCC TOWER A, NO.88 HAIDE 1ST ROAD, NANSHAN DISTRICT, SHENZHEN. CHINA
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-755-2382-2036</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Tianjin &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Tianjin Samsung SDI Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    301726 QingLing road no. 1,YAT-SEN Scientific&Industrial Park, Wuqing District, Tianjin, China
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-22-8212-9971(5200)</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Electronic Materials</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Wuxi &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Wuxi Co.,LTD</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">Xinhua Rd, Wuxi New District, Wuxi City, Jiangsu Province, China</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-510-8526-5060</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Xi'an &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI&#45;ARN&#40;Xi'an&#41; Power Battery Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">No. 2655, Biyuan 3rd Rd, Changan District, Xi'an, Shaanxi Province, China</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-029-8640-9999</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">INDIA &#45; Noida &#40;Production &#47; Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI India Private Limited</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    Unit No. 720, Tower B, Advant Navis Business Park , Plot No. 7 Sector-142, Expressway Noida &#45; 201305 Noida, Uttar Pradesh, INDIA
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+91-120-455-1750</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">JAPAN &#45; Tokyo &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Japan Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">(108-0075) Shinagawa Grand Central Tower 9F, 2-16-4, Konan, Minato-ku, Tokyo, Japan</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+81-3-6369-6401<br>+81-3-6369-6404</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_infoR color_g2">MALAYSIA &#45; Seremban &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Energy Malaysia SDN. Bhd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    71450 Lot 635 & 660, Kawasan Perindustrian Tuanku Jaafar,<br> Seremban, Negeri Sembilan,<br> Malaysia
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+606-760-1000<br>+606-670-1762&#40;Recruiting&#41;</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
-                                                                <p class="txt_info color_g2">TAIWAN &#45; Taipei &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Taiwan Branch</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">7F-1., No.399, Rui Guang Rd., Neihu Dist, Taipei, Taiwan</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+886-2-8178-5900</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">VIETNAM &#45; Bac Ninh &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI VietNam Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    Yen Phong 1 Industrial Zone, Yen Trung Commune, Yen Phong District, Bac Ninh Samsung SDI VietNam Co., Ltd.
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+84-222-626-2109<br>+84-969-257-483</p>
+                                                                <b class="txtB">구미 사업장</b>
+                                                                <span class="txt_caption color01">주소</span>
+                                                                <p class="txtR color_g2">경상북도 구미시 구미대로 58</p>
+                                                                <span class="txt_caption color01">전화번호</span>
+                                                                <p class="txtR color_g2 tel">+82-54-468-2804</p>
                                                             </div>
                                                         </li>
                                                     </ul>
-                                                </div>
-                                                <!-- 아메리카 -->
-                                                <div class="tab_item">
-                                                    <div class="item_cont">
+                                            </section>
+                                        </div>
+    
+                                        <!-- TAB2 내용 -->
+                                        <div class="tab_cont" id="tab-panel-02" aria-labelledby="tab-02" role="tabpanel" tabindex="0" aria-hidden="true" aria-expanded="true">
+                                            <section class="inner">
+                                                <h3 class="blind">해외 내용 </h3>
+                                                <!-- subTab_cont -->
+                                                <div class="subTab_cont">
+                                                    <ul class="tab_menu wide">
+                                                        <li><button>전체</button></li>
+                                                        <li><button>아메리카</button></li>
+                                                        <li><button>유럽</button></li>
+                                                        <li><button>아시아</button></li>
+                                                    </ul>
+                                                    <div class="tab_item">
                                                         <ul class="network_list global_list flex">
                                                             <li class="flex_item_3n">
                                                                 <div class="list_tit">
@@ -1100,20 +815,13 @@
                                                                     <p class="txt_info color_g2">AMERICA &#45; San Jose &#40;Sales&#41;</p>
                                                                 </div>
                                                                 <div class="list_txt">
-                                                                    <b class="txtB">Samsung SDI America, Inc &#40;San Jose Branch&#41;</b>
+                                                                    <b class="txtB">Samsung SDI America, Inc<br class="mo"> &#40;San Jose Branch&#41;</b>
                                                                     <span class="txt_caption color01">Address</span>
                                                                     <p class="txt_info color_g2">3655 North 1st Street, San Jose, CA 95134, USA</p>
                                                                     <span class="txt_caption color01">Tel</span>
-                                                                    <p class="txt_info color_g2 tel">+1-408-504-6063</p>
+                                                                    <p class="txt_info color_g2 tel">+1-408-504-6053</p>
                                                                 </div>
                                                             </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <!-- 유럽 -->
-                                                <div class="tab_item">
-                                                    <div class="item_cont">
-                                                        <ul class="network_list global_list flex">
                                                             <li class="flex_item_3n">
                                                                 <div class="list_tit">
                                                                     <h4 class="titsub1B _req">Battery</h4>
@@ -1130,14 +838,14 @@
                                                             <li class="flex_item_3n">
                                                                 <div class="list_tit">
                                                                     <h4 class="titsub1B _req">Electronic Materials</h4>
-                                                                    <p class="txt_info color_g2">Hungary &#45; Göd &#40;Production&#41;</p>
+                                                                    <p class="txt_info color_g2">GERMANY &#45; Dresden &#40;Sales&#41;</p>
                                                                 </div>
                                                                 <div class="list_txt">
-                                                                    <b class="txtB">Samsung SDI Hungary Zrt.</b>
+                                                                    <b class="txtB">Novaled GmbH</b>
                                                                     <span class="txt_caption color01">Address</span>
-                                                                    <p class="txt_info color_g2">2131 Göd, Schenek István utca 1, hungary</p>
+                                                                    <p class="txt_info color_g2">01099 Elisabeth-Boer-Straße 9 Dresden Germany</p>
                                                                     <span class="txt_caption color01">Tel</span>
-                                                                    <p class="txt_info color_g2 tel">+36-2-788-7020</p>
+                                                                    <p class="txt_info color_g2 tel">+49-351-79890-252</p>
                                                                 </div>
                                                             </li>
                                                             <li class="flex_item_3n">
@@ -1155,257 +863,543 @@
                                                             </li>
                                                             <li class="flex_item_3n">
                                                                 <div class="list_tit">
-                                                                    <h4 class="titsub1B _req">Electronic Materials</h4>
-                                                                    <p class="txt_info color_g2">GERMANY &#45; Dresden &#40;Sales&#41;</p>
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">GERMANY &#45; Munich &#40;R&D&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI Europe GmbH</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">Reichenbachstr.2, 85737 Ismaning, Germany</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+49-89-9292-7799(20)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">GERMANY &#45; Braunschweig &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI Europe GmbH &#40;Braunschweig Branch&#41;</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">Frankfurter Str. 3C, 38122 Braunschweig, Germany</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+49-531-12045308</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">UK &#45; Warwick &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI Europe GmbH &#40;UK Office&#41;</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">13B Warwick innovation center, Gallows Hill Warwick UK CV34 6UW</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+44-7840-508070</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">Hungary &#45; Göd &#40;Production&#41;</p>
                                                                 </div>
                                                                 <div class="list_txt">
                                                                     <b class="txtB">Samsung SDI Hungary Zrt.</b>
                                                                     <span class="txt_caption color01">Address</span>
-                                                                    <p class="txt_info color_g2">01099 Elisabeth-Boer-Straße 9 Dresden Germany</p>
+                                                                    <p class="txt_info color_g2">2131 Göd, Schenek István utca 1, hungary</p>
                                                                     <span class="txt_caption color01">Tel</span>
-                                                                    <p class="txt_info color_g2 tel">+49-351-79890-252</p>
+                                                                    <p class="txt_info color_g2 tel">+36-2-788-7020</p>
                                                                 </div>
                                                             </li>
-															<li class="flex_item_3n">
-																<div class="list_tit">
-																	<h4 class="titsub1B _req">Battery</h4>
-																	<p class="txt_info color_g2">GERMANY &#45; Munich &#40;R&D&#41;</p>
-																</div>
-																<div class="list_txt">
-																	<b class="txtB">Samsung SDI Europe GmbH</b>
-																	<span class="txt_caption color01">Address</span>
-																	<p class="txt_info color_g2">Reichenbachstr.2, 85737 Ismaning, Germany</p>
-																	<span class="txt_caption color01">Tel</span>
-																	<p class="txt_info color_g2 tel">+49-89-9292-7799(20)</p>
-																</div>
-															</li>
-															<li class="flex_item_3n">
-																<div class="list_tit">
-																	<h4 class="titsub1B _req">Battery</h4>
-																	<p class="txt_info color_g2">GERMANY &#45; Braunschweig &#40;Sales&#41;</p>
-																</div>
-																<div class="list_txt">
-																	<b class="txtB">Samsung SDI Europe GmbH &#40;Braunschweig Branch&#41;</b>
-																	<span class="txt_caption color01">Address</span>
-																	<p class="txt_info color_g2">Frankfurter Str. 3C, 38122 Braunschweig, Germany</p>
-																	<span class="txt_caption color01">Tel</span>
-																	<p class="txt_info color_g2 tel">+49-531-12045308</p>
-																</div>
-															</li>
-															<li class="flex_item_3n">
-																<div class="list_tit">
-																	<h4 class="titsub1B _req">Battery</h4>
-																	<p class="txt_info color_g2">UK &#45; Warwick &#40;Sales&#41;</p>
-																</div>
-																<div class="list_txt">
-																	<b class="txtB">Samsung SDI Europe GmbH &#40;UK Office&#41;</b>
-																	<span class="txt_caption color01">Address</span>
-																	<p class="txt_info color_g2">13B Warwick innovation center, Gallows Hill Warwick UK CV34 6UW</p>
-																	<span class="txt_caption color01">Tel</span>
-																	<p class="txt_info color_g2 tel">+44-7840-508070</p>
-																</div>
-															</li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Beijing &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI China Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">Room 2101-2, 21st Floor, Samsung Tower, Building 1, Yard 31, Jinghui Street, Chaoyang District, Beijing</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-10-8458-5611</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Hong Kong &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI &#40;Hongkong&#41; Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">Unit 701, 7 Floor. Tower 2, Metroplaza, 223 Hing Fong Road, Kwai Fong, N.T. Hong Kong</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+852-3743-0527</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Shanghai &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI China Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        200051) Samsung SDI, 19F, Building 1, Jinhongqiao International Center, No 523, Loushanguan Rd., Changning District, Shanghai China
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-21-6232-0101</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Shenzhen &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI China Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        518064 RM CDE , 20F SCC TOWER A, NO.88 HAIDE 1ST ROAD, NANSHAN DISTRICT, SHENZHEN. CHINA
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-755-2382-2036</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Tianjin &#40;Production&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Tianjin Samsung SDI Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        301726 QingLing road no. 1,YAT-SEN Scientific&Industrial Park, Wuqing District, Tianjin, China
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-22-8212-9971(5200)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Electronic Materials</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Wuxi &#40;Production&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI Wuxi Co.,LTD</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">Xinhua Rd, Wuxi New District, Wuxi City, Jiangsu Province, China</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-510-8526-5060</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Xi'an &#40;Production&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI&#45;ARN&#40;Xi'an&#41; Power Battery Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">No. 2655, Biyuan 3rd Rd, Changan District, Xi'an, Shaanxi Province, China</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-029-8640-9999</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">INDIA &#45; Noida &#40;Production &#47; Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI India Private Limited</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        Unit No. 720, Tower B, Advant Navis Business Park , Plot No. 7 Sector-142, Expressway Noida &#45; 201305 Noida, Uttar Pradesh, INDIA
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+91-120-455-1750</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">JAPAN &#45; Tokyo &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI Japan Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">(108-0075) Shinagawa Grand Central Tower 9F, 2-16-4, Konan, Minato-ku, Tokyo, Japan</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+81-3-6369-6401<br>+81-3-6369-6404</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_infoR color_g2">MALAYSIA &#45; Seremban &#40;Production&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI Energy Malaysia SDN. Bhd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        71450 Lot 635 & 660, Kawasan Perindustrian Tuanku Jaafar,<br> Seremban, Negeri Sembilan,<br> Malaysia
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+606-760-1000<br>+606-670-1762&#40;Recruiting&#41;</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
+                                                                    <p class="txt_info color_g2">TAIWAN &#45; Taipei &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Taiwan Branch</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">7F-1., No.399, Rui Guang Rd., Neihu Dist, Taipei, Taiwan</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+886-2-8178-5900</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">VIETNAM &#45; Bac Ninh &#40;Production&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI VietNam Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        Yen Phong 1 Industrial Zone, Yen Trung Commune, Yen Phong District, Bac Ninh Samsung SDI VietNam Co., Ltd.
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+84-222-626-2109<br>+84-969-257-483</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- 아메리카 -->
+                                                    <div class="tab_item">
+                                                        <div class="item_cont">
+                                                            <ul class="network_list global_list flex">
+                                                                <li class="flex_item_3n">
+                                                                    <div class="list_tit">
+                                                                        <h4 class="titsub1B _req">Battery</h4>
+                                                                        <p class="txt_info color_g2">AMERICA-Auburn Hill &#40;production &#47; Sales&#41;</p>
+                                                                    </div>
+                                                                    <div class="list_txt">
+                                                                        <b class="txtB">Samsung SDI America, Inc</b>
+                                                                        <span class="txt_caption color01">Address</span>
+                                                                        <p class="txt_info color_g2">4121 N. Atlantic Blvd., Auburn Hills, MI 48326 USA</p>
+                                                                        <span class="txt_caption color01">Tel</span>
+                                                                        <p class="txt_info color_g2 tel">+1-248-843-7871</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="flex_item_3n">
+                                                                    <div class="list_tit">
+                                                                        <h4 class="titsub1B _req">Battery</h4>
+                                                                        <p class="txt_info color_g2">AMERICA &#45; San Jose &#40;Sales&#41;</p>
+                                                                    </div>
+                                                                    <div class="list_txt">
+                                                                        <b class="txtB">Samsung SDI America, Inc &#40;San Jose Branch&#41;</b>
+                                                                        <span class="txt_caption color01">Address</span>
+                                                                        <p class="txt_info color_g2">3655 North 1st Street, San Jose, CA 95134, USA</p>
+                                                                        <span class="txt_caption color01">Tel</span>
+                                                                        <p class="txt_info color_g2 tel">+1-408-504-6053</p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 유럽 -->
+                                                    <div class="tab_item">
+                                                        <div class="item_cont">
+                                                            <ul class="network_list global_list flex">
+                                                                <li class="flex_item_3n">
+                                                                    <div class="list_tit">
+                                                                        <h4 class="titsub1B _req">Battery</h4>
+                                                                        <p class="txt_info color_g2">AUSTRIA &#45; Premstätten &#40;Production&#41;</p>
+                                                                    </div>
+                                                                    <div class="list_txt">
+                                                                        <b class="txtB">Samsung SDI Battery Systems GmbH</b>
+                                                                        <span class="txt_caption color01">Address</span>
+                                                                        <p class="txt_info color_g2">Frikusweg 1, 8141 Premstätten, Austria</p>
+                                                                        <span class="txt_caption color01">Tel</span>
+                                                                        <p class="txt_infoR color_g2 tel">+43-3135-5183014</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="flex_item_3n">
+                                                                    <div class="list_tit">
+                                                                        <h4 class="titsub1B _req">Electronic Materials</h4>
+                                                                        <p class="txt_info color_g2">GERMANY &#45; Dresden &#40;Sales&#41;</p>
+                                                                    </div>
+                                                                    <div class="list_txt">
+                                                                        <b class="txtB">Novaled GmbH</b>
+                                                                        <span class="txt_caption color01">Address</span>
+                                                                        <p class="txt_info color_g2">01099 Elisabeth-Boer-Straße 9 Dresden Germany</p>
+                                                                        <span class="txt_caption color01">Tel</span>
+                                                                        <p class="txt_infoR color_g2 tel">+49-351-79890-252</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="flex_item_3n">
+                                                                    <div class="list_tit">
+                                                                        <h4 class="titsub1B _req">Battery</h4>
+                                                                        <p class="txt_info color_g2">GERMANY &#45; Munich &#40;Sales&#41;</p>
+                                                                    </div>
+                                                                    <div class="list_txt">
+                                                                        <b class="txtB">Samsung SDI Europe GmbH</b>
+                                                                        <span class="txt_caption color01">Address</span>
+                                                                        <p class="txt_info color_g2">Reichenbachstr.2, 85737 Ismaning, Germany</p>
+                                                                        <span class="txt_caption color01">Tel</span>
+                                                                        <p class="txt_infoR color_g2 tel">+49-89-9292-7799(20)</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="flex_item_3n">
+                                                                    <div class="list_tit">
+                                                                        <h4 class="titsub1B _req">Battery</h4>
+                                                                        <p class="txt_info color_g2">GERMANY &#45; Munich &#40;R&D&#41;</p>
+                                                                    </div>
+                                                                    <div class="list_txt">
+                                                                        <b class="txtB">Samsung SDI Europe GmbH</b>
+                                                                        <span class="txt_caption color01">Address</span>
+                                                                        <p class="txt_info color_g2">Reichenbachstr.2, 85737 Ismaning, Germany</p>
+                                                                        <span class="txt_caption color01">Tel</span>
+                                                                        <p class="txt_infoR color_g2 tel">+49-89-9292-7799(20)</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="flex_item_3n">
+                                                                    <div class="list_tit">
+                                                                        <h4 class="titsub1B _req">Battery</h4>
+                                                                        <p class="txt_info color_g2">GERMANY &#45; Braunschweig &#40;Sales&#41;</p>
+                                                                    </div>
+                                                                    <div class="list_txt">
+                                                                        <b class="txtB">Samsung SDI Europe GmbH &#40;Braunschweig Branch&#41;</b>
+                                                                        <span class="txt_caption color01">Address</span>
+                                                                        <p class="txt_info color_g2">Frankfurter Str. 3C, 38122 Braunschweig, Germany</p>
+                                                                        <span class="txt_caption color01">Tel</span>
+                                                                        <p class="txt_infoR color_g2 tel">+49-531-12045308</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="flex_item_3n">
+                                                                    <div class="list_tit">
+                                                                        <h4 class="titsub1B _req">Battery</h4>
+                                                                        <p class="txt_info color_g2">UK &#45; Warwick &#40;Sales&#41;</p>
+                                                                    </div>
+                                                                    <div class="list_txt">
+                                                                        <b class="txtB">Samsung SDI Europe GmbH &#40;UK Office&#41;</b>
+                                                                        <span class="txt_caption color01">Address</span>
+                                                                        <p class="txt_info color_g2">13B Warwick innovation center, Gallows Hill Warwick UK CV34 6UW</p>
+                                                                        <span class="txt_caption color01">Tel</span>
+                                                                        <p class="txt_infoR color_g2 tel">+44-7840-508070</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="flex_item_3n">
+                                                                    <div class="list_tit">
+                                                                        <h4 class="titsub1B _req">Battery</h4>
+                                                                        <p class="txt_info color_g2">Hungary &#45; Göd &#40;Production&#41;</p>
+                                                                    </div>
+                                                                    <div class="list_txt">
+                                                                        <b class="txtB">Samsung SDI Hungary Zrt.</b>
+                                                                        <span class="txt_caption color01">Address</span>
+                                                                        <p class="txt_info color_g2">2131 Göd, Schenek István utca 1, hungary</p>
+                                                                        <span class="txt_caption color01">Tel</span>
+                                                                        <p class="txt_infoR color_g2 tel">+36-2-788-7020</p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 아시아 -->
+                                                    <div class="tab_item">
+                                                        <ul class="network_list global_list flex_between">
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Beijing &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI China Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">Room 2101-2, 21st Floor, Samsung Tower, Building 1, Yard 31, Jinghui Street, Chaoyang District, Beijing</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-10-8458-5611</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Hong Kong &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI &#40;Hongkong&#41; Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">Unit 701, 7 Floor. Tower 2, Metroplaza, 223 Hing Fong Road, Kwai Fong, N.T. Hong Kong</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+852-3743-0527</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Shanghai &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI China Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        200051) Samsung SDI, 19F, Building 1, Jinhongqiao International Center, No 523, Loushanguan Rd., Changning District, Shanghai China
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-21-6232-0101</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Shenzhen &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI China Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        518064 RM CDE , 20F SCC TOWER A, NO.88 HAIDE 1ST ROAD, NANSHAN DISTRICT, SHENZHEN. CHINA
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-755-2382-2036</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Tianjin &#40;Production&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Tianjin Samsung SDI Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        301726 QingLing road no. 1,YAT-SEN Scientific&Industrial Park, Wuqing District, Tianjin, China
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-22-8212-9971(5200)</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Electronic Materials</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Wuxi &#40;Production&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI Wuxi Co.,LTD</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">Xinhua Rd, Wuxi New District, Wuxi City, Jiangsu Province, China</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-510-8526-5060</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">CHINA &#45; Xi'an &#40;Production&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI&#45;ARN&#40;Xi'an&#41; Power Battery Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">No. 2655, Biyuan 3rd Rd, Changan District, Xi'an, Shaanxi Province, China</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+86-029-8640-9999</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">INDIA &#45; Noida &#40;Production &#47; Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI India Private Limited</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        Unit No. 720, Tower B, Advant Navis Business Park , Plot No. 7 Sector-142, Expressway Noida &#45; 201305 Noida, Uttar Pradesh, INDIA
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+91-120-455-1750</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">JAPAN &#45; Tokyo &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI Japan Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">(108-0075) Shinagawa Grand Central Tower 9F, 2-16-4, Konan, Minato-ku, Tokyo, Japan</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+81-3-6369-6401<br>+81-3-6369-6404</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_infoR color_g2">MALAYSIA &#45; Seremban &#40;Production&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI Energy Malaysia SDN. Bhd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        71450 Lot 635 & 660, Kawasan Perindustrian Tuanku Jaafar,<br> Seremban, Negeri Sembilan,<br> Malaysia
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+606-760-1000<br>+606-670-1762&#40;Recruiting&#41;</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
+                                                                    <p class="txt_info color_g2">TAIWAN &#45; Taipei &#40;Sales&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Taiwan Branch</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">7F-1., No.399, Rui Guang Rd., Neihu Dist, Taipei, Taiwan</p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+886-2-8178-5900</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="flex_item_3n">
+                                                                <div class="list_tit">
+                                                                    <h4 class="titsub1B _req">Battery</h4>
+                                                                    <p class="txt_info color_g2">VIETNAM &#45; Bac Ninh &#40;Production&#41;</p>
+                                                                </div>
+                                                                <div class="list_txt">
+                                                                    <b class="txtB">Samsung SDI VietNam Co., Ltd.</b>
+                                                                    <span class="txt_caption color01">Address</span>
+                                                                    <p class="txt_info color_g2">
+                                                                        Yen Phong 1 Industrial Zone, Yen Trung Commune, Yen Phong District, Bac Ninh Samsung SDI VietNam Co., Ltd.
+                                                                    </p>
+                                                                    <span class="txt_caption color01">Tel</span>
+                                                                    <p class="txt_info color_g2 tel">+84-222-626-2109<br>+84-969-257-483</p>
+                                                                </div>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <!-- 아시아 -->
-                                                <div class="tab_item">
-                                                    <ul class="network_list global_list flex_between">
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">UK &#45; Warwick &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Europe GmbH &#40;UK Office&#41;</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">13B Warwick innovation center, Gallows Hill Warwick UK CV34 6UW</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+44-7840-508070</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Beijing &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI China Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">Room 2101-2, 21st Floor, Samsung Tower, Building 1, Yard 31, Jinghui Street, Chaoyang District, Beijing</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-10-8458-5611</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Hong Kong &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI &#40;Hongkong&#41; Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">Unit 701, 7 Floor. Tower 2, Metroplaza, 223 Hing Fong Road, Kwai Fong, N.T. Hong Kong</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+852-3743-0527</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Shanghai &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI China Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    200051) Samsung SDI, 19F, Building 1, Jinhongqiao International Center, No 523, Loushanguan Rd., Changning District, Shanghai China
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-21-6232-0101</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Shenzhen &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI China Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    518064 RM CDE , 20F SCC TOWER A, NO.88 HAIDE 1ST ROAD, NANSHAN DISTRICT, SHENZHEN. CHINA
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-755-2382-2036</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Tianjin &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Tianjin Samsung SDI Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    301726 QingLing road no. 1,YAT-SEN Scientific&Industrial Park, Wuqing District, Tianjin, China
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-22-8212-9971(5200)</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Electronic Materials</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Wuxi &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Wuxi Co.,LTD</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">Xinhua Rd, Wuxi New District, Wuxi City, Jiangsu Province, China</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-510-8526-5060</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">CHINA &#45; Xi'an &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI&#45;ARN&#40;Xi'an&#41; Power Battery Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">No. 2655, Biyuan 3rd Rd, Changan District, Xi'an, Shaanxi Province, China</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+86-029-8640-9999</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">INDIA &#45; Noida &#40;Production &#47; Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI India Private Limited</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    Unit No. 720, Tower B, Advant Navis Business Park , Plot No. 7 Sector-142, Expressway Noida &#45; 201305 Noida, Uttar Pradesh, INDIA
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+91-120-455-1750</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">JAPAN &#45; Tokyo &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Japan Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">(108-0075) Shinagawa Grand Central Tower 9F, 2-16-4, Konan, Minato-ku, Tokyo, Japan</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+81-3-6369-6401<br>+81-3-6369-6404</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_infoR color_g2">MALAYSIA &#45; Seremban &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI Energy Malaysia SDN. Bhd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    71450 Lot 635 & 660, Kawasan Perindustrian Tuanku Jaafar,<br> Seremban, Negeri Sembilan,<br> Malaysia
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+606-760-1000<br>+606-670-1762&#40;Recruiting&#41;</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery &#38; Electronic<br class="mo"> Materials</h4>
-                                                                <p class="txt_info color_g2">TAIWAN &#45; Taipei &#40;Sales&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Taiwan Branch</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">7F-1., No.399, Rui Guang Rd., Neihu Dist, Taipei, Taiwan</p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+886-2-8178-5900</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="flex_item_3n">
-                                                            <div class="list_tit">
-                                                                <h4 class="titsub1B _req">Battery</h4>
-                                                                <p class="txt_info color_g2">VIETNAM &#45; Bac Ninh &#40;Production&#41;</p>
-                                                            </div>
-                                                            <div class="list_txt">
-                                                                <b class="txtB">Samsung SDI VietNam Co., Ltd.</b>
-                                                                <span class="txt_caption color01">Address</span>
-                                                                <p class="txt_info color_g2">
-                                                                    Yen Phong 1 Industrial Zone, Yen Trung Commune, Yen Phong District, Bac Ninh Samsung SDI VietNam Co., Ltd.
-                                                                </p>
-                                                                <span class="txt_caption color01">Tel</span>
-                                                                <p class="txt_info color_g2 tel">+84-222-626-2109<br>+84-969-257-483</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-									        <!-- //subTab_cont -->
-										</section>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //network_cont -->
-					</div>
-					<!-- //content_inner -->
-				</section>
-				<!-- End Of Contents -->
+                                                <!-- //subTab_cont -->
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //network_cont -->
+                        </div>
+                        <!-- //content_inner -->
+                    </section>
+                    <!-- End Of Contents -->
+                </div>
 
 			</div>
 		</div>
