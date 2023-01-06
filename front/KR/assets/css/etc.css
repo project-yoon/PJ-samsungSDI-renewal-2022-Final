@@ -529,7 +529,7 @@ table td.pd40 {
 	}
 
 	.body_title {
-		margin-bottom: 0;
+		margin-bottom: 16px;
 		line-height: 1.3;
 	}
 
@@ -773,6 +773,10 @@ table td.pd40 {
 	}
 	.privacy_policy .list_type {
 		margin: -14px 0 30px;
+	}
+
+	.privacy_policy .dropdown_menu_tab>button {
+		font-size: 14px;
 	}
 
 	/* 사이트맵

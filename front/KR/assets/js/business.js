@@ -59,45 +59,11 @@ function initSubtab() {
     }
 }
 
-function scrollMove () {
-    var winTop = 0;
-    $.scrollify({
-        section: ".scroll_ani_wrap .slide",
-        scrollSpeed: 1100,
-        touchScroll: true,
-        updateHash: true,
-        setHeights: false,
-        after:function() {
-            winTop = $(window).scrollTop()
-            target(winTop)
-        },
-
-      });
-
-    function target(winTop) {
-        var target = $('.scroll_ani_wrap .slide')[1]
-        var targetTop = $(target).offset().top
-        var targetBottom = $(target).offset().top + $(target).height()
-
-        if(targetTop <= winTop && targetBottom >= winTop){
-            $(target).addClass('active')
-        } else {
-            // $(target).removeClass('active')
-        }
-    }
-
-    $(".btn_scrolldown .button-next").click(function(e) {
-        e.preventDefault();
-
-        $.scrollify.next();
-    });
-}
-
 
 $(document).ready(function() {
-    // $(window).scrollTop(0)
+    history.replaceState({}, null, location.pathname);
+
     initSubtabNaviSticky(); // initSubtabNaviSticky
     initSubtab(); // initSubtab
 
-    scrollMove()
 })
