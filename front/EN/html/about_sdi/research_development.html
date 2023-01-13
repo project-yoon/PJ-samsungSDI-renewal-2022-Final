@@ -5,10 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>삼성SDI - 기업 CI 및 로고 소개 | 삼성SDI 공식사이트</title>
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="../../assets/css/base.css">
 	<link rel="stylesheet" href="../../assets/css/common.css">
 	<link rel="stylesheet" href="../../assets/css/about_sdi.css">
 	<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+	<script src="../../assets/js/jquery.fullPage.js"></script>
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
 	<script src="../../assets/js/common.js"></script>
 	<script src="../../assets/js/about_sdi.js"></script>
 	</head>
@@ -22,155 +25,133 @@
 				<button type="button" class="btn_keyinfo">KeyInfo</button>
 			</div>
 			<header class="header on">
-				<h1><a href="../main/index.html">삼성SDI</a></h1>
+				<h1><a href="../main/index.html">Samsung SDI</a></h1>
 				<nav class="gnb">
 					<h2 class="blind">Global Navi</h2>
 					<ul>
 						<li class="depth"><a href="javascript:void(0);"><span>SAMSUNG SDI</span></a>
 							<div class="depth_menu">
 								<ul>
-									<li><a href="../about_sdi/index.html" title="About Us로 이동하기"><span>About Us</span></a></li>
-									<li><a href="../about_sdi/history.html" title="History로 이동하기"><span>History</span></a></li>
-									<li><a href="../about_sdi/ci.html" title="CI로 이동하기"><span>CI</span></a></li>
-									<li><a href="../about_sdi/research_development.html" title="R&D로 이동하기"><span>R&D</span></a></li>
-									<li><a href="../about_sdi/global_network.html" title="Global Network로 이동하기"><span>Global Network</span></a></li>
+									<li><a href="../about_sdi/index.html" title="About Us"><span>About Us</span></a></li>
+									<li><a href="../about_sdi/history.html" title="History"><span>History</span></a></li>
+									<li><a href="../about_sdi/ci.html" title="CI"><span>CI</span></a></li>
+									<li><a href="../about_sdi/research_development.html" title="R&D"><span>R&D</span></a></li>
+									<li><a href="../about_sdi/global_network.html" title="Global Network"><span>Global Network</span></a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="depth"><a href="javascript:void(0);"><span>ESG</span></a>
 							<div class="depth_menu">
 								<ul>
-									<li class="more"><a href="javascript:void(0);"><span>ESG 전략</span></a>
+									<li class="more"><a href="javascript:void(0);"><span>ESG Strategy</span></a>
 										<div class="depth_detail">
 											<ul>
-												<li><a href="../esg/sustainability_tab01.html" title="지속가능경영 전략체계로 이동하기"><span>지속가능경영 전략체계</span></a></li>
-												<li><a href="../esg/sustainability_tab02.html" title="중요 이슈 분석으로 이동하기"><span>중요 이슈 분석</span></a></li>
-												<li><a href="../esg/sustainability_tab03.html" title="리스크 관리로 이동하기"><span>리스크 관리</span></a></li>
-												<li><a href="../esg/sustainability_tab04.html" title="지속가능경영 정책으로 이동하기"><span>지속가능경영 정책</span></a></li>
-												<li><a href="../esg/sustainability_tab05.html" title="이니셔티브와 인증으로 이동하기"><span>이니셔티브와 인증</span></a></li>
+												<li><a href="../esg/sustainability_tab01.html" title="Sustainability Management Strategic Framework"><span>Sustainability<br> Management<br> Strategic Framework</span></a></li>
+												<li><a href="../esg/sustainability_tab02.html" title="Materiality Analysis"><span>Materiality Analysis</span></a></li>
+												<li><a href="../esg/sustainability_tab03.html" title="Risk Management"><span>Risk Management</span></a></li>
+												<li><a href="../esg/sustainability_tab04.html" title="Sustainability Policy"><span>Sustainability Policy</span></a></li>
+												<li><a href="../esg/sustainability_tab05.html" title="Initiative and Certification"><span>Initiative and Certification</span></a></li>
 											</ul>
 										</div>
 									</li>
-
-									<li class="more"><a href="javascript:void(0);"><span>환경</span></a>
+		
+									<li class="more"><a href="javascript:void(0);"><span>Environment</span></a>
 										<div class="depth_detail">
 											<ul>
-												<li><a href="../esg/environment_tab01.html" title="환경경영으로 이동하기"><span>환경경영</span></a></li>
-												<li><a href="../esg/environment_tab02.html" title="Move to Net-Zero로 이동하기"><span>Move to Net-Zero</span></a></li>
+												<li><a href="../esg/environment_tab01.html" title="Environment-Friendly Management"><span>Environment-Friendly<br> Management</span></a></li>
+												<li><a href="../esg/environment_tab02.html" title="Move to Net-Zero"><span>Move to Net-Zero</span></a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="more"><a href="javascript:void(0);"><span>사회</span></a>
+									<li class="more"><a href="javascript:void(0);"><span>Social<br> Responsibility</span></a>
 										<div class="depth_detail">
 											<ul>
-												<li><a href="../esg/social_tab01.html" title="안전과 보건으로 이동하기"><span>안전과 보건</span></a></li>
-												<li><a href="../esg/social_tab02.html" title="상생협력으로 이동하기"><span>상생협력</span></a></li>
-												<li><a href="../esg/social_tab03.html" title="공급망 사회적 책임으로 이동하기"><span>공급망 사회적 책임</span></a></li>
-												<li><a href="../esg/social_tab04.html" title="사회공헌으로 이동하기"><span>사회공헌</span></a></li>
-												<li><a href="../esg/social_tab05.html" title="사회공헌 소식으로 이동하기"><span>사회공헌 소식</span></a></li>
-												<li><a href="../esg/social_tab06.html" title="다양성과 포옹으로 이동하기"><span>다양성과 포옹</span></a></li>
+												<li><a href="../esg/social_tab01.html" title="Safety and Health"><span>Safety and Health</span></a></li>
+												<li><a href="../esg/social_tab02.html" title="Win-Win Cooperation"><span>Win-Win Cooperation</span></a></li>
+												<li><a href="../esg/social_tab03.html" title="Social Responsibility in Supply Chains"><span>Social Responsibility in<br> Supply Chains</span></a></li>
+												<li><a href="../esg/social_tab04.html" title="Social Contribution"><span>Social Contribution</span></a></li>
+												<li><a href="../esg/social_tab05.html" title="News"><span>News</span></a></li>
+												<li><a href="../esg/social_tab06.html" title="Diversity and Inclusion"><span>Diversity and Inclusion</span></a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="more"><a href="javascript:void(0);"><span>지배구조</span></a>
+									<li class="more"><a href="javascript:void(0);"><span>Corporate<br> Governance</span></a>
 										<div class="depth_detail">
 											<ul>
-												<li><a href="../esg/governance_tab01.html" title="이사회로 이동하기"><span>이사회</span></a></li>
-												<li><a href="../esg/governance_tab02.html" title="위원회로 이동하기"><span>위원회</span></a></li>
-												<li><a href="../esg/governance_tab03.html" title="이해관계자로 이동하기"><span>이해관계자</span></a></li>
-												<li><a href="../esg/governance_tab04.html" title="준법경영으로 이동하기"><span>준법경영</span></a></li>
-												<li><a href="../esg/governance_tab05.html" title="윤리경영으로 이동하기"><span>윤리경영</span></a></li>
-												<li><a href="../esg/governance_tab06.html" title="정보보호로 이동하기"><span>정보보호</span></a></li>
+												<li><a href="../esg/governance_tab01.html" title="Board of Directors"><span>Board of Directors</span></a></li>
+												<li><a href="../esg/governance_tab02.html" title="Board Committees"><span>Board Committees</span></a></li>
+												<li><a href="../esg/governance_tab03.html" title="Stakeholders"><span>Stakeholders</span></a></li>
+												<li><a href="../esg/governance_tab04.html" title="Compliance"><span>Compliance</span></a></li>
+												<li><a href="../esg/governance_tab05.html" title="Ethics"><span>Ethics</span></a></li>
+												<li><a href="../esg/governance_tab06.html" title="Information Security"><span>Information Security</span></a></li>
 											</ul>
 										</div>
 									</li>
-									<li><a href="../esg/report.html" title="지속가능경영보고서로 이동하기"><span>지속가능경영보고서</span></a></li>
+									<li><a href="../esg/report.html" title="Sustainability Reports"><span>Sustainability<br> Reports</span></a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="depth"><a href="javascript:void(0);"><span>BUSINESS</span></a>
 							<div class="depth_menu">
 								<ul>
-									<li><a href="../business/index.html" title="소형배터리로 이동하기"><span>소형배터리</span></a></li>
-									<li><a href="../business/automotive_battery.html" title="자동차 배터리로 이동하기"><span>자동차 배터리</span></a></li>
-									<li><a href="../business/ess.html" title="ESS로 이동하기"><span>ESS</span></a></li>
-									<li><a href="../business/electronic_materials.html" title="전자재료로 이동하기"><span>전자재료</span></a></li>
-									<li><a href="../business/isi.html" title="important Safety Information로 이동하기"><span>important Safety Information</span></a></li>
+									<li><a href="../business/index.html" title="Small-Sized Lithium-ion Battery"><span>Small-Sized<br> Lithium-ion Battery</span></a></li>
+									<li><a href="../business/automotive_battery.html" title="Automotive Battery"><span>Automotive<br> Battery</span></a></li>
+									<li><a href="../business/ess.html" title="ESS"><span>ESS</span></a></li>
+									<li><a href="../business/electronic_materials.html" title="Electronic Materials"><span>Electronic<br> Materials</span></a></li>
+									<li><a href="../business/isi.html" title="important Safety Information"><span>important Safety<br> Information</span></a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="depth"><a href="javascript:void(0);"><span>INVESTMENT</span></a>
 							<div class="depth_menu">
 								<ul>
-									<li><a href="../investment/index.html" title="IR정보로 이동하기"><span>IR정보</span></a></li>
-									<li class="more"><a href="javascript:void(0);"><span>주식정보</span></a>
+									<li><a href="../investment/index.html" title="IR Information"><span>IR Information</span></a></li>
+									<li class="more"><a href="javascript:void(0);"><span>Stock<br> Information</span></a>
 										<div class="depth_detail">
 											<ul>
-												<li><a href="../investment/stock_tab01.html" title="주가정보로 이동하기"><span>주가정보</span></a></li>
-												<li><a href="../investment/stock_tab02.html" title="주식 상장 현황으로 이동하기"><span>주식 상장 현황</span></a></li>
-												<li><a href="../investment/stock_tab03.html" title="배당 현황으로 이동하기"><span>배당 현황</span></a></li>
-												<li><a href="../investment/stock_tab04.html" title="주주 현황으로 이동하기"><span>주주 현황</span></a></li>
+												<li><a href="../investment/stock_tab01.html" title="Stock Chart"><span>Stock Chart</span></a></li>
+												<li><a href="../investment/stock_tab02.html" title="Listing Information"><span>Listing Information</span></a></li>
+												<li><a href="../investment/stock_tab03.html" title="Dividend Details"><span>Dividend Details</span></a></li>
+												<li><a href="../investment/stock_tab04.html" title="Shareholder Structure"><span>Shareholder Structure</span></a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="more"><a href="javascript:void(0);"><span>재무정보</span></a>
+									<li class="more"><a href="javascript:void(0);"><span>Financial<br> Information</span></a>
 										<div class="depth_detail">
 											<ul>
-												<li><a href="../investment/financial_tab01.html" title="주요 지표로 이동하기"><span>주요 지표</span></a></li>
-												<li><a href="../investment/financial_tab02.html" title="신용등급으로 이동하기"><span>신용등급</span></a></li>
-												<li><a href="../investment/financial_tab03.html" title="감사 보고서로 이동하기"><span>감사 보고서</span></a></li>
-												<li><a href="../investment/financial_tab04.html" title="사업 보고서로 이동하기"><span>사업 보고서</span></a></li>
-												<li><a href="../investment/financial_tab05.html" title="실적 발표 자료로 이동하기"><span>실적 발표 자료</span></a></li>
+												<li><a href="../investment/financial_tab01.html" title="Financial Highlights"><span>Financial Highlights</span></a></li>
+												<li><a href="../investment/financial_tab02.html" title="Credit Rating"><span>Credit Rating</span></a></li>
+												<li><a href="../investment/financial_tab03.html" title="Audit Report"><span>Audit Report</span></a></li>
+												<li><a href="../investment/financial_tab05.html" title="Earnings Releases"><span>Earnings Releases</span></a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="more"><a href="javascript:void(0);"><span>이사회 및 위원회</span></a>
+									<li class="more"><a href="javascript:void(0);"><span>BOD &<br> Committees</span></a>
 										<div class="depth_detail">
 											<ul>
-												<li><a href="../investment/corporate_tab01.html" title="이사회로 이동하기"><span>이사회</span></a></li>
-												<li><a href="../investment/corporate_tab02.html" title="위원회로 이동하기"><span>위원회</span></a></li>
-												<li><a href="../investment/corporate_tab03.html" title="정관으로 이동하기"><span>정관</span></a></li>
-												<li><a href="../investment/corporate_tab04.html" title="주주총회로 이동하기"><span>주주총회</span></a></li>
+												<li><a href="../investment/corporate_tab01.html" title="Board of Directors"><span>Board of Directors</span></a></li>
+												<li><a href="../investment/corporate_tab02.html" title="Committees"><span>Committees</span></a></li>
+												<li><a href="../investment/corporate_tab03.html" title="Articles of Incorporation"><span>Articles of Incorporation</span></a></li>
+												<li><a href="../investment/corporate_tab04.html" title="Shareholders Meeting"><span>Shareholders Meeting</span></a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="more"><a href="javascript:void(0);"><span>공시</span></a>
-										<div class="depth_detail">
-											<ul>
-												<li><a href="../investment/disclosure_tab01.html" title="공시로 이동하기"><span>공시</span></a></li>
-												<li><a href="../investment/disclosure_tab02.html" title="전자 공고로 이동하기"><span>전자 공고</span></a></li>
-											</ul>
-										</div>
-									</li>
-									<li><a href="https://dividend.samsungsdi.com/" class="btn_link" title="배당금 조회 새 창 열기" target="_blank"><span>배당금 조회</span></a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="depth"><a href="javascript:void(0);"><span>CAREER</span></a>
 							<div class="depth_menu">
 								<ul>
-									<li><a href="../career/index.html"><span>인재상</span></a></li>
-									<li class="more"><a href="javascript:void(0);"><span>지원하기</span></a>
-										<div class="depth_detail">
-											<ul>
-												<li><a href="../career/career_tab01.html" title="채용전형으로 이동하기"><span>채용전형</span></a></li>
-												<li><a href="../career/career_tab02.html" title="직무소개로 이동하기"><span>직무소개</span></a></li>
-												<li><a href="../career/career_tab03.html" title="복리후생으로 이동하기"><span>복리후생</span></a></li>
-												<li><a href="../career/career_tab04.html" title="채용공고로 이동하기"><span>채용공고</span></a></li>
-												<!-- <li><a href="../career/career_tab04.html"><span>채용공고 FAQ</span></a></li> -->
-											</ul>
-										</div>
-									</li>
-									<li><a href="../career/career_life.html" title="삼성SDI Life로 이동하기"><span>삼성SDI Life</span></a></li>
+									<li><a href="../career/index.html" title="Core Values for HR"><span>Core Values for HR</span></a></li>
+									<li><a href="../career/career_tab02.html" title="Job Fields"><span>Job Fields</span></a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="depth"><a href="javascript:void(0);"><span>SDI Now</span></a>
 							<div class="depth_menu">
 								<ul>
-									<li><a href="../sdi_now/index.html" title="삼성SDI News로 이동하기"><span>삼성SDI News</span></a></li>
-									<li><a href="../sdi_now/column.html" title="Column으로 이동하기"><span>Column</span></a></li>
-									<li><a href="../sdi_now/media.html" title="Media로 이동하기"><span>Media</span></a></li>
+									<li><a href="../sdi_now/index.html" title="Samsung SDI News"><span>Samsung SDI News</span></a></li>
+									<li><a href="../sdi_now/column.html" title="Column"><span>Column</span></a></li>
 								</ul>
 							</div>
 						</li>
@@ -181,210 +162,194 @@
 					<ul>
 						<li class="item_01"><button type="button" class="btn_language">Language</button>
 							<ul class="language">
-								<li><a href="#" class="active">KR</a></li>
-								<li><a href="#">EN</a></li>
-								<li><a href="#">CN</a></li>
+								<li><a href="../../../KR/html/main/index.html">KR</a></li>
+								<li><a href="../../../EN/html/main/index.html" class="active">EN</a></li>
+								<li><a href="../../../CN/html/main/index.html">CN</a></li>
 							</ul>
 						</li>
 						<li class="item_02"><button type="button" class="btn_keyinfo" onclick="$('.keyinfo').fadeIn();">KeyInfo</button></li>
 						<li class="item_03"><button type="button" class="btn_search">Search</button></li>
-						<!-- <li class="item_04"><button type="button" class="btn_share">Share</button></li> -->
 						<li class="item_04"><button type="button" class="btn_sitemap">Sitemap</button></li>
 					</ul>
 				</nav>
 				<div id="bg_gnb"></div>
 			</header>
-
+		
 			<!-- User Menu : 풀 메뉴 패널 -->
 			<div class="pannel">
 				<h2 class="blind">Sitemap</h2>
 				<div class="pannel_util">
 					<ul>
-						<li class="on"><a href="javascript: void(0);" class="kr">KR</a></li>
-						<li><a href="javascript: void(0);" class="en">EN</a></li>
-						<li><a href="javascript: void(0);" class="cn">CN</a></li>
+						<li><a href="../../../KR/html/main/index.html" class="kr">KR</a></li>
+						<li class="on"><a href="../../../EN/html/main/index.html" class="en">EN</a></li>
+						<li><a href="../../../CN/html/main/index.html" class="cn">CN</a></li>
 					</ul>
-					<div class="close"><a href="javascript: void(0);">닫기</a></div>
+					<div class="close"><a href="javascript: void(0);">Close</a></div>
 				</div>
 				<!-- //pannel_util -->
 				<div class="pannel_items">
 					<div class="item">
 						<h3>SAMSUNG SDI</h3>
 						<ul class="depth_menu">
-							<li><a href="../about_sdi/index.html" title="About Us로 이동하기">About Us</a></li>
-							<li><a href="../about_sdi/history.html" title="History로 이동하기">History</a></li>
-							<li><a href="../about_sdi/ci.html" title="CI로 이동하기">CI</a></li>
-							<li><a href="../about_sdi/research_development.html" title="R&D로 이동하기">R&amp;D</a></li>
-							<li><a href="../about_sdi/global_network.html" title="Global Network로 이동하기">Global Network</a></li>
+							<li><a href="../about_sdi/index.html" title="About Us">About Us</a></li>
+							<li><a href="../about_sdi/history.html" title="History">History</a></li>
+							<li><a href="../about_sdi/ci.html" title="CI">CI</a></li>
+							<li><a href="../about_sdi/research_development.html" title="R&D">R&amp;D</a></li>
+							<li><a href="../about_sdi/global_network.html" title="Global Network">Global Network</a></li>
 						</ul>
 					</div>
 					<div class="item">
 						<h3>ESG</h3>
 						<ul class="depth_menu">
-							<li><a href="javascript: void(0);">ESG 전략</a>
+							<li><a href="javascript: void(0);">ESG Strategy</a>
 								<ul class="depth_detail">
-									<li><a href="../esg/sustainability_tab01.html" title="지속가능경영 전략체계로 이동하기">지속가능경영 전략체계</a></li>
-									<li><a href="../esg/sustainability_tab02.html" title="중요 이슈 분석으로 이동하기">중요 이슈 분석</a></li>
-									<li><a href="../esg/sustainability_tab03.html" title="리스크 관리로 이동하기">리스크 관리</a></li>
-									<li><a href="../esg/sustainability_tab04.html" title="지속가능경영 정책으로 이동하기">지속가능경영 정책</a></li>
-									<li><a href="../esg/sustainability_tab05.html" title="이니셔티브와 인증으로 이동하기">이니셔티브와 인증</a></li>
+									<li><a href="../esg/sustainability_tab01.html" title="Sustainability Management Strategic Framework">Sustainability<br> Management<br> Strategic Framework</a></li>
+									<li><a href="../esg/sustainability_tab02.html" title="Materiality Analysis">Materiality Analysis</a></li>
+									<li><a href="../esg/sustainability_tab03.html" title="Risk Management">Risk Management</a></li>
+									<li><a href="../esg/sustainability_tab04.html" title="Sustainability Policy">Sustainability Policy</a></li>
+									<li><a href="../esg/sustainability_tab05.html" title="Initiative and Certification">Initiative and Certification</a></li>
 								</ul>
 							</li>
-							<li><a href="javascript: void(0);">환경</a>
+							<li><a href="javascript: void(0);">Environment</a>
 								<ul class="depth_detail">
-									<li><a href="../esg/environment_tab01.html" title="환경경영으로 이동하기">환경경영</a></li>
-									<li><a href="../esg/environment_tab02.html" title="Move to Net-Zero로 이동하기">Move to Net-Zero</a></li>
+									<li><a href="../esg/environment_tab01.html" title="Environment-Friendly Management">Environment-Friendly<br> Management</a></li>
+									<li><a href="../esg/environment_tab02.html" title="Move to Net-Zero">Move to Net-Zero</a></li>
 								</ul>
 							</li>
-							<li><a href="javascript: void(0);">사회</a>
+							<li><a href="javascript: void(0);">Social Responsibility</a>
 								<ul class="depth_detail">
-									<li><a href="../esg/social_tab01.html" title="안전과 보건으로 이동하기">안전과 보건</a></li>
-									<li><a href="../esg/social_tab02.html" title="상생협력으로 이동하기">상생협력</a></li>
-									<li><a href="../esg/social_tab03.html" title="사회공헌으로 이동하기">사회공헌</a></li>
-									<li><a href="../esg/social_tab04.html" title="공급망 사회적 책임으로 이동하기">공급망 사회적 책임</a></li>
-									<li><a href="../esg/social_tab05.html" title="사회공헌 소식으로 이동하기">사회공헌 소식</a></li>
-									<li><a href="../esg/social_tab06.html" title="다양성과 포용으로 이동하기">다양성과 포용</a></li>
+									<li><a href="../esg/social_tab01.html" title="Safety and Health">Safety and Health</a></li>
+									<li><a href="../esg/social_tab02.html" title="Win-Win Cooperation">Win-Win Cooperation</a></li>
+									<li><a href="../esg/social_tab03.html" title="Social Responsibility in Supply Chains">Social Responsibility<br> in Supply Chains</a></li>
+									<li><a href="../esg/social_tab04.html" title="Social Contribution">Social Contribution</a></li>
+									<li><a href="../esg/social_tab05.html" title="News">News</a></li>
+									<li><a href="../esg/social_tab06.html" title="Diversity and Inclusion">Diversity and Inclusion</a></li>
 								</ul>
 							</li>
-							<li><a href="javascript: void(0);">지배구조</a>
+							<li><a href="javascript: void(0);">Corporate Governance</a>
 								<ul class="depth_detail">
-									<li><a href="../esg/governance_tab01.html" title="이사회로 이동하기">이사회</a></li>
-									<li><a href="../esg/governance_tab02.html" title="위원회로 이동하기">위원회</a></li>
-									<li><a href="../esg/governance_tab03.html" title="이해관계자로 이동하기">이해관계자</a></li>
-									<li><a href="../esg/governance_tab04.html" title="준법경영으로 이동하기">준법경영</a></li>
-									<li><a href="../esg/governance_tab05.html" title="윤리경영으로 이동하기">윤리경영</a></li>
-									<li><a href="../esg/governance_tab06.html" title="정보보호로 이동하기">정보보호</a></li>
+									<li><a href="../esg/governance_tab01.html" title="Board of Directors">Board of Directors</a></li>
+									<li><a href="../esg/governance_tab02.html" title="Committees">Committees</a></li>
+									<li><a href="../esg/governance_tab03.html" title="Stakeholders">Stakeholders</a></li>
+									<li><a href="../esg/governance_tab04.html" title="Compliance">Compliance</a></li>
+									<li><a href="../esg/governance_tab05.html" title="Ethics">Ethics</a></li>
+									<li><a href="../esg/governance_tab06.html" title="Information Security">Information Security</a></li>
 								</ul>
 							</li>
-							<li><a href="../esg/report.html" title="지속가능경영보고서로 이동하기">지속가능경영보고서</a></li>
+							<li><a href="../esg/report.html" title="Sustainability Reports">Sustainability Reports</a></li>
 						</ul>
 					</div>
 					<div class="item">
 						<h3>BUSINESS</h3>
 						<ul class="depth_menu">
-							<li><a href="../business/index.html" title="소형 배터리로 이동하기">소형 배터리</a></li>
-							<li><a href="../business/automotive_battery.html" title="자동차 배터리로 이동하기">자동차 배터리</a></li>
-							<li><a href="../business/ess.html" title="ESS로 이동하기">ESS</a></li>
-							<li><a href="../business/electronic_materials.html" title="전자재료로 이동하기">전자재료</a></li>
-							<li><a href="../business/isi.html" title="Important Safety Information으로 이동하기">Important Safety<br>Information</a></li>
+							<li><a href="../business/index.html" title="Small-Sized Lithium-ion Battery">Small-Sized<br> Lithium-ion Battery</a></li>
+							<li><a href="../business/automotive_battery.html" title="Automotive Battery">Automotive Battery</a></li>
+							<li><a href="../business/ess.html" title="ESS">ESS</a></li>
+							<li><a href="../business/electronic_materials.html" title="Electronic Materials">Electronic Materials</a></li>
+							<li><a href="../business/isi.html" title="Important Safety Information">Important Safety<br>Information</a></li>
 						</ul>
 					</div>
 					<div class="item">
 						<h3>INVESTMENT</h3>
 						<ul class="depth_menu">
-							<li><a href="../investment/index.html" title="IR정보로 이동하기">IR정보</a></li>
-							<li><a href="javascript:void(0);">주식정보</a>
+							<li><a href="../investment/index.html" title="IR Information">IR Information</a></li>
+							<li><a href="javascript:void(0);">Stock Information</a>
 								<ul class="depth_detail">
-									<li><a href="../investment/stock_tab01.html" title="주가정보로 이동하기">주가정보</a></li>
-									<li><a href="../investment/stock_tab02.html" title="주식 상장 현황으로 이동하기">주식 상장 현황</a></li>
-									<li><a href="../investment/stock_tab03.html" title="배당 현황으로 이동하기">배당 현황</a></li>
-									<li><a href="../investment/stock_tab04.html" title="주주 현황으로 이동하기">주주 현황</a></li>
+									<li><a href="../investment/stock_tab01.html" title="Stock Chart">Stock Chart</a></li>
+									<li><a href="../investment/stock_tab02.html" title="Listing Information">Listing Information</a></li>
+									<li><a href="../investment/stock_tab03.html" title="Dividend Details">Dividend Details</a></li>
+									<li><a href="../investment/stock_tab04.html" title="Shareholder Structure">Shareholder Structure</a></li>
 								</ul>
 							</li>
-							<li><a href="javascript: void(0);">재무정보</a>
+							<li><a href="javascript: void(0);">Financial Information</a>
 								<ul class="depth_detail">
-									<li><a href="../investment/financial_tab01.html" title="주요 지표로 이동하기">주요 지표</a></li>
-									<li><a href="../investment/financial_tab02.html" title="신용등급으로 이동하기">신용등급</a></li>
-									<li><a href="../investment/financial_tab03.html" title="감사 보고서로 이동하기">감사 보고서</a></li>
-									<li><a href="../investment/financial_tab04.html" title="사업 보고서로 이동하기">사업 보고서</a></li>
-									<li><a href="../investment/financial_tab05.html" title="실적 발표 자료로 이동하기">실적 발표 자료</a></li>
+									<li><a href="../investment/financial_tab01.html" title="Financial Highlights">Financial Highlights</a></li>
+									<li><a href="../investment/financial_tab02.html" title="Credit Rating">Credit Rating</a></li>
+									<li><a href="../investment/financial_tab03.html" title="Audit Report">Audit Report</a></li>
+									<li><a href="../investment/financial_tab05.html" title="Earnings Releases">Earnings Releases</a></li>
 								</ul>
 							</li>
-							<li><a href="javascript: void(0);">이사회 및 위원회</a>
+							<li><a href="javascript: void(0);">BOD & Committees</a>
 								<ul class="depth_detail">
-									<li><a href="../investment/corporate_tab01.html" title="이사회로 이동하기">이사회</a></li>
-									<li><a href="../investment/corporate_tab02.html" title="위원회로 이동하기">위원회</a></li>
-									<li><a href="../investment/corporate_tab03.html" title="정관으로 이동하기">정관</a></li>
-									<li><a href="../investment/corporate_tab04.html" title="주주총회로 이동하기">주주총회</a></li>
+									<li><a href="../investment/corporate_tab01.html" title="Board of Directors">Board of Directors</a></li>
+									<li><a href="../investment/corporate_tab02.html" title="Committees">Committees</a></li>
+									<li><a href="../investment/corporate_tab03.html" title="Articles of Incorporation">Articles of Incorporation</a></li>
+									<li><a href="../investment/corporate_tab04.html" title="Shareholders Meeting">Shareholders Meeting</a></li>
 								</ul>
 							</li>
-							<li><a href="javascript: void(0);">공시</a>
-								<ul class="depth_detail">
-									<li><a href="../investment/disclosure_tab01.html" title="공시로 이동하기">공시</a></li>
-									<li><a href="../investment/disclosure_tab02.html" title="전자공고로 이동하기">전자공고</a></li>
-								</ul>
-							</li>
-							<li><a href="https://dividend.samsungsdi.com" class="btn_link" target="_blank" title="배당금 조회로 새 창열기"><span>배당금 조회</span></a></li>
 						</ul>
 					</div>
 					<div class="item">
 						<h3>CAREER</h3>
 						<ul class="depth_menu">
-							<li><a href="../career/index.html" title="인재상으로 이동하기">인재상</a></li>
-							<li><a href="javascript: void(0);">지원하기</a>
-								<ul class="depth_detail">
-									<li><a href="../career/career_tab01.html" title="채용전형으로 이동하기">채용전형</a></li>
-									<li><a href="../career/career_tab02.html" title="직무소개로 이동하기">직무소개</a></li>
-									<li><a href="../career/career_tab03.html" title="복리후생으로 이동하기">복리후생</a></li>
-									<li><a href="../career/career_tab04.html" title="채용공고로 이동하기">채용공고</a></li>
-								</ul>
-							</li>
-							<li><a href="../career/career_life.html" title="삼성SDI Life로 이동하기">삼성SDI Life</a></li>
+							<li><a href="../career/index.html" title="Core Values for HR">Core Values for HR</a></li>
+							<li><a href="../career/career_tab02.html" title="Job Fields">Job Fields</a></li>
 						</ul>
 						<h3>SDI Now</h3>
 						<ul class="depth_menu">
-							<li><a href="../sdi_now/index.html" title="삼성SDI News로 이동하기">삼성SDI News</a></li>
-							<li><a href="../sdi_now/column.html" title="Column으로 이동하기">Column</a></li>
-							<li><a href="../sdi_now/media.html" title="Media로 이동하기">Media</a></li>
+							<li><a href="../sdi_now/index.html" title="Samsung SDI News">Samsung SDI News</a></li>
+							<li><a href="../sdi_now/column.html" title="Column">Column</a></li>
 						</ul>
-						<h3>고객센터</h3>
+						<h3>Contact Us</h3>
 						<ul class="depth_menu">
-							<li><a href="../etc/information.html" title="문의하기로 이동하기">문의하기</a></li>
+							<li><a href="../etc/information.html" title="Voice of Customers">Voice of Customers</a></li>
 						</ul>
 					</div>
 				</div>
 				<!-- //pannel_cont -->
 				<ul class="pannel_sns">
-					<li><a href="https://www.facebook.com/samsungsdi" target="_blank" title="삼성SDI 페이스북 새 창 열기"><img src="../../assets/images/layout/ico_sns_facebook.svg" alt="페이스북"></a></li>
-					<li><a href="https://www.youtube.com/user/SDISamsung" target="_blank" title="삼성SDI 유투브 새 창 열기"><img src="../../assets/images/layout/ico_sns_utube.svg" alt="유튜브"></a></li>
-					<li><a href="https://blog.naver.com/sdibattery" target="_blank" title="삼성SDI 네이버 블로그 새 창 열기"><img src="../../assets/images/layout/ico_sns_blog.svg" alt="네이버 블로그"></a></li>
+					<li><a href="https://www.facebook.com/samsungsdi" target="_blank" title="Open Samsung SDI Facebook"><img src="../../assets/images/layout/ico_sns_facebook.svg" alt="Facebook"></a></li>
+					<li><a href="https://www.youtube.com/user/SDISamsung" target="_blank" title="Open Samsung SDI utube"><img src="../../assets/images/layout/ico_sns_utube.svg" alt="utube"></a></li>
+					<li><a href="https://blog.naver.com/sdibattery" target="_blank" title="Open Samsung SDI Naver Blog"><img src="../../assets/images/layout/ico_sns_blog.svg" alt="Naver Blog"></a></li>
 				</ul>
 				<!-- //pannel_sns -->
 			</div>
 			<!-- // User Menu : 풀 메뉴 패널 -->
-
+		
 			<!-- User Menu : 통합검색 -->
 			<div class="pop_wrap" id="popup_search">
 				<div class="pop_inner">
 					<div class="pop_head">
-						<h3 class="titmain">통합검색</h3>
+						<h3 class="titmain">Search</h3>
 					</div>
 					<div class="pop_body">
 						<div class="search_wrap">
-							<input type="text" placeholder="무엇이 궁금하신가요?" value="Cell">
-							<button type="button"><span class="blind">검색하기</span></button>
+							<input type="text" placeholder="What are you looking for?" value="">
+							<button type="button"><span class="blind">Search</span></button>
 						</div>
 						<div class="recomm_content">
-							<h4 class="titsub2">추천 검색어</h4>
+							<h4 class="titsub2">Suggestions</h4>
 							<!-- //filter -->
 							<div class="filter">
 								<ul class="flex">
 									<!-- 추천 검색어 최대 글자 수 20자까지 -->
-									<li><button class="btn round30">소형배터리</button></li>
+									<li><button class="btn round30">Battery</button></li>
 									<li><button class="btn round30">ESG</button></li>
-									<li><button class="btn round30">리튬이온배터리</button></li>
-									<li><button class="btn round30">그린커뮤니티</button></li>
-									<li><button class="btn round30">경력채용</button></li>
+									<li><button class="btn round30">Automotive</button></li>
+									<li><button class="btn round30">Hiring</button></li>
+									<li><button class="btn round30">SDI Now</button></li>
+									<li><button class="btn round30">OLED</button></li>
+									<li><button class="btn round30">Materials</button></li>
 								</ul>
 							</div>
-							<!-- filter -->
+							<!-- filter -->	
 						</div>
 					</div>
 				</div>
 				<div class="pop_btn">
-					<button class="close_btn"><span class="blind">팝업 창 닫기</span></button>
+					<button class="close_btn"><span class="blind">Close Popup</span></button>
 				</div>
 			</div>
 			<!-- // User Menu : 통합검색 -->
-
+		
 			<!-- User Menu : Key Info -->
 			<div class="keyinfo">
 				<div class="keyinfo_inner">
 					<div class="keyinfo_cont">
 						<div class="stock_info">
-							<div class="more"><a href="../investment/stock_tab01.html" class="titsub1B" title="주가정보로 이동하기">주가정보</a></div>
+							<div class="more"><a href="../investment/stock_tab01.html" class="titsub1B" title="Stock Information">Stock Information</a></div>
 							<div class="price">
-                            	<!-- iframe 영역 -->
+								<!-- iframe 영역 -->
 								<div class="iframe-wrap">
 									<iframe src="https://ir.gsifn.io/samsungsdi/ir3_keyinfo.html?koreng=1" title="실시간 주가정보" allowfullscreen tabindex="-1"></iframe>
 								</div>
@@ -392,35 +357,29 @@
 						</div>
 						<div class="key_info_util">
 							<ul class="flex_between">
-								<li class="flex_item_6n"><a href="../investment/financial_tab05.html" class="txt_info" title="실적 발표 자료로 이동하기"><span>실적 발표 자료</span></a></li>
-								<li class="flex_item_6n"><a href="../investment/financial_tab04.html" class="txt_info" title="사업보고서로 이동하기"><span>사업 보고서</span></a></li>
-								<li class="flex_item_6n"><a href="../investment/financial_tab03.html" class="txt_info" title="감사보고서로 이동하기"><span>감사 보고서</span></a></li>
-								<li class="flex_item_6n"><a href="../investment/disclosure_tab02.html" class="txt_info" title="전자공고로 이동하기"><span>전자 공고</span></a></li>
-								<li class="flex_item_6n"><a href="../esg/report.html" class="txt_info" title="지속가능경영보고서로 이동하기"><span>지속가능경영<br>보고서</span></a></li>
-								<li class="flex_item_6n"><a href="https://dividend.samsungsdi.com" class="txt_info" target="_blank" title="배당금 조회로 새창열기"><span>배당금 조회</span></a></li>
+								<li class="flex_item_3n"><a href="../investment/financial_tab05.html" class="txt_info" title="Earnings Releases"><span>Earnings Releases</span></a></li>
+								<li class="flex_item_3n"><a href="../investment/financial_tab03.html" class="txt_info" title="Audit Reports"><span>Audit Reports</span></a></li>
+								<li class="flex_item_3n"><a href="../esg/report.html" class="txt_info" title="Sustainability Reports"><span>Sustainability Reports</span></a></li>
 							</ul>
-							<div class="wanted">
-								<a href="../career/career_tab04.html" class="titsub2" title="채용중인 공고로 이동하기">채용중인 공고<span class="txt_caption">11건</span></a>
-							</div>
 						</div>
 						<div class="news">
-							<div class="more"><a href="../sdi_now/index.html" class="titsub1B" title="삼성SDI News로 이동하기">삼성SDI News</a></div>
+							<div class="more"><a href="../sdi_now/index.html" class="titsub1B" title="Samsung SDI News">Samsung SDI News</a></div>
 							<ul class="news_list">
 								<li>
 									<a href="../sdi_now/news_view.html">
-										<span class="tit txt">삼성SDI, 미국·유럽에 R&amp;D 연구소 잇달아 설립 경영실적 발표 사상 최대</span>
+										<span class="tit txt">Samsung SDI establishes R&D centers in Europe</span>
 										<span class="date txt_infoR color03">2022.08.16</span>
 									</a>
 								</li>
 								<li>
 									<a href="../sdi_now/news_view.html">
-										<span class="tit txt">삼성SDI 2022년 2분기 경영실적 발표 사상 최대매출 영업 이익 달성 경영실적 삼성SDI 2022년 2분기 경영실적 발표 사상 최대매출 영업 이익 달성 경영실적</span>
+										<span class="tit txt">Samsung SDI posts the biggest earnings in 2Q 2022</span>
 										<span class="date txt_infoR color03">2022.07.29</span>
 									</a>
 								</li>
 								<li>
 									<a href="../sdi_now/news_view.html">
-										<span class="tit txt">삼성SDI, 헝가리에서 외교부 장관 만나 '2030 부산엑스포' 유치 지원 당부</span>
+										<span class="tit txt">Samsung SDI asks Hungary’s foreign minister to support 2030 World<br> Samsung SDI asks Hungary’s foreign minister to support 2030 World</span>
 										<span class="date txt_infoR color03">2022.07.26</span>
 									</a>
 								</li>
@@ -431,15 +390,15 @@
 				</div>
 			</div>
 			<!-- // User Menu : Key Info -->
-
+		
 			<aside id="sitemap" tabindex="0">
 				<h2 class="blind">Sitemap</h2>
 				<nav class="user_menu">
 					<h3 class="blind">User Menu</h3>
 					<ul class="language">
-						<li><a href="#" class="active">KR</a></li>
-						<li><a href="#">EN</a></li>
-						<li><a href="#">CN</a></li>
+						<li><a href="../../../KR/html/main/index.html">KR</a></li>
+						<li><a href="../../../EN/html/main/index.html" class="active">EN</a></li>
+						<li><a href="../../../CN/html/main/index.html">CN</a></li>
 					</ul>
 					<button type="button" class="btn_close" aria-label="Close">Sitemap Close</button>
 				</nav>
@@ -449,273 +408,267 @@
 						<li><a href="javascript:void(0);"><b>SAMSUNG SDI</b></a>
 							<button class="depth_open">Open</button>
 							<ul>
-								<li><a href="../about_sdi/index.html" title="About Us로 이동하기">About Us</a></li>
-								<li><a href="../about_sdi/history.html" title="History로 이동하기">History</a></li>
-								<li><a href="../about_sdi/ci.html" title="CI로 이동하기">CI</a></li>
-								<li><a href="../about_sdi/research_development.html" title="R&D로 이동하기">R&D</a></li>
-								<li><a href="../about_sdi/global_network.html" title="Global Network로 이동하기">Global Network</a></li>
+								<li><a href="../about_sdi/index.html" title="About Us">About Us</a></li>
+								<li><a href="../about_sdi/history.html" title="History">History</a></li>
+								<li><a href="../about_sdi/ci.html" title="CI">CI</a></li>
+								<li><a href="../about_sdi/research_development.html" title="R&D">R&D</a></li>
+								<li><a href="../about_sdi/global_network.html" title="Global Network">Global Network</a></li>
 							</ul>
 						</li>
 						<li><a href="javascript:void(0);"><b>ESG</b></a>
 							<button class="depth_open">Open</button>
 							<ul>
-								<li><a href="javascript:void(0);">ESG 전략</a><button class="depth_detail_open">Open</button>
+								<li><a href="javascript:void(0);">ESG Strategy</a><button class="depth_detail_open">Open</button>
 									<ul>
-										<li><a href="../esg/sustainability_tab01.html" title="지속가능경영 전략체계로 이동하기">지속가능경영 전략체계</a></li>
-										<li><a href="../esg/sustainability_tab02.html" title="중요 이슈 분석으로 이동하기">중요 이슈 분석</a></li>
-										<li><a href="../esg/sustainability_tab03.html" title="리스크 관리로 이동하기">리스크 관리</a></li>
-										<li><a href="../esg/sustainability_tab04.html" title="지속가능경영 정책으로 이동하기">지속가능경영 정책</a></li>
-										<li><a href="../esg/sustainability_tab05.html" title="이니셔티브와 인증으로 이동하기">이니셔티브와 인증</a></li>
+										<li><a href="../esg/sustainability_tab01.html" title="Sustainability Management Strategic Framework">Sustainability Management Strategic<br> Framework</a></li>
+										<li><a href="../esg/sustainability_tab02.html" title="Materiality Analysis">Materiality Analysis</a></li>
+										<li><a href="../esg/sustainability_tab03.html" title="Risk Management">Risk Management</a></li>
+										<li><a href="../esg/sustainability_tab04.html" title="Sustainability Policy">Sustainability Policy</a></li>
+										<li><a href="../esg/sustainability_tab05.html" title="Initiative and Certification">Initiative and Certification</a></li>
 									</ul>
 								</li>
-								<li><a href="javascript:void(0);">환경</a><button class="depth_detail_open">Open</button>
+								<li><a href="javascript:void(0);">Environment</a><button class="depth_detail_open">Open</button>
 									<ul>
-										<li><a href="../esg/environment_tab01.html" title="환경경영로 이동하기">환경경영</a></li>
-										<li><a href="../esg/environment_tab02.html" title="Move to Net-Zero로 이동하기">Move to Net-Zero</a></li>
+										<li><a href="../esg/environment_tab01.html" title="Environment-Friendly Management">Environment-Friendly Management</a></li>
+										<li><a href="../esg/environment_tab02.html" title="Move to Net-Zero">Move to Net-Zero</a></li>
 									</ul>
 								</li>
-								<li><a href="javascript:void(0);">사회</a><button class="depth_detail_open">Open</button>
+								<li><a href="javascript:void(0);">Social Responsibility</a><button class="depth_detail_open">Open</button>
 									<ul>
-										<li><a href="../esg/social_tab01.html" title="안전과 보건로 이동하기">안전과 보건</a></li>
-										<li><a href="../esg/social_tab02.html" title="상생협력으로 이동하기">상생협력</a></li>
-										<li><a href="../esg/social_tab03.html" title="사회공헌으로 이동하기">사회공헌</a></li>
-										<li><a href="../esg/social_tab04.html" title="공급망 사회적 책임으로 이동하기">공급망 사회적 책임</a></li>
-										<li><a href="../esg/social_tab05.html" title="사회공헌 소식으로 이동하기">사회공헌 소식</a></li>
-										<li><a href="../esg/social_tab06.html" title="다양성과 포용으로 이동하기">다양성과 포용</a></li>
+										<li><a href="../esg/social_tab01.html" title="Safety and Health">Safety and Health</a></li>
+										<li><a href="../esg/social_tab02.html" title="Win-Win Cooperation">Win-Win Cooperation</a></li>
+										<li><a href="../esg/social_tab03.html" title="Social Responsibility in Supply Chains">Social Responsibility in Supply Chains</a></li>
+										<li><a href="../esg/social_tab04.html" title="Social Contribution">Social Contribution</a></li>
+										<li><a href="../esg/social_tab05.html" title="News">News</a></li>
+										<li><a href="../esg/social_tab06.html" title="Diversity and Inclusion">Diversity and Inclusion</a></li>
 									</ul>
 								</li>
-								<li><a href="javascript:void(0);">지배구조</a><button class="depth_detail_open">Open</button>
+								<li><a href="javascript:void(0);">Corporate Governance</a><button class="depth_detail_open">Open</button>
 									<ul>
-										<li><a href="../esg/governance_tab01.html" title="이사회로 이동하기">이사회</a></li>
-										<li><a href="../esg/governance_tab02.html" title="위원회로 이동하기">위원회</a></li>
-										<li><a href="../esg/governance_tab03.html" title="이해관계자로 이동하기">이해관계자</a></li>
-										<li><a href="../esg/governance_tab04.html" title="준법경영으로 이동하기">준법경영</a></li>
-										<li><a href="../esg/governance_tab05.html" title="윤리경영으로 이동하기">윤리경영</a></li>
-										<li><a href="../esg/governance_tab06.html" title="정보보호로 이동하기">정보보호</a></li>
+										<li><a href="../esg/governance_tab01.html" title="Board of Directors">Board of Directors</a></li>
+										<li><a href="../esg/governance_tab02.html" title="Committees">Committees</a></li>
+										<li><a href="../esg/governance_tab03.html" title="Stakeholders">Stakeholders</a></li>
+										<li><a href="../esg/governance_tab04.html" title="Compliance">Compliance</a></li>
+										<li><a href="../esg/governance_tab05.html" title="Ethics">Ethics</a></li>
+										<li><a href="../esg/governance_tab06.html" title="Information Security">Information Security</a></li>
 									</ul>
 								</li>
-								<li><a href="../esg/report.html" title="지속가능경영보고서로 이동하기">지속가능경영보고서</a></li>
+								<li><a href="../esg/report.html" title="Sustainability Reports">Sustainability Reports</a></li>
 							</ul>
-						</li>
+						</li>  
 						<li><a href="javascript:void(0);"><b>BUSINESS</b></a>
 							<button class="depth_open">Open</button>
 							<ul>
-								<li><a href="../business/index.html" title="소형배터리로 이동하기">소형배터리</a></li>
-								<li><a href="../business/automotive_battery.html" title="자동차 배터리로 이동하기">자동차 배터리</a></li>
-								<li><a href="../business/ess.html" title="ESS로 이동하기">ESS</a></li>
-								<li><a href="../business/electronic_materials.html" title="전자재료로 이동하기">전자재료</a></li>
-								<li><a href="../business/isi.html" title="Important Safety Information으로 이동하기">Important Safety Information</a></li>
+								<li><a href="../business/index.html" title="Small-Sized Lithium-ion Battery">Small-Sized Lithium-ion Battery</a></li>
+								<li><a href="../business/automotive_battery.html" title="Automotive Battery">Automotive Battery</a></li>
+								<li><a href="../business/ess.html" title="ESS">ESS</a></li>
+								<li><a href="../business/electronic_materials.html" title="Electronic Materials">Electronic Materials</a></li>
+								<li><a href="../business/isi.html" title="Important Safety Information">Important Safety Information</a></li>
 							</ul>
 						</li>
 						<li><a href="javascript:void(0);"><b>INVESTMENT</b></a>
 							<button class="depth_open">Open</button>
 							<ul>
-								<li><a href="../investment/index.html" title="IR정보로 이동하기">IR정보</a></li>
-								<li><a href="javascript:void(0);">주식정보</a><button class="depth_detail_open">Open</button>
+								<li><a href="../investment/index.html" title="IR Information">IR Information</a></li>
+								<li><a href="javascript:void(0);">Stock Information</a><button class="depth_detail_open">Open</button>
 									<ul>
-										<li><a href="../investment/stock_tab01.html" title="주가정보로 이동하기">주가정보</a></li>
-										<li><a href="../investment/stock_tab02.html" title="주식 상장 현황로 이동하기">주식 상장 현황</a></li>
-										<li><a href="../investment/stock_tab03.html" title="배당 현황으로 이동하기">배당 현황</a></li>
-										<li><a href="../investment/stock_tab04.html" title="주주 현황으로 이동하기">주주 현황</a></li>
+										<li><a href="../investment/stock_tab01.html" title="Stock Chart">Stock Chart</a></li>
+										<li><a href="../investment/stock_tab02.html" title="Listing Information">Listing Information</a></li>
+										<li><a href="../investment/stock_tab03.html" title="Dividend Details">Dividend Details</a></li>
+										<li><a href="../investment/stock_tab04.html" title="Shareholder Structure">Shareholder Structure</a></li>
 									</ul>
 								</li>
-								<li><a href="javascript:void(0);">재무정보</a><button class="depth_detail_open">Open</button>
+								<li><a href="javascript:void(0);">Financial Information</a><button class="depth_detail_open">Open</button>
 									<ul>
-										<li><a href="../investment/financial_tab01.html" title="주요 지표로 이동하기">주요 지표</a></li>
-										<li><a href="../investment/financial_tab02.html" title="신용등급으로 이동하기">신용등급</a></li>
-										<li><a href="../investment/financial_tab03.html" title="감사 보고서로 이동하기">감사 보고서</a></li>
-										<li><a href="../investment/financial_tab04.html" title="사업 보고서로 이동하기">사업 보고서</a></li>
-										<li><a href="../investment/financial_tab05.html" title="실적 발표 자료로 이동하기">실적 발표 자료</a></li>
+										<li><a href="../investment/financial_tab01.html" title="Financial Highlights">Financial Highlights</a></li>
+										<li><a href="../investment/financial_tab02.html" title="Credit Rating">Credit Rating</a></li>
+										<li><a href="../investment/financial_tab03.html" title="Audit Report">Audit Report</a></li>
+										<li><a href="../investment/financial_tab05.html" title="Earnings Releases">Earnings Releases</a></li>
 									</ul>
 								</li>
-								<li><a href="#">이사회 및 위원회</a><button class="depth_detail_open">Open</button>
+								<li><a href="#">BOD & Committees</a><button class="depth_detail_open">Open</button>
 									<ul>
-										<li><a href="../investment/corporate_tab01.html" title="이사회로 이동하기">이사회</a></li>
-										<li><a href="../investment/corporate_tab02.html" title="위원회로 이동하기">위원회</a></li>
-										<li><a href="../investment/corporate_tab03.html" title="정관으로 이동하기">정관</a></li>
-										<li><a href="../investment/corporate_tab04.html" title="주주총회로 이동하기">주주총회</a></li>
+										<li><a href="../investment/corporate_tab01.html" title="Board of Directors">Board of Directors</a></li>
+										<li><a href="../investment/corporate_tab02.html" title="Committees">Committees</a></li>
+										<li><a href="../investment/corporate_tab03.html" title="Articles of Incorporation">Articles of Incorporation</a></li>
+										<li><a href="../investment/corporate_tab04.html" title="Shareholders Meeting">Shareholders Meeting</a></li>
 									</ul>
 								</li>
-								<li><a href="#">공시</a><button class="depth_detail_open">Open</button>
-									<ul>
-										<li><a href="../investment/disclosure_tab01.html" title="공시로 이동하기">공시</a></li>
-										<li><a href="../investment/disclosure_tab02.html" title="전자공고로 이동하기">전자공고</a></li>
-									</ul>
-								</li>
-								<li><a href="https://dividend.samsungsdi.com/" class="btn_link" title="배당금 조회 새 창 열기" target="_blank"><span>배당금 조회</span></a></li>
 							</ul>
 						</li>
 						<li><a href="javascript:void(0);"><b>CAREER</b></a>
 							<button class="depth_open">Open</button>
 							<ul>
-								<li><a href="../career/index.html" title="인재상으로 이동하기">인재상</a></li>
-								<li><a href="javascript:void(0);">지원하기</a><button class="depth_detail_open">Open</button>
+								<li><a href="../career/index.html" title="Core Values">Core Values</a></li>
+								<li><a href="javascript:void(0);">Join Us</a><button class="depth_detail_open">Open</button>
 									<ul>
-										<li><a href="../career/career_tab01.html" title="채용전형으로 이동하기">채용전형</a></li>
-										<li><a href="../career/career_tab02.html" title="직무소개로 이동하기">직무소개</a></li>
-										<li><a href="../career/career_tab03.html" title="복리후생으로 이동하기">복리후생</a></li>
-										<li><a href="../career/career_tab04.html" title="채용공고로 이동하기">채용공고</a></li>
+										<li><a href="../career/career_tab01.html" title="Hiring Process">Hiring Process</a></li>
+										<li><a href="../career/career_tab02.html" title="Job Descriptions">Job Descriptions</a></li>
+										<li><a href="../career/career_tab03.html" title="Benefits">Benefits</a></li>
+										<li><a href="../career/career_tab04.html" title="Hiring Notice">Hiring Notice</a></li>
 									</ul>
 								</li>
-								<li><a href="../career/career_life.html" title="삼성SDI Life로 이동하기">삼성SDI Life</a></li>
 							</ul>
 						</li>
 						<li><a href="javascript:void(0);"><b>SDI Now</b></a>
 							<button class="depth_open">Open</button>
 							<ul>
-								<li><a href="../sdi_now/index.html" title="삼성SDI News로 이동하기">삼성SDI News</a></li>
-								<li><a href="../sdi_now/column.html" title="Column로 이동하기">Column</a></li>
-								<li><a href="../sdi_now/media.html" title="Media로 이동하기">Media</a></li>
+								<li><a href="../sdi_now/index.html" title="Samsung SDI News">Samsung SDI News</a></li>
+								<li><a href="../sdi_now/column.html" title="Column">Column</a></li>
 							</ul>
 						</li>
-						<li><a href="javascript:void(0);"><b>고객센터</b></a>
+						<li><a href="javascript:void(0);"><b>Contact Us</b></a>
 							<button class="depth_open">Open</button>
 							<ul>
-								<li><a href="../etc/information.html" title="문의하기로 이동하기">문의하기</a></li>
+								<li><a href="../etc/information.html" title="Voice of Customers">Voice of Customers</a></li>
 							</ul>
 						</li>
 					</ul>
 					<div class="sns_wrap">
 						<ul class="sns">
-							<li><a href="https://www.facebook.com/samsungsdi" title="삼성SDI 페이스북 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_facebook_w.svg" alt="Facebook"></a></li>
-							<li><a href="https://twitter.com/sdiin" title="삼성SDI 트위터 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_twitter_w.svg" alt="Twitter"></a></li>
-							<li><a href="https://www.youtube.com/user/SDISamsung" title="삼성SDI 유투브 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_utube_w.svg" alt="YouTube"></a></li>
-							<li><a href="https://blog.naver.com/sdibattery" title="삼성SDI 네이버 블로그 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_blog_w.svg" alt="Naver Blog"></a></li>
-							<li><a href="https://www.linkedin.com/company/Samsung-sdi" title="삼성SDI 링크드인 새 창 열기" target="_blank"><img src="../../assets/images/layout/ico_sns_linkedin_w.svg" alt="Linked in"></a></li>
+							<li><a href="https://www.facebook.com/samsungsdi" title="Open SAMSUNG SDI Facebook" target="_blank"><img src="../../assets/images/layout/ico_sns_facebook_w.svg" alt="Facebook"></a></li>
+							<!-- <li><a href="https://twitter.com/sdiin" title="Open SAMSUNG SDI Twitter" target="_blank"><img src="../../assets/images/layout/ico_sns_twitter_w.svg" alt="Twitter"></a></li> -->
+							<li><a href="https://www.youtube.com/user/SDISamsung" title="Open SAMSUNG SDI Youtube" target="_blank"><img src="../../assets/images/layout/ico_sns_utube_w.svg" alt="YouTube"></a></li>
+							<li><a href="https://blog.naver.com/sdibattery" title="Open SAMSUNG SDI Naver Blog" target="_blank"><img src="../../assets/images/layout/ico_sns_blog_w.svg" alt="Naver Blog"></a></li>
+							<!-- <li><a href="https://www.linkedin.com/company/Samsung-sdi" title="Open SAMSUNG SDI Linked in" target="_blank"><img src="../../assets/images/layout/ico_sns_linkedin_w.svg" alt="Linked in"></a></li> -->
 						</ul>
 					</div>
-				</nav>
+				</nav>	
 			</aside>
 		</div>
 
 		<!--  container -->
 		<div id="container" class="develop">
-			<div class="wrap">
-				<div class="sub_visual full">
-					<h2 class="subH">R&amp;D</h2>
-					<p class="titsub1">Samsung SDI seeks ceaseless<br class="mo"> evolution and<br class="pc"> creates a brighter<br class="mo"> future.</p>
-					<div class="sub_nav">
-						<ul class="col5ea">
-							<li><a href="./index.html" class="titsub2">About Us</a></li>
-							<li><a href="./history.html" class="titsub2">History</a></li>
-							<li><a href="./ci.html" class="titsub2">CI</a></li>
-							<li class="on"><a href="./research_development.html" class="titsub2">R&amp;D</a></li>
-							<li><a href="./global_network.html" class="titsub2">Global Network</a></li>
-						</ul>
-					</div>
-					<div class="btn_scrolldown">
-						<button><span  class="blind">Go to content</span></button>
-					</div>
-				</div>
-				<!-- Start Of Contents -->
-				<section class="content">
-					<h3 class="blind">R&amp;D detail page</h3>
-					<div class="fix_nav">
-						<div>
-							<ul>
-								<li class="on"><a href="#item1">Overview</a></li>
-								<li><a href="#item2">R&amp;D Areas</a></li>
-								<li><a href="#item3">Patents</a></li>
+			<div class="wrap" id="fullpage">
+				<div class="section">
+					<div class="sub_visual full">
+						<h2 class="subH">R&amp;D</h2>
+						<p class="titsub1">Samsung SDI seeks ceaseless<br class="mo"> evolution and<br class="pc"> creates a brighter<br class="mo"> future.</p>
+						<div class="sub_nav">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><a href="./index.html" class="titsub2"><span>About Us</span></a></li>
+								<li class="swiper-slide"><a href="./history.html" class="titsub2"><span>History</span></a></li>
+								<li class="swiper-slide"><a href="./ci.html" class="titsub2"><span>CI</span></a></li>
+								<li class="swiper-slide on"><a href="./research_development.html" class="titsub2"><span>R&amp;D</span></a></li>
+								<li class="swiper-slide"><a href="./global_network.html" class="titsub2"><span>Global Network</span></a></li>
 							</ul>
 						</div>
+						<!-- <div class="btn_scrolldown">
+							<button class="button-next" ><span class="blind">Go to content</span></button>
+						</div> -->
 					</div>
-					<div class="content_inner">
-						<div class="develop_cont">
-							<div class="fix_items">
-								<div id="item1" class="item">
-									<h3 class="titmain">Overview</h3>
-									<p class="txtR">
-										As a world&#45;class materials and energy solution provider, Samsung SDI continues its focus on R&D investment to secure new technologies
-										and boosts technological competitiveness. In addition, by expanding our business to include cutting&#45;edge materials and parts
-										manufacturing, Samsung SDI is now making a leap forward to becoming the solution provider for batteries and materials for IT and
-										vehicles, as well as energy sector. In particular, the year 2014 was a cornerstone year for Samsung SDI since its R&D Center and
-										Electronics Materials Business joined Samsung Future Technology Campus to create synergy through joint research and development
-										activities with Samsung affiliates. We promise to continue our best efforts to maintain our global leadership in technology, capitalizing
-										upon our technical edge and capability in materials and pursuing the future energy solution business.
-									</p>
-									<div class="wide">
-										<img src="../../assets/images/about_sdi/development_img_01.png" class="pc_img" alt="">
-										<img src="../../assets/images/about_sdi/development_img_01_m.png" class="mo_img" alt="">
-									</div>
-									<h3 class="titmain">How do we create value?</h3>
-									<div class="list_cont">
-										<ul class="flex">
-											<li class="flex_item_3n txtR color_g2">
-												<span class="color_g1">R&#38;D Investments</span>
-												Samsung SDI’s continued and solid investments in R&#38;D serve to enhance its competitive edge. As of 2021, the annual R&D spending was KRW 877.648 billion, which accounted for 7.39&#37; of revenue.
-											</li>
-											<li class="flex_item_3n txtR color_g2">
-												<span class="color_g1">R&D Hub</span>
-												Samsung SDI’s R&D Hub consists of Samsung SDI R&D Center, Small&#45;Sized Li&#45;ion Battery Business, Automotive &#38; ESS Battery Business, and Electronic Materials Business. These networks of R&#38;D teams work together to boost Samsung SDI’s global leadership in technology. The efforts continue in researching and developing battery materials and securing a stable supply of materials &#40;e.g. import from Chile&#41;.
-											</li>
-											<li class="flex_item_3n txtR color_g2">
-												<span class="color_g1">Researchers and Developers</span>
-												As of late 2021, Samsung SDI retains approximately 2,300 R&#38;D experts and 53&#37; of them are either Masters or PhD graduates. Samsung SDI operates a learning system where employees share their experience and knowledge. By the same token, in order to further nurture its global talent, the company has increased its support through various systems and contents including academic training programs, in&#45;house technology college system, global talent enabling centers, global educational portals, and outstanding educational contents.
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div id="item2" class="item">
-									<h3 class="titmain">R&D Areas</h3>
-									<dl class="field_info">
-										<dt class="titsub1B_req">
-											Battery
-											<img src="../../assets/images/about_sdi/development_img_02.png" class="pc_img" alt="">
-											<img src="../../assets/images/about_sdi/development_img_02_m.png" class="mo_img" alt="">
-										</dt>
-										<dd>
-											<div class="accordion">
-												<dl class="accordion_list">
-													<dt><a href="javascript:void(0)" title="Open">Establish Materials R&D Center’s Mid/Long-Term Strategies</a></dt>
-													<dd>Samsung SDI has established and has been operating mid/long-term strategies in order to secure product leadership. Building upon such strategies, we plan to implement a big-data-based system that integrates scientific technology and HR management, to create a ‘Strong and Lively R&D Center.’</dd>
-													<dt><a href="javascript:void(0)" title="Open">Strengthen R&#38;D Partnerships</a></dt>
-													<dd>In order to take the lead in the ever-changing technology and market environment, Samsung SDI has been amping up its R&D partnerships. Samsung SDI conducts joint R&#38;D projects with universities and research institutes home and abroad, to develop innovative elementary technologies and capitalize on them in the market. In addition, the company continues to expand its overseas R&D networks to build a system where all pro­cesses from development to completion can be locally managed. At the same time, Samsung SDI concentrates on technologies for cutting-edge battery materials at the ‘Samsung Future Technology Campus’ where collaboration with affiliated companies generates tremendous synergy.</dd>
-													<dt><a href="javascript:void(0)" title="Open">Bolster R&#38;D in Li&#45;ion Battery Materials</a></dt>
-													<dd>Recently, the focus of Li&#45;ion battery market has moved from small&#45;sized lithium&#45;ion bat­teries onto medium&#45;to&#45;large lithium-ion batteries for automotive and energy storage system applications. With the increasing market demand for electric vehicles featuring longer range and better battery systems, Samsung SDI is committed to align itself with such need by working on technologies that can overcome limitations of the existing materials. As more and more devices are built with Li-ion batteries and the competition intensifies, we are raising our efforts in R&D to upgrade the existing materials and develop new materials with high-capacity thereby coming up with longer battery life and shorter charging time.</dd>
-												</dl>
-											</div>
-										</dd>
-									</dl>
-									<dl class="field_info">
-										<dt class="titsub1B_req">
-											Materials
-											<img src="../../assets/images/about_sdi/development_img_03.png" class="pc_img" alt="">
-											<img src="../../assets/images/about_sdi/development_img_03_m.png" class="mo_img" alt="">
-										</dt>
-										<dd>
-											<div class="accordion">
-												<dl class="accordion_list">
-													<dt><a href="javascript:void(0)" title="Open">Electronics Materials</a></dt>
-													<dd>
-														Samsung SDI strives to develop core materials for high&#45;tech IT products such as semiconductors, displays, new energy solutions in line with market need. We spare no efforts in developing competitive products built with innovative technology and top quality. The
-														achievements made by Samsung SDI include development of polarizing PET films, high-efficiency electrode pastes, OLED evaporation materials with higher efficiency and longer life, and the next-generation CR materials for high-resolution displays. We will keep on
-														coming up with innovations in OLED materials, polarizing films, high-brightness CRs, and even more with the aim of expanding our market leadership in both existing and new markets.
-													</dd>
-												</dl>
-											</div>
-										</dd>
-									</dl>
-								</div>
-								<div id="item3" class="item">
-									<h3 class="titmain">Patents</h3>
-									<h4 class="titsub1B">Creating synergy for intellectual property</h4>
-									<p class="txtR color_g2">
-										Samsung SDI has built a foundation to demonstrate synergy not only in battery materials but also in future energy materials. In particular, we are pioneering potential business fields with competitive patents, in the backdrop of intensive support for major projects
-										aimed at the next-generation battery and materials. As of late 2021, Samsung SDI maintains 17,735 patents registered home and abroad. Especially, we have secured 10,428 registered patents in major markets such as the US, Europe, and China, and are<br class="pc"> strengthening our responsiveness therein.
-									</p>
-									<div class="map">
-										<img src="../../assets/images/about_sdi/development_img_04.png" class="pc_img" alt="">
-										<img src="../../assets/images/about_sdi/development_img_04_m.png" class="mo_img" alt="">
-									</div>
-									<p class="notice_txt">Global Status of Samsung SDI’s Patents &#40;as of 2021&#41;</p>
-								</div>
+				</div>
+				<div class="section" id="targetResponsive">
+					<!-- Start Of Contents -->
+					<section class="content">
+						<h3 class="blind">R&amp;D detail page</h3>
+						<div class="fix_nav">
+							<div>
+								<ul>
+									<li class="on"><a href="#item1">Overview</a></li>
+									<li><a href="#item2">R&amp;D Areas</a></li>
+									<li><a href="#item3">Patents</a></li>
+								</ul>
 							</div>
 						</div>
-						<!--/develop_cont -->
-					</div>
-					<!--/content_inner -->
-				</section>
-				<!-- End Of Contents -->
+						<div class="content_inner">
+							<div class="develop_cont">
+								<div class="fix_items">
+									<div id="item1" class="item">
+										<h3 class="titmain">Overview</h3>
+										<p class="txtR">
+											As a world&#45;class materials and energy solution provider, Samsung SDI continues its focus on R&D investment to secure new technologies
+											and boosts technological competitiveness. In addition, by expanding our business to include cutting&#45;edge materials and parts
+											manufacturing, Samsung SDI is now making a leap forward to becoming the solution provider for batteries and materials for IT and
+											vehicles, as well as energy sector. In particular, the year 2014 was a cornerstone year for Samsung SDI since its R&D Center and
+											Electronics Materials Business joined Samsung Future Technology Campus to create synergy through joint research and development
+											activities with Samsung affiliates. We promise to continue our best efforts to maintain our global leadership in technology, capitalizing
+											upon our technical edge and capability in materials and pursuing the future energy solution business.
+										</p>
+										<div class="wide">
+											<img src="../../assets/images/about_sdi/development_img_01.png" class="pc_img" alt="">
+											<img src="../../assets/images/about_sdi/development_img_01_m.png" class="mo_img" alt="">
+										</div>
+										<h3 class="titmain">How do we<br class="mo"> create value?</h3>
+										<div class="list_cont">
+											<ul class="flex">
+												<li class="flex_item_3n txtR color_g2">
+													<span class="color_g1">R&#38;D Investments</span>
+													Samsung SDI’s continued and solid investments in R&#38;D serve to enhance its competitive edge. As of 2021, the annual R&D spending was KRW 877.648 billion, which accounted for 7.39&#37; of revenue.
+												</li>
+												<li class="flex_item_3n txtR color_g2">
+													<span class="color_g1">R&D Hub</span>
+													Samsung SDI’s R&D Hub consists of Samsung SDI R&D Center, Small&#45;Sized Li&#45;ion Battery Business, Automotive &#38; ESS Battery Business, and Electronic Materials Business. These networks of R&#38;D teams work together to boost Samsung SDI’s global leadership in technology. The efforts continue in researching and developing battery materials and securing a stable supply of materials &#40;e.g. import from Chile&#41;.
+												</li>
+												<li class="flex_item_3n txtR color_g2">
+													<span class="color_g1">Researchers and Developers</span>
+													As of late 2021, Samsung SDI retains approximately 2,300 R&#38;D experts and 53&#37; of them are either Masters or PhD graduates. Samsung SDI operates a learning system where employees share their experience and knowledge. By the same token, in order to further nurture its global talent, the company has increased its support through various systems and contents including academic training programs, in&#45;house technology college system, global talent enabling centers, global educational portals, and outstanding educational contents.
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div id="item2" class="item">
+										<h3 class="titmain">R&D Areas</h3>
+										<dl class="field_info">
+											<dt class="titsub1B_req">
+												Battery
+												<img src="../../assets/images/about_sdi/development_img_02.png" class="pc_img" alt="">
+												<img src="../../assets/images/about_sdi/development_img_02_m.png" class="mo_img" alt="">
+											</dt>
+											<dd>
+												<div class="accordion">
+													<dl class="accordion_list">
+														<dt><a href="javascript:void(0)" title="Open">Establish Materials R&D Center’s Mid/Long-Term Strategies</a></dt>
+														<dd>Samsung SDI has established and has been operating mid/long-term strategies in order to secure product leadership. Building upon such strategies, we plan to implement a big-data-based system that integrates scientific technology and HR management, to create a ‘Strong and Lively R&D Center.’</dd>
+														<dt><a href="javascript:void(0)" title="Open">Strengthen R&#38;D Partnerships</a></dt>
+														<dd>In order to take the lead in the ever-changing technology and market environment, Samsung SDI has been amping up its R&D partnerships. Samsung SDI conducts joint R&#38;D projects with universities and research institutes home and abroad, to develop innovative elementary technologies and capitalize on them in the market. In addition, the company continues to expand its overseas R&D networks to build a system where all pro­cesses from development to completion can be locally managed. At the same time, Samsung SDI concentrates on technologies for cutting-edge battery materials at the ‘Samsung Future Technology Campus’ where collaboration with affiliated companies generates tremendous synergy.</dd>
+														<dt><a href="javascript:void(0)" title="Open">Bolster R&#38;D in Li&#45;ion Battery Materials</a></dt>
+														<dd>Recently, the focus of Li&#45;ion battery market has moved from small&#45;sized lithium&#45;ion bat­teries onto medium&#45;to&#45;large lithium-ion batteries for automotive and energy storage system applications. With the increasing market demand for electric vehicles featuring longer range and better battery systems, Samsung SDI is committed to align itself with such need by working on technologies that can overcome limitations of the existing materials. As more and more devices are built with Li-ion batteries and the competition intensifies, we are raising our efforts in R&D to upgrade the existing materials and develop new materials with high-capacity thereby coming up with longer battery life and shorter charging time.</dd>
+													</dl>
+												</div>
+											</dd>
+										</dl>
+										<dl class="field_info">
+											<dt class="titsub1B_req">
+												Materials
+												<img src="../../assets/images/about_sdi/development_img_03.png" class="pc_img" alt="">
+												<img src="../../assets/images/about_sdi/development_img_03_m.png" class="mo_img" alt="">
+											</dt>
+											<dd>
+												<div class="accordion">
+													<dl class="accordion_list">
+														<dt><a href="javascript:void(0)" title="Open">Electronics Materials</a></dt>
+														<dd>
+															Samsung SDI strives to develop core materials for high&#45;tech IT products such as semiconductors, displays, new energy solutions in line with market need. We spare no efforts in developing competitive products built with innovative technology and top quality. The
+															achievements made by Samsung SDI include development of polarizing PET films, high-efficiency electrode pastes, OLED evaporation materials with higher efficiency and longer life, and the next-generation CR materials for high-resolution displays. We will keep on
+															coming up with innovations in OLED materials, polarizing films, high-brightness CRs, and even more with the aim of expanding our market leadership in both existing and new markets.
+														</dd>
+													</dl>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<div id="item3" class="item">
+										<h3 class="titmain">Patents</h3>
+										<h4 class="titsub1B">Creating synergy for intellectual property</h4>
+										<p class="txtR color_g2">
+											Samsung SDI has built a foundation to demonstrate synergy not only in battery materials but also in future energy materials. In particular, we are pioneering potential business fields with competitive patents, in the backdrop of intensive support for major projects
+											aimed at the next-generation battery and materials. As of late 2021, Samsung SDI maintains 17,735 patents registered home and abroad. Especially, we have secured 10,428 registered patents in major markets such as the US, Europe, and China, and are<br class="pc"> strengthening our responsiveness therein.
+										</p>
+										<div class="map">
+											<img src="../../assets/images/about_sdi/development_img_04.png" class="pc_img" alt="">
+											<img src="../../assets/images/about_sdi/development_img_04_m.png" class="mo_img" alt="">
+										</div>
+										<p class="notice_txt">Global Status of Samsung SDI’s Patents<br class="mo"> &#40;as of 2021&#41;</p>
+									</div>
+								</div>
+							</div>
+							<!--/develop_cont -->
+						</div>
+						<!--/content_inner -->
+					</section>
+					<!-- End Of Contents -->
+				</div>
 
 			</div>
 		</div>
@@ -727,30 +680,30 @@
 		<!--/ 팝업 종료  -->
 		<div id="footer_wrap">
 			<div class="quick">
-				<button type="button" class="btn_top" title="최상단으로 이동하기"><img src="../../assets/images/layout/btn_top.png" alt="최상단 이동"></button>
+				<button type="button" class="btn_top" title="To Top"><img src="../../assets/images/layout/btn_top.png" alt="To Top"></button>
 			</div>
 			<footer id="footer">
 			   <div class="inner">
 				  <ul class="site_terms">
-					 <li><a href="https://audit.samsungsdi.com:40195/audit/" title="윤리 &#183; 준법경영 새창열기" target="_blank">윤리 &#183; 준법경영</a></li>
-					 <li><a href="../etc/security_report.html" title="보안신고센터로 이동하기">보안신고센터</a></li>
-					 <li><a href="https://gsrm.samsungsdi.com/" title="파트너사 새창열기" target="_blank">파트너사</a></li>
-					 <li><a href="../etc/b2b_billing.html" title="B2B대금결제로 이동하기">B2B대금결제</a></li>
-					 <li><a href="../etc/privacy_policy.html" title="이용약관으로 이동하기"><strong>이용약관</strong></a></li>
-					 <li><a href="../etc/information.html" title="고객센터로 이동하기">고객센터</a></li>
-					 <li><a href="https://sdiself.v-pass.net:8092/html/MAIN/uUserLogin.html" title="내방객 신청 시스템 새창열기" target="_blank">내방객 신청 시스템</a></li>
-					 <li><a href="../etc/sitemap.html" title="사이트맵으로 이동하기">사이트맵</a></li>
+					 <li><a href="https://audit.samsungsdi.com:40195/audit/" title="Open Ethics & Corporate Compliance" target="_blank">Ethics &#183; Corporate Compliance</a></li>
+					 <li><a href="../etc/security_report.html" title="Security Incident Report">Security Incident Report</a></li>
+					 <li><a href="https://gsrm.samsungsdi.com/" title="Open Partners" target="_blank">Partners</a></li>
+					 <li><a href="../etc/b2b_billing.html" title="B2B Billing">B2B Billing</a></li>
+					 <li><a href="../etc/privacy_policy.html" title="Terms & Conditions"><strong>Terms &#38; Conditions</strong></a></li>
+					 <li><a href="../etc/information.html" title="Contact Us">Contact Us</a></li>
+					 <li><a href="https://sdiself.v-pass.net:8092/html/MAIN/uUserLogin.html" title="Open Visit Request Portal" target="_blank">Visit Request Portal</a></li>
+					 <li><a href="../etc/sitemap.html" title="Site Map">Site Map</a></li>
 				  </ul>
 			   </div>
 			   <div class="footer_line"></div>
 			   <div class="inner">
 				  <ul class="sns">
-					 <li><a href="https://www.facebook.com/samsungsdi" title="삼성SDI 페이스북 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_facebook.svg" alt="Facebook"></a></li>
-					 <li><a href="https://www.youtube.com/user/SDISamsung" title="삼성SDI 유투브 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_utube.svg" alt="YouTube"></a></li>
-					 <li><a href="https://blog.naver.com/sdibattery" title="삼성SDI 네이버 블로그 새창열기" target="_blank"><img src="../../assets/images/layout/ico_sns_blog.svg" alt="Naver Blog"></a></li>
+					<li><a href="https://www.facebook.com/samsungsdi" target="_blank" title="Open Samsung SDI Facebook"><img src="../../assets/images/layout/ico_sns_facebook.svg" alt="Facebook"></a></li>
+					<li><a href="https://www.youtube.com/user/SDISamsung" target="_blank" title="Open Samsung SDI YouTube"><img src="../../assets/images/layout/ico_sns_utube.svg" alt="YouTube"></a></li>
+					<li><a href="https://blog.naver.com/sdibattery" target="_blank" title="Open Samsung SDI Naver Blog"><img src="../../assets/images/layout/ico_sns_blog.svg" alt="Naver Blog"></a></li>
 				  </ul>
-				  <address>삼성SDI(주) : 경기도 용인시 기흥구 공세로 150-20 [17084]</address>
-				  <p class="copyright">COPYRIGHT 2022 SAMSUNG SDI CO.,LTD. <br class="mo">ALL RIGHT RESERVED.</p>
+				  <address>Samsung SDI(주) : [17084] 150-120, GONGSE-RO GIHEUNG-GU YONGIN-SI</address>
+				  <p class="copyright">COPYRIGHT 2022 SAMSUNG SDI CO.,LTD. <br class="mo">ALL RIGHT RESERVED.</p> 
 			   </div>
 			</footer>
 		</div>
