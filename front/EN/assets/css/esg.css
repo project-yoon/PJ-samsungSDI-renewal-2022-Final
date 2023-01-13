@@ -4,13 +4,14 @@
 .mo {display:none;}
 h3.mb40 {margin-bottom: 40px !important;}
 p {line-height: 1.4;}
+.view_body p {line-height: 1.5;color: #666666;word-break: keep-all;}
 .cont_txt:not(:last-child) {margin-bottom: 60px;}
 .cont_txt h4 {margin-bottom: 24px;}
 .cont_txt h4 + p:not(:last-child) {margin-bottom: 40px;}
 .cont_txt h4 + p.exp {margin-bottom: 20px;}
 .cont_item:not(:last-child) {margin-bottom: 120px;}
 .cont_head:not(:last-child) {margin-bottom: 40px;}
-.cont_head h3 {margin-bottom: 30px;}
+.cont_head h3 {margin-bottom: 30px;line-height: 1.4;}
 .cont_body b.img_tit {display: block; margin-bottom: 30px;}
 
 
@@ -23,6 +24,7 @@ p {line-height: 1.4;}
 .list_title {color: #666; margin-bottom: 16px; padding-left: 11px;}
 * + .list_title {margin-top: 30px;}
 
+/* sub_visual */
 .sustainability .sub_visual,
 .important_issue .sub_visual,
 .risk_management .sub_visual,
@@ -46,7 +48,7 @@ p {line-height: 1.4;}
 
 /*btn container*/
 .btn_wrap { display: flex; align-items: center; justify-content: center; margin-top: 50px;}
-.btn_wrap .btn {padding: 0; width: 327px; height: 54px; display: flex; justify-content: center; align-items: center; }
+.btn_wrap .btn {width: 327px; height: 54px; display: flex; justify-content: center; align-items: center; }
 
 /* info_list */
 .info_list li {
@@ -100,7 +102,7 @@ p {line-height: 1.4;}
 /* 사회 - 안전과 보건
 **********************************************************/
 .safety_health .cont_txt:not(:last-child) {margin-bottom: 60px;}
-.safety_health .cont_txt b {margin-bottom: 14px !important;}
+.safety_health .cont_txt b {margin-bottom: 22px}
 .safety_health .cont_txt b + p {margin-bottom: 30px;}
 .safety_health .cont_txt ol.round_num {padding: 60px; border-radius: 20px; background: #F6F7FE;}
 .safety_health .cont_txt ol.round_num > li {margin:16px 0 0 0;}
@@ -118,16 +120,16 @@ p {line-height: 1.4;}
 .winwin_partnership .project .dot_bullet li {padding-left: 10px;}
 .winwin_partnership .project .dot_bullet li::before {width: 2px; height: 2px; background: #666666; top: 6px;}
 .winwin_partnership .project > ul {gap: 30px; flex-wrap: wrap;}
-.winwin_partnership .project > ul > li {padding: 39px 36px 39px 135px; border: 1px solid #eeeeee; border-radius: 20px; background-repeat: no-repeat; background-size: 56px; background-position: left 40px top 40px;}
+.winwin_partnership .project > ul > li {padding: 39px 36px 39px 135px; border: 1px solid #eeeeee; border-radius: 20px; background-repeat: no-repeat; background-size: 56px; background-position: left 40px top 40px; line-height: 1.5;}
 .winwin_partnership .project > ul > li > b {display: inline-block; margin-bottom: 16px;}
 .winwin_partnership .project > ul > li > .dot_bullet li:not(:last-child) {margin-bottom: 10px;}
 .winwin_partnership .project > ul > li:nth-child(1) {background-image: url('../images/esg/ico_partner.png');}
 .winwin_partnership .project > ul > li:nth-child(2) {background-image: url('../images/esg/ico_growth.png');}
 .winwin_partnership .project > ul > li:nth-child(3) {background-image: url('../images/esg/ico_fair.png');}
 
-.winwin_partnership .action_agenda ul {gap: 30px; flex-wrap: wrap;}
+.winwin_partnership .action_agenda ul {gap: 30px; flex-wrap: wrap;line-height: 1.4;}
 .winwin_partnership .action_agenda ul li {border: 1px solid #dddddd; border-radius: 20px;}
-.winwin_partnership .action_agenda ul li a {padding: 35px 35px 35px 86px; display: block; background-repeat: no-repeat; background-position: left 40px top 29px; background-size: 32px; position: relative;}
+.winwin_partnership .action_agenda ul li a {padding: 35px 35px 35px 86px; display: flex; align-items: center; background-repeat: no-repeat; background-position: left 40px top 50%; background-size: 32px; position: relative; height: 100%;}
 .winwin_partnership .action_agenda ul li a::after {content: ""; width: 16px; height: 16px; background: url('../images/esg/ico_arrow.png')no-repeat; background-size: contain; position: absolute; right: 24px; top: 50%; transform: translateY(-50%);}
 .winwin_partnership .action_agenda ul li:nth-child(1) a {background-image: url('../images/esg/ico_contract.png');}
 .winwin_partnership .action_agenda ul li:nth-child(2) a {background-image: url('../images/esg/ico_partner02.png');}
@@ -251,7 +253,13 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 }
 .social_contribution .info_list {
 	flex-wrap: wrap;
+	line-height: 1.5;
 }
+
+.social_contribution .info_list li {
+	margin-bottom: 16px;
+}
+
 .social_contribution .flex_between.cont_info {
 	flex-wrap: wrap;
 	gap: 60px 0;
@@ -339,8 +347,8 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	border-radius: 20px;
 	padding: 60px;
 }
-.operation_progress_wrap li {
-	line-height: 1.8;
+.operation_progress_wrap li:not(:last-child) {
+	margin-bottom: 17px;
 }
 
 .bld_row {
@@ -381,8 +389,7 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 .flx_col_2 .right_cont {
 	width: 100%;
 	max-width: 550px;
-	margin-left: 20px;
-	padding: 40px;
+	margin-left: 60px;
 }
 
 .flx_col_3 {
@@ -446,7 +453,6 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 
 .sustainable_management_new .management_item dd {
 	position: relative;
-	padding-left: 10px;
 }
 .sustainable_management_new .management_item dd + dd {
 	margin-top: 10px;
@@ -455,6 +461,7 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 .sustainable_management_new .management_item dd ul li {
 	position: relative;
 	padding-left: 10px;
+	font-size: 16px;
 }
 .sustainable_management_new .management_item dd ul li::before {
 	position: absolute;
@@ -466,15 +473,23 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 }
 .grd_lay_2 {
 	display: grid;
-	grid-auto-flow: column;
-	grid-template-rows: repeat(5, auto);
+	grid-template-rows: repeat(4, auto);
 	grid-auto-rows: auto;
 	grid-gap: 14px;
 }
 
-.sustainable_management_new  .sustainable_management_new_head .btn_wrap {
+.sustainable_management_new .sustainable_management_new_head .btn_wrap {
 	justify-content: flex-start;
-	gap: 20px;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.sustainable_management_new .sustainable_management_new_head .btn_wrap .btn {
+	max-width: 367px;
+	padding: 0;
+	padding: 15px 40px 15px 16px;
+}
+.sustainable_management_new .sustainable_management_new_head .btn_wrap .btn_ti_download .btn_name {
+	line-height: 1.4;
 }
 .sustainable_management_new .management_item .managenent_download {
 	display: flex;
@@ -519,6 +534,22 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 /* 테블릿
 **********************************************************/
 @media all and (max-width: 1280px) {
+	/* 공통 */
+	p {line-height: 1.3;}
+	/* sub_visual */
+	.safety_health .sub_visual h2,
+	.winwin_partnership .sub_visual h2,
+	.social_responsibility .sub_visual h2,
+	.social_contribution .sub_visual h2,
+	.social_list .sub_visual h2,
+	.social_diversity .sub_visual h2,
+	.social_view .sub_visual h2,
+	.directorate .sub_visual h2,
+	.committee .sub_visual h2,
+	.sustainable_management .sub_visual h2 {
+		top: 150px;
+	}
+
 	/* ESG 전략 - 중요 이슈 분석
 	**********************************************************/
 	.important_issue .cont_body ol.round_num {border-radius: 14px;}
@@ -556,7 +587,7 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
     .winwin_partnership .project > ul > li {padding: 29px 26px 29px 100px; border-radius: 14px; background-size: 40px; background-position: left 30px top 30px;}
     .winwin_partnership .action_agenda ul {gap: 20px; flex-direction: column;}
     .winwin_partnership .action_agenda ul li {width: 100%; border-radius: 14px;}
-    .winwin_partnership .action_agenda ul li a {padding: 25px 25px 25px 60px; background-position: left 24px top 23px; background-size: 24px;}
+    .winwin_partnership .action_agenda ul li a {padding: 25px 36px 25px 60px; background-position: left 24px top 50%; background-size: 24px;}
 
 	/* 사회 - 사회공헌
 	**********************************************************/
@@ -636,7 +667,6 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 		width: 100%;
 		max-width: none;
 		margin-left: 0;
-		padding: 0;
 	}
 	[class *='flx_col'] {
 		width: 100%;
@@ -667,30 +697,27 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	h3.mb40 {margin-bottom: 30px !important;}
 	/* p {line-height: 1.3;} */
 	figure {max-width: 375px;margin: 0 auto;}
-
+	
 	.dot_bullet > li {margin-bottom: 15px !important;padding-left: 10px;}
 	.dot_bullet > li::before {width: 2px; height: 2px; border-radius: 2px; top: 6px;}
 	.list_title {padding-left: 10px; font-size: 16px;}
-
-
+	
 	.cont_txt:not(:last-child) {margin-bottom: 50px;}
-	.cont_txt h4 {margin-bottom: 16px;}
+	.cont_txt h4 {margin-bottom: 16px;line-height: 1.3;}
 	.cont_txt h4 + p:not(:last-child) {margin-bottom: 16px;}
 	.cont_txt h4 + p.exp {margin-bottom: 24px;}
-
+	
 	.cont_item:not(:last-child) {margin-bottom: 70px;}
-	.cont_head:not(:last-child) {margin-bottom: 16px;}
-	.cont_head h3 {margin-bottom: 16px;}
-	.cont_body b.img_tit {margin-bottom: 20px;}
+	.cont_head:not(:last-child) {margin-bottom: 30px;}
+	.cont_head h3 {margin-bottom: 16px;line-height: 1.3;}
+	.cont_body b.img_tit {margin-bottom: 20px;line-height: 1.3;}
+	
+	.social_contribution .cont_body>p {margin-bottom: 40px;}
+	.info_list li {line-height: 1.3;}
 
-	.social_contribution .cont_body>p {
-		margin-bottom: 40px;
-	}
-	.info_list li {
-		line-height: 1.3;
-	}
-
-	/* 공통 */
+	.popup.full_modal .pop_head h3 {line-height: 1.3;}
+	
+	/* sub_visual */
 	.sustainability .sub_visual,
 	.important_issue .sub_visual,
 	.risk_management .sub_visual,
@@ -708,6 +735,17 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	.directorate .sub_visual,
 	.committee .sub_visual {background-image: url('../../assets/images/esg/visual_esg_04_mo.png');}
 
+	.safety_health .sub_visual h2,
+	.winwin_partnership .sub_visual h2,
+	.social_responsibility .sub_visual h2,
+	.social_contribution .sub_visual h2,
+	.social_list .sub_visual h2,
+	.social_diversity .sub_visual h2,
+	.social_view .sub_visual h2,
+	.directorate .sub_visual h2,
+	.committee .sub_visual h2,
+	.sustainable_management .sub_visual h2 {top: 25px;}
+
 	/* ESG 전략 - 중요 이슈 분석
 	**********************************************************/
 	.important_issue .cont_body figure {margin-bottom: 30px;}
@@ -721,6 +759,13 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	**********************************************************/
 	.risk_management .risk_system .cont_body {overflow-x: auto;}
     .risk_management .risk_system .cont_body figure {width: 843px; max-width: none;}
+	.sustainable_policy .cont_body ul li a {line-height: 1.3;}
+	
+	/* ESG 전략 - 이니셔티브
+	**********************************************************/
+	.initiative .esg_result .cont_body ul li {
+		line-height: 1.3;
+	}
 
 	/* 환경 - Move to Net-Zero
 	**********************************************************/
@@ -728,7 +773,7 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 
 	/* 사회 - 안전과 보건
 	**********************************************************/
-	.safety_health .cont_txt b {margin-bottom: 6px !important;}
+	.safety_health .cont_txt b {margin-bottom: 20px}
 	.safety_health .cont_txt b + p {margin-bottom: 20px;}
 	.safety_health .cont_txt ol.round_num {padding: 30px; line-height: 12px;}
 	.safety_health .cont_txt ol.round_num > li {padding-left: 22px;}
@@ -793,7 +838,7 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	.pop_quick {right: 16px; bottom: 24px;}
 
 	.popup.full_modal .supplementary_provision h4 {margin-bottom: 20px;}
-	.popup.full_modal .supplementary_provision ul li {margin-bottom: 16px; font-size: 14px;}
+	.popup.full_modal .supplementary_provision ul li {margin-bottom: 16px; font-size: 14px;line-height: 1.3;}
 
 
 	.number_bullet {margin-top: 20px;}
@@ -817,10 +862,14 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 		width: 100%;
 		max-width: 375px;
 		margin: 0 auto 30px;
+		padding: 16px 0;
 		font-size: 16px;
+		text-align: left;
+		background-position-x: right;
 	}
 	.social_responsibility .cont_body .txt_info {
 		margin-bottom: 20px;
+		line-height: 1.3;
 	}
 
 	/* 사회 - 사회공헌
@@ -834,6 +883,11 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	.social_contribution .info_list.mo_list {
 		display: flex;
 	}
+	
+	.social_contribution .info_list li {
+		margin-bottom: 10px;
+	}
+
 	.social_contribution .cont_info .info_list.mo_list li {
 		width: calc((100% - 16px) / 2);
 		margin-bottom: 0;
@@ -882,6 +936,7 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	}
 
 	.operation_progress_wrap {padding: 30px;}
+	.operation_progress_wrap li {line-height: 1.3;}
 	.bld_row >*:not(:first-child) {margin-left: 0px; margin-bottom: 20px;}
 
 
@@ -912,6 +967,9 @@ p.notice.type2::before {content: "*"; position: absolute; left: 0; top: 0;}
 	.sustainable_management_new .sustainable_management_new_head .btn_wrap {flex-direction: column;justify-content: inherit;}
 	.sustainable_management_new .sustainable_management_new_head .btn_wrap a {max-width: none;}
 	.sustainable_management_main_old .report_wrap .report_image {border-radius: 14px;}
+	.sustainable_management_new .management_item dt {line-height: 1.3;}
+	.sustainable_management_new .management_item dd ul li {line-height: 1.3;}
+	.sustainable_management_new .sustainable_management_new_head .btn_wrap .btn_ti_download .btn_name {line-height: 1.3;}
 }
 
 @media all and (max-width: 450px) {
