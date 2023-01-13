@@ -79,6 +79,9 @@
 .search_result .total .total_num {
     font-size: 21px;
 }
+.search_result .list_cont .filter_tit p {
+    font-size: 20px;
+}
 
 .list_column li:not(:last-child) {
     border-bottom: 1px solid #EEEEEE;
@@ -136,6 +139,9 @@
     }
     .search_result .list_cont {
         margin-bottom: 70px;
+    }
+    .search_result .list_cont .filter_tit p {
+        font-size: 18px;
     }
     .list_column li a {
         padding: 24px 0px;

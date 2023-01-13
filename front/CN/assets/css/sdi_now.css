@@ -118,6 +118,9 @@
     .media .list_cont .filter_tit p {
         margin-bottom: 16px;
     }
+    .column .list_cont .filter_tit .category {
+        margin-bottom: 10px;
+    }
 
     /* view_body */
     .view_body .view_txt strong {

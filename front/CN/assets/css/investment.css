@@ -117,6 +117,7 @@
     padding: 24px 40px;
     text-align: left;
     line-height: 1.4;
+    color: #666;
 }
 
 /* 이사회
@@ -205,6 +206,7 @@
 }
 .articles_incorporation .article_txt dt {
     margin-bottom: 20px;
+    word-break: keep-all;
     color: #222;
 }
 .articles_incorporation .article_txt dd {
@@ -214,6 +216,7 @@
 }
 .articles_incorporation .article_txt dd ol li {
     margin-bottom: 40px;
+    word-break: keep-all;
 }
 .articles_incorporation .article_txt dd ol li:nth-last-of-type(1) {
     margin-bottom: 0;
@@ -246,10 +249,17 @@
 .articles_incorporation .article_txt dd .supplement_box:nth-last-of-type(1) {
     margin-bottom: 0;
 }
+.articles_incorporation .article_txt .art_incontent {
+    flex-wrap: wrap;
+    justify-content: left;
+}
 .articles_incorporation .article_txt .art_incontent li {
     padding: 0;
     margin-bottom: 30px;
     background: transparent;
+}
+.articles_incorporation .article_txt .art_incontent li.flex_item_6n {
+    width: calc((100% - 30px) / 6);
 }
 .articles_incorporation .article_txt .art_incontent li::before {
     margin-bottom: 30px;
@@ -297,6 +307,7 @@
 }
 .dividend_details .stock_info dd {
     padding: 30px 0;
+    line-height: 1.4;
     border-bottom: 1px solid #ddd;
 }
 .dividend_details .stock_info dd:first-of-type {
@@ -364,6 +375,8 @@
 .shareholders .graph_circle ul li:nth-child(5):before {
     background-color: #7094F0;
 }
+.shareholders .basic_table {margin-top: 30px;}
+.shareholders .basic_table.mo th {line-height: 1.4;}
 
 /*주주총회
 **********************************************************/
@@ -395,8 +408,8 @@
     top: 8px;
     left: 0;
     display: block;
-    width: 3px;
-    height: 3px;
+    width: 2px;
+    height: 2px;
     background-color: #222;
 }
 .general_meeting .iframe-wrap {
@@ -463,7 +476,7 @@
     justify-content: space-between;
 }
 
-/* 공시 상세페이지
+/* 공시 detail page
 ********************************************************** */
 .disclosure_view .view_head .tit .category {
     margin-bottom: 22px;
@@ -710,6 +723,12 @@
     .mo {
         display: block;
     }
+    .sub_visual h2 {
+        top: 150px;
+    }
+    .ir_activity .sub_visual h2 {
+        top: 200px;
+    }
 
     /* IR 정보 */
     .ir_activity h3 {
@@ -717,6 +736,9 @@
     }
     .ir_activity .cont_box:not(:last-child) {
         margin-bottom: 70px;
+    }
+    .ir_activity .cont_box .cont_head p {
+        line-height: 1.3;
     }
 
     /* 재무정보 - 공통 */
@@ -732,9 +754,18 @@
     }
     .accordion > dl.accordion_list > dd ul li {
         padding: 20px;
+        border-radius: 14px;
     }
     .accordion > dl.accordion_list > dd ul li p {
         margin-bottom: 58px;
+    }
+    .business_report .btn.md,
+    .earning_releases .btn.md { 
+        max-width: none;
+        padding: 18px 24px;
+        height: 74px;
+        line-height: 1.3;
+        border-radius: 7px;
     }
 
     /* 재무정보 - 주요지표 */
@@ -752,6 +783,7 @@
     .credit_rating .definition_box h3 {
         margin-bottom: 16px;
     }
+
     .credit_rating .definition_box .basic_table {
         margin-bottom: 16px;
     }
@@ -816,15 +848,19 @@
     }
     .dividend_details .stock_info {
         padding: 30px 24px;
+        border-radius: 7px;
     }
     .dividend_details .stock_info dt {
         margin-bottom: 14px;
+        line-height: 1.3;
     }
     .dividend_details .stock_info dd {
         line-height: 1.3;
     }
 
     /* 주식정보 - 주주 현황 */
+    .shareholders h3 {margin-bottom: 16px;}
+    .shareholders h4 {line-height: 1.3;}
     .shareholders .graph_circle .graph_pic {
         max-width: 327px;
     }
@@ -844,11 +880,13 @@
 
     .shareholders .basic_table.mo th {
         padding-left: 20px;
+        line-height: 1.3;
         text-align: left;
     }
     .shareholders .basic_table.mo td {
         padding-right: 20px;
         text-align: right;
+        font-size: 14px;
         line-height: 1.3;
     }
 
@@ -871,8 +909,15 @@
     .articles_incorporation .supplement_box {
         margin-bottom: 30px;
     }
+    .articles_incorporation .article_txt .art_incontent {
+        justify-content: space-between;
+        gap: 0 10px;
+    }
     .articles_incorporation .article_txt .art_incontent li {
         margin-bottom: 20px;
+    }
+    .articles_incorporation .article_txt .art_incontent li.flex_item_6n {
+        width: calc((100% - 30px) / 3);
     }
 
     /* 주주총회 */
@@ -984,6 +1029,14 @@
 /* 모바일
 **********************************************************/
 @media all and (max-width: 720px) {
+    /* 공통 */
+    .sub_visual h2 {
+        top: 25px;
+    }
+    .ir_activity .sub_visual h2 {
+        top: 50px;
+    }
+
     /* sub_visual */
     .ir_activity .sub_visual {
         background: url("../images/investment/visual_investment_01_mo.png") no-repeat center / cover;
@@ -1025,6 +1078,10 @@
         padding: 15px 36px 15px 16px;
         font-size: 16px;
     }
+    .business_report .btn.md,
+    .earning_releases .btn.md {
+        padding: 18px 10px;
+    }
 
     /* 재무정보 - 주요지표 */
     .financial_information section.content .content_inner {
@@ -1032,6 +1089,9 @@
     }
 
     /* 재무정보 - 신용등급 */
+    .credit_rating .definition_box p {
+        line-height: 1.3;
+    }
     .credit_rating .definition_box .basic_table tr td + td {
         padding: 16px 12px;
         line-height: 1.3;
@@ -1039,7 +1099,12 @@
 
     /* 주식정보 - 주주현황 */
     .shareholders .graph_circle li {
-        width: 50%;
+        width: 100%;
+    }
+
+    /* 정관 */
+    .articles_incorporation .article_txt .art_incontent li.flex_item_6n {
+        width: calc((100% - 30px) / 2);
     }
 
     /* 공시 */
@@ -1068,10 +1133,31 @@
     /* 팝업
 	***********************************************************/
     .responsive_table table {
-        width: 748px;
+        width: 405px;
+        min-width: unset;
     }
     .responsive_table .fixed-side {
         width: 204px;
+    }
+    .popup.full_modal .pop_head {
+        margin-bottom: 34px;
+    }
+    .popup.full_modal .txt_desc {
+        margin-bottom: 30px;
+        line-height: 1.3;
+    }
+    .popup.full_modal .pop_cont .pop_tit.flex_between {
+        max-width: 405px;
+    }
+    .popup.full_modal .pop_cont .pop_tit h4 {
+        line-height: 1.3;
+    }
+    .popup.full_modal .pop_cont .pop_tit span {
+        width: 200px;
+    }
+    .popup.full_modal .pop_cont .table-scroll, 
+    .popup.full_modal .pop_cont .table-scroll-all {
+        margin-top: 16px;
     }
     .popup.full_modal .pop_cont .view_file {
         flex-direction: column;
