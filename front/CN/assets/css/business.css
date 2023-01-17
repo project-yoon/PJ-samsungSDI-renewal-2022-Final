@@ -186,6 +186,7 @@ ol.round_num li:last-child {
 }
 .isi .guide_info {
     background: linear-gradient(180deg, #121212 0%, #273479 30.41%, #425BE6 100%);
+    overflow: hidden;
 }
 
 ul.businessAniArea {max-width: 1000px; margin: 0 auto;}
@@ -598,12 +599,10 @@ ul.businessAniArea li + li {margin-top: 70px;}
     }
     
     /* sub_visual */
-    .sub_visual.full::after {
-        height: 200px;
-    }
-    .visual_info.full::after {
-        height: 200px;
-    }
+    .sub_visual.full::after { height: 200px; }
+    .visual_info.full::after { height: 200px; }
+    .visual_info.full {overflow: hidden;}
+
     .visual_info p {
         font-size: 16px;
     }
