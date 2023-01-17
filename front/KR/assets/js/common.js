@@ -110,11 +110,13 @@ function Full_GNB_CHK() {
 }
 //New! Header GNB
 function initHeaderGNB() {
+  var winW = $(window).width()
   var GNB = $(".gnb");
   var depth_2_height = $(".depth").outerHeight() + $(".depth_menu").outerHeight();
-
   //header height resize
   $(window).on('resize', function () {
+    winW = $(window).width()
+    if(winW <= 720) { $('.header.on').attr('style','') }
     depth_2_height = $(".depth").outerHeight() + $(".depth_menu").outerHeight();
   })
 
@@ -148,7 +150,9 @@ function initHeaderGNB() {
       GNB.find(">ul>li>.depth_menu>ul>li")
         .siblings(".more")
         .removeClass("open");
-      GNB.parent(".header").css({ height: "80px" });
+      if(winW >= 720) {
+        GNB.parent(".header").css({ height: "80px" });
+      }
       GNB.parent(".header").css({ overflow: "" });
     })
     .find("li")
@@ -239,6 +243,9 @@ function initKeyinfoBtn() {
   $(".btn_keyinfo")
     .off("click")
     .on("click", function () {
+      if($('#container').hasClass('main')) {
+        $.scrollify.disable();
+      }
       $(".keyinfo").fadeIn();
       $('body').css({
         'height': '100vh',
@@ -249,6 +256,9 @@ function initKeyinfoBtn() {
   $(".keyinfo .close")
     .off("click")
     .on("click", function () {
+      if($('#container').hasClass('main')) {
+        $.scrollify.enable();
+      }
       $('body').css({
         'height': 'auto',
         'overflow':'unset'
@@ -259,12 +269,12 @@ function initKeyinfoBtn() {
 //Search Popup
 function initSearchBtn() {
   $(".btn_search").click(function () {
-    $("html, body").css("overflow", "hidden");
+    $("body").css({"overflow":"hidden"});
     $("#popup_search").css("display", "block");
   });
   $(".close_btn").click(function () {
     $("#popup_search").css("display", "none");
-    $("html, body").css("overflow", "visible");
+    $("body").css("overflow", "visible");
   });
 }
 //Sitemap GNB
@@ -292,6 +302,10 @@ function initSitemapGnb() {
     bodyOverflowAntiShaking(sitemapOpenIs);
     //body overflow 처리 및 그로 인한 레이아웃 흔들림 방지
 
+    if($('#container').hasClass('main')) {
+      $.scrollify.disable();
+    }
+
     var winW = $(window).width();
 		if(winW < 1280){
             sitemap.fadeIn(300).addClass('on');	
@@ -310,6 +324,10 @@ function initSitemapGnb() {
   // 패널 끄기
   pannelClose.off("click").on("click", function (e) {
     e.preventDefault();
+
+    if($('#container').hasClass('main')) {
+      $.scrollify.enable()
+    }
 
     pannel.fadeOut(300).removeClass("on");
     sitemapOpenIs = false;
@@ -393,6 +411,9 @@ function initSitemapGnb() {
     })
 	*/
   btnClose.off("click").on("click", function () {
+    if($('#container').hasClass('main')) {
+      $.scrollify.enable();
+    }
     sitemap.css({
       right: "-" + dist() + "px",
     });
@@ -1227,7 +1248,6 @@ function initAccordionList() {
     });
 }
 
-
 function scrollNext () {
   var scrollDown = $(".btn_scrolldown button.move")
 
@@ -1311,27 +1331,10 @@ function scrollMove () {
 
 }
 
-function mobileHeight() {
-  var vh = window.innerHeight * 0.01
-  document.documentElement.style.setProperty('--mo-real-height', `${vh}px`)
-
-  window.addEventListener('resize', () => {
-    var vh = window.innerHeight * 0.01
-    document.documentElement.style.setProperty('--mo-real-height', `${vh}px`)
-  })
-  window.addEventListener('touvhend', () => {
-    var vh = window.innerHeight * 0.01
-    document.documentElement.style.setProperty('--mo-real-height', `${vh}px`)
-  })
-
-}
-
-
 $(document).ready(function () {
   if ($(".quick").length > 0) {
     initTopMove(); //Top move
   }
-  // mobileHeight() //모바일 
   initPopCookieSet(); // cookie setting
   // initHeaderGnb();        Header GNB
   // Full_GNB_CHK();

@@ -187,6 +187,7 @@ ol.round_num li:last-child {
     background-image: url(../images/business/visual_business_05.png);
 }
 .isi .guide_info {
+    overflow: hidden;
     background: linear-gradient(180deg, #121212 0%, #273479 30.41%, #425BE6 100%);
 }
 
@@ -595,11 +596,13 @@ ul.businessAniArea li + li {margin-top: 70px;}
     .isi section.content .content_inner {
         padding-top: 40px;
     }
+    .visual_info.full {overflow: hidden;}
     .visual_info.full ul.businessAniArea li {font-size: .85em;}
     .visual_info.full ul.businessAniArea li + li {margin-top: 50px;}
     .materials .init ul.businessAniArea li:nth-child(1) ,
     .materials .init ul.businessAniArea li:nth-child(2) {transform: translateY(0px);}
     /* sub_visual */
+
     .sub_visual.full::after {
         height: 200px;
     }
