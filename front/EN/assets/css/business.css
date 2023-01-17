@@ -148,6 +148,7 @@ ol.round_num li:last-child {
 .guide_info.full {
     position: relative;
 }
+
 .sub_visual.full::after {
     position: absolute;
     bottom: 0;
@@ -622,7 +623,6 @@ ul.businessAniArea li + li {margin-top: 70px;}
     .isi .mo {
         display: block;
     }
-
     .sub_visual.full {
         padding: 0 24px;
     }
@@ -634,12 +634,10 @@ ul.businessAniArea li + li {margin-top: 70px;}
     }
     
     /* sub_visual */
-    .sub_visual.full::after {
-        height: 200px;
-    }
-    .visual_info.full::after {
-        height: 200px;
-    }
+    .sub_visual.full::after { height: 200px; }
+    .visual_info.full::after { height: 200px; }
+    .visual_info.full {overflow: hidden;}
+    
     .visual_info p {
         font-size: 16px;
     }
