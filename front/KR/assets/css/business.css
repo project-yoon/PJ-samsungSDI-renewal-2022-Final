@@ -428,9 +428,12 @@ ul.businessAniArea li + li {margin-top: 70px;}
     }
     .guide_info {
         height: 980px;
+        height: 1020px;
     }
     .guide_info .inner {
         padding: 90px 24px;
+        padding: 5% 24px;
+        margin-top: 10%;
     }
     .guide_info .info_head {
         margin-bottom: 60px;
