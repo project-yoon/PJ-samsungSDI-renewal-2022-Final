@@ -1,3 +1,16 @@
+
+
+
+// 크롬 모바일 주소창 숨기기
+
+  window.addEventListener('load',function(){
+    setTimeout(scrollTo, 0,0,1);
+  },false);
+
+
+
+
+
 //Header cookie setting
 function initPopCookieSet() {
   function setCookie(name, value, expirehours) {
@@ -548,12 +561,21 @@ function initTopMove() {
   });
 
   btnTopMove.find(".btn_top").off("click").on("click", function () {
-      if ($('#container.main').length) {
-        $.scrollify.move("#mainTop");
-      }
-      $("html,body").animate(
-        { scrollTop: 0, }
-        ,500);
+    // 모바일 화면 이슈 수정
+    var isMobile = /Mobi/i.test(window.navigator.userAgent);
+
+    if ($('#container.main').length) {
+      $.scrollify.move("#mainTop");
+    }
+      
+    if ($('.sub_visual.full').length != 0 && isMobile) {
+      var pageHeight = $(window).height();
+      $('.sub_visual.full').css('height', pageHeight)
+    }
+    
+    $("html,body").animate(
+      { scrollTop: 0, }
+      ,500);
     });
 }
 //body overflow 처리 및 그로 인한 레이아웃 흔들림 방지
@@ -1289,12 +1311,11 @@ function scrollMove () {
     anchorCorrection = 70
   }
 
-
-
   function scrollActive() {
       $('#fullpage').fullpage({
           anchors: ['page1', 'page2', 'page3'],
-          onLeave: function (origin, destination, direction, trigger) {
+        onLeave: function (origin, destination, direction, trigger) {
+            
             if (destination === targetIndex && direction === 'down') {
               setTimeout(function () {
                 fullpage_api.destroy('all');    
