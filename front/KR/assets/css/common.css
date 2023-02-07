@@ -1,4 +1,7 @@
 @charset "UTF-8";
+:root {
+  --vh : 100vh;
+}
 
 .guide_header { margin:40px 0; }
 
@@ -3686,7 +3689,7 @@ nav#skip_navi a {
     .sub_visual.full {
       margin-top: 0;
       height: 100vh;
- 
+      height: calc(var(--vh, 1vh) * 100);
     }
 
     .sub_visual h1 {

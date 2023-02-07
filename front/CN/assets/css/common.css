@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* 영문 */
+:root {
+  --vh : 100vh;
+}
+
 
 .guide_header { margin:40px 0; }
 
@@ -1902,7 +1906,7 @@ nav#skip_navi a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: var(--vh);
   }
   .sub_visual.full,
   .sub_visual h1 {
@@ -3666,6 +3670,7 @@ nav#skip_navi a {
     .sub_visual.full {
       margin-top: 0;
       height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
     }
     .sub_visual h1 {
       font-size: 36px;

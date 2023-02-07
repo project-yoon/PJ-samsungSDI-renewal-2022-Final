@@ -1,13 +1,21 @@
+var isMobile = /Mobi/i.test(window.navigator.userAgent);
+
+//컨텐츠 height 맞추기
+function mobileAutoHeight() {
 
 
+  if (isMobile == false) {
+    return
+  }
 
-// 크롬 모바일 주소창 숨기기
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-  window.addEventListener('load',function(){
-    setTimeout(scrollTo, 0,0,1);
-  },false);
-
-
+  window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
+}
 
 
 
@@ -561,20 +569,15 @@ function initTopMove() {
   });
 
   btnTopMove.find(".btn_top").off("click").on("click", function () {
-    // 모바일 화면 이슈 수정
-    var isMobile = /Mobi/i.test(window.navigator.userAgent);
+    var top = 0
+    isMobile ? top = 1 : 0
 
     if ($('#container.main').length) {
       $.scrollify.move("#mainTop");
     }
-      
-    if ($('.sub_visual.full').length != 0 && isMobile) {
-      var pageHeight = $(window).height();
-      $('.sub_visual.full').css('height', pageHeight)
-    }
-    
+
     $("html,body").animate(
-      { scrollTop: 0, }
+      { scrollTop: top, }
       ,500);
     });
 }
@@ -1336,7 +1339,7 @@ function scrollMove () {
   $(window).on('scroll', function() {
       winTop = $(window).scrollTop()
 
-      if(isActive === true && winTop <= 80){
+      if(isActive === true && winTop <= 0){
           isActive = false
           history.replaceState({}, null, location.pathname);
           scrollActive()
@@ -1353,6 +1356,7 @@ function scrollMove () {
 }
 
 $(document).ready(function () {
+  mobileAutoHeight()
   if ($(".quick").length > 0) {
     initTopMove(); //Top move
   }

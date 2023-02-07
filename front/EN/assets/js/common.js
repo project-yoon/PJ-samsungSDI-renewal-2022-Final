@@ -1,3 +1,23 @@
+var isMobile = /Mobi/i.test(window.navigator.userAgent);
+
+//컨텐츠 height 맞추기
+function mobileAutoHeight() {
+
+
+  if (isMobile == false) {
+    return
+  }
+
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+  window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
+}
+
+
 //Header cookie setting
 function initPopCookieSet() {
   function setCookie(name, value, expirehours) {
@@ -583,11 +603,15 @@ function initTopMove() {
   });
 
   btnTopMove.find(".btn_top").off("click").on("click", function () {
+    var top = 0
+    isMobile ? top = 1 : 0
+
     if ($('#container.main').length) {
       $.scrollify.move("#mainTop");
     }
+
     $("html,body").animate(
-      { scrollTop: 0, }
+      { scrollTop: top, }
       ,500);
   });
 }
@@ -1347,7 +1371,7 @@ function scrollMove () {
   $(window).on('scroll', function() {
       winTop = $(window).scrollTop()
 
-      if(isActive === true && winTop <= 80){
+      if(isActive === true && winTop <= 0){
           isActive = false
           history.replaceState({}, null, location.pathname);
           scrollActive()
