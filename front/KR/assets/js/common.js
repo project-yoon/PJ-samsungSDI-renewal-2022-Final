@@ -3,7 +3,6 @@ var isMobile = /Mobi/i.test(window.navigator.userAgent);
 //컨텐츠 height 맞추기
 function mobileAutoHeight() {
 
-
   if (isMobile == false) {
     return
   }
@@ -15,6 +14,8 @@ function mobileAutoHeight() {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
+
+  console.log(vh)
 }
 
 

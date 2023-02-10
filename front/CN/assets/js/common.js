@@ -15,6 +15,8 @@ function mobileAutoHeight() {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
+
+
 }
 
 
@@ -1388,12 +1390,11 @@ function scrollMove () {
     anchorCorrection = 70
   }
 
-
-
   function scrollActive() {
       $('#fullpage').fullpage({
           anchors: ['page1', 'page2', 'page3'],
-          onLeave: function (origin, destination, direction, trigger) {
+        onLeave: function (origin, destination, direction, trigger) {
+            
             if (destination === targetIndex && direction === 'down') {
               setTimeout(function () {
                 fullpage_api.destroy('all');    
@@ -1429,8 +1430,6 @@ function scrollMove () {
   scrollActive()
 
 }
-
-
 
 $(document).ready(function () {
   mobileAutoHeight()

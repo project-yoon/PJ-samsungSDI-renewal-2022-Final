@@ -3,7 +3,6 @@ var isMobile = /Mobi/i.test(window.navigator.userAgent);
 //컨텐츠 height 맞추기
 function mobileAutoHeight() {
 
-
   if (isMobile == false) {
     return
   }
@@ -1345,12 +1344,11 @@ function scrollMove () {
     anchorCorrection = 70
   }
 
-
-
   function scrollActive() {
       $('#fullpage').fullpage({
           anchors: ['page1', 'page2', 'page3'],
-          onLeave: function (origin, destination, direction, trigger) {
+        onLeave: function (origin, destination, direction, trigger) {
+            
             if (destination === targetIndex && direction === 'down') {
               setTimeout(function () {
                 fullpage_api.destroy('all');    
@@ -1387,7 +1385,10 @@ function scrollMove () {
 
 }
 
+
 $(document).ready(function () {
+  mobileAutoHeight()
+  
   if ($(".quick").length > 0) {
     initTopMove(); //Top move
   }
