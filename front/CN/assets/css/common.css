@@ -1906,7 +1906,8 @@ nav#skip_navi a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: var(--vh);
+    /* height: var(--vh); */
+    height: 100vh;
   }
   .sub_visual.full,
   .sub_visual h1 {
@@ -2478,7 +2479,6 @@ nav#skip_navi a {
   }
   .keyinfo .key_info_util > ul a {
     display: block;
-    vertical-align: bottom;
     width: 100%;
     padding: 24px 34px 24px 100px;
     background-repeat: no-repeat;
