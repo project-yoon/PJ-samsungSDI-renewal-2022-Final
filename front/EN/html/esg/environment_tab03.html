@@ -4,13 +4,20 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>투자정보 - 주주 현황 | 삼성SDI 공식 사이트</title>
+	<title>ESG - 환경(자원 순환) | 삼성SDI 공식사이트</title>
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="../../assets/css/base.css">
 	<link rel="stylesheet" href="../../assets/css/common.css">
-	<link rel="stylesheet" href="../../assets/css/investment.css">
+  <link rel="stylesheet" href="../../assets/css/esg.css">
 	<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+	<script src="../../assets/js/jquery.fullPage.js"></script>
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
 	<script src="../../assets/js/common.js"></script>
-	<script src="../../assets/js/investment.js"></script>
+
+	<!-- ★ 페이지 특정 리소스 호출 -->
+	<link rel="stylesheet" href="../../assets/css/★CATEGODYNAME.css">
+	<script src="../../assets/js/★CATEGODYNAME.js"></script>
+
 </head>
 <body>
 <nav id="skip_navi">
@@ -529,17 +536,17 @@
 
 <hr>
 
-<div id="container" class="shareholders">
+<div id="container" class="circulation">  <!-- 페이지 키클래스 -->
 	<div class="wrap">
 		<div class="sub_visual">
-			<h2 class="subH">Stock<br class="mo"> Information</h2>
-		</div>	
+			<h2 class="subH">Environment</h2>
+		</div>
 		<section class="content">
 			<div class="sub_nav1">
 				<div class="sub_nav1_inner">
 					<div class="home"><a href="../main/index.html">Home</a></div>
 					<div class="depth">
-						<a href="../investment/index.html">INVESTMENT</a>
+						<a href="../esg/sustainability_tab01.html">ESG</a>
 						<ul>
 							<li><a href="../about_sdi/index.html">SAMSUNG SDI</a></li>
 							<li><a href="../business/index.html">BUSINESS</a></li>
@@ -550,171 +557,116 @@
 						</ul>
 					</div>
 					<div class="depth">
-						<a href="./stock_tab01.html">Stock Information</a>
+						<a href="./environment_tab01.html">Environment</a>
 						<ul>
-							<li><a href="./index.html">IR Information</a></li>
-							<li><a href="./stock_tab01.html">Stock Information</a></li>
-							<li><a href="./financial_tab01.html">Financial Information</a></li>
-							<li><a href="./corporate_tab01.html">BOD &amp; Committees</a></li>
+							<li><a href="./sustainability_tab01.html">ESG Strategy</a></li>
+							<li><a href="./environment_tab01.html">Environment</a></li>
+							<li><a href="./social_tab01.html">Social Responsibility</a></li>
+							<li><a href="./governance_tab01.html">Corporate Governance</a></li>
+							<li><a href="./report.html">Sustainability Reports</a></li>
 						</ul>
 					</div>
 					<div class="depth">
-						<a href="./stock_tab04.html"><span>Shareholder Structure</span></a>
+						<a href="./environment_tab02.html">Resource <br class="mo">Circulation</a>
 						<ul>
-							<li><a href="./stock_tab01.html">Stock Chart</a></li>
-							<li><a href="./stock_tab02.html">Listing Information</a></li> 
-							<li><a href="./stock_tab03.html">Dividend Details</a></li>
-							<li><a href="./stock_tab04.html">Shareholder Structure</a></li>
+							<li><a href="./environment_tab01.html">Environmental Management</a></li>
+							<li><a href="./environment_tab02.html">Action for Climate Crisis</a></li>
+							<li><a href="./environment_tab03.html">Resource Circulation</a></li>
 						</ul>
 					</div>
-				</div>		
+				</div>
 			</div>
+
 			<div class="content_inner">
-				<div class="stock04">
-					<h3 class="titmain">Ownership structure</h3>
-					<p class="graph_date txt_infoR color_g2">&#40;As of December 31, 2021&#41;</p>
-					<div class="graph_circle">
-						<div class="graph_pic"><img src="../../assets/images/investment/stock_tab04_img_01.png" alt=""></div>	
-						<ul class="txt_infoR color_g2">
-							<li>Foreign investors<span class="txt_infoB color_g1">46.2&#37;</span></li>
-							<li>Largest shareholder, Etc<span class="txt_infoB color_g1">40.4&#37;</span></li>
-							<li>Domestic institutional investors<span class="txt_infoB color_g1">16.2&#37;</span></li>
-							<li>Retail investors <span class="txt_infoB color_g1">12.4&#37;</span></li>
-							<li>Treasury<span class="txt_infoB color_g1">4.8&#37;</span></li>
-						</ul>
+				<div class="cont_item">
+					<div class="cont_head">
+						<h3 class="titmain mb40">Resource Circulation</h3>
 					</div>
-					<h4 class="titmain">5&#45;Percent Shareholder Status</h4>
-					<div class="basic_table pc">
-						<table>
-							<caption>Stock ownership status table of 5% or more shareholders with shareholder name, number of shares owned, ownership ratio, and transaction relationship with the company</caption>
-							<colgroup>
-								<col style="width: 25%;">
-								<col style="width: 25%;">
-								<col style="width: 25%;">
-								<col style="width: 25%;">
-							</colgroup>	
-							<thead>
-								<tr>
-									<th scope="col" class="txt_info">Shareholders</th>
-									<th scope="col">Holding shares</th>
-									<th scope="col">Ownership &#40;&#37;&#41;</th>
-									<th scope="col">Relationship with the company</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Samsung Electronics</td>
-									<td class="color_g2">13,462,673</td>
-									<td class="color_g2">19.58&#37;</td>
-									<td class="color_g2">Largest shareholder/Business<br> partner in purchase and sales</td>
-								</tr>
-								<tr>
-									<td>National Pension Service of Korea</td>
-									<td class="color_g2">5,495,966</td>
-									<td class="color_g2">7.99&#37;</td>
-									<td class="color_g2">Financial investors</td>
-								</tr>
-								<tr>
-									<td>BlackRock Fund Advisors</td>
-									<td class="color_g2">3,444,030</td>
-									<td class="color_g2">5.01&#37;</td>
-									<td class="color_g2">Financial investors</td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="cont_body">
+						<div class="cont_txt">
+							<h4 class="titsub1B">Key Performance</h4>
+							<div class="table-scroll">
+								<div class="table-wrap responsive_table">
+									<table class="main-table">
+										<caption>Key Performance</caption>
+										<colgroup>
+											<col style="width: 25.41%;">
+											<col style="width: 18.58%;">
+											<col style="width: 18.58%;">
+											<col style="width: 18.58%;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">Category</th>
+												<th scope="col">Unit</th>
+												<th scope="col">2019</th>
+												<th scope="col">2020</th>
+												<th scope="col">2021</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">Domestic waste<br> recycling rate</th>
+												<td>&#37;</td>
+												<td>93.9</td>
+												<td>96.1</td>
+												<td class="txt_info_req">96.0</td>
+											</tr>
+											<tr>
+												<th scope="row">Overseas waste<br> recycling rate</th>
+												<td>&#37;</td>
+												<td>89.4</td>
+												<td>77.3</td>
+												<td class="txt_info_req">89.7</td>
+											</tr>
+											<tr>
+												<th scope="row">Water use rate</th>
+												<td>
+													1000 ton / KRW 100 million<br>
+													&#40;sales revenue&#41;
+												</td>
+												<td>0.08</td>
+												<td>0.07</td>
+												<td class="txt_info_req">0.06</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="cont_txt">
+							<h4 class="titsub1B">Battery Recycle and Reuse</h4>
+							<p>
+								Samsung SDI partners with governments and specialists to actively explore ways to recycle and reuse such batteries to eventually minimize the environmental impact generated from end-of-life batteries from the battery lifecycle viewpoint.
+							</p>
+							<div class="img_box">
+								<b class="img_tit txt_info">&#60;Samsung SDI’s Resource Recovery Process&#62;</b>
+								<figure>
+									<img src="../../assets/images/esg/net_zero_img_02.svg" alt="Samsung SDI’s Resource Recovery Process" class="pc">
+									<img src="../../assets/images/esg/net_zero_img_02_mo.svg" alt="Samsung SDI’s Resource Recovery Process" class="mo">
+								</figure>
+							</div>
+						</div>
+						<div class="cont_txt">
+							<h4 class="titsub1B">Minimizing waste landfill</h4>
+							<p>
+								To minimize the waste generated from our manufacturing, we take the waste-to-resource approach in improving our recycling throughout the phases of R&amp;D, process, and production.
+							</p>
+						</div>
+						<div class="cont_txt">
+							<h4 class="titsub1B">Water Resources Management</h4>
+							<p>
+								We endeavor to reduce our water consumption and manage water quality at an appropriate level. To minimize the amount of chemicals used to operate manufacturing facilities, we have altered our process method to curb the use of such harmful chemicals as hydrochloric acid and caustic soda and mitigate the generation of effluents accordingly. To preserve our aquatic ecosystem, we have raised the bar in operating and managing our effluent treatment facilities to minimize the discharge of water pollutants.
+							</p>
+						</div>
+						<div class="cont_txt">
+							<h4 class="titsub1B">Minimizing the Use of Single-Use Items</h4>
+							<p>
+								As a responsible corporate citizen, Samsung SDI has been an ardent participator in environment preservation and resource recycling by tapering the use of disposable items in our operations. We aim to remove all the single-use items and plastics inside our operations by the end of 2022 and cut in half such items at shops and services installed in our business sites by the end of 2023.
+							</p>
+						</div>
 					</div>
-					<div class="basic_table mo">
-						<table>
-							<caption>Stock ownership status table of 5% or more shareholders with shareholder name, number of shares owned, ownership ratio, and transaction relationship with the company</caption>
-							<colgroup>
-								<col style="width: 50%;">
-								<col style="width: 50%;">
-							</colgroup>	
-							<thead>
-								<tr>
-									<th scope="row">Shareholders</th>
-									<td>Samsung<br> Electronics</td>
-								</tr>
-								<tr>
-									<th scope="row">Holding shares</th>
-									<td>13,462,673</td>
-								</tr>
-								<tr>
-									<th scope="row">Ownership &#40;&#37;&#41;</th>
-									<td>19.58&#37;</td>
-								</tr>
-								<tr>
-									<th scope="row">Relationship with<br> the company</th>
-									<td>
-										Largest<br>
-										shareholder<br>
-										&#47;Business partner<br>
-										in purchase<br>
-										and sales
-									</td>
-								</tr>
-							</thead>
-						</table>
-					</div>
-					<div class="basic_table mo">
-						<table>
-							<caption>Stock ownership status table of 5% or more shareholders with shareholder name, number of shares owned, ownership ratio, and transaction relationship with the company</caption>
-							<colgroup>
-								<col style="width: 50%;">
-								<col style="width: 50%;">
-							</colgroup>	
-							<thead>
-								<tr>
-									<th scope="row">Shareholders</th>
-									<td>National Pension<br> Service of Korea</td>
-								</tr>
-								<tr>
-									<th scope="row">Holding shares</th>
-									<td>5,495,966</td>
-								</tr>
-								<tr>
-									<th>Ownership &#40;&#37;&#41;</th>
-									<td>7.99&#37;</td>
-								</tr>
-								<tr>
-									<th scope="row">Relationship with<br> the company</th>
-									<td>Financial investors</td>
-								</tr>
-							</thead>
-						</table>
-					</div>
-					<div class="basic_table mo">
-						<table>
-							<caption>Stock ownership status table of 5% or more shareholders with shareholder name, number of shares owned, ownership ratio, and transaction relationship with the company</caption>
-							<colgroup>
-								<col style="width: 50%;">
-								<col style="width: 50%;">
-							</colgroup>	
-							<thead>
-								<tr>
-									<th scope="row">Shareholders</th>
-									<td>BlackRock<br>Fund Advisors</td>
-								</tr>
-								<tr>
-									<th scope="row">Holding shares</th>
-									<td>3,444,030</td>
-								</tr>
-								<tr>
-									<th scope="row">Ownership &#40;&#37;&#41;</th>
-									<td>5.01&#37;</td>
-								</tr>
-								<tr>
-									<th scope="row">Relationship with<br> the company</th>
-									<td>Financial<br> investors</td>
-								</tr>
-							</thead>
-						</table>
-					</div>
-					<ul class="list_star txt_infoR color_g3">
-						<li>The above major shareholders are the stock ownership status of shareholders over 5&#37;.</li>
-						<li>As of December 31, 2021, the number of total common shares outstanding is 68,764,530.</li>
-						<li>Holding shares and ownership of BlackRock fund advertisers are as of August 4, 2020.</li>
-					</ul>      
 				</div>
 			</div>
 		</section>
