@@ -1,41 +1,30 @@
-<!--
-
-	*** SUB PAGE TEMPLATE ***
-
-		1. [필수!] ★ 을 검색하고 해당하는 영역을 알맞게 수정한다
-		2. 페이지 키클래스는 #container에서 지정
-		3. 컨텐츠는 .content_inner 안에서 작성한다
-		4. 컨텐츠 구성은 [head/body] 또는 [tit/cont]를 묶음으로 반복한다
-		5. Tab페이지 일 경우, .tab_cont 아래에서 .content_inner를 사용한다
-		6. 스타일 지정은 .페이지키클래스를 최상으로 한다
-			예/ .PAGECLASS .table .txt_info { ~ }
-		7. 작업 완료 후, 해당 주석을 제거한 뒤 공유한다
-
- -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>★PAGETITLE | 삼성SDI 공식사이트</title>
-<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
-<link rel="stylesheet" href="../../assets/css/base.css">
-<link rel="stylesheet" href="../../assets/css/common.css">
-<script src="../../assets/js/jquery-1.11.3.min.js"></script>
-<script src="../../assets/js/swiper-bundle.min.js"></script>
-<script src="../../assets/js/common.js"></script>
-<link rel="stylesheet" href="../../assets/css/career.css">
-<script src="../../assets/js/career.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ESG - 환경(자원 순환) | 삼성SDI 공식사이트</title>
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/base.css">
+	<link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/esg.css">
+	<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+	<script src="../../assets/js/jquery.fullPage.js"></script>
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/common.js"></script>
 
-<link rel="stylesheet" href="../../assets/css/★CATEGODYNAME.css"> <!-- 해당 페이지 스타일 호출 -->
-<script src="../../assets/js/★CATEGODYNAME.js"></script> <!-- 해당 페이지 스크립트 호출 -->
+	<!-- ★ 페이지 특정 리소스 호출 -->
+	<link rel="stylesheet" href="../../assets/css/★CATEGODYNAME.css">
+	<script src="../../assets/js/★CATEGODYNAME.js"></script>
 
 </head>
+
 <body>
 <nav id="skip_navi">
-    <a href="#container">Go to main text</a>
+  <a href="#container">Go to main text</a>
 </nav>
+
 <div id="header_wrap">
 	<div class="utill">
 		<button type="button" class="btn_keyinfo">KeyInfo</button>
@@ -51,58 +40,8 @@
 							<li><a href="../about_sdi/index.html" title="About Us"><span>About Us</span></a></li>
 							<li><a href="../about_sdi/history.html" title="History"><span>History</span></a></li>
 							<li><a href="../about_sdi/ci.html" title="CI"><span>CI</span></a></li>
-							<li><a href="../about_sdi/research_development.html" title="R&D"><span>R&D</span></a></li>
+							<li><a href="../about_sdi/research_development.html" title="R&D"><span>R&amp;D</span></a></li>
 							<li><a href="../about_sdi/global_network.html" title="Global Network"><span>Global Network</span></a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="depth"><a href="javascript:void(0);"><span>ESG</span></a>
-					<div class="depth_menu">
-						<ul>
-							<li class="more"><a href="javascript:void(0);"><span>ESG战略</span></a>
-								<div class="depth_detail">
-									<ul>
-										<li><a href="../esg/sustainability_tab01.html" title="可持续经营战略体系"><span>可持续经营战略体系</span></a></li>
-										<li><a href="../esg/sustainability_tab02.html" title="热点分析"><span>热点分析</span></a></li>
-										<li><a href="../esg/sustainability_tab03.html" title="风险管理"><span>风险管理</span></a></li>
-										<li><a href="../esg/sustainability_tab04.html" title="可持续经营政策"><span>可持续经营政策</span></a></li>
-										<li><a href="../esg/sustainability_tab05.html" title="倡议和认证"><span>倡议和认证</span></a></li>
-									</ul>
-								</div>
-							</li>
-							<li class="more"><a href="javascript:void(0);"><span>环境</span></a>
-								<div class="depth_detail">
-									<ul>
-										<li><a href="../esg/environment_tab01.html" title="环境经营"><span>环境经营</span></a></li>
-										<li><a href="../esg/environment_tab02.html" title="Move to Net-Zero"><span>Move to Net-Zero</span></a></li>
-									</ul>
-								</div>
-							</li>
-							<li class="more"><a href="javascript:void(0);"><span>社会</span></a>
-								<div class="depth_detail">
-									<ul>
-										<li><a href="../esg/social_tab01.html" title="安全和保健"><span>安全和保健</span></a></li>
-										<li><a href="../esg/social_tab02.html" title="共赢合作"><span>共赢合作</span></a></li>
-										<li><a href="../esg/social_tab03.html" title="供应链社会责任"><span>供应链社会责任</span></a></li>
-										<li><a href="../esg/social_tab04.html" title="社会贡献"><span>社会贡献</span></a></li>
-										<li><a href="../esg/social_tab05.html" title="社会贡献消息"><span>社会贡献消息</span></a></li>
-										<li><a href="../esg/social_tab06.html" title="多样性和包容性"><span>多样性和包容性</span></a></li>
-									</ul>
-								</div>
-							</li>
-							<li class="more"><a href="javascript:void(0);"><span>管理结构</span></a>
-								<div class="depth_detail">
-									<ul>
-										<li><a href="../esg/governance_tab01.html" title="理事会"><span>理事会</span></a></li>
-										<li><a href="../esg/governance_tab02.html" title="委员会"><span>委员会</span></a></li>
-										<li><a href="../esg/governance_tab03.html" title="利害关系方"><span>利害关系方</span></a></li>
-										<li><a href="../esg/governance_tab04.html" title="合规经营"><span>合规经营</span></a></li>
-										<li><a href="../esg/governance_tab05.html" title="伦理经营"><span>伦理经营</span></a></li>
-										<li><a href="../esg/governance_tab06.html" title="信息保护"><span>信息保护</span></a></li>
-									</ul>
-								</div>
-							</li>
-							<li><a href="../esg/report.html" title="可持续经营报告"><span>可持续经营报告</span></a></li>
 						</ul>
 					</div>
 				</li>
@@ -110,8 +49,7 @@
 					<div class="depth_menu">
 						<ul>
 							<li><a href="../business/index.html" title="小型电池"><span>小型电池</span></a></li>
-							<li><a href="../business/automotive_battery.html" title="汽车电池"><span>汽车电池</span></a></li>
-							<li><a href="../business/ess.html" title="ESS"><span>ESS</span></a></li>
+							<li><a href="../business/mid_to_large.html" title="中大型电池">中大型电池</a></li>
 							<li><a href="../business/electronic_materials.html" title="电子材料"><span>电子材料</span></a></li>
 							<li><a href="../business/isi.html" title="important Safety Information"><span>important Safety<br> Information</span></a></li>
 						</ul>
@@ -162,11 +100,60 @@
 						</ul>
 					</div>
 				</li>
-				<li class="depth"><a href="javascript:void(0);"><span>SDI Now</span></a>
+				<li class="depth"><a href="javascript:void(0);"><span>ESG</span></a>
 					<div class="depth_menu">
 						<ul>
-							<li><a href="../sdi_now/index.html" title="三星SDI News"><span>三星SDI News</span></a></li>
-							<li><a href="../sdi_now/column.html" title="Column"><span>Column</span></a></li>
+							<li class="more"><a href="javascript:void(0);"><span>ESG战略</span></a>
+								<div class="depth_detail">
+									<ul>
+										<li><a href="../esg/sustainability_tab01.html" title="可持续经营战略体系"><span>可持续经营战略体系</span></a></li>
+										<li><a href="../esg/sustainability_tab02.html" title="热点分析"><span>热点分析</span></a></li>
+										<li><a href="../esg/sustainability_tab03.html" title="风险管理"><span>风险管理</span></a></li>
+										<li><a href="../esg/sustainability_tab04.html" title="可持续经营政策"><span>可持续经营政策</span></a></li>
+										<li><a href="../esg/sustainability_tab05.html" title="倡议和认证"><span>倡议和认证</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="more"><a href="javascript:void(0);"><span>环境</span></a>
+								<div class="depth_detail">
+									<ul>
+										<li><a href="../esg/environment_tab01.html" title="环境经营"><span>环境经营</span></a></li>
+										<li><a href="../esg/environment_tab02.html" title="应对气候变化"><span>应对气候变化</span></a></li>
+												<li><a href="../esg/environment_tab03.html" title="资源循环"><span>资源循环</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="more"><a href="javascript:void(0);"><span>社会</span></a>
+								<div class="depth_detail">
+									<ul>
+										<li><a href="../esg/social_tab01.html" title="安全和保健"><span>安全和保健</span></a></li>
+										<li><a href="../esg/social_tab03.html" title="供应链社会责任"><span>供应链社会责任</span></a></li>
+										<li><a href="../esg/social_tab02.html" title="共赢合作"><span>共赢合作</span></a></li>
+										<li><a href="../esg/social_tab04.html" title="社会贡献"><span>社会贡献</span></a></li>
+										<li><a href="../esg/social_tab06.html" title="多样性和包容性"><span>多样性和包容性</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="more"><a href="javascript:void(0);"><span>管理结构</span></a>
+								<div class="depth_detail">
+									<ul>
+										<li><a href="../esg/governance_tab01.html" title="理事会 & 委员会"><span>理事会 &amp; 委员会</span></a></li>
+										<li><a href="../esg/governance_tab03.html" title="利害关系方"><span>利害关系方</span></a></li>
+										<li><a href="../esg/governance_tab04.html" title="合规经营"><span>合规经营</span></a></li>
+										<li><a href="../esg/governance_tab05.html" title="伦理经营"><span>伦理经营</span></a></li>
+										<li><a href="../esg/governance_tab06.html" title="信息保护"><span>信息保护</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="../esg/report.html" title="可持续经营报告"><span>可持续经营报告</span></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="depth"><a href="javascript:void(0);"><span>PR Center</span></a>
+					<div class="depth_menu">
+						<ul>
+							<li><a href="../pr_center/index.html" title="News"><span>News</span></a></li>
+							<li><a href="../pr_center/column.html" title="Column"><span>Column</span></a></li>
 						</ul>
 					</div>
 				</li>
@@ -193,6 +180,7 @@
 	<!-- User Menu : 풀 메뉴 패널 -->
 	<div class="pannel">
 		<h2 class="blind">Sitemap</h2>
+		<!-- pannel_util -->
 		<div class="pannel_util">
 			<ul>
 				<li><a href="../../../KR/html/main/index.html" class="kr">KR</a></li>
@@ -201,7 +189,7 @@
 			</ul>
 			<div class="close"><a href="javascript: void(0);">Close</a></div>
 		</div>
-		<!-- //pannel_util -->
+		<!-- pannel_items -->
 		<div class="pannel_items">
 			<div class="item">
 				<h3>SAMSUNG SDI</h3>
@@ -214,52 +202,10 @@
 				</ul>
 			</div>
 			<div class="item">
-				<h3>ESG</h3>
-				<ul class="depth_menu">
-					<li><a href="javascript: void(0);">ESG 战略</a>
-						<ul class="depth_detail">
-							<li><a href="../esg/sustainability_tab01.html" title="可持续经营战略体系">可持续经营战略体系</a></li>
-							<li><a href="../esg/sustainability_tab02.html" title="热点分析">热点分析</a></li>
-							<li><a href="../esg/sustainability_tab03.html" title="风险管理">风险管理</a></li>
-							<li><a href="../esg/sustainability_tab04.html" title="可持续经营政策">可持续经营政策</a></li>
-							<li><a href="../esg/sustainability_tab05.html" title="倡议和认证">倡议和认证</a></li>
-						</ul>
-					</li>
-					<li><a href="javascript: void(0);">环境</a>
-						<ul class="depth_detail">
-							<li><a href="../esg/environment_tab01.html" title="环境经营">环境经营</a></li>
-							<li><a href="../esg/environment_tab02.html" title="Move to Net-Zero">Move to Net-Zero</a></li>
-						</ul>
-					</li>
-					<li><a href="javascript: void(0);">社会</a>
-						<ul class="depth_detail">
-							<li><a href="../esg/social_tab01.html" title="安全和保健">安全和保健</a></li>
-							<li><a href="../esg/social_tab02.html" title="共赢合作">共赢合作</a></li>
-							<li><a href="../esg/social_tab03.html" title="供应链社会责任">供应链社会责任</a></li>
-							<li><a href="../esg/social_tab04.html" title="社会贡献">社会贡献</a></li>
-							<li><a href="../esg/social_tab05.html" title="社会贡献消息">社会贡献消息</a></li>
-							<li><a href="../esg/social_tab06.html" title="多样性和包容性">多样性和包容性</a></li>
-						</ul>
-					</li>
-					<li><a href="javascript: void(0);">管理结构</a>
-						<ul class="depth_detail">
-							<li><a href="../esg/governance_tab01.html" title="理事会">理事会</a></li>
-							<li><a href="../esg/governance_tab02.html" title="委员会">委员会</a></li>
-							<li><a href="../esg/governance_tab03.html" title="利害关系方">利害关系方</a></li>
-							<li><a href="../esg/governance_tab04.html" title="合规经营">合规经营</a></li>
-							<li><a href="../esg/governance_tab05.html" title="伦理经营">伦理经营</a></li>
-							<li><a href="../esg/governance_tab06.html" title="信息保护">信息保护</a></li>
-						</ul>
-					</li>
-					<li><a href="../esg/report.html" title="可持续经营报告">可持续经营报告</a></li>
-				</ul>
-			</div>
-			<div class="item">
 				<h3>BUSINESS</h3>
 				<ul class="depth_menu">
-					<li><a href="../business/index.html" title="小型电池">Small-Sized<br> Lithium-ion Battery</a></li>
-					<li><a href="../business/automotive_battery.html" title="汽车电池">汽车电池</a></li>
-					<li><a href="../business/ess.html" title="ESS">ESS</a></li>
+					<li><a href="../business/index.html" title="小型电池">小型电池</a></li>
+					<li><a href="../business/mid_to_large.html" title="中大型电池">中大型电池</a></li>
 					<li><a href="../business/electronic_materials.html" title="电子材料">电子材料</a></li>
 					<li><a href="../business/isi.html" title="Important Safety Information">Important Safety<br>Information</a></li>
 				</ul>
@@ -284,7 +230,7 @@
 							<li><a href="../investment/financial_tab05.html" title="Earnings Releases">Earnings Releases</a></li>
 						</ul>
 					</li>
-					<li><a href="javascript: void(0);">BOD & Committees</a>
+					<li><a href="javascript: void(0);">BOD &amp; Committees</a>
 						<ul class="depth_detail">
 							<li><a href="../investment/corporate_tab01.html" title="Board of Directors">Board of Directors</a></li>
 							<li><a href="../investment/corporate_tab02.html" title="Board Committees">Board Committees</a></li>
@@ -300,26 +246,68 @@
 					<li><a href="../career/index.html" title="理想人才">理想人才</a></li>
 					<li><a href="../career/career_tab02.html" title="职务介绍">职务介绍</a></li>
 				</ul>
-				<h3>SDI Now</h3>
+			</div>
+			<div class="item">
+				<h3>ESG</h3>
 				<ul class="depth_menu">
-					<li><a href="../sdi_now/index.html" title="三星SDI News">三星SDI News</a></li>
-					<li><a href="../sdi_now/column.html" title="Column">Column</a></li>
+					<li><a href="javascript: void(0);">ESG 战略</a>
+						<ul class="depth_detail">
+							<li><a href="../esg/sustainability_tab01.html" title="可持续经营战略体系">可持续经营战略体系</a></li>
+							<li><a href="../esg/sustainability_tab02.html" title="热点分析">热点分析</a></li>
+							<li><a href="../esg/sustainability_tab03.html" title="风险管理">风险管理</a></li>
+							<li><a href="../esg/sustainability_tab04.html" title="可持续经营政策">可持续经营政策</a></li>
+							<li><a href="../esg/sustainability_tab05.html" title="倡议和认证">倡议和认证</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript: void(0);">环境</a>
+						<ul class="depth_detail">
+							<li><a href="../esg/environment_tab01.html" title="环境经营">环境经营</a></li>
+							<li><a href="../esg/environment_tab02.html" title="应对气候变化">应对气候变化</a></li>
+							 <li><a href="../esg/environment_tab03.html" title="资源循环">资源循环</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript: void(0);">社会</a>
+						<ul class="depth_detail">
+							<li><a href="../esg/social_tab01.html" title="安全和保健">安全和保健</a></li>
+							<li><a href="../esg/social_tab03.html" title="供应链社会责任">供应链社会责任</a></li>
+							<li><a href="../esg/social_tab02.html" title="共赢合作">共赢合作</a></li>
+							<li><a href="../esg/social_tab04.html" title="社会贡献">社会贡献</a></li>
+							<li><a href="../esg/social_tab06.html" title="多样性和包容性">多样性和包容性</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript: void(0);">管理结构</a>
+						<ul class="depth_detail">
+							<li><a href="../esg/governance_tab01.html" title="理事会 & 委员会">理事会 &amp; 委员会</a></li>
+							<li><a href="../esg/governance_tab03.html" title="利害关系方">利害关系方</a></li>
+							<li><a href="../esg/governance_tab04.html" title="合规经营">合规经营</a></li>
+							<li><a href="../esg/governance_tab05.html" title="伦理经营">伦理经营</a></li>
+							<li><a href="../esg/governance_tab06.html" title="信息保护">信息保护</a></li>
+						</ul>
+					</li>
+					<li><a href="../esg/report.html" title="可持续经营报告">可持续经营报告</a></li>
 				</ul>
+			</div>
+			<div class="item">
+				<h3>PR Center</h3>
+				<ul class="depth_menu">
+					<li><a href="../pr_center/index.html" title="News">News</a></li>
+					<li><a href="../pr_center/column.html" title="Column">Column</a></li>
+				</ul>
+			</div>
+			<div class="item">
 				<h3>客服中心</h3>
 				<ul class="depth_menu">
 					<li><a href="../etc/information.html" title="咨询">咨询</a></li>
 				</ul>
 			</div>
 		</div>
-		<!-- //pannel_cont -->
+		<!-- pannel_sns -->
 		<ul class="pannel_sns">
 			<li><a href="https://www.facebook.com/samsungsdi" target="_blank" title="Open Samsung SDI Facebook"><img src="../../assets/images/layout/ico_sns_facebook.svg" alt="Facebook"></a></li>
 			<li><a href="https://www.youtube.com/user/SDISamsung" target="_blank" title="Open Samsung SDI utube"><img src="../../assets/images/layout/ico_sns_utube.svg" alt="utube"></a></li>
 			<li><a href="https://blog.naver.com/sdibattery" target="_blank" title="Open Samsung SDI Naver Blog"><img src="../../assets/images/layout/ico_sns_blog.svg" alt="Naver Blog"></a></li>
 		</ul>
-		<!-- //pannel_sns -->
 	</div>
-	<!-- // User Menu : 풀 메뉴 패널 -->
 
 	<!-- User Menu : 통합검색 -->
 	<div class="pop_wrap" id="popup_search">
@@ -329,12 +317,12 @@
 			</div>
 			<div class="pop_body">
 				<div class="search_wrap">
-					<input type="text" placeholder="您想知道什么？" value="">
+					<label><input type="text" placeholder="您想知道什么？" value=""></label>
 					<button type="button"><span class="blind">搜索</span></button>
 				</div>
 				<div class="recomm_content">
 					<h4 class="titsub2">推荐搜索词</h4>
-					<!-- //filter -->
+					<!-- filter -->
 					<div class="filter">
 						<ul class="flex">
 							<!-- 추천 검색어 최대 글자 수 20자까지 -->
@@ -345,7 +333,6 @@
 							<li><button class="btn round30">SDI Now</button></li>
 						</ul>
 					</div>
-					<!-- filter -->	
 				</div>
 			</div>
 		</div>
@@ -353,7 +340,6 @@
 			<button class="close_btn"><span class="blind">Close Popup</span></button>
 		</div>
 	</div>
-	<!-- // User Menu : 통합검색 -->
 
 	<!-- User Menu : Key Info -->
 	<div class="keyinfo">
@@ -376,22 +362,22 @@
 					</ul>
 				</div>
 				<div class="news">
-					<div class="more"><a href="../sdi_now/index.html" class="titsub1B" title="三星SDI News">三星SDI News</a></div>
+					<div class="more"><a href="../pr_center/index.html" class="titsub1B" title="三星SDI News">三星SDI News</a></div>
 					<ul class="news_list">
 						<li>
-							<a href="../sdi_now/news_view.html">
-								<span class="tit txt">三星SDI在美国、欧洲设立R&D研究所</span>
+							<a href="../pr_center/news_view.html">
+								<span class="tit txt">三星SDI在美国、欧洲设立R&amp;D研究所</span>
 								<span class="date txt_infoR color03">2022.08.16</span>
 							</a>
 						</li>
 						<li>
-							<a href="../sdi_now/news_view.html">
+							<a href="../pr_center/news_view.html">
 								<span class="tit txt">三星SDI公布2022年第二季度经营业绩，创历史新高</span>
 								<span class="date txt_infoR color03">2022.07.29</span>
 							</a>
 						</li>
 						<li>
-							<a href="../sdi_now/news_view.html">
+							<a href="../pr_center/news_view.html">
 								<span class="tit txt">三星SDI在匈牙利会见外交部长，请求支持申办"2030釜山世博会"</span>
 								<span class="date txt_infoR color03">2022.07.26</span>
 							</a>
@@ -402,7 +388,6 @@
 			<div class="close"><a href="javascript:void(0);" class="txt_caption color00">Close</a></div>
 		</div>
 	</div>
-	<!-- // User Menu : Key Info -->
 
 	<aside id="sitemap" tabindex="0">
 		<h2 class="blind">Sitemap</h2>
@@ -424,57 +409,15 @@
 						<li><a href="../about_sdi/index.html" title="About Us">About Us</a></li>
 						<li><a href="../about_sdi/history.html" title="History">History</a></li>
 						<li><a href="../about_sdi/ci.html" title="CI">CI</a></li>
-						<li><a href="../about_sdi/research_development.html" title="R&D">R&D</a></li>
+						<li><a href="../about_sdi/research_development.html" title="R&D">R&amp;D</a></li>
 						<li><a href="../about_sdi/global_network.html" title="Global Network">Global Network</a></li>
 					</ul>
 				</li>
-				<li><a href="javascript:void(0);"><b>ESG</b></a>
-					<button class="depth_open">Open</button>
-					<ul>
-						<li><a href="javascript:void(0);">ESG 战略</a><button class="depth_detail_open">Open</button>
-							<ul>
-								<li><a href="../esg/sustainability_tab01.html" title="可持续经营战略体系">可持续经营战略体系</a></li>
-								<li><a href="../esg/sustainability_tab02.html" title="热点分析">热点分析</a></li>
-								<li><a href="../esg/sustainability_tab03.html" title="风险管理">风险管理</a></li>
-								<li><a href="../esg/sustainability_tab04.html" title="可持续经营政策">可持续经营政策</a></li>
-								<li><a href="../esg/sustainability_tab05.html" title="倡议和认证">倡议和认证</a></li>
-							</ul>
-						</li>
-						<li><a href="javascript:void(0);">环境</a><button class="depth_detail_open">Open</button>
-							<ul>
-								<li><a href="../esg/environment_tab01.html" title="环境经营">环境经营</a></li>
-								<li><a href="../esg/environment_tab02.html" title="Move to Net-Zero">Move to Net-Zero</a></li>
-							</ul>
-						</li>
-						<li><a href="javascript:void(0);">社会</a><button class="depth_detail_open">Open</button>
-							<ul>
-								<li><a href="../esg/social_tab01.html" title="安全和保健">安全和保健</a></li>
-								<li><a href="../esg/social_tab02.html" title="共赢合作">共赢合作</a></li>
-								<li><a href="../esg/social_tab03.html" title="供应链社会责任">供应链社会责任</a></li>
-								<li><a href="../esg/social_tab04.html" title="社会贡献">社会贡献</a></li>
-								<li><a href="../esg/social_tab05.html" title="社会贡献消息">社会贡献消息</a></li>
-								<li><a href="../esg/social_tab06.html" title="多样性和包容性">多样性和包容性</a></li>
-							</ul>
-						</li>
-						<li><a href="javascript:void(0);">管理结构</a><button class="depth_detail_open">Open</button>
-							<ul>
-								<li><a href="../esg/governance_tab01.html" title="理事会">理事会</a></li>
-								<li><a href="../esg/governance_tab02.html" title="委员会">委员会</a></li>
-								<li><a href="../esg/governance_tab03.html" title="利害关系方">利害关系方</a></li>
-								<li><a href="../esg/governance_tab04.html" title="合规经营">合规经营</a></li>
-								<li><a href="../esg/governance_tab05.html" title="伦理经营">伦理经营</a></li>
-								<li><a href="../esg/governance_tab06.html" title="信息保护">信息保护</a></li>
-							</ul>
-						</li>
-						<li><a href="../esg/report.html" title="可持续经营报告">可持续经营报告</a></li>
-					</ul>
-				</li>  
 				<li><a href="javascript:void(0);"><b>BUSINESS</b></a>
 					<button class="depth_open">Open</button>
 					<ul>
 						<li><a href="../business/index.html" title="小型电池">小型电池</a></li>
-						<li><a href="../business/automotive_battery.html" title="汽车电池">汽车电池</a></li>
-						<li><a href="../business/ess.html" title="ESS">ESS</a></li>
+						<li><a href="../business/mid_to_large.html" title="中大型电池">中大型电池</a></li>
 						<li><a href="../business/electronic_materials.html" title="电子材料">电子材料</a></li>
 						<li><a href="../business/isi.html" title="Important Safety Information">Important Safety Information</a></li>
 					</ul>
@@ -499,7 +442,7 @@
 								<li><a href="../investment/financial_tab05.html" title="Earnings Releases">Earnings Releases</a></li>
 							</ul>
 						</li>
-						<li><a href="#">BOD & Committees</a><button class="depth_detail_open">Open</button>
+						<li><a href="#">BOD &amp; Committees</a><button class="depth_detail_open">Open</button>
 							<ul>
 								<li><a href="../investment/corporate_tab01.html" title="Board of Directors">Board of Directors</a></li>
 								<li><a href="../investment/corporate_tab02.html" title="Board Committees">Board Committees</a></li>
@@ -516,19 +459,59 @@
 						<li><a href="../career/career_tab02.html" title="职务介绍">职务介绍</a></li>
 					</ul>
 				</li>
-				<li><a href="javascript:void(0);"><b>SDI Now</b></a>
+				<li><a href="javascript:void(0);"><b>ESG</b></a>
 					<button class="depth_open">Open</button>
 					<ul>
-						<li><a href="../sdi_now/index.html" title="三星SDI News">三星SDI News</a></li>
-						<li><a href="../sdi_now/column.html" title="Column">Column</a></li>
+						<li><a href="javascript:void(0);">ESG 战略</a><button class="depth_detail_open">Open</button>
+							<ul>
+								<li><a href="../esg/sustainability_tab01.html" title="可持续经营战略体系">可持续经营战略体系</a></li>
+								<li><a href="../esg/sustainability_tab02.html" title="热点分析">热点分析</a></li>
+								<li><a href="../esg/sustainability_tab03.html" title="风险管理">风险管理</a></li>
+								<li><a href="../esg/sustainability_tab04.html" title="可持续经营政策">可持续经营政策</a></li>
+								<li><a href="../esg/sustainability_tab05.html" title="倡议和认证">倡议和认证</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:void(0);">环境</a><button class="depth_detail_open">Open</button>
+							<ul>
+								<li><a href="../esg/environment_tab01.html" title="环境经营">环境经营</a></li>
+								<li><a href="../esg/environment_tab02.html" title="应对气候变化">应对气候变化</a></li>
+							 <li><a href="../esg/environment_tab03.html" title="资源循环">资源循环</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:void(0);">社会</a><button class="depth_detail_open">Open</button>
+							<ul>
+								<li><a href="../esg/social_tab01.html" title="安全和保健">安全和保健</a></li>
+								<li><a href="../esg/social_tab03.html" title="供应链社会责任">供应链社会责任</a></li>
+								<li><a href="../esg/social_tab02.html" title="共赢合作">共赢合作</a></li>
+								<li><a href="../esg/social_tab04.html" title="社会贡献">社会贡献</a></li>
+								<li><a href="../esg/social_tab06.html" title="多样性和包容性">多样性和包容性</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:void(0);">管理结构</a><button class="depth_detail_open">Open</button>
+							<ul>
+								<li><a href="../esg/governance_tab01.html" title="理事会 & 委员会">理事会 &amp; 委员会</a></li>
+								<li><a href="../esg/governance_tab03.html" title="利害关系方">利害关系方</a></li>
+								<li><a href="../esg/governance_tab04.html" title="合规经营">合规经营</a></li>
+								<li><a href="../esg/governance_tab05.html" title="伦理经营">伦理经营</a></li>
+								<li><a href="../esg/governance_tab06.html" title="信息保护">信息保护</a></li>
+							</ul>
+						</li>
+						<li><a href="../esg/report.html" title="可持续经营报告">可持续经营报告</a></li>
+					</ul>
+				</li> 
+				<li><a href="javascript:void(0);"><b>PR Center</b></a>
+					<button class="depth_open">Open</button>
+					<ul>
+						<li><a href="../pr_center/index.html" title="News">News</a></li>
+						<li><a href="../pr_center/column.html" title="Column">Column</a></li>
 					</ul>
 				</li>
-				<li><li><a href="javascript:void(0);"><b>客服中心</b></a>
+				<!-- <li><a href="javascript:void(0);"><b>客服中心</b></a>
 					<button class="depth_open">Open</button>
 					<ul>
 						<li><a href="../etc/information.html" title="咨询">咨询</a></li>
 					</ul>
-				</li>
+				</li> -->
 			</ul>
 			<div class="sns_wrap">
 				<ul class="sns">
@@ -540,49 +523,138 @@
 		</nav>	
 	</aside>
 </div>
+
 <hr>
 
-<!--  container -->
-<div id="container" class="★PAGECLASS">  <!-- 페이지 키클래스 -->
+<div id="container" class="circulation">  <!-- 페이지 키클래스 -->
 	<div class="wrap">
-
-		<!-- page visual title -->
 		<div class="sub_visual">
-			<h2 class="subH">★PAGETITLE</h2>
+			<h2 class="subH">环境</h2>
 		</div>
-
-		<!-- Start Of Contents -->
 		<section class="content">
-			<div class="content_inner" style="background-color: #fff;">
-
-				<!-- 컨텐츠 구성 예시, 재구성 시 제거 -->
-				<div class="cont_head">
-					<h3 class="body_title">★Title</h3>
-					<p class="txt color_g2">★Sub Text</p>
-				</div>
-				<div class="cont_body">
-					★Contents
-					<div class="wide" style="background-color: #F5F5F5;text-align: center;height: 150px;line-height: 150px;">
-						<p class="titsub1B">.content_inner 안에서 .wide</p>
+			<div class="sub_nav1">
+				<div class="sub_nav1_inner">
+					<div class="home"><a href="../main/index.html">Home</a></div>
+					<div class="depth">
+						<a href="../esg/sustainability_tab01.html">ESG</a>
+						<ul>
+							<li><a href="../about_sdi/index.html">SAMSUNG SDI</a></li>
+							<li><a href="../business/index.html">BUSINESS</a></li>
+							<li><a href="../investment/index.html">INVESTMENT</a></li>
+							<li><a href="../career/index.html">CAREER</a></li>
+							<li><a href="../esg/sustainability_tab01.html">ESG</a></li>
+							<li><a href="../pr_center/index.html">PR Center</a></li>
+						</ul>
+					</div>
+					<div class="depth">
+						<a href="./environment_tab01.html">环境</a>
+						<ul>
+							<li><a href="./sustainability_tab01.html">ESG战略</a></li>
+							<li><a href="./environment_tab01.html">环境</a></li>
+							<li><a href="./social_tab01.html">社会</a></li>
+							<li><a href="./governance_tab01.html">管理结构</a></li>
+							<li><a href="./report.html">可持续经营政策</a></li>
+						</ul>
+					</div>
+					<div class="depth">
+						<a href="./environment_tab02.html">资源循环</a>
+						<ul>
+							<li><a href="./environment_tab01.html">环境经营</a></li>
+							<li><a href="./environment_tab02.html">应对气候变化</a></li>
+							<li><a href="./environment_tab03.html">资源循环</a></li>
+						</ul>
 					</div>
 				</div>
-				<!-- //컨텐츠 구성 예시 -->
 			</div>
-			<div class="wide" style="background-color: #F5F5F5;text-align: center;height: 150px;line-height: 150px;">
-				<p class="titsub1B">.content_inner 밖에서 .wide</p>
+
+			<div class="content_inner">
+				<div class="cont_item">
+					<div class="cont_head">
+						<h3 class="titmain mb40">资源循环</h3>
+					</div>
+					<div class="cont_body">
+						<div class="cont_txt">
+							<h4 class="titsub1B">主要成果指标</h4>
+							<div class="table-scroll">
+								<div class="table-wrap responsive_table">
+									<table class="main-table">
+										<caption>主要成果指标</caption>
+										<colgroup>
+											<col style="width: 25.41%;">
+											<col style="width: 18.58%;">
+											<col style="width: 18.58%;">
+											<col style="width: 18.58%;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">指标</th>
+												<th scope="col">单位</th>
+												<th scope="col">2019</th>
+												<th scope="col">2020</th>
+												<th scope="col">2021</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">国内废弃物再利用率</th>
+												<td>&#37;</td>
+												<td>93.9</td>
+												<td>96.1</td>
+												<td class="txt_info_req">96.0</td>
+											</tr>
+											<tr>
+												<th scope="row">海外废物再利用率</th>
+												<td>&#37;</td>
+												<td>89.4</td>
+												<td>77.3</td>
+												<td class="txt_info_req">89.7</td>
+											</tr>
+											<tr>
+												<th scope="row">用水取水量韩元单位</th>
+												<td>千吨&#47;亿元 &#40;销售额&#41;</td>
+												<td>0.08</td>
+												<td>0.07</td>
+												<td class="txt_info_req">0.06</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="cont_txt">
+							<h4 class="titsub1B">电池再利用与再使用</h4>
+							<p class="color_g2">三星SDI为了配合电池市场规模的增长,从电池的全生命周期的观点出发,与政府及专门企业合作,积极寻求回收利用&#40;Recycling&#41;及梯次利用&#40;Reuse&#41;方案。</p>
+							<div class="img_box">
+								<b class="img_tit txt_info">&#60;三星SDI资源回收流程&#62;</b>
+								<figure>
+									<img src="../../assets/images/esg/net_zero_img_02.svg" alt="三星SDI资源回收流程" class="pc">
+									<img src="../../assets/images/esg/net_zero_img_02_mo.svg" alt="三星SDI资源回收流程" class="mo">
+								</figure>
+							</div>
+						</div>
+						<div class="cont_txt">
+							<h4 class="titsub1B">尽量减少垃圾填埋</h4>
+							<p class="color_g2">三星SDI为了最大限度地减少生产过程中产生的废弃物,在研究开发及工程、制造过程中,根据废弃物资源化方式,努力提高回收率.</p>
+						</div>
+						<div class="cont_txt">
+							<h4 class="titsub1B">水资源管理</h4>
+							<p class="color_g2">三星SDI正在努力减少用水量,并以适当的水平管理水质. 在运营制造设备时,为了最大限度地减少必要药物的使用量,正在改变工艺,抑制盐酸、氢氧化钠等有害化学物质的使用,减少废水的产生量. 另外,加强废水处理设施的运营和管理,最大限度地减少水污染物的排放,保护水生态系统.</p>
+						</div>
+						<div class="cont_txt">
+							<h4 class="titsub1B">尽量减少使用一次性用品</h4>
+							<p class="color_g2">作为履行社会责任的企业,尽量减少一次性用品和塑料的使用,参与环境保护和资源回收利用活动. 2022年内取消公司内部一次性用品和塑料的使用,到2023年为止,公司内部入驻企业的一次性用品和塑料使用率将比原来减少50%.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-		<!-- End Of Contents -->
-
 	</div>
 </div>
-<!-- // container -->
+<div id="bg_modal"></div>
 
 <hr>
-<div id="btn_top_move">
-	<button type="button"><img src="../../assets/images/layout/btn_top.png" alt="Top Move"></button>
-</div>
-<hr>
+
 <div id="footer_wrap">
 	<div class="quick">
 		<button type="button" class="btn_top" title="To Top"><img src="../../assets/images/layout/btn_top.png" alt="To Top"></button>
@@ -607,11 +679,10 @@
 				<li><a href="https://blog.naver.com/sdibattery" target="_blank" title="Open Samsung SDI Naver Blog">
 					<img src="../../assets/images/layout/ico_sns_blog.svg" alt="Naver Blog"></a></li>
 			</ul>
-			<address>三星SDI（株）:京畿道龙仁市器兴区贡税路 150-120 [17084]</address>
+			<address>三星SDI&#40;株&#41;:京畿道龙仁市器兴区贡税路 150-120 &#91;17084&#93;</address>
 			<p class="copyright">COPYRIGHT 2022 SAMSUNG SDI CO.,LTD. <br class="mo">ALL RIGHT RESERVED.</p>
 		</div>
 	</footer>
 </div>
-
 </body>
 </html>
