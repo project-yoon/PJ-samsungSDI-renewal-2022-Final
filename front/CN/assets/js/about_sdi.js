@@ -18,7 +18,6 @@ function initSubPageNavi() {
         snHeight = subNavi.outerHeight();
         scSection.each(function(h) {
             if(contentsMoveNavi.length > 0) {
-                //console.log(cmnItem.eq(h).offset().left)
                 cmnItemOfsLeft[h] = cmnItem.eq(h).offset().left;
                 cmnItemWidth[h] = cmnItem.eq(h).outerWidth();
             }
