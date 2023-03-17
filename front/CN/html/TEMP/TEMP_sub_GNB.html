@@ -1,22 +1,41 @@
+<!--
+
+	*** SUB PAGE TEMPLATE ***
+
+		1. [필수!] ★ 을 검색하고 해당하는 영역을 알맞게 수정한다
+		2. 페이지 키클래스는 #container에서 지정
+		3. 컨텐츠는 .content_inner 안에서 작성한다
+		4. 컨텐츠 구성은 [head/body] 또는 [tit/cont]를 묶음으로 반복한다
+		5. Tab페이지 일 경우, .tab_cont 아래에서 .content_inner를 사용한다
+		6. 스타일 지정은 .페이지키클래스를 최상으로 한다
+			예/ .PAGECLASS .table .txt_info { ~ }
+		7. 작업 완료 후, 해당 주석을 제거한 뒤 공유한다
+
+ -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>투자정보 - 주가정보 | 삼성SDI 공식사이트</title>
-	<link rel="stylesheet" href="../../assets/css/base.css">
-	<link rel="stylesheet" href="../../assets/css/common.css">
-	<link rel="stylesheet" href="../../assets/css/investment.css">
-	<script src="../../assets/js/jquery-1.11.3.min.js"></script>
-	<script src="../../assets/js/common.js"></script>
-	<script src="../../assets/js/investment.js"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>★PAGETITLE | 삼성SDI 공식사이트</title>
+<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/common.css">
+<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+<script src="../../assets/js/swiper-bundle.min.js"></script>
+<script src="../../assets/js/common.js"></script>
+<link rel="stylesheet" href="../../assets/css/career.css">
+<script src="../../assets/js/career.js"></script>
+
+<link rel="stylesheet" href="../../assets/css/★CATEGODYNAME.css">
+<script src="../../assets/js/★CATEGODYNAME.js"></script>
+
 </head>
 <body>
 <nav id="skip_navi">
   <a href="#container">Go to main text</a>
 </nav>
-
 <div id="header_wrap">
 	<div class="utill">
 		<button type="button" class="btn_keyinfo">KeyInfo</button>
@@ -111,7 +130,7 @@
 									<ul>
 										<li><a href="../esg/environment_tab01.html" title="环境经营"><span>环境经营</span></a></li>
 										<li><a href="../esg/environment_tab02.html" title="应对气候变化"><span>应对气候变化</span></a></li>
-										<li><a href="../esg/environment_tab03.html" title="资源循环"><span>资源循环</span></a></li>
+												<li><a href="../esg/environment_tab03.html" title="资源循环"><span>资源循环</span></a></li>
 									</ul>
 								</div>
 							</li>
@@ -515,62 +534,38 @@
 		</nav>	
 	</aside>
 </div>
-
 <hr>
 
-<div id="container" class="stock_index">
+<!--  container -->
+<div id="container" class="★PAGECLASS">  <!-- 페이지 키클래스 -->
 	<div class="wrap">
-		<div class="sub_visual">
-			<h2 class="subH">Stock<br class="mo"> Information</h2>
-		</div>
-		<section class="content">
-			<div class="sub_nav1">
-				<div class="sub_nav1_inner">
-					<div class="home"><a href="../main/index.html">Home</a></div>
-					<div class="depth">
-						<a href="../investment/index.html">INVESTMENT</a>
-						<ul>
-							<li><a href="../about_sdi/index.html">SAMSUNG SDI</a></li>
-							<li><a href="../business/index.html">BUSINESS</a></li>
-							<li><a href="../investment/index.html">INVESTMENT</a></li>
-							<li><a href="../career/index.html">CAREER</a></li>
-							<li><a href="../esg/sustainability_tab01.html">ESG</a></li>
-							<li><a href="../pr_center/index.html">PR Center</a></li>
-						</ul>
-					</div>
-					<div class="depth">
-						<a href="./stock_tab01.html">Stock Information</a>
-						<ul>
-							<li><a href="./index.html">IR Information</a></li>
-							<li><a href="./stock_tab01.html">Stock Information</a></li>
-							<li><a href="./financial_tab01.html">Financial Information</a></li>
-							<li><a href="./corporate_tab01.html">BOD &amp; Committees</a></li>
-						</ul>
-					</div>
-					<div class="depth">
-						<a href="./stock_tab01.html"><span>Stock Chart</span></a>
-						<ul>
-							<li><a href="./stock_tab01.html">Stock Chart</a></li>
-							<li><a href="./stock_tab02.html">Listing Information</a></li> 
-							<li><a href="./stock_tab03.html">Dividend Details</a></li>
-							<li><a href="./stock_tab04.html">Shareholder Structure</a></li>
-						</ul>
-					</div> 
-				</div>		
-			</div>
 
+		<!-- page visual title -->
+		<div class="sub_visual">
+			<h2 class="subH">★PAGETITLE</h2>
+		</div>
+
+		<!-- Start Of Contents -->
+		<section class="content">
 			<div class="content_inner">
-				<h3 class="blind">Stock Chart</h3>
-				<!-- iframe 영역 -->
-				<div class="iframe-wrap">
-					<iframe width="100%" height="" src="https://ir.gsifn.io/samsungsdi/ir3_current_daily.html?koreng=2" frameborder="0" title="Stock Chart" allowfullscreen scrolling="no" id="" style="overflow: hidden; height: 100vh;"></iframe>
+
+				<!-- 컨텐츠 구성 예시, 재구성 시 제거 -->
+				<div class="cont_head">
+					<h3 class="body_title">★Title</h3>
+					<p class="txt color_g2">★Sub Text</p>
 				</div>
-				<!-- iframeHeight --><script type="text/javascript" src="https://ir.gsifn.io/common/js/jquery.iframeResizer.min.js"></script>
-			</div>	
+				<div class="cont_body">
+					★Contents
+				</div>
+				<!-- //컨텐츠 구성 예시 -->
+
+			</div>
 		</section>
+		<!-- End Of Contents -->
+
 	</div>
 </div>
-<div id="bg_modal"></div>
+<!-- // container -->
 
 <hr>
 
