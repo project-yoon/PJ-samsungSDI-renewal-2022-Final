@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Basic Document Rule | guide | 삼성SDI 공식사이트</title>
+<link rel="stylesheet" href="../front/KR/assets/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../front/KR/assets/css/base.css">
+<link rel="stylesheet" href="../front/KR/assets/css/common.css">
+<link rel="stylesheet" href="../guide/assets/css/guide_only.css" />
+<script src="../front/KR/assets/js/jquery-1.11.3.min.js"></script>
+<script src="../front/KR/assets/js/swiper-bundle.min.js"></script>
+<script src="../front/KR/assets/js/common.js"></script>
+<script src="../guide/assets/assets/js/guide.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.7/styles/monokai_sublime.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/bash.min.js"></script>
+</head>
+<body>
+<nav id="skip_navi">
+    <a href="#container">본문 바로가기</a>
+</nav>
+
+<div id="CPguide_head"></div>
+
+<hr />
+
+
+<div id="container" class="CPguide doc basicDocument">
+	<div class="wrap">
+        <section class="content" style="padding-top:0;">
+
+			<div class="content_inner">
+				<div class="CPguide_header">
+					<h3 class="titmain">Basic Document Rule</h3>
+				</div>
+				<!-- <div class="CPguide_body"></div> -->
+            </div>
+			<!-- <hr class="line"> -->
+			<div class="content_inner">
+				<div class="CPguide_header">
+					<h4 class="titmain">기본정책</h4>
+				</div>
+				<div class="CPguide_body" style="display: block;">
+					
+					
+					<div class="basic_table table-scroll">
+						<div class="table-wrap responsive_table">
+							<table class="main-table">
+								<caption>환경정의</caption>
+								<colgroup>
+									<col style="width:30%">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">인코딩</th>
+										<td>UTF-8</td>
+									</tr>
+									<tr>
+										<th scope="row">마크업 종류</th>
+										<td>HTML5, CSS3, Javascript</td>
+									</tr>
+									<tr>
+										<th scope="row">웹 유형</th>
+										<td>PC Web , Mobile Web </td>
+									</tr>
+									<tr>
+										<th scope="row">PC 웹 호환성</th>
+										<td>
+											chrome (버전 91.0), Edge 버전  110.0 이상
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Mobile 웹 호환성</th>
+										<td>
+											<div>
+												device : Android 5.0 이상, IOS 15.6 이상 <br><br>
+												browser : 사파리, 크롬
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">해상도 정책</th>
+										<td>
+											PC UI : 기준 1200px ~ 최소 1280px<br><br>
+											　- 1200px 이상일 경우, content는 Center 정렬<br><br>
+											　- 1280px 이하일 경우, 브라우저 반응형 <br><br>
+											MO UI : 720px ~ 												
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<hr class="line">
+
+			<div class="content_inner">
+				<div class="CPguide_header">
+					<h4 class="titmain">META</h4>
+				</div>
+				<div class="CPguide_body">
+
+
+					<div class="CPguide_dsc">
+						<h5 class="CPguide_tit3">DOCTYPE</h5>
+						
+						<!-- CODE EX -->
+						<div class="CPguide_code">
+							<pre><code class="html hljs xml">
+<span class="hljs-tag">&lt; !<span class="hljs-attr">DOCTYPE</span> <span class="hljs-attr">html</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"ko"</span>/&gt;</span>
+
+</code></pre>
+						</div>
+						<!-- // CODE EX -->
+
+						<ul>
+							<li>DTD는 문서 최 상단에서 문서 형식을 정의하고 선언한다.</li>
+							<li>주의: 앞에 공백이 없도록 한다</li>
+						</ul>
+					</div>
+
+					<div class="CPguide_dsc">
+						<h5 class="CPguide_tit3">Encoding</h5>
+						
+						<!-- CODE EX -->
+						<div class="CPguide_code">
+							<pre><code class="html hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>/&gt;</span>
+
+</code></pre>
+						</div>
+						<!-- // CODE EX -->
+
+						<ul>
+							<li>문서의 글자 타입은  utf-8 (가변길이 유니코드 인코딩)를 필수로 정의한다.</li>
+						</ul>
+					</div>
+
+					<div class="CPguide_dsc">
+						<h5 class="CPguide_tit3">브라우저 호환성 설정</h5>
+						
+						<!-- CODE EX -->
+						<div class="CPguide_code">
+							<pre><code class="html hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge,chrome=1"</span>/&gt;</span>
+
+</code></pre>
+						</div>
+						<!-- // CODE EX -->
+
+						<ul>
+							<li>문서 초기 정보를 나타내는 속성으로 http-equiv에서 오래된 브라우저 지원을 위해 필수로 정의한다.</li>
+							<li>이 외, META 선언은 기획/개발과 협의.</li>
+						</ul>
+					</div>
+
+					<div class="CPguide_dsc">
+						<h5 class="CPguide_tit3">모바일 설정</h5>
+						
+						<!-- CODE EX -->
+						<div class="CPguide_code">
+							<pre><code class="html hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>/&gt;</span>
+
+</code></pre>
+						</div>
+						<!-- // CODE EX -->
+
+						<ul>
+							<li>화면의 가로를 모바일 가로 사이즈에 맞춘다.</li>
+							<li>화면의 초기 화면 배율을 정상 배율(100%)로 초기화 한다.</li>
+							<li>화면 확대/축소에 대해 별도 선언을 하지 않은 상태로, 허용하지 않을 경우 관련 선언을 추가한다.</li>
+						</ul>
+					</div>
+
+
+				</div>
+			</div>
+
+			<hr class="line">
+
+			<div class="content_inner">
+				<div class="CPguide_header">
+					<h4 class="titmain">Library & Plugin</h4>
+				</div>
+				<div class="CPguide_body" style="display: block;">
+					
+					
+					<div class="basic_table table-scroll">
+						<div class="table-wrap responsive_table">
+							<table class="main-table">
+								<caption>사용하고 있는 라이브러리 및 플러그인에 대한 표</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:20%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>명칭</th>
+										<th>파일명</th>
+										<th>URL</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">제이쿼리</th>
+										<td>jquery</td>
+										<td>
+											·  PC/MW : https://code.jquery.com/jquery-1.11.3.min.js
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">페이지 스크롤</th>
+										<td>jquery ui</td>
+										<td>
+											· /assets/js/jquery.fullPage.js (v2.9.7)
+											<br>
+											<br>
+											· /assets/js/jquery.scrollify.1.0.19.min.js (v1.0.19) <code>(Main page ONLY)</code>
+											<br>
+										</td>
+									</tr>
+									<tr>
+										<th>슬라이더</th>
+										<td>Swiper (bundle)</td>
+										<td>https://cdn.jsdelivr.net/npm/swiper@8.2.6/swiper-bundle.min.js</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+        </section> 
+    </div>
+</div>
+<div id="bg_modal"></div>
+
+
+<script type="text/javascript">
+	$(document).ready( function() {
+		$("#CPguide_head").load("guide_head.html");
+	});
+</script>
+</body>
+</html>

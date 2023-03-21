@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Popup | guide | 삼성SDI 공식사이트</title>
+<link rel="stylesheet" href="../front/KR/assets/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../front/KR/assets/css/base.css">
+<link rel="stylesheet" href="../front/KR/assets/css/common.css">
+<link rel="stylesheet" href="../guide/assets/css/guide_only.css" />
+<script src="../front/KR/assets/js/jquery-1.11.3.min.js"></script>
+<script src="../front/KR/assets/js/swiper-bundle.min.js"></script>
+<script src="../front/KR/assets/js/common.js"></script>
+<script src="../guide/assets/assets/js/guide.js"></script>
+</head>
+<body>
+<nav id="skip_navi">
+    <a href="#container">본문 바로가기</a>
+</nav>
+
+
+<div id="CPguide_head"></div>
+
+<hr />
+
+<div id="container" class="CPguide Popups">
+	<div class="wrap">
+        <section class="content" style="padding-top:0;">
+            <div class="content_inner">
+				<div class="CPguide_header">
+					<h3 class="body_title">Popups</h3>
+					<h4 class="titmain">Basic<span class="txt_info">기본 팝업</span></h4>
+					<p class="txt_info"> <code> .basic_modal </code></p>
+				</div>
+				<div class="CPguide_body grd3">
+				<!-- basic -->
+
+
+					<div class="item item--1">
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_one_btn"><span>Button 1 piece</span></button>
+					</div>
+					<div class="item item--2">
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_two_btn"><span>Button 2 piece</span></button>
+					</div>
+					<div class="item item--3">
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_none_btn"><span>none Button</span></button>
+					</div>
+					
+					<!-- 버튼이 1개일 경우, 스크롤이 되는 경우 -->
+					<div class="popup basic_modal" data-id="pop_layout_one_btn">
+						<div class="pop_head">
+							<div class="logo"><img src="../front/KR/assets/images/layout/pop_logo.png" alt="삼성SDI"></div>
+							<h3 class="titmain">버튼 노출 케이스</h3>
+							<button type="button" class="btn_close" title="팝업 창 닫기"></button>
+						</div>
+						<div class="pop_body" tabindex="0">
+							<p>
+								팝업 상세내용 입력 영역입니다. 팝업 상세
+								내용 입력 영역입니다. 팝업 상세내용 
+								입력 영역입니다. 팝업 상세내용 입력 영역
+								입니다. 팝업 상세내용 입력 영역입니다. 
+							</p>
+							<ul>
+								<li class="color_g2">일시 : 입력 영역입니다.</li>
+								<li class="color_g2">장소 : 장소 입력영역 입니다. </li>
+							</ul>
+							<div class="btn_area">
+								<button type="button" title="버튼레이블" class="btn sm btn_primary">버튼레이블</button>
+							</div>
+						</div>
+						<div class="pop_foot flex">
+							<p class="copyright txt_caption color_g3">COPYRIGHT 2022 SAMSUNG SDI CO.,LTD. ALL RIGHT RESERVED.</p>
+							<div class="hide_cont">
+								<form name="formPop">
+									<input id="chk_today1" onclick="closeWin('pop1',this);" type='checkbox' name='chkbox[]' value='checkbox' >
+									<label value='checkbox' for="chk_today1" class="txt_infoR">오늘 하루동안 보지 않기</label>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<!-- 버튼이 2개일 경우, 스크롤이 되는 경우 -->
+					<div class="popup basic_modal" data-id="pop_layout_two_btn">
+						<div class="pop_head">
+							<div class="logo"><img src="../front/KR/assets/images/layout/pop_logo.png" alt="삼성SDI"></div>
+							<h3 class="titmain">버튼 2개 노출 / 스크롤 있는 케이스</h3>
+							<button type="button" class="btn_close" title="팝업 창 닫기"></button>
+						</div>
+						<div class="pop_body" tabindex="0">
+							<p>
+								팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 
+								팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 
+								팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 
+								팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 
+								팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 
+							</p>
+							<ul>
+								<li class="color_g2">일시 : 입력 영역입니다.</li>
+								<li class="color_g2">입력 영역입니다. 53글자 수 이상 넘어갈 경우에는 행간을 내려주시면 됩니다. 입력 영역입니다. 행간이 내려갈경우 예시입니다.</li>
+							</ul>
+							<div class="btn_area">
+								<button type="button" title="버튼레이블" class="btn sm btn_primary">버튼레이블</button>
+								<button type="button" title="버튼레이블" class="btn sm btn_primary">버튼레이블</button>
+							</div>
+						</div>
+						<div class="pop_foot flex">
+							<p class="copyright txt_caption color_g3">COPYRIGHT 2022 SAMSUNG SDI CO.,LTD. ALL RIGHT RESERVED.</p>
+							<div class="hide_cont">
+								<form name="formPop">
+									<input id="chk_today2" onclick="closeWin('pop2',this);" type='checkbox' name='chkbox[]' value='checkbox' >
+									<label value='checkbox' for="chk_today2" class="txt_infoR">오늘 하루동안 보지 않기</label>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<!-- 버튼이 없는 경우 -->
+					<div class="popup basic_modal" data-id="pop_layout_none_btn">
+						<div class="pop_head">
+							<div class="logo"><img src="../front/KR/assets/images/layout/pop_logo.png" alt="삼성SDI"></div>
+							<h3 class="titmain">버튼이 없는 케이스</h3>
+							<button type="button" class="btn_close" title="팝업 창 닫기"></button>
+						</div>
+						<div class="pop_body" tabindex="0">
+							<p>
+								팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 
+								팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 
+								팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 
+								팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 
+								팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 팝업 상세내용 입력 영역입니다. 
+							</p>
+							<ul>
+								<li class="color_g2">일시 : 입력 영역입니다.</li>
+								<li class="color_g2">입력 영역입니다. 53글자 수 이상 넘어갈 경우에는 행간을 내려주시면 됩니다. 입력 영역입니다. 행간이 내려갈경우 예시입니다.</li>
+							</ul>
+						</div>
+						<div class="pop_foot flex">
+							<p class="copyright txt_caption color_g3">COPYRIGHT 2022 SAMSUNG SDI CO.,LTD. ALL RIGHT RESERVED.</p>
+							<div class="hide_cont">
+								<form name="formPop">
+									<input id="chk_today3" onclick="closeWin('pop3',this);" type='checkbox' name='chkbox[]' value='checkbox' >
+									<label value='checkbox' for="chk_today3" class="txt_infoR">오늘 하루동안 보지 않기</label>
+								</form>
+							</div>
+						</div>
+						<script>
+							function setCookie(name, value, expirehours) {
+								var todayDate = new Date();
+								todayDate.setHours(todayDate.getHours() + expirehours);
+								document.cookie = name + "=" + escape(value) + "; path=/; expires=" +todayDate.toGMTString() + ";"}
+							function closeWin(id, checkbox) {if (checkbox.checked) {setCookie(id, "done", 1);}$(this).closest('.popup').fadeOut();}
+							cookiedata = document.cookie;
+								// pop1
+								if (cookiedata.indexOf("pop1=done") < 0) {// $(".pop1").fadeIn();
+								} else {$(".pop1").fadeOut();$(this).closest('.pop1').fadeOut();}
+								// pop2
+								if (cookiedata.indexOf("pop2=done") < 0) {// $(".pop2").fadeIn();
+								} else {$(".pop2").fadeOut();$(this).closest('.pop2').fadeOut();}
+								// pop3
+								if (cookiedata.indexOf("pop3=done") < 0) {// $(".pop3").fadeIn();
+								} else {$(".pop3").fadeOut();$(this).closest('.pop3').fadeOut();}
+								// type1
+								if (cookiedata.indexOf("type1=done") < 0) {// $(".type1").fadeIn(); 쿠키없을경우접속시노출
+								} else {$(".type1").fadeOut();$(this).closest('.type1').fadeOut();}
+						</script>
+					</div>
+
+
+				<!-- // basic -->
+				</div>
+			</div>
+
+			<hr class="line">
+
+			<div class="content_inner">
+
+				<div class="CPguide_header">
+					<h4 class="titmain">Full popup <span class="txt_info">풀팝업</span></h4>
+					<p class="txt_info"> <code> .full_modal </code></p>
+				</div>
+				<div class="CPguide_body">
+				<!-- full -->
+
+
+					<div>
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_full"><span>Full</span></button>
+					</div>
+
+					<div class="popup full_modal" data-id="pop_layout_full" style="z-index: 9999999;"> <!-- [D]: 개발 시 인라인 스타일 제거 -->
+						<div class="pop_head">
+							<h3 class="titmain">풀 팝업 가이드</h3>
+							<button class="btn_close" type="button" title="팝업 창 닫기"></button>
+						</div>
+						<div class="pop_body">
+							<div class="pop_inner">
+								<div style="height:800px; background:gray;">
+									팝업내용
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				<!-- // full  -->
+				</div>
+
+			</div>
+
+			<hr class="line">
+
+			<div class="content_inner">
+
+				<div class="CPguide_header">
+					<h4 class="titmain">Toast <span class="txt_info">작은 팝업</span></h4>
+					<p class="txt_info_req">※ 호출 버튼에서 <code> .showToast</code> 클래스 필수</p>
+					<p class="txt_info"> <code> .pop_toast </code></p>
+				</div>
+				<div class="CPguide_body grd3">
+				<!-- Toast -->
+
+
+					<div class="item item--1">
+						<a href="javascript:void(0);" class="btn lg showToast" data-id="pop_toast">Toast Example</a>
+					</div>
+					<div class="item item--2">
+						<button type="button" class="btn lg showToast" data-id="pop_toast_att">Toast point color</button>
+					</div>
+					<div class="item item--3"></div>
+					
+					<div class="pop_toast" data-id="pop_toast">
+						<p class="toast_message">Toast message</p>
+					</div>
+
+					<div class="pop_toast" data-id="pop_toast_att">
+						<p class="toast_message">강조 컬러는 <span class="point">#FF5B5B</span>로 해주세요. 최대 30자까지</p>
+						<input class="copy" type="text">
+					</div>
+
+
+				<!-- // Toast -->
+				</div>
+
+			</div>
+
+			<hr class="line">
+
+			<div class="content_inner">
+
+				<div class="CPguide_header">
+					<h4 class="titmain">Alert <span class="txt_info">작은 팝업</span></h4>
+					<p class="txt_info"> <code> .alert_modal </code></p>
+				</div>
+				<div class="CPguide_body grd3">
+				<!-- Alert -->
+
+
+					<div class="item item--1">
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_alert_img" ><span>images alert</span></button>
+					</div>
+					<div class="item item--2">
+						<button type="button" class="btn lg popOpen" data-id="pop_layout_alert_info"><span>info alert</span></button>
+					</div>
+					<div class="item item--3"></div>
+
+					<!-- 1. 이미지 alert -->
+					<div class="popup alert_modal type1" data-id="pop_layout_alert_img">
+						<div class="pop_body">
+							<div class="pop_img">
+								<img src="../front/KR/assets/images/business/visual_business_04.png" alt="이미지대체텍스트">
+							</div>
+						</div>
+						<div class="pop_foot flex">
+							
+							<div class="hide_cont">
+								<form name="formPop">
+									<input id="chk_today" onclick="closeWin('type1',this);" type='checkbox' name='chkbox[]' value='checkbox' >
+									<label value='checkbox' for="chk_today" class="txt_infoR">오늘 하루동안 보지 않기</label>
+								</form>
+							</div>
+							<a href="javascript:void(0);" class="close">닫기</a>
+						</div>
+					</div>
+
+					<!-- 2. 안내 alert -->
+					<div class="popup alert_modal type2" data-id="pop_layout_alert_info">
+						<div class="pop_body">
+							<strong class="titsub2B">안내문구</strong>
+							<p class="pop_txt">확인하는 문구 들어가는 자리입니다.<br>문구는 최대 2줄까지만 작성해주세요.</p>
+							<p class="pop_notice txt_infoR color_g2">유의사항 등 이런 일이 일어날 수 있습니다.<br> 도와드릴까요. 주의하세요. 등 안내하는 문구 자리입니다.</p>
+							<a href="javascript:void(0);" title="안내문구 내용 자세히 보기" class="txt_info">자세히 보기</a>
+						</div>
+						<div class="pop_foot flex">
+							<a href="javascript:void(0);" class="cancel">취소</a>
+							<a href="javascript:void(0);" class="check">확인</a>
+						</div>
+					</div>
+
+
+				<!-- // Alert -->
+				</div>
+
+			</div>
+
+        </section> 
+    </div>
+</div>
+<div id="bg_modal"></div>
+
+
+<script type="text/javascript">
+	$(document).ready( function() {
+		$("#CPguide_head").load("guide_head.html");
+	});
+</script>
+</body>
+</html>

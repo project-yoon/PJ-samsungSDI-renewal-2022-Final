@@ -1,0 +1,47 @@
+<!-- <div id="CPguide_head">	 -->
+    <header class="header on">
+        <nav class="quick_menu_group">
+            <div class="area">
+                <div>
+                    <a href="../guide/guide_rule_HTML.html" id="pubGd" title="바로가기"><span>삼성SDI Publishing Guide</span></a>
+                    <a href="../guide/typeface.html" id="eleGd" title="바로가기"><span>Elements Guide</span></a>
+                </div>
+                <div class="inr">
+                    <a href="../list_pc.html" target="_blank" title="바로가기"><span>PC Page List <b>⧉</b></span></a>
+                    <!-- <a href="../../../list_mo.html" target="_blank" title="바로가기"><span>Mobile Page List <b>⧉</b></span></a> -->
+                </div>
+            </div>
+        </nav> 
+        <h1><a href="#">삼성SDI 웹퍼블리싱 가이드</a></h1>
+		<nav class="gnb_menu_group">
+			<h2 class="blind">Global Navi</h2>
+            <ul id="gnb">
+				<li class="active"><a href="guide_rule_Document.html">Document</a></li>
+                <li class=""><a href="guide_rule_HTML.html">HTML</a></li>
+				<li class=""><a href="guide_rule_CSS.html">CSS</a></li>
+				<li class=""><a href="../front/KR/html/TEMP/TEMP_sub_basic.html" target="_blank" title="기본 레이아웃 새 창으로보기">Basic layout <b>⧉</b></a></li>
+			</ul>
+			<ul id="gnb2">
+				<li class="active"><a href="typeface.html">Typeface</a></li>
+				<li class=""><a href="Colors.html">Colors</a></li>
+				<li class=""><a href="button.html">Buttons</a></li>
+				<li class=""><a href="Components.html">Components</a></li>
+				<li class=""><a href="list.html">Lists</a></li>
+				<li class=""><a href="table.html">Tables</a></li>
+				<li class=""><a href="tab.html">Tabs</a></li>
+				<li class=""><a href="wide.html">Wide</a></li>
+				<li class=""><a href="popup.html">Popups</a></li>
+				<li class=""><a href="../front/KR/html/career/career_tab04_view_temp.html" target="_blank" title="Admin(에디터)에서 입력 시 사용되는 요소 모음 새 창으로보기">Edit Contents <b>⧉</b></a></li>
+			</ul>
+		</nav>
+		<div id="bg_gnb"></div>
+	</header>
+<!-- </div> -->
+<script>
+// header - contents[doc type] show/hide
+function pubGd(){$("#pubGd").addClass("active");$("#eleGd").removeClass("active");$("#gnb").css('display', 'block');$("#gnb2").css('display', 'none');};
+function eleGd(){$("#eleGd").addClass("active");$("#pubGd").removeClass("active");$("#gnb").css('display', 'none');$("#gnb2").css('display', 'block');};
+$(document).ready(function() {let container = document.getElementById("container");var gnbLink = $("#gnb li:first a").attr("href");var gnb2Link = $("#gnb2 li:first a").attr("href");if($(container).hasClass("doc")){pubGd();}else{eleGd();};$("#pubGd").on("click", function(){pubGd();$(this).attr("href",gnbLink);});$("#eleGd").on("click", function(){eleGd();$(this).attr("href",gnb2Link);});});
+// header-minify scroll
+$(function(){$(window).scroll(function(){var scroll = $(this).scrollTop();var headerH = $("#CPguide_head > .header").height();var miniGnbH = $('#CPguide_head').height();if ($(window).scrollTop()  >= headerH){$("#CPguide_head").addClass("minify");$("#container").css("padding-top",miniGnbH);return false;}else {$("#CPguide_head").removeClass("minify");$("#container").css("padding-top",'0');return false;}});});
+</script>

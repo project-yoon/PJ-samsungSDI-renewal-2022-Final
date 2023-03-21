@@ -1,0 +1,88 @@
+<!-- <div id="CPguide_head">	 -->
+    <header class="header on">
+        <nav class="quick_menu_group">
+            <div class="area">
+                <div>
+                    <span><a href="../guide/guide_rule_HTML.html" id="pubGd" title="바로가기">삼성SDI Publishing Guide</a></span>
+                    <span><a href="../guide/typeface.html" id="eleGd" title="바로가기">Elements Guide</a></span>
+                </div>
+                <div class="inr">
+                    <span><a href="../../../list_pc.html" target="_blank" title="바로가기">PC Page List <b>◱🢂</b></a></span>
+                    <!-- <span><a href="../../../list_mo.html" target="_blank" title="바로가기">Mobile Page List <b>◱🢂</b></a></span> -->
+                </div>
+            </div>
+        </nav> 
+        <h1><a href="#">삼성SDI</a></h1>
+		<nav class="gnb_menu_group">
+			<h2 class="blind">Global Navi</h2>
+			<ul>
+				<li class="deps01"><a href="guide_rule_Document.html">Document</a></li>
+                <li class="deps02"><a href="guide_rule_HTML.html">HTML</a></li>
+				<li class="deps03"><a href="guide_rule_CSS.html">CSS</a></li>
+				<li class="deps03"><a href="../../../front/html/TEMP/TEMP_sub_basic.html" target="_blank" title="기본 레이아웃 새 창으로보기">Basic layout<b>🢂</b></a></li>
+			</ul>
+		</nav>
+		<div id="bg_gnb"></div>
+	</header>
+<!-- </div> -->
+<script>
+
+			// header - contents[doc type] show/hide
+			function pubGd(){
+				$("#pubGd").addClass("active");
+				$("#eleGd").removeClass("active");
+				$("#gnb").css('display', 'block');
+				$("#gnb2").css('display', 'none');
+			};
+			function eleGd(){
+				$("#eleGd").addClass("active");
+				$("#pubGd").removeClass("active");
+				$("#gnb").css('display', 'none');
+				$("#gnb2").css('display', 'block');
+			};
+			$(document).ready(function() {
+				let contents = document.getElementById("contents");
+				var gnbLink = $("#gnb li:first a").attr("href");
+				var gnb2Link = $("#gnb2 li:first a").attr("href");
+				if($(contents).hasClass("doc")){pubGd();}else{eleGd();};
+				$("#pubGd").on("click", function () {pubGd();$(this).attr("href",gnbLink);});
+				$("#eleGd").on("click", function () {eleGd();$(this).attr("href",gnb2Link);});
+			});
+			// header-minify scroll
+			$(function(){
+				$(window).scroll(function(){
+					var scroll = $(this).scrollTop();
+					var headerH = $(".CPguide_header > .gnb").height() + $(".CPguide_header > .quick_menu_group").height();
+					var miniGnbH = $('.CPguide_header').height();
+					if ($(window).scrollTop()  >= headerH){
+						$(".gd_lnb").addClass("minify");
+						$("#contents").css("padding-top",miniGnbH);
+						return false;
+					}
+					else {
+						$(".gd_lnb").removeClass("minify");
+						$("#contents").css("padding-top",'0');
+						return false;
+					}
+				});			
+			});
+		
+// header-minify scroll
+// $(function(){
+//     $(window).scroll(function(){
+//         var scroll = $(this).scrollTop();
+//         var headerH = $("#CPguide_head > .header").height();
+//         var miniGnbH = $('#CPguide_head').height();
+//         if ($(window).scrollTop()  >= headerH){
+//             $("#CPguide_head").addClass("minify");
+//             $("#container").css("padding-top",miniGnbH);
+//             return false;
+//         }
+//         else {
+//             $("#CPguide_head").removeClass("minify");
+//             $("#container").css("padding-top",'0');
+//             return false;
+//         }
+//     });			
+// });
+</script>

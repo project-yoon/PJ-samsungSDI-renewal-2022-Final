@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Components | guide | 삼성SDI 공식사이트</title>
+<link rel="stylesheet" href="../front/KR/assets/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../front/KR/assets/css/base.css">
+<link rel="stylesheet" href="../front/KR/assets/css/common.css">
+<link rel="stylesheet" href="../guide/assets/css/guide_only.css" />
+<script src="../front/KR/assets/js/jquery-1.11.3.min.js"></script>
+<script src="../front/KR/assets/js/swiper-bundle.min.js"></script>
+<script src="../front/KR/assets/js/common.js"></script>
+<script src="../guide/assets/assets/js/guide.js"></script>
+</head>
+<body>
+<nav id="skip_navi">
+    <a href="#container">본문 바로가기</a>
+</nav>
+
+<div id="CPguide_head"></div>
+
+<hr />
+
+<div id="container" class="CPguide Components">
+	<div class="wrap">
+        <section class="content" style="padding-top:0;">
+
+            <div class="content_inner">
+                <div class="CPguide_header">
+					<h3 class="titmain">Components</h3>
+					<h4 class="titmain">Drop box</h4>
+				</div>
+				<div class="CPguide_body grd1">
+					<div class="item item--1">
+						
+						<!-- drop -->
+						<div class="dropdown_menu_tab">
+							<button title="클릭 시 열기">선택하세요</button>
+							<ul class="scroll">
+								<li><a href="#" data-tab="tp2_20220725">opt1</a></li>
+								<li><a href="#" data-tab="tp2_20210601">opt2</a></li>
+								<li><a href="#" data-tab="tp2_20200401">opt3</a></li>
+								<li><a href="#" data-tab="tp2_20190502">opt4</a></li>
+								<li><a href="#" data-tab="tp2_20190404">opt5</a></li>
+								<li><a href="#" data-tab="tp2_20150825">opt6</a></li>
+							</ul>
+						</div>
+						<!-- // drop -->
+						<!-- drop -->
+						<!-- 우측 정렬 시, 클래스 ml_auto 추가 -->
+						<div class="dropdown_menu_tab ml_auto"> 
+							<button title="클릭 시 열기">우측 정렬 예시</button>
+							<ul class="scroll">
+								<li><a href="#" data-tab="tp2_20220725">opt1</a></li>
+								<li><a href="#" data-tab="tp2_20210601">opt2</a></li>
+								<li><a href="#" data-tab="tp2_20200401">opt3</a></li>
+								<li><a href="#" data-tab="tp2_20190502">opt4</a></li>
+								<li><a href="#" data-tab="tp2_20190404">opt5</a></li>
+								<li><a href="#" data-tab="tp2_20150825">opt6</a></li>
+							</ul>
+						</div>
+						<!-- // drop -->
+
+					</div>
+				</div>
+			</div>
+
+			<hr class="line">
+
+            <div class="content_inner">
+                <div class="CPguide_header">
+					<h3 class="titmain">Form Elements</h3>
+					<h4 class="titmain">Radio</h4>
+					<span class="txt_info">(aboute_sdi 에서만 사용, <code>/assets/css/about_sdi.css</code> 호출)</span>
+					<link rel="stylesheet" href="../front/KR/assets/css/about_sdi.css">
+				</div>
+				<div class="CPguide_body">
+					<div style="position:relative;">
+						
+						<form class="form_wrap">
+							<div class="form_field">
+
+								<!-- map_btn_list -->
+								<div class="map_box">
+                                    <ul class="map_header">
+                                        <li>
+                                            <input id="chk_all" type="radio" name="chk_type" value="all" checked>
+                                            <label for="chk_all"><span class="chkspan"></span>전체</label>
+                                        </li>
+                                        <li>
+                                            <input id="chk_product" type="radio" name="chk_type" value="product" class="chk_sub">
+                                            <label for="chk_product"><span class="chkspan"></span>생산법인</label>
+                                        </li>
+                                        <li>
+                                            <input id="chk_sale" type="radio" name="chk_type" value="sale" class="chk_sub">
+                                            <label for="chk_sale"><span class="chkspan"></span>판매법인</label>
+                                        </li>
+                                        <li>
+                                            <input id="chk_develop" type="radio" name="chk_type" value="develop" class="chk_sub">
+                                            <label for="chk_develop"><span class="chkspan"></span>연구개발</label>
+                                        </li>
+                                    </ul>
+								</div>
+								<!-- //map_btn_list -->
+
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+			<hr class="line">
+
+			<div class="content_inner">
+                <div class="CPguide_header">
+					<h3 class="titmain">Paging</h3>
+					<h4 class="titmain">numbering - <span class="txt_info">모바일에서 MORE버튼으로 변형</span></h4>
+				</div>
+				<div class="CPguide_body grd1">
+					<div class="item item--1">
+
+						<!-- Page numbering -->
+						<div class="paging_area">
+							<div class="pc_paging">
+								<!-- 
+									*** 반영 시, 이미지경로확인 ***
+									../../../front/assets/
+											▼
+									../../assets/
+								-->
+								<!-- <a href="javascript:void(0);" class="prev txt_infoR"><img src="../front/KR/assets/images/common/paging_btn_first.png" alt="처음페이지"></a> -->
+								<a href="javascript:void(0);" class="prev txt_infoR"><img src="../front/KR/assets/images/common/paging_btn_prev.png" alt="이전페이지"></a>
+								<a href="javascript:void(0);" class="num txt_infoR active">1</a>
+								<a href="javascript:void(0);" class="num txt_infoR">2</a>
+								<a href="javascript:void(0);" class="num txt_infoR">3</a>
+								<a href="javascript:void(0);" class="num txt_infoR">4</a>
+								<a href="javascript:void(0);" class="num txt_infoR">5</a>
+								<a href="javascript:void(0);" class="num txt_infoR">6</a>
+								<a href="javascript:void(0);" class="num txt_infoR">7</a>
+								<a href="javascript:void(0);" class="num txt_infoR">8</a>
+								<a href="javascript:void(0);" class="num txt_infoR">9</a>
+								<a href="javascript:void(0);" class="num txt_infoR">10</a>
+								<a href="javascript:void(0);" class="next txt_infoR"><img src="../front/KR/assets/images/common/paging_btn_next.png" alt="다음페이지"></a>
+								<a href="javascript:void(0);" class="last txt_infoR"><img src="../front/KR/assets/images/common/paging_btn_last.png" alt="마지막페이지"></a>
+							</div>
+							<div class="m_paging">
+								<button type="button" title="더보기">MORE<span>00 &#47; 00</span></button>
+							</div>
+						</div>
+						<!-- // Page numbering -->
+
+					</div>
+				</div>
+                <div class="CPguide_header">
+					<h4 class="titmain">page move - <span class="txt_info">기본</span></h4>
+				</div>
+				<div class="CPguide_body grd1" style="display: block;">
+					<div class="item item--1">
+						
+						<ul class="move_area">
+							<li class="prev">
+								<a href="javascript:void(0);">
+									<em>이전글</em>
+									<span>삼성SDI, 전고체 전지 파일럿 라인 착공</span>
+								</a>
+							</li>
+							<li class="next on"><!-- [D]: 활성화 시 .on -->
+								<a href="javascript:void(0);">
+									<em>다음글</em>
+									<span>삼성SDI, 인터배터리 2020 참가</span>
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="CPguide_header">
+					<h4 class="titmain">page move - <span class="txt_info">모바일 와이드 타입 <code>.wide_mo</code></span></h4>
+				</div>
+				<div class="CPguide_body grd1" style="display: block;">
+					<div class="item item--1 wide_mo">
+						
+						<ul class="move_area">
+							<li class="prev">
+								<a href="javascript:void(0);">
+									<em>이전글</em>
+									<span>삼성SDI, 전고체 전지 파일럿 라인 착공</span>
+								</a>
+							</li>
+							<li class="next on"><!-- [D]: 활성화 시 .on -->
+								<a href="javascript:void(0);">
+									<em>다음글</em>
+									<span>삼성SDI, 인터배터리 2020 참가</span>
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="CPguide_header">
+					<h4 class="titmain">page move - <span class="txt_info">PC 와이드 타입 <code>.wide_pc</code></span></h4>
+				</div>
+				<div class="CPguide_body grd1" style="display: block;">
+					<div class="item item--1 wide_pc">
+						
+						<ul class="move_area">
+							<li class="prev">
+								<a href="javascript:void(0);">
+									<em>이전글</em>
+									<span>삼성SDI, 전고체 전지 파일럿 라인 착공</span>
+								</a>
+							</li>
+							<li class="next on"><!-- [D]: 활성화 시 .on -->
+								<a href="javascript:void(0);">
+									<em>다음글</em>
+									<span>삼성SDI, 인터배터리 2020 참가</span>
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="CPguide_header">
+					<h4 class="titmain">page move - <span class="txt_info">All wide <code>.wide</code> </span></h4>
+				</div>
+				<div class="CPguide_body grd1" style="display: block;">
+					<div class="item item--1 wide">
+						
+						<ul class="move_area">
+							<li class="prev">
+								<a href="javascript:void(0);">
+									<em>이전글</em>
+									<span>삼성SDI, 전고체 전지 파일럿 라인 착공</span>
+								</a>
+							</li>
+							<li class="next on"><!-- [D]: 활성화 시 .on -->
+								<a href="javascript:void(0);">
+									<em>다음글</em>
+									<span>삼성SDI, 인터배터리 2020 참가</span>
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+
+			</div>
+        </section> 
+    </div>
+</div>
+<div id="bg_modal"></div>
+
+<script type="text/javascript">
+	$(document).ready( function() {
+		$("#CPguide_head").load("guide_head.html");
+	});
+</script>
+</body>
+</html>

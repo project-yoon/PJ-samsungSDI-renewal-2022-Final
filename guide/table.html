@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Table | guide | 삼성SDI 공식사이트</title>
+<link rel="stylesheet" href="../front/KR/assets/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../front/KR/assets/css/base.css">
+<link rel="stylesheet" href="../front/KR/assets/css/common.css">
+<link rel="stylesheet" href="../guide/assets/css/guide_only.css" />
+<script src="../front/KR/assets/js/jquery-1.11.3.min.js"></script>
+<script src="../front/KR/assets/js/swiper-bundle.min.js"></script>
+<script src="../front/KR/assets/js/common.js"></script>
+<script src="../guide/assets/assets/js/guide.js"></script>
+</head>
+<body>
+<nav id="skip_navi">
+    <a href="#container">본문 바로가기</a>
+</nav>
+
+
+<div id="CPguide_head"></div>
+
+<hr />
+
+<div id="container" class="CPguide Tables">
+	<div class="wrap">
+        <section class="content" style="padding-top:0;">
+            <div class="content_inner">
+				<div class="CPguide_header">
+					<h3 class="body_title">Tables</h3>
+					<h4 class="titmain">Basic - <code>basic_table</code> <span class="txt_info">상단 헤더가 있는 가로형</span></h4>
+				</div>
+				<div class="CPguide_body">
+
+					<div class="basic_table">
+						<table>
+							<caption>테이블 가이드 상단 헤더가 있는 가로형 기본 형태에 관한 표</caption>
+							<colgroup>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">분류</th>
+									<th scope="col">내용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="row">분류 1</td>
+									<td>내용 1</td>
+								</tr>
+								<tr>
+									<td scope="row">분류 2</td>
+									<td>내용 2</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+				<div class="CPguide_header">
+					<h4 class="titmain">Basic - <code>basic_table</code> <span class="txt_info">좌측 헤더가 있는 세로형</span></h4>
+				</div>
+				<div class="CPguide_body">
+
+					<div class="basic_table">
+						<table>
+							<caption>테이블 가이드 좌측 헤더가 있는 세로형 기본 형태에 관한 표</caption>
+							<colgroup>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">분류</th>
+									<th scope="col">내용</th>
+									<th scope="col">비고</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">분류 1</th>
+									<td>내용 1</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th scope="row">분류 2</th>
+									<td>내용 2</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+
+			</div>
+
+			<hr class="line">
+
+			<div class="content_inner">
+
+				<div class="CPguide_header">
+					<h3 class="titmain">Responsive</h3>
+					<h4 class="titmain">전체 스크롤 - <span class="txt_info">모바일에서 좌측헤더를 포함하여 스크롤이 가능한 테이블</span></h4>
+					<p><code>.table-scroll-all</code> &gt; <code>.table-wrap.responsive_table</code> &gt; <code>table</code> </p>
+				</div>
+				<div class="CPguide_body" style="display: block;">
+
+					<!-- 예시 컨텐츠 시작 -->
+					<div class="table-scroll-all">
+						<div class="table-wrap responsive_table">
+							<table>
+								<caption>테이블 가이드를 위한 개인정보 처리 및 보유 기간관 예시 표</caption>
+								<colgroup>
+									<col style="width: 42.83%;">
+									<col style="width: 14.16%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">보유항목</th>
+										<th scope="col">보유기간 항목</th>
+										<th scope="col">법적근거</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">소비자의 불만 또는 분쟁처리에 관한 기록</th>
+										<td>3년</td>
+										<td rowspan="4">전자상거래 등에서의 소비자보호에 관한 법률</td>
+									</tr>
+									<tr>
+										<th scope="row">표시/광고에 관한 기록</th>
+										<td>6개월</td>
+									</tr>
+									<tr>
+										<th scope="row">계약 또는 청약철회 등에 관한 기록</th>
+										<td>5년</td>
+									</tr>
+									<tr>
+										<th scope="row">대금결제 및 재화 등의 공급에 관한 기록</th>
+										<td>5년</td>
+									</tr>
+									<tr>
+										<th scope="row">전자금융 거래에 관한 기록</th>
+										<td>5년</td>
+										<td>전자금융거래법</td>
+									</tr>
+									<tr>
+										<th scope="row">홈페이지 웹사이트 방문기록</th>
+										<td>3개월</td>
+										<td>통신비밀보호법</td>
+									</tr>
+									<tr>
+										<th scope="row">신용정보의 수집/처리에 관한 기록</th>
+										<td>3년</td>
+										<td>신용정보의 이용 및 보호에 관한 법률</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- // 예시 컨텐츠 종료 -->
+
+				</div>
+				<div class="CPguide_header">
+					<h4 class="titmain">좌측 고정 스크롤 - <span class="txt_info">모바일에서 좌측헤더를 고정하여 스크롤이 가능한 테이블</span></h4>
+					<p class="txt_info">고정 할 th에 클래스 추가 <code>.fixed-side.bg-line</code></p>
+				</div>
+				<div class="CPguide_body" style="display: block;">
+
+					<!-- 예시 컨텐츠 시작 -->
+					<div class="table-scroll">
+						<div class="table-wrap responsive_table">
+							<table class="main-table">
+								<caption>테이블 가이드를 위한 개인정보 처리목적 예시 표</caption>
+								<colgroup>
+									<col style="width: 11.58%;">
+									<col style="width: 63.41%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="fixed-side bg-line">구분</th>
+										<th scope="col">수집 항목</th>
+										<th scope="col">처리 목적</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" class="fixed-side bg-line">모바일에서<br>고정될 부분</th>
+										<td>쿠키</td>
+										<td>
+											팝업창 內<br>
+											‘오늘하루보지않기’ 기능에만 사용
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="fixed-side bg-line">모바일에서<br>고정될 부분</th>
+										<td class="left">
+											<div class="container">
+												<div class="cont">
+													<span>사업장 내방</span>
+													<p>
+														&#91;필수항목&#93; 성명, 생년월일, 휴대폰번호, 휴대폰OS, 국적, 아이디&#40;ID&#41;, 비밀번호, 소속업체, &#40;소속업체&#41;
+														사업자번호, 이메일주소, 쿠키&#40;Cookie&#41;, 내방기록<br>
+														&#91;선택항목&#93; &#40;소속업체&#41;부서, &#40;소속업체&#41;직급, 차량번호
+													</p>
+												</div>
+												<div class="cont">
+													<span>출입증 발급</span>
+													<p>
+													&#91;필수항목&#93; 성명, 영문성명, 생년월일, 성별, 회사명, 휴대폰번호, 출입&#47;취식기록<br>
+													&#91;선택항목&#93; 사진, 직급, 회사주소, 회사전화번호, 사업자등록번호
+													</p>
+												</div>
+												<div class="cont">
+													<span>노트북 보안</span>
+													<p>
+														&#91;필수항목&#93; 성명, 이메일주소, 휴대폰번호, 회사명, &#40;SDI담당자&#41; 성명, &#40;SDI담당자&#41; 부서
+													</p>
+												</div>
+												<div class="cont">
+													<span>CCTV</span>
+													<p>
+														사업장 출입&#47;이동 &#40;개인&#41;영상정보
+													</p>
+												</div>
+											</div>
+										</td>
+										<td>보안 및 안전관련 운영</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- // 예시 컨텐츠 종료 -->
+
+				</div>
+            </div>
+        </section> 
+    </div>
+</div>
+<div id="bg_modal"></div>
+
+
+<script type="text/javascript">
+	$(document).ready( function() {
+		$("#CPguide_head").load("guide_head.html");
+	});
+</script>
+</body>
+</html>

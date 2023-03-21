@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Basic CSS Rule | guide | 삼성SDI 공식사이트</title>
+<link rel="stylesheet" href="../front/KR/assets/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../front/KR/assets/css/base.css">
+<link rel="stylesheet" href="../front/KR/assets/css/common.css">
+<link rel="stylesheet" href="../guide/assets/css/guide_only.css" />
+<script src="../front/KR/assets/js/jquery-1.11.3.min.js"></script>
+<script src="../front/KR/assets/js/swiper-bundle.min.js"></script>
+<script src="../front/KR/assets/js/common.js"></script>
+<script src="../guide/assets/assets/js/guide.js"></script>
+</head>
+<body>
+<nav id="skip_navi">
+    <a href="#container">본문 바로가기</a>
+</nav>
+
+<div id="CPguide_head"></div>
+
+<hr />
+
+
+<div id="container" class="CPguide doc basicCSS">
+	<div class="wrap">
+        <section class="content" style="padding-top:0;">
+
+			<div class="content_inner">
+				<div class="CPguide_header">
+					<h3 class="titmain">Basic CSS Rule</h3>
+					<h4 class="titmain">CSS 작성 규칙</h4>
+				</div>
+				<div class="CPguide_body">
+					
+					<div class="CPguide_dsc">
+						<ul>
+							<li>클래스명은 스네이크 표기법(snake_case) 또는, 카멜 표기법(camelCase)을 따른다.</li>
+							<li><strong>예약어</strong>또는, <strong>위치와 기능</strong>의 클래스명은 <u>스네이크 표기법</u>(snake_case)으로 작성한다. </li>
+							<li>이외, 위치 지정 없이 <strong>한 단어 이상의 띄어쓰기</strong>를 구분할 때, <u>카멜 표기법</u>(camelCase)으로 작성한다. </li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<hr class="line">
+
+			<div class="content_inner">
+				<div class="CPguide_header">
+					<h4 class="titmain">Stylesheet 파일 역할</h4>
+				</div>
+				<div class="CPguide_body" style="display: block;">
+					
+					
+					<div class="table-scroll">
+						<div class="table-wrap responsive_table">
+						<table class="main-table">
+								<caption>CSS 파일 역할</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:25%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>파일명</th>
+										<th>역할</th>
+										<th>항목</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">base.css</th>
+										<td>사용할 서체 지정 및 문서 초기화</td>
+										<td style="text-align: left;">서체 정의 및 호출, 폰트 초기화, 도큐먼트 초기화</td>
+									</tr>
+									<tr>
+										<th scope="row">common.css</th>
+										<td>사이트 공통 선언</td>
+										<td style="text-align: left;">폰트컬러 예약어, 여백관련 예약어, 버튼컬러예약어, 타이틀 정의, 링크스타일,<br>폼스타일, 텍스트아레아, 버튼, 탭기본, 아이콘기본 등</td>
+									</tr>
+									<tr>
+										<th scope="row">main.css</th>
+										<td>메인 고유 스타일</td>
+										<td style="text-align: left;">사이트메인, 공통, 섹션 메인 전용 스타일</td>
+									</tr>
+									<tr>
+										<th scope="row">about_sdi.css<br>business.css<br>career.css<br>esg.css<br>etc.css<br>investment.css<br>sdi_now.css<br>search.css<br>:</th>
+										<td>서브 페이지</td>
+										<td style="text-align: left;">키클래스를 이용하여 공통 외 스타일을 제어하고, 각 카테고리마다 스타일 시트를 별도 선언</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+        </section> 
+    </div>
+</div>
+<div id="bg_modal"></div>
+
+
+<script type="text/javascript">
+	$(document).ready( function() {
+		$("#CPguide_head").load("guide_head.html");
+	});
+</script>
+</body>
+</html>

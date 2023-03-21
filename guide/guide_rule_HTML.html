@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Basic Layout Rule | guide | 삼성SDI 공식사이트</title>
+<link rel="stylesheet" href="../front/KR/assets/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../front/KR/assets/css/base.css">
+<link rel="stylesheet" href="../front/KR/assets/css/common.css">
+<link rel="stylesheet" href="../guide/assets/css/guide_only.css" />
+<script src="../front/KR/assets/js/jquery-1.11.3.min.js"></script>
+<script src="../front/KR/assets/js/swiper-bundle.min.js"></script>
+<script src="../front/KR/assets/js/common.js"></script>
+<script src="../guide/assets/assets/js/guide.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.7/styles/monokai_sublime.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/bash.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<nav id="skip_navi">
+    <a href="#container">본문 바로가기</a>
+</nav>
+
+<div id="CPguide_head"></div>
+
+<hr />
+
+
+<div id="container" class="CPguide doc basicHTML">
+	<div class="wrap">
+        <section class="content" style="padding-top:0;">
+
+			<div class="content_inner">
+				<div class="CPguide_header">
+					<h3 class="titmain">Basic Layout Rule</h3>
+				</div>
+				<div class="CPguide_body">
+					<div class="dcm"><p style="color: #252f33;">Document</p>
+						<div style="background-color: #fff;border: 1px solid #eee;border-right: 0; "> <p>head</p>  </div>
+						<div style="background-color: #eee;"> <p>body</p>
+							<div style="background-color: #cccccc;"><p>header_wrap</p>
+								<div style="background-color: #d4d4d4;"><p>utill <span> : 미사용 처리 됨</span></p></div>
+								<div style="background-color: #d4d4d4;"><p>header</p></div>
+								<div style="background-color: #d4d4d4;"><p>pannel <span> : pc 전체메뉴</span></p></div>
+								<div style="background-color: #d4d4d4;"><p>popup_search <span> : 통합검색</span></p></div>
+								<div style="background-color: #d4d4d4;"><p>keyinfo</p></div>
+								<div style="background-color: #d4d4d4;"><p>sitemap <span> : mo 전체메뉴</span></p></div>
+							</div>
+							<div style="background-color: #cccccc;"><p>container / 　★ <code>page-key-class</code></p>
+								<div style="background-color: #d4d4d4;"><p>wrap</p>
+									<div style="background-color: #e4e4e4;"><p>sub_visual</p></div>
+									<div style="background-color: #e8e8e8;"><p>content / &lt;section&gt;</p>
+										<div style="background-color: #bdbdbd;"><p> &lt;div&gt; </p></div>
+										<div style="background-color: #bdbdbd;"><p> &lt;div&gt; </p></div>
+										<div style="background-color: #bdbdbd;"><p> … </p></div>
+									</div>
+								</div>
+							</div>
+							<div style="background-color: #cccccc;"><p>popuop (pop-wrap)</p>
+								<div style="background-color: #e0e0e0;margin: 0;"><p>pop_head</p></div>
+								<div style="background-color: #eeeeee;margin: 0;"><p>pop_body</p></div>
+								<div style="background-color: #e0e0e0;margin: 0;"><p>pop_foot</p></div>
+							</div>
+							<div style="background-color: #cccccc;"><p>bg_modal</p></div>
+							<div style="background-color: #cccccc;"><p>footer_wrap</p>
+								<div style="background-color: #e0e0e0;margin: 0;"><p>quick</p></div>
+								<div style="background-color: #eeeeee;margin: 0;"><p>&lt;footer&gt;</p></div>
+							</div>
+						</div>								
+					</div>
+
+				</div>
+            </div>
+			<hr class="line">
+			<div class="content_inner">
+				<div class="CPguide_header">
+					<h3 class="titmain">Page Code</h3>
+				</div>
+				<div class="CPguide_body">
+							<!-- CODE EX -->
+							<div class="CPguide_code">
+								<pre><code class="html">
+&lt! DOCTYPE html&gt
+&lthtml lang="ko"&gt
+	&lthead&gt
+		&ltmeta charset="UTF-8"&gt
+		&ltmeta http-equiv="X-UA-Compatible" content="IE=edge" /&gt
+		&ltmeta name="viewport" content="width=device-width, initial-scale=1.0" /&gt
+		&lttitle&gtpage title | 삼성SDI 공식사이트&lt/title&gt
+	&lt/head&gt
+	&ltbody&gt
+		&ltnav id="skip_navi"&gt
+			&lta href="#container"&gt본문 바로가기&lt/a&gt
+		&lt/nav&gt
+
+		&ltdiv id="header_wrap" class="PAGEKEYCLASS"&gt &lt!-- main, information, column 와 같은 페이지 키클래스 지정 --&gt
+			&ltdiv class="utill"&gt&lt/div&gt
+			&ltheader class="header on"&gt&lt/header&gt
+			&ltaside id="sitemap" tabindex="0"&gt&lt/aside&gt
+		&lt/div&gt
+
+		&lt!--  container --&gt
+		&ltdiv id="container"&gt
+			&ltdiv class="wrap"&gt
+
+				&lt!-- Start Of Contents --&gt
+				&ltsection class="content"&gt
+					&ltdiv class="content_inner"&gt&lt/div&gt
+				&lt/section&gt
+				&lt!-- End Of Contents --&gt
+
+			&lt/div&gt
+		&lt/div&gt
+		&lt!-- // container --&gt
+
+		&lt!-- 팝업 시작 --&gt
+		&ltdiv id="bg_modal"&gt&lt/div&gt
+		&lt!-- // 팝업 종료  --&gt
+
+		&ltdiv id="btn_top_move"&gt
+			&ltbutton type="button"&gt&ltimg src="../../assets/images/layout/btn_top.png" alt="Top Move" /&gt&lt/button&gt
+		&lt/div&gt
+
+		&ltdiv id="footer_wrap"&gt&lt/div&gt
+	&lt/body&gt
+&lt/html&gt
+
+</code></pre>
+							</div>
+							<!-- // CODE EX -->
+				</div>
+			</div>
+
+        </section> 
+    </div>
+</div>
+<div id="bg_modal"></div>
+
+
+<script type="text/javascript">
+	$(document).ready( function() {
+		$("#CPguide_head").load("guide_head.html");
+	});
+</script>
+</body>
+</html>

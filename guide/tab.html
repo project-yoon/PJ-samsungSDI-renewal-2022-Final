@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta httab-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tab | guide | 삼성SDI 공식사이트</title>
+<link rel="stylesheet" href="../front/KR/assets/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../front/KR/assets/css/base.css">
+<link rel="stylesheet" href="../front/KR/assets/css/common.css">
+<link rel="stylesheet" href="../guide/assets/css/guide_only.css" />
+<script src="../front/KR/assets/js/jquery-1.11.3.min.js"></script>
+<script src="../front/KR/assets/js/swiper-bundle.min.js"></script>
+<script src="../front/KR/assets/js/common.js"></script>
+<script src="../guide/assets/assets/js/guide.js"></script>
+</head>
+<body>
+<nav id="skip_navi">
+    <a href="#container">본문 바로가기</a>
+</nav>
+
+
+<div id="CPguide_head"></div>
+
+<hr />
+
+<div id="container" class="CPguide Tabs">
+	<div class="wrap">
+        <section class="content" style="padding-top:0;">
+
+			<div class="content_inner">
+				<div class="CPguide_header">
+					<h3 class="titmain">Tabs</h3>
+					<h4 class="titmain">Basic Tab</h4>
+					<span class="txt_info">Tab-in-Tab일 경우 1depth로 이용되는 스타일</span>
+				</div>
+				<div class="CPguide_body">
+					
+					<!-- Basic Tab - Start -->
+					<div class="tab_cont sItem" aria-hidden="true">
+						<!-- <h2 class="subH">타이틀</h2> -->
+						<div class="tab_area" data-role="tab">
+							<div class="tab_nav wide">
+								<div class="inner">
+									<!-- TAB LIST -->
+									<div class="tab_list">
+										<ul class="col2" role="tablist" aria-label="Tabs">
+											<li class="tab_item active">
+												<a href="javascript:void(0);" class="tab-button" id="tab-01" aria-controls="tab-panel-01" role="tab" aria-selected="true" tabindex="0">Tabs-1</a>
+											</li>
+											<li class="tab_item">
+												<a href="javascript:void(0);" class="tab-button" id="tab-02" aria-controls="tab-panel-02" role="tab" aria-selected="false" tabindex="-1">Tabs-2</a>
+											</li>
+											<li class="tab_item">
+												<a href="javascript:void(0);" class="tab-button" id="tab-03" aria-controls="tab-panel-03" role="tab" aria-selected="false" tabindex="-1">Tabs-3</a>
+											</li>
+											<li class="tab_item">
+												<a href="javascript:void(0);" class="tab-button" id="tab-04" aria-controls="tab-panel-04" role="tab" aria-selected="false" tabindex="-1">Tabs-4</a>
+											</li>
+										</ul>
+									</div>
+									<!-- //TAB LIST -->
+							</div>
+						</div>
+
+						<!-- tab_conts -->
+						<div class="tab_conts">
+							<div class="tab_cont active" id="tab-panel-01" aria-labelledby="tab-01" role="tabpanel" tabindex="0" aria-hidden="false">
+									<span class="blind">Tab-제목및설명</span>
+									<div class="subTab_cont">
+
+										<!-- 컨텐츠 -->
+										<p style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#f9f9f9;">Tabs Content 1</p>
+									</div>
+								</div>
+								<div class="tab_cont" id="tab-panel-02" aria-labelledby="tab-02" role="tabpanel" tabindex="0" aria-hidden="true" aria-expanded="false">
+									<span class="blind">Tab-제목및설명</span>
+									<div class="subTab_cont">
+
+										<!-- 컨텐츠 -->
+										<p style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#ecdede;">Tabs Content 2</p>
+									</div>
+								</div>
+								<div class="tab_cont" id="tab-panel-03" aria-labelledby="tab-03" role="tabpanel" tabindex="0" aria-hidden="true" aria-expanded="false">
+									<span class="blind">Tab-제목및설명</span>
+									<div class="subTab_cont">
+
+										<!-- 컨텐츠 -->
+										<p style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#ebebeb;">Tabs Content 3</p>
+									</div>
+								</div>
+								<div class="tab_cont" id="tab-panel-04" aria-labelledby="tab-04" role="tabpanel" tabindex="0" aria-hidden="true" aria-expanded="false">
+									<span class="blind">Tab-제목및설명</span>
+									<div class="subTab_cont">
+
+										<!-- 컨텐츠 -->
+										<p style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#ece5e5;">Tabs Content 4</p>
+									</div>
+								</div>
+							</div>
+							<!-- // tab_conts -->
+						</div>
+					</div>
+					<!-- //Basic Tab - End -->
+					
+				</div>
+			</div>
+
+			<hr class="line">
+
+			<div class="content_inner" style="padding-bottom: 0;" >
+				<div class="CPguide_header">
+					<h4 class="titmain">Fix Nav & Scroll Tab</h4>
+					<span class="txt_info_req">실 적용 페이지와 가이드 환경의 상이한 점 주의, 상단 비주얼이 있을 경우 사용하는 것</span><br>
+					<span class="txt_info">about_sdi 에서 사용, <code>/assets/js/about_sdi.js</code> 호출</span>
+					<script src="../front/KR/assets/js/about_sdi.js"></script>
+					<!-- <script src="../front/KR/assets/js/business.js"></script> -->
+				</div>
+				<div class="CPguide_body">
+					<div class="fix_nav typeA">
+						<div>
+							<ul>
+								<li class="on"><a href="#FixNav01">FixNav01</a></li>
+								<li><a href="#FixNav02">FixNav02</a></li>
+								<li><a href="#FixNav03">FixNav03</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content_inner">
+						<div class="ci_cont fix_items">
+							<div id="FixNav01" class="item">
+								<div style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#f9f9f9;">FixNav01-contents</div>
+							</div>
+							<div id="FixNav02" class="item">
+								<div style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#f9f9f9;">FixNav02-contents</div>
+							</div>
+							<div id="FixNav03" class="item">
+								<div style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#f9f9f9;">FixNav03-contents</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<hr class="line">
+
+			<div class="content_inner">
+                <div class="CPguide_header">
+					<h3 class="titmain">button Tab</h3>
+					<h4 class="titmain">모바일에서 Drop box로 변형 </h4>
+				</div>
+				<div class="CPguide_body grd1">
+					<div class="item item--1">
+
+						<div class="tab_area1" data-role="tab"> 
+							<div class="tab_nav1">
+								<div class="tab_list1">
+									<button class="">전체</button>
+									<ul role="tablist" aria-label="Tabs" class="">
+										<li class="tab_item active"><a href="javascript:void(0);" class="tab-button" id="tab-01" aria-controls="tab-panel-01" role="tab" aria-selected="false" tabindex="-1">Content 1</a></li>
+										<li class="tab_item"><a href="javascript:void(0);" class="tab-button" id="tab-02" aria-controls="tab-panel-02" role="tab" aria-selected="false" tabindex="-1">Content 2</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="tab_conts">
+								<div class="tab_cont active" id="tab-panel-01" aria-labelledby="tab-01" role="tabpanel" tabindex="-1" aria-hidden="true">
+									<div style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#f9f9f9;">Content 1</div>
+								</div>
+								<div class="tab_cont" id="tab-panel-02" aria-labelledby="tab-02" role="tabpanel" tabindex="-1" aria-hidden="true" aria-expanded="true">
+									<div style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#f9f9f9;">Content 2</div>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+				</div>
+                <div class="CPguide_header">
+					<h4 class="titmain">모바일에서 변형 없음</h4>
+					<span class="txt_info">(비즈니스 에서만 사용, <code>/assets/js/business.js</code> 호출)</span>
+					<script src="../front/KR/assets/js/business.js"></script>
+				</div>
+				<div class="CPguide_body grd1">
+					<div class="item item--1">
+
+						<div class="subTab_cont">
+							<ul class="tab_menu wide">
+								<li class="on"><button>cont 1</button></li>
+								<li><button>cont 2</button></li>
+								<li><button>cont 3</button></li>
+							</ul>
+							<div class="tab_item" style="display: block;">
+								<div class="item_cont">
+									<div style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#f9f9f9;">Content 1</div>
+								</div>
+							</div>
+							<div class="tab_item" style="display: none;">
+								<div class="item_cont">
+									<div style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#f9f9f9;">Content 2</div>
+								</div>
+							</div>
+							<div class="tab_item" style="display: none;">
+								<div class="item_cont">
+									<div style="margin-top: 20px;padding:20px;width:100%;height:300px;background-color:#f9f9f9;">Content 3</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+        </section> 
+    </div>
+</div>
+<div id="bg_modal"></div>
+
+
+<script type="text/javascript">
+	$(document).ready( function() {
+		$("#CPguide_head").load("guide_head.html");
+		$("#TEMP_TAB").load("../../../front/html/TEMP/TEMP_tab_style.html");
+	});
+</script>
+</body>
+</html>
